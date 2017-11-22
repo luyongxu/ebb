@@ -1,4 +1,10 @@
 .Rproj.user
-/Raw Data/pricing_data.csv
-/Output/results.csv
-/Output/xgb_model.model
+
+/Raw Data/*
+!/Raw Data/gitkeep.txt
+
+/Output/*
+!/Output/gitkeep.txt
+
+/Correspondence/*
+!/Correspondence/gitkeep.txt
