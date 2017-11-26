@@ -42,25 +42,31 @@ download_data <- function(symbol, outputsize, datatype, api_key) {
 #' # 4. Download List of S&P 500 Companies 
 sp500_stocks <- read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies") %>% 
   html_nodes("td:nth-child(1) .text") %>% 
-  html_text()
+  html_text() %>% 
+  unique()
 
+#' # 5. Add Symbols 
+sp500_stocks <- c(sp500_stocks)
 
-#' # 5. Download Pricing Data 
+#' # 6. Download Pricing Data 
 pricing_data <- tibble() 
 for (ticker in sp500_stocks) { 
   print(str_c("Download data for ", ticker, "."))
-  tryCatch(df <- download_data(symbol = ticker, outputsize = "full", datatype = "json", api_key = api_key) , 
-           error = function(c) {
-             df <- NULL
-             print(str_c("Unable to download data for ", ticker, ".")) 
-           })
+  df <- tryCatch(download_data(symbol = ticker, outputsize = "full", datatype = "json", api_key = api_key), 
+                 error = function(c) {
+                   print(str_c("Unable to download data for ", ticker, ".")) 
+                   return(NULL)
+                 })
   pricing_data <- pricing_data %>% bind_rows(df)
+  Sys.sleep(1)
 }
 
-#' # 6. Inspect Data 
+#' # 7. Inspect Data 
 print(pricing_data)
 glimpse(pricing_data) 
 summary(pricing_data)
+print(pricing_data %>% count(symbol) %>% arrange(desc(n)))
 
-#' # 7. Save Data 
+#' # 8. Save Data 
 write_csv(pricing_data, "./Raw Data/pricing_data.csv")
+

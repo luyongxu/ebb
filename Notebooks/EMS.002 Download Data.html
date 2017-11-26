@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kevin Lu" />
 
-<meta name="date" content="2017-11-12" />
+<meta name="date" content="2017-11-25" />
 
 <title>Download Data</title>
 
@@ -245,7 +245,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Download Data</h1>
 <h4 class="author"><em>Kevin Lu</em></h4>
-<h4 class="date"><em>November 12, 2017</em></h4>
+<h4 class="date"><em>November 25, 2017</em></h4>
 
 </div>
 
@@ -283,19 +283,25 @@ div.tocify {
 <h1>4. Download List of S&amp;P 500 Companies</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sp500_stocks &lt;-<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;https://en.wikipedia.org/wiki/List_of_S%26P_500_companies&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;td:nth-child(1) .text&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw">html_text</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">html_text</span>() <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unique</span>()</code></pre></div>
+</div>
+<div id="add-symbols" class="section level1">
+<h1>5. Add Symbols</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sp500_stocks &lt;-<span class="st"> </span><span class="kw">c</span>(sp500_stocks)</code></pre></div>
 </div>
 <div id="download-pricing-data" class="section level1">
-<h1>5. Download Pricing Data</h1>
+<h1>6. Download Pricing Data</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pricing_data &lt;-<span class="st"> </span><span class="kw">tibble</span>() 
 <span class="cf">for</span> (ticker <span class="cf">in</span> sp500_stocks) { 
   <span class="kw">print</span>(<span class="kw">str_c</span>(<span class="st">&quot;Download data for &quot;</span>, ticker, <span class="st">&quot;.&quot;</span>))
-  <span class="kw">tryCatch</span>(df &lt;-<span class="st"> </span><span class="kw">download_data</span>(<span class="dt">symbol =</span> ticker, <span class="dt">outputsize =</span> <span class="st">&quot;full&quot;</span>, <span class="dt">datatype =</span> <span class="st">&quot;json&quot;</span>, <span class="dt">api_key =</span> api_key) , 
-           <span class="dt">error =</span> <span class="cf">function</span>(c) {
-             df &lt;-<span class="st"> </span><span class="ot">NULL</span>
-             <span class="kw">print</span>(<span class="kw">str_c</span>(<span class="st">&quot;Unable to download data for &quot;</span>, ticker, <span class="st">&quot;.&quot;</span>)) 
-           })
+  df &lt;-<span class="st"> </span><span class="kw">tryCatch</span>(<span class="kw">download_data</span>(<span class="dt">symbol =</span> ticker, <span class="dt">outputsize =</span> <span class="st">&quot;full&quot;</span>, <span class="dt">datatype =</span> <span class="st">&quot;json&quot;</span>, <span class="dt">api_key =</span> api_key), 
+                 <span class="dt">error =</span> <span class="cf">function</span>(c) {
+                   <span class="kw">print</span>(<span class="kw">str_c</span>(<span class="st">&quot;Unable to download data for &quot;</span>, ticker, <span class="st">&quot;.&quot;</span>)) 
+                   <span class="kw">return</span>(<span class="ot">NULL</span>)
+                 })
   pricing_data &lt;-<span class="st"> </span>pricing_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">bind_rows</span>(df)
+  <span class="kw">Sys.sleep</span>(<span class="dv">1</span>)
 }</code></pre></div>
 <pre><code>## [1] &quot;Download data for MMM.&quot;
 ## [1] &quot;Download data for ABT.&quot;
@@ -348,9 +354,11 @@ div.tocify {
 ## [1] &quot;Download data for AOS.&quot;
 ## [1] &quot;Download data for APA.&quot;
 ## [1] &quot;Download data for AIV.&quot;
+## [1] &quot;Unable to download data for AIV.&quot;
 ## [1] &quot;Download data for AAPL.&quot;
 ## [1] &quot;Download data for AMAT.&quot;
 ## [1] &quot;Download data for ADM.&quot;
+## [1] &quot;Unable to download data for ADM.&quot;
 ## [1] &quot;Download data for ARNC.&quot;
 ## [1] &quot;Download data for AJG.&quot;
 ## [1] &quot;Download data for AIZ.&quot;
@@ -367,6 +375,7 @@ div.tocify {
 ## [1] &quot;Download data for BCR.&quot;
 ## [1] &quot;Download data for BAX.&quot;
 ## [1] &quot;Download data for BBT.&quot;
+## [1] &quot;Unable to download data for BBT.&quot;
 ## [1] &quot;Download data for BDX.&quot;
 ## [1] &quot;Download data for BRK.B.&quot;
 ## [1] &quot;Download data for BBY.&quot;
@@ -425,9 +434,11 @@ div.tocify {
 ## [1] &quot;Download data for CMCSA.&quot;
 ## [1] &quot;Download data for CMA.&quot;
 ## [1] &quot;Download data for CAG.&quot;
+## [1] &quot;Unable to download data for CAG.&quot;
 ## [1] &quot;Download data for CXO.&quot;
 ## [1] &quot;Download data for COP.&quot;
 ## [1] &quot;Download data for ED.&quot;
+## [1] &quot;Unable to download data for ED.&quot;
 ## [1] &quot;Download data for STZ.&quot;
 ## [1] &quot;Download data for COO.&quot;
 ## [1] &quot;Download data for GLW.&quot;
@@ -450,6 +461,7 @@ div.tocify {
 ## [1] &quot;Download data for DLR.&quot;
 ## [1] &quot;Download data for DFS.&quot;
 ## [1] &quot;Download data for DISCA.&quot;
+## [1] &quot;Unable to download data for DISCA.&quot;
 ## [1] &quot;Download data for DISCK.&quot;
 ## [1] &quot;Download data for DISH.&quot;
 ## [1] &quot;Download data for DG.&quot;
@@ -558,6 +570,7 @@ div.tocify {
 ## [1] &quot;Download data for INTU.&quot;
 ## [1] &quot;Download data for ISRG.&quot;
 ## [1] &quot;Download data for IVZ.&quot;
+## [1] &quot;Download data for IQV.&quot;
 ## [1] &quot;Download data for IRM.&quot;
 ## [1] &quot;Download data for JEC.&quot;
 ## [1] &quot;Download data for JBHT.&quot;
@@ -688,7 +701,6 @@ div.tocify {
 ## [1] &quot;Download data for PWR.&quot;
 ## [1] &quot;Download data for QCOM.&quot;
 ## [1] &quot;Download data for DGX.&quot;
-## [1] &quot;Download data for Q.&quot;
 ## [1] &quot;Download data for RRC.&quot;
 ## [1] &quot;Download data for RJF.&quot;
 ## [1] &quot;Download data for RTN.&quot;
@@ -805,9 +817,9 @@ div.tocify {
 ## [1] &quot;Download data for ZTS.&quot;</code></pre>
 </div>
 <div id="inspect-data" class="section level1">
-<h1>6. Inspect Data</h1>
+<h1>7. Inspect Data</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(pricing_data)</code></pre></div>
-<pre><code>## # A tibble: 2,037,287 x 7
+<pre><code>## # A tibble: 2,012,355 x 7
 ##     timestamp   open   high    low  close  volume symbol
 ##        &lt;date&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;chr&gt;
 ##  1 2000-01-03  96.06  96.44  94.06  94.38 1086700    MMM
@@ -820,9 +832,9 @@ div.tocify {
 ##  8 2000-01-12 101.90 103.60 100.80 100.80 1434200    MMM
 ##  9 2000-01-13 101.30 101.90 100.40 100.80 1122200    MMM
 ## 10 2000-01-14 100.80 100.90  98.94  99.31 1270900    MMM
-## # ... with 2,037,277 more rows</code></pre>
+## # ... with 2,012,345 more rows</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">glimpse</span>(pricing_data) </code></pre></div>
-<pre><code>## Observations: 2,037,287
+<pre><code>## Observations: 2,012,355
 ## Variables: 7
 ## $ timestamp &lt;date&gt; 2000-01-03, 2000-01-04, 2000-01-05, 2000-01-06, 200...
 ## $ open      &lt;dbl&gt; 96.06, 92.88, 91.13, 94.31, 101.10, 100.40, 100.80, ...
@@ -832,30 +844,45 @@ div.tocify {
 ## $ volume    &lt;dbl&gt; 1086700, 1356900, 1849700, 2987900, 2050600, 1931900...
 ## $ symbol    &lt;chr&gt; &quot;MMM&quot;, &quot;MMM&quot;, &quot;MMM&quot;, &quot;MMM&quot;, &quot;MMM&quot;, &quot;MMM&quot;, &quot;MMM&quot;, &quot;MM...</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(pricing_data)</code></pre></div>
-<pre><code>##    timestamp               open              high          
-##  Min.   :2000-01-03   Min.   :   0.01   Min.   :     0.21  
-##  1st Qu.:2004-11-30   1st Qu.:  28.34   1st Qu.:    28.75  
-##  Median :2009-06-19   Median :  44.00   Median :    44.50  
-##  Mean   :2009-04-19   Mean   :  60.79   Mean   :    61.53  
-##  3rd Qu.:2013-10-11   3rd Qu.:  66.69   3rd Qu.:    67.42  
-##  Max.   :2017-11-10   Max.   :5020.00   Max.   :100000.00  
-##       low               close             volume          
-##  Min.   :   0.002   Min.   :   0.20   Min.   :         0  
-##  1st Qu.:  27.930   1st Qu.:  28.35   1st Qu.:    772600  
-##  Median :  43.430   Median :  43.99   Median :   1773800  
-##  Mean   :  60.081   Mean   :  60.80   Mean   :   4596599  
-##  3rd Qu.:  65.940   3rd Qu.:  66.70   3rd Qu.:   4152000  
-##  Max.   :4965.000   Max.   :4985.00   Max.   :3772638000  
+<pre><code>##    timestamp               open              high        
+##  Min.   :2000-01-03   Min.   :   0.21   Min.   :   0.21  
+##  1st Qu.:2004-12-03   1st Qu.:  28.45   1st Qu.:  28.86  
+##  Median :2009-06-26   Median :  44.35   Median :  44.90  
+##  Mean   :2009-04-26   Mean   :  61.25   Mean   :  61.95  
+##  3rd Qu.:2013-10-22   3rd Qu.:  67.22   3rd Qu.:  67.95  
+##  Max.   :2017-11-24   Max.   :5020.00   Max.   :5059.00  
+##       low              close             volume          
+##  Min.   :   0.01   Min.   :   0.20   Min.   :         0  
+##  1st Qu.:  28.02   1st Qu.:  28.46   1st Qu.:    766100  
+##  Median :  43.80   Median :  44.36   Median :   1767300  
+##  Mean   :  60.53   Mean   :  61.26   Mean   :   4615454  
+##  3rd Qu.:  66.47   3rd Qu.:  67.23   3rd Qu.:   4168408  
+##  Max.   :4965.00   Max.   :4985.00   Max.   :3772638000  
 ##     symbol         
-##  Length:2037287    
+##  Length:2012355    
 ##  Class :character  
 ##  Mode  :character  
 ##                    
 ##                    
 ## </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(pricing_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">count</span>(symbol) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">arrange</span>(<span class="kw">desc</span>(n)))</code></pre></div>
+<pre><code>## # A tibble: 498 x 2
+##    symbol     n
+##     &lt;chr&gt; &lt;int&gt;
+##  1      A  4504
+##  2   AAPL  4504
+##  3    ABC  4504
+##  4    ABT  4504
+##  5   ADBE  4504
+##  6    ADI  4504
+##  7    ADP  4504
+##  8   ADSK  4504
+##  9    AEP  4504
+## 10    AES  4504
+## # ... with 488 more rows</code></pre>
 </div>
 <div id="save-data" class="section level1">
-<h1>7. Save Data</h1>
+<h1>8. Save Data</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(pricing_data, <span class="st">&quot;./Raw Data/pricing_data.csv&quot;</span>)</code></pre></div>
 </div>
 

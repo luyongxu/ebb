@@ -38,11 +38,13 @@ render_wrapper <- function(filename, output) {
 #' # 2. Render 
 render_wrapper("EMS.001 Load Packages", "html_document")
 render_wrapper("EMS.002 Download Data", "html_document")
-render_wrapper("EMS.003 Engineer Features", "html_document")
-render_wrapper("EMS.004 Plot Features", "html_document")
-render_wrapper("EMS.005 Cross Validate Model", "html_document")
-render_wrapper("EMS.006 Train Model", "html_document")
-render_wrapper("EMS.007 Examine Predictions", "html_document")
+render_wrapper("EMS.003 Clean Data", "html_document")
+render_wrapper("EMS.004 Plot Data", "html_document")
+render_wrapper("EMS.005 Engineer Features", "html_document")
+render_wrapper("EMS.006 Plot Features Model", "html_document")
+render_wrapper("EMS.007 Cross Validate Model", "html_document")
+render_wrapper("EMS.008 Train Model", "html_document")
+render_wrapper("EMS.009 Examine Predictions", "html_document")
 
 #' # 3. Beep 
 beepr::beep(1)

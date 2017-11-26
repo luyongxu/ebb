@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kevin Lu" />
 
-<meta name="date" content="2017-11-12" />
+<meta name="date" content="2017-11-25" />
 
 <title>Load Packages</title>
 
@@ -245,29 +245,66 @@ div.tocify {
 
 <h1 class="title toc-ignore">Load Packages</h1>
 <h4 class="author"><em>Kevin Lu</em></h4>
-<h4 class="date"><em>November 12, 2017</em></h4>
+<h4 class="date"><em>November 25, 2017</em></h4>
 
 </div>
 
 
-<div id="load-packages" class="section level1">
-<h1>1. Load Packages</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(<span class="kw">suppressMessages</span>({ 
-  <span class="kw">library</span>(tidyverse)
-  <span class="kw">library</span>(stringr)
-  <span class="kw">library</span>(lubridate)
-  <span class="kw">library</span>(jsonlite)
-  <span class="kw">library</span>(timetk)
-  <span class="kw">library</span>(rvest)
-  <span class="kw">library</span>(RcppRoll)
-  <span class="kw">library</span>(xgboost)
-  <span class="kw">library</span>(sparkline)
+<div id="capture-command-line-arguments" class="section level1">
+<h1>1. Capture Command Line Arguments</h1>
+<p>This script when called through the command line using Rscript has the option of including a debug argument indicating whether to be verbose in the output or not to aid in debugging package dependency errors.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">args_debug &lt;-<span class="st"> </span><span class="kw">commandArgs</span>(<span class="dt">trailingOnly =</span> <span class="ot">TRUE</span>) 
+<span class="cf">if</span> (<span class="kw">length</span>(args_debug) <span class="op">==</span><span class="st"> </span><span class="dv">0</span>) { 
+  debug &lt;-<span class="st"> </span><span class="ot">FALSE</span> 
+} <span class="cf">else</span> <span class="cf">if</span> (args_debug[<span class="dv">1</span>] <span class="op">==</span><span class="st"> &quot;debug&quot;</span>) { 
+  debug &lt;-<span class="st"> </span><span class="ot">TRUE</span>
+}</code></pre></div>
+</div>
+<div id="print-library-paths-and-packages" class="section level1">
+<h1>2. Print library Paths and Packages</h1>
+<p>The .libPaths() function returns the libraries that R looks in to load packages. There are differences in the library path folder list when running scripts using Rscript and running scripts using RStudio. This section explicitly prints out the library path and the installed packages in each directory to aid in debugging any problems regarding loading packages and loading package dependencies.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span> (debug <span class="op">==</span><span class="st"> </span><span class="ot">TRUE</span>) { 
+  <span class="kw">print</span>(<span class="st">&quot;The following directories are in the library path: &quot;</span>)
+  <span class="kw">print</span>(<span class="kw">.libPaths</span>())
+  <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)
+  <span class="cf">for</span> (i <span class="cf">in</span> <span class="kw">.libPaths</span>()) { 
+    <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;The following packages are installed in&quot;</span>, i, <span class="st">&quot;:&quot;</span>))
+    <span class="kw">print</span>(<span class="kw">rownames</span>(<span class="kw">installed.packages</span>(<span class="dt">lib.loc =</span> i)))
+    <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)
+  }
+}</code></pre></div>
+</div>
+<div id="load-libraries" class="section level1">
+<h1>3. Load libraries</h1>
+<p>The RStudio Server Amazon Machine Image provided by Louis Aslett (<a href="http://www.louisaslett.com/RStudio_AMI/" class="uri">http://www.louisaslett.com/RStudio_AMI/</a>) provides an easy way to start an ec2 instance with RStudio Server and all major libraries installed. This machine image installs packages in the “/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4” directory. When running scripts using Rscript in the command line, however, this directory is not present in the library path. This section adds the folder to the library path.</p>
+<p>Each library may depend on certain dependencies are those dependencies are loaded first before loading the parent library. When library dependencies are loaded, they may also be looking in incorrect library paths and may cause the parent library to not load. If this happens, load the dependencies manually first before loading the parent library.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">library_path &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4&quot;</span>, <span class="kw">.libPaths</span>())
+<span class="kw">suppressWarnings</span>(<span class="kw">suppressMessages</span>({
+  <span class="kw">library</span>(tidyverse, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(readr, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(rvest, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(jsonlite, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(stringr, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(timetk, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(xts, <span class="dt">lib.loc =</span> library_path)
+  <span class="kw">library</span>(TTR, <span class="dt">lib.loc =</span> library_path)
 }))</code></pre></div>
 </div>
+<div id="print-session-info" class="section level1">
+<h1>4. Print Session Info</h1>
+<p>A debugging step used to verify that all libraries have been loaded properly.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span> (debug <span class="op">==</span><span class="st"> </span><span class="ot">TRUE</span>) { 
+  <span class="kw">sessionInfo</span>()
+}</code></pre></div>
+</div>
 <div id="options" class="section level1">
-<h1>2. Options</h1>
+<h1>5. Options</h1>
 <p>Turn off scientific notation.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>) </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>)</code></pre></div>
+</div>
+<div id="clean" class="section level1">
+<h1>6. Clean</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rm</span>(args_debug, debug, library_path)</code></pre></div>
 </div>
 
 
