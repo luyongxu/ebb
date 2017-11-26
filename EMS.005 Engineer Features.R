@@ -1,5 +1,4 @@
-
-#' # 4. Plot #' ---
+#' ---
 #' title: "Engineer Features"
 #' author: "Kevin Lu"
 #' date: '`r format(Sys.Date(), "%B %d, %Y")`'
