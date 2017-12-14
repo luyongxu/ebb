@@ -50,17 +50,25 @@ if (debug == TRUE) {
 #' library. When library dependencies are loaded, they may also be looking in incorrect library paths and may cause 
 #' the parent library to not load. If this happens, load the dependencies manually first before loading the parent 
 #' library.  
-library_path <- c("/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4", .libPaths())
-suppressWarnings(suppressMessages({
-  library(tidyverse, lib.loc = library_path)
-  library(readr, lib.loc = library_path)
-  library(rvest, lib.loc = library_path)
-  library(jsonlite, lib.loc = library_path)
-  library(stringr, lib.loc = library_path)
-  library(timetk, lib.loc = library_path)
-  library(xts, lib.loc = library_path)
-  library(TTR, lib.loc = library_path)
-}))
+#' 
+#' The load_library() function will load a package and will install the package first if necessary.  
+load_library <- function(package_name) { 
+  library_path <- c(.libPaths(), "/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4")
+  suppressWarnings(suppressMessages({
+    if(require(package_name, character.only = TRUE, lib.loc = library_path) == FALSE) {
+      install.packages(package_name, repos = "https://cloud.r-project.org/")
+      require(package_name, character.only = TRUE, lib.loc = library_path)
+    }
+  }))
+}
+load_library("tidyverse")
+load_library("readr")
+load_library("rvest")
+load_library("jsonlite")
+load_library("stringr")
+load_library("timetk")
+load_library("xts")
+load_library("TTR")
 
 #' # 4. Print Session Info 
 #' A debugging step used to verify that all libraries have been loaded properly.  
@@ -73,4 +81,4 @@ if (debug == TRUE) {
 options(scipen = 999)
 
 #' # 6. Clean
-rm(args_debug, debug, library_path)
+rm(args_debug, debug, load_library)

@@ -14,7 +14,7 @@
 #' ---
 
 #' # 1. Source Load Packages
-source("EMS.001 Load Packages.R")
+source("01-load-packages.R")
 
 #' # 2. Set Alpha Vantage API Key 
 api_key <- "E6TPW2MZ9X85ZC34"
@@ -68,5 +68,5 @@ summary(pricing_data)
 print(pricing_data %>% count(symbol) %>% arrange(desc(n)))
 
 #' # 8. Save Data 
-write_csv(pricing_data, "./Raw Data/pricing_data.csv")
+write_csv(pricing_data, "./data/pricing-data.csv")
 
