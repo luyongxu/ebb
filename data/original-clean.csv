@@ -1,4 +1,4 @@
-id,date,close,earnings,ticker,exchange,initial_trend,position_label
+id,timestamp,close,earnings,symbol,exchange,initial_trend,position_label
 1,11/2/2015,53.24,0,MSFT,US Equity,1,0
 1,11/3/2015,54.15,0,MSFT,US Equity,1,0
 1,11/4/2015,54.4,0,MSFT,US Equity,1,5
