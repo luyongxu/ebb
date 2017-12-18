@@ -45,6 +45,7 @@ load_library("timetk")
 load_library("xts")
 load_library("TTR")
 load_library("alphavantager")
+load_library("quantmod")
 
 #' # 2. Options 
 #' Turn off scientific notation. 

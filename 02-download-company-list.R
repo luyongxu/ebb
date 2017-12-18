@@ -102,23 +102,19 @@ list_nyse <- download_company_list(exchange = "nyse")
 list_amex <- download_company_list(exchange = "amex")
 list_tsx <- download_company_list(exchange = "tsx")
 
-#' # 4. Clean Company List 
-#' Use companies listed in the NASDAQ, NYSE, or AMEX with a market capitalization greater than $1 billion. 
-list_clean <- bind_rows(list_nasdaq, list_nyse, list_amex) %>% 
-  filter(market_cap >= 1000000000) %>%
-  group_by(symbol) %>% 
-  filter(row_number() == 1)
+#' # 4. Combine Company List 
+list_all <- bind_rows(list_nasdaq, list_nyse, list_amex, list_tsx)
 
 #' # 5. Print Lists
 print(list_nasdaq)
 print(list_nyse)
 print(list_amex)
 print(list_tsx)
-print(list_clean)
+print(list_all)
 
 #' # 6. Save Company Lists 
 write_csv(list_nasdaq, "./data/list-nasdaq.csv")
 write_csv(list_nyse, "./data/list-nyse.csv")
 write_csv(list_amex, "./data/list-amex.csv")
 write_csv(list_tsx, "./data/list-tsx.csv")
-write_csv(list_clean, "./data/list-clean.csv")
+write_csv(list_all, "./data/list-all.csv")
