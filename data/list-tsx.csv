@@ -143,9 +143,9 @@ AZZ,Azarga Uranium Corp.,TSX
 ABX,Barrick Gold Corporation,TSX
 ADC.UN,First Asset Canadian Convertibles Fund,TSX
 AUMN,Golden Minerals Company,TSX
-AOG.UN,LOGiQ Advantage Oil & Gas Income Fund,TSX
-AV.UN,LOGiQ Advantage VIP Income Fund,TSX
 AAR.UN,Pure Industrial Real Estate Trust,TSX
+AV.UN,Redwood Advantage Monthly Income Fund,TSX
+AOG.UN,Redwood Energy Income Fund,TSX
 BTO,B2Gold Corp.,TSX
 BAD,Badger Daylighting Ltd.,TSX
 BLDP,Ballard Power Systems Inc.,TSX
@@ -466,7 +466,6 @@ CF.PR.A,Canaccord Genuity Group Inc.,TSX
 CF.PR.C,Canaccord Genuity Group Inc.,TSX
 CNE,Canacol Energy Ltd.,TSX
 GOOS,Canada Goose Holdings Inc.,TSX
-CPF.UN,Canadian 50 Advantaged Preferred Share Fund,TSX
 CAR.UN,Canadian Apartment Properties Real Estate Investment Trust,TSX
 CCI.UN,Canadian Convertibles Plus Fund,TSX
 CCX,Canadian Crude Oil Index ETF,TSX
@@ -840,7 +839,6 @@ ETG,Entree Resources Ltd.,TSX
 EPS,Epsilon Energy Ltd.,TSX
 EQB,Equitable Group Inc.,TSX
 EQB.PR.C,Equitable Group Inc.,TSX
-EQI,Equity Financial Holdings Inc.,TSX
 ETAC,Equium Global Tactical Allocation Fund,TSX
 ERD,Erdene Resource Development Corporation,TSX
 ERO,Ero Copper Corp.,TSX
@@ -871,6 +869,7 @@ EIF.DB.E,Exchange Income Corporation,TSX
 EIF.DB.F,Exchange Income Corporation,TSX
 EIF.DB.G,Exchange Income Corporation,TSX
 EIF.DB.H,Exchange Income Corporation,TSX
+EIF.DB.I,Exchange Income Corporation,TSX
 XTC,Exco Technologies Limited,TSX
 EXF,EXFO Inc.,TSX
 EXE,Extendicare Inc.,TSX
@@ -904,6 +903,7 @@ FFH.U,Fairfax Financial Holdings Limited,TSX
 FIH.U,Fairfax India Holdings Corporation,TSX
 FRX,Fennec Pharmaceuticals Inc.,TSX
 FSZ,Fiera Capital Corporation,TSX
+FSZ.DB,Fiera Capital Corporation,TSX
 FTN,Financial 15 Split Corp.,TSX
 FTN.PR.A,Financial 15 Split Corp.,TSX
 FTT,Finning International Inc.,TSX
@@ -979,7 +979,6 @@ FF,First Mining Finance Corp.,TSX
 FN,First National Financial Corporation,TSX
 FN.PR.A,First National Financial Corporation,TSX
 FN.PR.B,First National Financial Corporation,TSX
-FNM.UN,First National Mortgage Investment Fund,TSX
 FM,First Quantum Minerals Ltd.,TSX
 FDE,First Trust AlphaDEX Emerging Market Dividend ETF (CAD-Hedged),TSX
 FDE.A,First Trust AlphaDEX Emerging Market Dividend ETF (CAD-Hedged),TSX
@@ -1063,7 +1062,6 @@ GIL,Gildan Activewear Inc.,TSX
 GVC,Glacier Media Inc.,TSX
 GLG,GLG Life Tech Corporation,TSX
 GAF.UN,Global Alpha Worldwide Growth Fund,TSX
-NAF.UN,Global Capital Securities Trust,TSX
 GCS.PR.A,Global Champions Split Corp.,TSX
 GDG.UN,Global Dividend Growers Income Fund,TSX
 HIG.UN,Global Healthcare Income & Growth Fund,TSX
@@ -1249,7 +1247,6 @@ IGM,IGM Financial Inc.,TSX
 IGM.PR.B,IGM Financial Inc.,TSX
 IMV,Immunovaccine Inc.,TSX
 III,Imperial Metals Corporation,TSX
-III.RT,Imperial Metals Corporation,TSX
 IMO,Imperial Oil Limited,TSX
 IRG,Imvescor Restaurant Group Inc.,TSX
 INC.UN,Income Financial Trust,TSX
@@ -1370,12 +1367,12 @@ XSU,iShares U.S. Small Cap Index ETF (CAD-Hedged),TSX
 IVN,Ivanhoe Mines Ltd.,TSX
 IGCF,PIMCO Investment Grade Credit Fund (Canada),TSX
 ILV,PowerShares S&P International Developed Low Volatility Index ETF,TSX
+IFL.UN,Redwood Floating Rate Bond Fund,TSX
+ISL.U,Redwood Floating Rate Income Fund,TSX
+ISL.UN,Redwood Floating Rate Income Fund,TSX
 IDR.UN,REIT INDEXPLUS Income Fund,TSX
 ITX,The Intertain Group Limited,TSX
 ITX.DB,The Intertain Group Limited,TSX
-IFL.UN,Voya Diversified Floating Rate Senior Loan Fund,TSX
-ISL.U,Voya Floating Rate Senior Loan Fund,TSX
-ISL.UN,Voya Floating Rate Senior Loan Fund,TSX
 IQD,WisdomTree International Quality Dividend Growth Index ETF,TSX
 IQD.B,WisdomTree International Quality Dividend Growth Index ETF,TSX
 JAG,Jaguar Mining Inc.,TSX
@@ -1418,7 +1415,6 @@ LAM,Laramide Resources Ltd.,TSX
 LGO,Largo Resources Ltd.,TSX
 LAS.A,Lassonde Industries Inc.,TSX
 LB,Laurentian Bank of Canada,TSX
-LB.PR.F,Laurentian Bank of Canada,TSX
 LB.PR.H,Laurentian Bank of Canada,TSX
 LB.PR.J,Laurentian Bank of Canada,TSX
 LFX,LeadFX Inc,TSX
@@ -1438,14 +1434,11 @@ LIQ.DB.B,Liquor Stores N.A. Ltd.,TSX
 LAC,Lithium Americas Corp.,TSX
 L,Loblaw Companies Limited,TSX
 L.PR.B,Loblaw Companies Limited,TSX
-MBB.UN,LOGiQ Advantage Bond Fund,TSX
 LGQ,Logiq Asset Management Inc.,TSX
 LGQ.DB.A,Logiq Asset Management Inc.,TSX
-VIP.UN,LOGiQ VIP Income Fund,TSX
 LGT.A,Logistec Corporation,TSX
 LGT.B,Logistec Corporation,TSX
 LN,Loncor Resources Inc.,TSX
-LOW.UN,Low Volatility Canadian Equities Income Fund,TSX
 LVU.UN,Low Volatility U.S. Equity Income Fund,TSX
 LUC,Lucara Diamond Corp.,TSX
 LUG,Lundin Gold Inc.,TSX
@@ -1456,6 +1449,7 @@ LYD,Lydian International Limited,TSX
 PR,Lysander-Slater Preferred Share ActivETF,TSX
 LEAF,MedReleaf Corp.,TSX
 LS.UN,Middlefield Healthcare & Life Sciences Dividend Fund,TSX
+LOW.UN,Redwood Low Volatility High Income Fund,TSX
 XMF.A,M Split Corp.,TSX
 XMF.PR.B,M Split Corp.,TSX
 XMF.PR.C,M Split Corp.,TSX
@@ -1473,7 +1467,6 @@ MEE,Mackenzie Maximum Diversification Emerging Markets Index ETF,TSX
 MUS,Mackenzie Maximum Diversification US Index ETF,TSX
 MPCF,Mackenzie Portfolio Completion ETF,TSX
 MUB,Mackenzie Unconstrained Bond ETF,TSX
-MQI.UN,Macquarie Global Infrastructure Income Fund,TSX
 MPC,Madison Pacific Properties Inc.,TSX
 MPC.C,Madison Pacific Properties Inc.,TSX
 MAG,MAG Silver Corp.,TSX
@@ -1528,6 +1521,8 @@ MEG,MEG Energy Corp.,TSX
 MGA,Mega Uranium Ltd.,TSX
 MRD,Melcor Developments Ltd.,TSX
 MR.DB,Melcor Real Estate Investment Trust,TSX
+MR.DB.A,Melcor Real Estate Investment Trust,TSX
+MR.R,Melcor Real Estate Investment Trust,TSX
 MR.UN,Melcor Real Estate Investment Trust,TSX
 MERC.U,Mercer International Inc.,TSX
 MX,Methanex Corporation,TSX
@@ -1555,6 +1550,7 @@ MPVD,Mountain Province Diamonds Inc.,TSX
 MTY,MTY Food Group Inc.,TSX
 MTL,Mullen Group Ltd.,TSX
 MMP.UN,Precious Metals and Mining Trust,TSX
+MQI.UN,Redwood Global Infrastructure Income Fund,TSX
 MNT,Royal Canadian Mint - Canadian Gold Reserves,TSX
 MNT.U,Royal Canadian Mint - Canadian Gold Reserves,TSX
 MNS,Royal Canadian Mint - Canadian Silver Reserves,TSX
@@ -1624,6 +1620,7 @@ NG,NovaGold Resources Inc.,TSX
 NVA,NuVista Energy Ltd.,TSX
 NRI,Nuvo Pharmaceuticals Inc.,TSX
 SFD,NXT Energy Solutions Inc.,TSX
+NAF.UN,Redwood Global Financials Income Fund,TSX
 NRGY.UN,Sprott Energy Opportunities Trust,TSX
 NWC,The North West Company Inc.,TSX
 NPK,Verde Agritech Plc,TSX
@@ -1861,6 +1858,7 @@ R.WT,Red Eagle Mining Corporation,TSX
 RDK,"Redhawk Resources, Inc.",TSX
 RKN,Redknee Solutions Inc.,TSX
 RDL,Redline Communications Group Inc.,TSX
+VIP.UN,Redwood Monthly Income Fund,TSX
 RET,Reitmans (Canada) Limited,TSX
 RET.A,Reitmans (Canada) Limited,TSX
 RFP,Resolute Forest Products Inc.,TSX
@@ -2012,7 +2010,6 @@ TAO,TAG Oil Ltd.,TSX
 TAO.WT,TAG Oil Ltd.,TSX
 THO,Tahoe Resources Inc.,TSX
 TBL,Taiga Building Products Ltd.,TSX
-TBL.NT,Taiga Building Products Ltd.,TSX
 TLO,Talon Metals Corp.,TSX
 TVE,Tamarack Valley Energy Ltd.,TSX
 TNX,Tanzanian Royalty Exploration Corporation,TSX
