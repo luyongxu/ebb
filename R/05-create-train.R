@@ -47,7 +47,9 @@ original_clean <- original_clean %>%
          symbol = ifelse(exchange == "CT Equity", str_c(symbol, ".TO"), symbol))
 
 #' # 6. Create Train
-train <- ohlc_data %>% left_join(original_clean) %>% mutate(diff = yahoo_close - close)
+train <- ohlc_data %>% 
+  left_join(original_clean) %>% 
+  filter(timestamp <= "2017-11-02")
 
 #' # 7. Print Data 
 glimpse(train)

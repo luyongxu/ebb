@@ -14,7 +14,10 @@
 #' ---
 #' This script loads the necessary packages. 
 
-#' # 1. Load libraries 
+#' # 1. Install Libraries Not on CRAN 
+# devtools::install_github("thomasp85/patchwork")
+
+#' # 2. Load libraries 
 #' The RStudio Server Amazon Machine Image provided by Louis Aslett (http://www.louisaslett.com/RStudio_AMI/) provides 
 #' an easy way to start an ec2 instance with RStudio Server and all major libraries installed. This machine image installs 
 #' packages in the "/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4" directory. When running scripts using Rscript in the 
@@ -47,10 +50,11 @@ load_library("TTR")
 load_library("alphavantager")
 load_library("quantmod")
 load_library("formattable")
+load_library("patchwork")
 
-#' # 2. Options 
+#' # 3. Options 
 #' Turn off scientific notation. 
 options(scipen = 999)
 
-#' # 3. Clean
+#' # 4. Clean
 rm(load_library)
