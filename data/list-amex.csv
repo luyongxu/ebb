@@ -1,358 +1,359 @@
 symbol,name,last_sale,market_cap,ipo_year,sector,industry,summary_quote,exchange
-XXII,"22nd Century Group, Inc",2.58,3188e5,NA,Consumer Non-Durables,Farming/Seeds/Milling,http://www.nasdaq.com/symbol/xxii,AMEX
-FAX,Aberdeen Asia-Pacific Income Fund Inc,4.87,123e7,1986,NA,NA,http://www.nasdaq.com/symbol/fax,AMEX
-IAF,Aberdeen Australia Equity Fund Inc,6.47,14714e4,NA,NA,NA,http://www.nasdaq.com/symbol/iaf,AMEX
-CH,"Aberdeen Chile Fund, Inc.",9.04,8459e4,NA,NA,NA,http://www.nasdaq.com/symbol/ch,AMEX
-ABE,Aberdeen Emerging Markets Smaller Company Opportunities Fund I,14.63,13876e4,NA,NA,NA,http://www.nasdaq.com/symbol/abe,AMEX
-FCO,"Aberdeen Global Income Fund, Inc.",9.13,7966e4,1992,NA,NA,http://www.nasdaq.com/symbol/fco,AMEX
-IF,"Aberdeen Indonesia Fund, Inc.",7.613,7048e4,1990,NA,NA,http://www.nasdaq.com/symbol/if,AMEX
-ISL,"Aberdeen Israel Fund, Inc.",20.63,814e5,1992,NA,NA,http://www.nasdaq.com/symbol/isl,AMEX
-ACU,Acme United Corporation.,22.8752,7718e4,1988,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/acu,AMEX
-ATNM,"Actinium Pharmaceuticals, Inc.",0.693,5546e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/atnm,AMEX
-AE,"Adams Resources & Energy, Inc.",43.08,18169e4,NA,Energy,Oil Refining/Marketing,http://www.nasdaq.com/symbol/ae,AMEX
-ACY,AeroCentury Corp.,15,2125e4,NA,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/acy,AMEX
-AIRI,Air Industries Group,1.66,3865e4,NA,Capital Goods,Military/Government/Technical,http://www.nasdaq.com/symbol/airi,AMEX
-AXU,Alexco Resource Corp,1.57,15895e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/axu,AMEX
+XXII,"22nd Century Group, Inc",2.8,34598e4,NA,Consumer Non-Durables,Farming/Seeds/Milling,http://www.nasdaq.com/symbol/xxii,AMEX
+FAX,Aberdeen Asia-Pacific Income Fund Inc,4.88,123e7,1986,NA,NA,http://www.nasdaq.com/symbol/fax,AMEX
+IAF,Aberdeen Australia Equity Fund Inc,6.37,14487e4,NA,NA,NA,http://www.nasdaq.com/symbol/iaf,AMEX
+CH,"Aberdeen Chile Fund, Inc.",8.93,8356e4,NA,NA,NA,http://www.nasdaq.com/symbol/ch,AMEX
+ABE,Aberdeen Emerging Markets Smaller Company Opportunities Fund I,14.54,13791e4,NA,NA,NA,http://www.nasdaq.com/symbol/abe,AMEX
+FCO,"Aberdeen Global Income Fund, Inc.",8.82,7695e4,1992,NA,NA,http://www.nasdaq.com/symbol/fco,AMEX
+IF,"Aberdeen Indonesia Fund, Inc.",7.64,7073e4,1990,NA,NA,http://www.nasdaq.com/symbol/if,AMEX
+ISL,"Aberdeen Israel Fund, Inc.",19.13,7548e4,1992,NA,NA,http://www.nasdaq.com/symbol/isl,AMEX
+ACU,Acme United Corporation.,23.4,7895e4,1988,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/acu,AMEX
+ATNM,"Actinium Pharmaceuticals, Inc.",0.6636,531e5,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/atnm,AMEX
+AE,"Adams Resources & Energy, Inc.",43.5,18347e4,NA,Energy,Oil Refining/Marketing,http://www.nasdaq.com/symbol/ae,AMEX
+ACY,AeroCentury Corp.,15.24,2159e4,NA,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/acy,AMEX
+AIRI,Air Industries Group,1.69,3935e4,NA,Capital Goods,Military/Government/Technical,http://www.nasdaq.com/symbol/airi,AMEX
+AXU,Alexco Resource Corp,1.59,16098e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/axu,AMEX
 ALO,Alio Gold Inc.,3.67,16397e4,2011,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/alo,AMEX
-AAU,"Almaden Minerals, Ltd.",1.02,10336e4,2015,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aau,AMEX
-APT,"Alpha Pro Tech, Ltd.",3.85,5835e4,NA,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/apt,AMEX
-AAMC,Altisource Asset Management Corp,77.8,12409e4,NA,Finance,Real Estate,http://www.nasdaq.com/symbol/aamc,AMEX
+AAU,"Almaden Minerals, Ltd.",1.03,10438e4,2015,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aau,AMEX
+APT,"Alpha Pro Tech, Ltd.",4,6062e4,NA,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/apt,AMEX
+AAMC,Altisource Asset Management Corp,81.6,13015e4,NA,Finance,Real Estate,http://www.nasdaq.com/symbol/aamc,AMEX
 DIT,AMCON Distributing Company,97.85,6758e4,NA,Consumer Non-Durables,Food Distributors,http://www.nasdaq.com/symbol/dit,AMEX
-ALN,American Lorain Corporation,0.175,67e5,NA,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/aln,AMEX
-AMS,American Shared Hospital Services,2.669,1524e4,NA,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/ams,AMEX
-USAS,Americas Silver Corporation,3.84,15935e4,2017,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/usas,AMEX
-AMPE,"Ampio Pharmaceuticals, Inc.",3.33,25289e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ampe,AMEX
-APHB,AmpliPhi Biosciences Corporation,1.037,985e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/aphb,AMEX
-ARNC^,Arconic Inc.,91,NA,NA,NA,NA,http://www.nasdaq.com/symbol/arnc^,AMEX
-AKG,Asanko Gold Inc.,0.662,13468e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/akg,AMEX
-AINC,Ashford Inc.,97.9,20488e4,2014,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/ainc,AMEX
+ALN,American Lorain Corporation,0.176,674e4,NA,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/aln,AMEX
+AMS,American Shared Hospital Services,2.5965,1483e4,NA,Health Care,Medical Specialities,http://www.nasdaq.com/symbol/ams,AMEX
+USAS,Americas Silver Corporation,3.62,15022e4,2017,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/usas,AMEX
+AMPE,"Ampio Pharmaceuticals, Inc.",4.07,30908e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ampe,AMEX
+APHB,AmpliPhi Biosciences Corporation,1.01,959e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/aphb,AMEX
+ARNC^,Arconic Inc.,90.25,NA,NA,NA,NA,http://www.nasdaq.com/symbol/arnc^,AMEX
+AKG,Asanko Gold Inc.,0.7061,14366e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/akg,AMEX
+AINC,Ashford Inc.,93,19462e4,2014,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/ainc,AMEX
 ASB.WS,Associated Banc-Corp,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/asb.ws,AMEX
-AST,"Asterias Biotherapeutics, Inc.",2.2,11913e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/ast,AMEX
-AUG,Auryn Resources Inc.,1.73,13581e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aug,AMEX
-AWX,Avalon Holdings Corporation,2.019,768e4,NA,Public Utilities,Environmental Services,http://www.nasdaq.com/symbol/awx,AMEX
-ASM,Avino Silver,1.41,7433e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/asm,AMEX
-BTG,B2Gold Corp,3.09,303e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/btg,AMEX
-BTN,"Ballantyne Strong, Inc",4.6,6631e4,NA,Miscellaneous,Industrial Machinery/Components,http://www.nasdaq.com/symbol/btn,AMEX
-BKJ,"Bancorp of New Jersey, Inc",18.15,12478e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/bkj,AMEX
-BCV,Bancroft Fund Limited,21.65,11366e4,NA,NA,NA,http://www.nasdaq.com/symbol/bcv,AMEX
-BCV^A,Bancroft Fund Limited,25.34,NA,NA,NA,NA,http://www.nasdaq.com/symbol/bcv^a,AMEX
-BHB,"Bar Harbor Bankshares, Inc.",28.56,44079e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/bhb,AMEX
-BRN,"Barnwell Industries, Inc.",2.27,1879e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/brn,AMEX
-BGSF,BG Staffing Inc,15.52,13595e4,NA,Technology,Professional Services,http://www.nasdaq.com/symbol/bgsf,AMEX
-BPMX,BioPharmX Corporation,0.1155,1473e4,2015,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/bpmx,AMEX
-BTX,"BioTime, Inc.",2.26,28672e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/btx,AMEX
+AST,"Asterias Biotherapeutics, Inc.",2.25,12184e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/ast,AMEX
+AUG,Auryn Resources Inc.,1.64,128740000.00000001,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aug,AMEX
+AWX,Avalon Holdings Corporation,2,761e4,NA,Public Utilities,Environmental Services,http://www.nasdaq.com/symbol/awx,AMEX
+ASM,Avino Silver,1.34,7064e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/asm,AMEX
+BTG,B2Gold Corp,3.1,304e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/btg,AMEX
+BTN,"Ballantyne Strong, Inc",4.65,6703e4,NA,Miscellaneous,Industrial Machinery/Components,http://www.nasdaq.com/symbol/btn,AMEX
+BKJ,"Bancorp of New Jersey, Inc",18.25,12547e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/bkj,AMEX
+BCV,Bancroft Fund Limited,21.76,11424e4,NA,NA,NA,http://www.nasdaq.com/symbol/bcv,AMEX
+BCV^A,Bancroft Fund Limited,25.28,NA,NA,NA,NA,http://www.nasdaq.com/symbol/bcv^a,AMEX
+BHB,"Bar Harbor Bankshares, Inc.",27.01,41687e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/bhb,AMEX
+BRN,"Barnwell Industries, Inc.",2.08,1722e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/brn,AMEX
+BGSF,BG Staffing Inc,15.94,13962e4,NA,Technology,Professional Services,http://www.nasdaq.com/symbol/bgsf,AMEX
+BPMX,BioPharmX Corporation,0.1102,1405e4,2015,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/bpmx,AMEX
+BTX,"BioTime, Inc.",2.15,27276e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/btx,AMEX
 BTX.WS,"BioTime, Inc.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/btx.ws,AMEX
-BGI,Birks Group Inc.,1.49,2676e4,NA,Consumer Services,Consumer Specialties,http://www.nasdaq.com/symbol/bgi,AMEX
-BZM,BlackRock Maryland Municipal Bond Trust,13.4711,2801e4,2002,NA,NA,http://www.nasdaq.com/symbol/bzm,AMEX
-MHE,BlackRock Massachusetts Tax-Exempt Trust,13.9799,33090000.000000004,1993,NA,NA,http://www.nasdaq.com/symbol/mhe,AMEX
-BLE,BlackRock Municipal Income Trust II,14.24,33464e4,2002,NA,NA,http://www.nasdaq.com/symbol/ble,AMEX
-BLJ,Blackrock New Jersey Municipal Bond Trust,14.54,3385e4,2002,NA,NA,http://www.nasdaq.com/symbol/blj,AMEX
-BFY,BlackRock New York Municipal Income Trust II,14.8284,7421e4,2002,NA,NA,http://www.nasdaq.com/symbol/bfy,AMEX
-BHV,BlackRock Virginia Municipal Bond Trust,16.62,2661e4,2002,NA,NA,http://www.nasdaq.com/symbol/bhv,AMEX
-BDR,"Blonder Tongue Laboratories, Inc.",0.665,54e5,NA,Technology,Radio And Television Broadcasting And Communications Equipment,http://www.nasdaq.com/symbol/bdr,AMEX
-BRG,"Bluerock Residential Growth REIT, Inc.",10.03,24281e4,2014,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/brg,AMEX
-BRG^A,"Bluerock Residential Growth REIT, Inc.",26.195,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^a,AMEX
-BRG^C,"Bluerock Residential Growth REIT, Inc.",25.79,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^c,AMEX
-BRG^D,"Bluerock Residential Growth REIT, Inc.",25.0706,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^d,AMEX
-BVX,Bovie Medical Corporation,2.66,8741e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/bvx,AMEX
+BGI,Birks Group Inc.,1.3,2335e4,NA,Consumer Services,Consumer Specialties,http://www.nasdaq.com/symbol/bgi,AMEX
+BZM,BlackRock Maryland Municipal Bond Trust,13.62,2832e4,2002,NA,NA,http://www.nasdaq.com/symbol/bzm,AMEX
+MHE,BlackRock Massachusetts Tax-Exempt Trust,13.94,33e6,1993,NA,NA,http://www.nasdaq.com/symbol/mhe,AMEX
+BLE,BlackRock Municipal Income Trust II,14.43,33911e4,2002,NA,NA,http://www.nasdaq.com/symbol/ble,AMEX
+BLJ,Blackrock New Jersey Municipal Bond Trust,14.73,3429e4,2002,NA,NA,http://www.nasdaq.com/symbol/blj,AMEX
+BFY,BlackRock New York Municipal Income Trust II,14.804,7409e4,2002,NA,NA,http://www.nasdaq.com/symbol/bfy,AMEX
+BHV,BlackRock Virginia Municipal Bond Trust,17.21,2755e4,2002,NA,NA,http://www.nasdaq.com/symbol/bhv,AMEX
+BDR,"Blonder Tongue Laboratories, Inc.",0.6061,492e4,NA,Technology,Radio And Television Broadcasting And Communications Equipment,http://www.nasdaq.com/symbol/bdr,AMEX
+BRG,"Bluerock Residential Growth REIT, Inc.",10.11,24474e4,2014,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/brg,AMEX
+BRG^A,"Bluerock Residential Growth REIT, Inc.",26.3775,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^a,AMEX
+BRG^C,"Bluerock Residential Growth REIT, Inc.",25.45,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^c,AMEX
+BRG^D,"Bluerock Residential Growth REIT, Inc.",25.2,NA,NA,NA,NA,http://www.nasdaq.com/symbol/brg^d,AMEX
+BVX,Bovie Medical Corporation,2.6,8544e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/bvx,AMEX
 BWL.A,"Bowl America, Inc.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/bwl.a,AMEX
-CMCL,Caledonia Mining Corporation Plc,6.96,7367e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/cmcl,AMEX
-CEI,"Camber Energy, Inc.",0.1236,851e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/cei,AMEX
-CANF,Can-Fite Biopharma Ltd,1.63,2666e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/canf,AMEX
-ROX,"Castle Brands, Inc.",1.28,21031e4,2006,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/rox,AMEX
-CAW,"CCA Industries, Inc.",3.05,2137e4,NA,Consumer Non-Durables,Package Goods/Cosmetics,http://www.nasdaq.com/symbol/caw,AMEX
-CVM,Cel-Sci Corporation,1.89,1906e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/cvm,AMEX
+CMCL,Caledonia Mining Corporation Plc,7.39,7822e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/cmcl,AMEX
+CEI,"Camber Energy, Inc.",0.1222,841e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/cei,AMEX
+CANF,Can-Fite Biopharma Ltd,1.4801,2421e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/canf,AMEX
+ROX,"Castle Brands, Inc.",1.22,20045e4,2006,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/rox,AMEX
+CAW,"CCA Industries, Inc.",3.15,2207e4,NA,Consumer Non-Durables,Package Goods/Cosmetics,http://www.nasdaq.com/symbol/caw,AMEX
+CVM,Cel-Sci Corporation,1.8898,1905e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/cvm,AMEX
 CVM.WS,Cel-Sci Corporation,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/cvm.ws,AMEX
-CEF,Central Fund of Canada Limited,13.12,331e7,NA,NA,NA,http://www.nasdaq.com/symbol/cef,AMEX
-CET,Central Securities Corporation,27.37,67908e4,NA,NA,NA,http://www.nasdaq.com/symbol/cet,AMEX
-LEU,Centrus Energy Corp.,3.985,3602e4,2014,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/leu,AMEX
-CCF,Chase Corporation,122.2,115e7,NA,Consumer Durables,Building Products,http://www.nasdaq.com/symbol/ccf,AMEX
-CQH,"Cheniere Energy Partners LP Holdings, LLC",27.93,647e7,2013,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/cqh,AMEX
-CQP,"Cheniere Energy Partners, LP",28.75,1392e7,2007,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/cqp,AMEX
-LNG,"Cheniere Energy, Inc.",54.13,1286e7,NA,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/lng,AMEX
-CVR,Chicago Rivet & Machine Co.,31.7567,3068e4,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/cvr,AMEX
-CPHI,"China Pharma Holdings, Inc.",0.171,745e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/cphi,AMEX
+CEF,Central Fund of Canada Limited,13.4,338e7,NA,NA,NA,http://www.nasdaq.com/symbol/cef,AMEX
+CET,Central Securities Corporation,27.4,67982e4,NA,NA,NA,http://www.nasdaq.com/symbol/cet,AMEX
+LEU,Centrus Energy Corp.,4.01,3625e4,2014,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/leu,AMEX
+CCF,Chase Corporation,120.5,113e7,NA,Consumer Durables,Building Products,http://www.nasdaq.com/symbol/ccf,AMEX
+CQH,"Cheniere Energy Partners LP Holdings, LLC",27.69,642e7,2013,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/cqh,AMEX
+CQP,"Cheniere Energy Partners, LP",29.64,1435e7,2007,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/cqp,AMEX
+LNG,"Cheniere Energy, Inc.",53.84,128e8,NA,Public Utilities,Oil/Gas Transmission,http://www.nasdaq.com/symbol/lng,AMEX
+CVR,Chicago Rivet & Machine Co.,31.8,3072e4,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/cvr,AMEX
+CPHI,"China Pharma Holdings, Inc.",0.1756,765e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/cphi,AMEX
+XNY,China Xiniya Fashion Limited,5.19,NA,2010,Consumer Non-Durables,Apparel,http://www.nasdaq.com/symbol/xny,AMEX
 CISN.WS,Cision Ltd.,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/cisn.ws,AMEX
-CKX,"CKX Lands, Inc.",9.85,1913e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ckx,AMEX
-GLV,Clough Global Dividend and Income Fund,13.36,9361e4,2004,NA,NA,http://www.nasdaq.com/symbol/glv,AMEX
-GLQ,Clough Global Equity Fund,13.33,14697e4,2005,NA,NA,http://www.nasdaq.com/symbol/glq,AMEX
-GLO,Clough Global Opportunities Fund,10.91,35157e4,2006,NA,NA,http://www.nasdaq.com/symbol/glo,AMEX
-COHN,Cohen & Company Inc.,7.7,969e4,NA,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/cohn,AMEX
-MOC,Command Security Corporation,3.0308,2985e4,NA,Consumer Services,Diversified Commercial Services,http://www.nasdaq.com/symbol/moc,AMEX
-CIX,CompX International Inc.,13.45,16713e4,1998,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/cix,AMEX
-LODE,"Comstock Mining, Inc.",0.342,1549e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/lode,AMEX
-CDOR,"Condor Hospitality Trust, Inc.",9.98,11656e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/cdor,AMEX
+CKX,"CKX Lands, Inc.",10.18,1977e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ckx,AMEX
+GLV,Clough Global Dividend and Income Fund,13.34,9347e4,2004,NA,NA,http://www.nasdaq.com/symbol/glv,AMEX
+GLQ,Clough Global Equity Fund,13.37,14741e4,2005,NA,NA,http://www.nasdaq.com/symbol/glq,AMEX
+GLO,Clough Global Opportunities Fund,10.88,3506e5,2006,NA,NA,http://www.nasdaq.com/symbol/glo,AMEX
+COHN,Cohen & Company Inc.,8.02,101e5,NA,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/cohn,AMEX
+MOC,Command Security Corporation,3.07,3023e4,NA,Consumer Services,Diversified Commercial Services,http://www.nasdaq.com/symbol/moc,AMEX
+CIX,CompX International Inc.,13.3,16527e4,1998,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/cix,AMEX
+LODE,"Comstock Mining, Inc.",0.39,1767e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/lode,AMEX
+CDOR,"Condor Hospitality Trust, Inc.",9.95,11621e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/cdor,AMEX
 CTO,Consolidated-Tomoka Land Co.,63.5,35444e4,NA,Finance,Real Estate,http://www.nasdaq.com/symbol/cto,AMEX
-MCF,Contango Oil & Gas Company,5.22,13316e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/mcf,AMEX
-CUO,Continental Materials Corporation,19.1742,3225e4,NA,Capital Goods,Building Materials,http://www.nasdaq.com/symbol/cuo,AMEX
-CMT,Core Molding Technologies Inc,22.6,17746e4,NA,Consumer Non-Durables,Plastic Products,http://www.nasdaq.com/symbol/cmt,AMEX
-CVRS,"Corindus Vascular Robotics, Inc.",0.9405,17748e4,2015,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/cvrs,AMEX
-CRMD,CorMedix Inc,0.56,3753e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/crmd,AMEX
-CRF,"Cornerstone Strategic Return Fund, Inc. (The)",15.19,33507e4,NA,NA,NA,http://www.nasdaq.com/symbol/crf,AMEX
-CLM,"Cornerstone Strategic Value Fund, Inc.",15.43,67243e4,1987,NA,NA,http://www.nasdaq.com/symbol/clm,AMEX
-CVU,"CPI Aerostructures, Inc.",9.35,8285e4,NA,Capital Goods,Military/Government/Technical,http://www.nasdaq.com/symbol/cvu,AMEX
-CIK,"Credit Suisse Asset Management Income Fund, Inc.",3.29,17204e4,NA,NA,NA,http://www.nasdaq.com/symbol/cik,AMEX
-DHY,Credit Suisse High Yield Bond Fund,2.83,28313e4,1998,NA,NA,http://www.nasdaq.com/symbol/dhy,AMEX
-CRHM,CRH Medical Corporation,2.475,18346e4,2015,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/crhm,AMEX
-CRVP,"Crystal Rock Holdings, Inc.",0.812,1734e4,NA,Consumer Non-Durables,Food Distributors,http://www.nasdaq.com/symbol/crvp,AMEX
-CTEK,"CynergisTek, Inc.",3.8688,3676e4,2017,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/ctek,AMEX
-DXR,Daxor Corporation,4.8241,1829e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/dxr,AMEX
-VCF,"Delaware Investments Colorado Municipal Income Fund, Inc",15.511,7503e4,1993,NA,NA,http://www.nasdaq.com/symbol/vcf,AMEX
-VFL,Delaware Investments Florida Insured Municipal Income Fund,13.14,595e5,1993,NA,NA,http://www.nasdaq.com/symbol/vfl,AMEX
-VMM,"Delaware Investments Minnesota Municipal Income Fund II, Inc.",13.49,1552e5,1993,NA,NA,http://www.nasdaq.com/symbol/vmm,AMEX
-DLA,"Delta Apparel, Inc.",20.71,15066e4,NA,Consumer Non-Durables,Apparel,http://www.nasdaq.com/symbol/dla,AMEX
+MCF,Contango Oil & Gas Company,4.71,12015e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/mcf,AMEX
+CUO,Continental Materials Corporation,19,3196e4,NA,Capital Goods,Building Materials,http://www.nasdaq.com/symbol/cuo,AMEX
+CMT,Core Molding Technologies Inc,21.7,1704e5,NA,Consumer Non-Durables,Plastic Products,http://www.nasdaq.com/symbol/cmt,AMEX
+CVRS,"Corindus Vascular Robotics, Inc.",1.01,19059e4,2015,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/cvrs,AMEX
+CRMD,CorMedix Inc,0.502,3365e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/crmd,AMEX
+CRF,"Cornerstone Strategic Return Fund, Inc. (The)",15.285,33716e4,NA,NA,NA,http://www.nasdaq.com/symbol/crf,AMEX
+CLM,"Cornerstone Strategic Value Fund, Inc.",15.47,67417e4,1987,NA,NA,http://www.nasdaq.com/symbol/clm,AMEX
+CVU,"CPI Aerostructures, Inc.",8.95,7931e4,NA,Capital Goods,Military/Government/Technical,http://www.nasdaq.com/symbol/cvu,AMEX
+CIK,"Credit Suisse Asset Management Income Fund, Inc.",3.31,17309e4,NA,NA,NA,http://www.nasdaq.com/symbol/cik,AMEX
+DHY,Credit Suisse High Yield Bond Fund,2.84,28413e4,1998,NA,NA,http://www.nasdaq.com/symbol/dhy,AMEX
+CRHM,CRH Medical Corporation,2.65,19644e4,2015,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/crhm,AMEX
+CRVP,"Crystal Rock Holdings, Inc.",0.83,1773e4,NA,Consumer Non-Durables,Food Distributors,http://www.nasdaq.com/symbol/crvp,AMEX
+CTEK,"CynergisTek, Inc.",4.05,3848e4,2017,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/ctek,AMEX
+DXR,Daxor Corporation,4.5728,1733e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/dxr,AMEX
+VCF,"Delaware Investments Colorado Municipal Income Fund, Inc",15.5231,7509e4,1993,NA,NA,http://www.nasdaq.com/symbol/vcf,AMEX
+VFL,Delaware Investments Florida Insured Municipal Income Fund,13.26,6005e4,1993,NA,NA,http://www.nasdaq.com/symbol/vfl,AMEX
+VMM,"Delaware Investments Minnesota Municipal Income Fund II, Inc.",13.47,15497e4,1993,NA,NA,http://www.nasdaq.com/symbol/vmm,AMEX
+DLA,"Delta Apparel, Inc.",20.2,14695e4,NA,Consumer Non-Durables,Apparel,http://www.nasdaq.com/symbol/dla,AMEX
 DNN,Denison Mine Corp,0.55,3075e5,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/dnn,AMEX
-DGSE,"DGSE Companies, Inc.",0.93,2506e4,NA,Consumer Services,Consumer Specialties,http://www.nasdaq.com/symbol/dgse,AMEX
-DPW,Digital Power Corporation,4.16,9683e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/dpw,AMEX
-DSS,"Document Security Systems, Inc.",2.11,3469e4,NA,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/dss,AMEX
-DMF,"Dreyfus Municipal Income, Inc.",8.84,1834e5,1988,NA,NA,http://www.nasdaq.com/symbol/dmf,AMEX
-GRF,"Eagle Capital Growth Fund, Inc.",7.92,2842e4,NA,NA,NA,http://www.nasdaq.com/symbol/grf,AMEX
-EVM,Eaton Vance California Municipal Bond Fund,11.56,24732e4,2002,NA,NA,http://www.nasdaq.com/symbol/evm,AMEX
-EIA,Eaton Vance California Municipal Bond Fund II,11.7793,4578e4,2002,NA,NA,http://www.nasdaq.com/symbol/eia,AMEX
+DGSE,"DGSE Companies, Inc.",0.931,2508e4,NA,Consumer Services,Consumer Specialties,http://www.nasdaq.com/symbol/dgse,AMEX
+DPW,Digital Power Corporation,3.21,7472e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/dpw,AMEX
+DSS,"Document Security Systems, Inc.",1.8,2959e4,NA,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/dss,AMEX
+DMF,"Dreyfus Municipal Income, Inc.",8.89,18443e4,1988,NA,NA,http://www.nasdaq.com/symbol/dmf,AMEX
+GRF,"Eagle Capital Growth Fund, Inc.",7.9404,285e5,NA,NA,NA,http://www.nasdaq.com/symbol/grf,AMEX
+EVM,Eaton Vance California Municipal Bond Fund,11.505,24614e4,2002,NA,NA,http://www.nasdaq.com/symbol/evm,AMEX
+EIA,Eaton Vance California Municipal Bond Fund II,11.5,4469e4,2002,NA,NA,http://www.nasdaq.com/symbol/eia,AMEX
 CEV,Eaton Vance California Municipal Income Trust,12.16,8822e4,1999,NA,NA,http://www.nasdaq.com/symbol/cev,AMEX
-EVV,Eaton Vance Limited Duration Income Fund,13.6,158e7,2003,NA,NA,http://www.nasdaq.com/symbol/evv,AMEX
-MAB,Eaton Vance Massachusetts Municipal Bond Fund,13.23,234e5,2002,NA,NA,http://www.nasdaq.com/symbol/mab,AMEX
-MMV,Eaton Vance Massachusetts Municipal Income Trust,13.04,3569e4,1999,NA,NA,http://www.nasdaq.com/symbol/mmv,AMEX
-MIW,Eaton Vance Michigan Municipal Bond Fund,13.47,2021e4,2002,NA,NA,http://www.nasdaq.com/symbol/miw,AMEX
+EVV,Eaton Vance Limited Duration Income Fund,13.65,159e7,2003,NA,NA,http://www.nasdaq.com/symbol/evv,AMEX
+MAB,Eaton Vance Massachusetts Municipal Bond Fund,13.21,2336e4,2002,NA,NA,http://www.nasdaq.com/symbol/mab,AMEX
+MMV,Eaton Vance Massachusetts Municipal Income Trust,13.1093,3588e4,1999,NA,NA,http://www.nasdaq.com/symbol/mmv,AMEX
+MIW,Eaton Vance Michigan Municipal Bond Fund,13.46,2019e4,2002,NA,NA,http://www.nasdaq.com/symbol/miw,AMEX
 EMI,Eaton Vance Michigan Municipal Income Trust,12.83,2583e4,1999,NA,NA,http://www.nasdaq.com/symbol/emi,AMEX
-EIM,Eaton Vance Municipal Bond Fund,12.41,84597e4,2002,NA,NA,http://www.nasdaq.com/symbol/eim,AMEX
-EIV,Eaton Vance Municipal Bond Fund II,12.17,12186e4,2002,NA,NA,http://www.nasdaq.com/symbol/eiv,AMEX
-EMJ,Eaton Vance New Jersey Municipal Bond Fund,12.37,319e5,2002,NA,NA,http://www.nasdaq.com/symbol/emj,AMEX
-EVJ,Eaton Vance New Jersey Municipal Income Trust,11.63,5348e4,1999,NA,NA,http://www.nasdaq.com/symbol/evj,AMEX
-ENX,Eaton Vance New York Municipal Bond Fund,12.3,19264e4,2002,NA,NA,http://www.nasdaq.com/symbol/enx,AMEX
-NYH,Eaton Vance New York Municipal Bond Fund II,11.48,2935e4,2002,NA,NA,http://www.nasdaq.com/symbol/nyh,AMEX
-EVY,Eaton Vance New York Municipal Income Trust,12.67,6938e4,1999,NA,NA,http://www.nasdaq.com/symbol/evy,AMEX
-EIO,Eaton Vance Ohio Municipal Bond Fund,12.95,32869999.999999996,2002,NA,NA,http://www.nasdaq.com/symbol/eio,AMEX
-EVO,Eaton Vance Ohio Municipal Income Trust,13.06,3731e4,1999,NA,NA,http://www.nasdaq.com/symbol/evo,AMEX
-EIP,Eaton Vance Pennsylvania Municipal Bond Fund,12.39,3667e4,2002,NA,NA,http://www.nasdaq.com/symbol/eip,AMEX
+EIM,Eaton Vance Municipal Bond Fund,12.51,85278e4,2002,NA,NA,http://www.nasdaq.com/symbol/eim,AMEX
+EIV,Eaton Vance Municipal Bond Fund II,12.31,12326e4,2002,NA,NA,http://www.nasdaq.com/symbol/eiv,AMEX
+EMJ,Eaton Vance New Jersey Municipal Bond Fund,12.43,32060000.000000004,2002,NA,NA,http://www.nasdaq.com/symbol/emj,AMEX
+EVJ,Eaton Vance New Jersey Municipal Income Trust,11.74,5398e4,1999,NA,NA,http://www.nasdaq.com/symbol/evj,AMEX
+ENX,Eaton Vance New York Municipal Bond Fund,12.33,19311e4,2002,NA,NA,http://www.nasdaq.com/symbol/enx,AMEX
+NYH,Eaton Vance New York Municipal Bond Fund II,11.5656,2957e4,2002,NA,NA,http://www.nasdaq.com/symbol/nyh,AMEX
+EVY,Eaton Vance New York Municipal Income Trust,12.71,696e5,1999,NA,NA,http://www.nasdaq.com/symbol/evy,AMEX
+EIO,Eaton Vance Ohio Municipal Bond Fund,12.7,32229999.999999996,2002,NA,NA,http://www.nasdaq.com/symbol/eio,AMEX
+EVO,Eaton Vance Ohio Municipal Income Trust,13.0282,3722e4,1999,NA,NA,http://www.nasdaq.com/symbol/evo,AMEX
+EIP,Eaton Vance Pennsylvania Municipal Bond Fund,12.44,3682e4,2002,NA,NA,http://www.nasdaq.com/symbol/eip,AMEX
 EVP,Eaton Vance Pennsylvania Municipal Income Trust,12.19,3171e4,1999,NA,NA,http://www.nasdaq.com/symbol/evp,AMEX
-ELMD,"Electromed, Inc.",6.2,5121e4,2011,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,http://www.nasdaq.com/symbol/elmd,AMEX
-ELLO,Ellomay Capital Ltd.,9.1375,9756e4,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/ello,AMEX
-ECF,Ellsworth Growth and Income Fund Ltd.,9.32,12001e4,1986,NA,NA,http://www.nasdaq.com/symbol/ecf,AMEX
-ECF^A,Ellsworth Growth and Income Fund Ltd.,25.14,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ecf^a,AMEX
-EMAN,eMagin Corporation,1.7,5945e4,NA,Technology,Semiconductors,http://www.nasdaq.com/symbol/eman,AMEX
-MSN,Emerson Radio Corporation,1.49,3649e4,NA,Consumer Non-Durables,Consumer Electronics/Appliances,http://www.nasdaq.com/symbol/msn,AMEX
-EMX,EMX Royalty Corporation,0.8401,66980000.00000001,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/emx,AMEX
-UUUU,Energy Fuels Inc,1.86,13397e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/uuuu,AMEX
+ELMD,"Electromed, Inc.",6.07,5014e4,2011,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,http://www.nasdaq.com/symbol/elmd,AMEX
+ELLO,Ellomay Capital Ltd.,9,961e5,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/ello,AMEX
+ECF,Ellsworth Growth and Income Fund Ltd.,9.41,12117e4,1986,NA,NA,http://www.nasdaq.com/symbol/ecf,AMEX
+ECF^A,Ellsworth Growth and Income Fund Ltd.,25.1236,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ecf^a,AMEX
+EMAN,eMagin Corporation,1.65,577e5,NA,Technology,Semiconductors,http://www.nasdaq.com/symbol/eman,AMEX
+MSN,Emerson Radio Corporation,1.4599,3575e4,NA,Consumer Non-Durables,Consumer Electronics/Appliances,http://www.nasdaq.com/symbol/msn,AMEX
+EMX,EMX Royalty Corporation,0.8312,66269999.99999999,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/emx,AMEX
+UUUU,Energy Fuels Inc,1.79,12893e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/uuuu,AMEX
 UUUU.WS,Energy Fuels Inc,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/uuuu.ws,AMEX
-ENRJ,"EnerJex Resources, Inc.",0.225,344e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/enrj,AMEX
-ENSV,ENSERVCO Corporation,0.6208,3177e4,NA,Energy,Oilfield Services/Equipment,http://www.nasdaq.com/symbol/ensv,AMEX
-ESNC,"EnSync, Inc.",0.425,2373e4,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/esnc,AMEX
-EGI,Entree Resources Ltd.,0.5732,9949e4,2017,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/egi,AMEX
-EVI,"EnviroStarm, Inc.",39.95,43169e4,NA,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/evi,AMEX
-ERN,Erin Energy Corp.,2.55,54813e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ern,AMEX
-ESP,Espey Mfg. & Electronics Corp.,23.17,5487e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/esp,AMEX
-EVBN,"Evans Bancorp, Inc.",41.8,19977e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/evbn,AMEX
-EPM,"Evolution Petroleum Corporation, Inc.",7.15,23641e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/epm,AMEX
-FEN,First Trust Energy Income and Growth Fund,25.69,49831e4,2004,NA,NA,http://www.nasdaq.com/symbol/fen,AMEX
-BDL,"Flanigan&#39;s Enterprises, Inc.",23,4275e4,NA,Consumer Services,Restaurants,http://www.nasdaq.com/symbol/bdl,AMEX
-FSI,Flexible Solutions International Inc.,1.79,2063e4,NA,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/fsi,AMEX
-FTF,Franklin Limited Duration Income Trust,11.77,26605e4,2003,NA,NA,http://www.nasdaq.com/symbol/ftf,AMEX
-FSP,Franklin Street Properties Corp.,10.58,113e7,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/fsp,AMEX
-FRD,Friedman Industries Inc.,5.53,3876e4,NA,Capital Goods,Steel/Iron Ore,http://www.nasdaq.com/symbol/frd,AMEX
-FTNW,"FTE Networks, Inc.",10.7921,6041e4,NA,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/ftnw,AMEX
-GGN,"GAMCO Global Gold, Natural Reources & Income Trust",5.25,7104e5,2005,NA,NA,http://www.nasdaq.com/symbol/ggn,AMEX
-GGN^B,"GAMCO Global Gold, Natural Reources & Income Trust",24.544,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ggn^b,AMEX
-GST,Gastar Exploration Inc.,0.9851,21568e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gst,AMEX
-GST^A,Gastar Exploration Inc.,17.99,NA,NA,NA,NA,http://www.nasdaq.com/symbol/gst^a,AMEX
-GST^B,Gastar Exploration Inc.,18.5,NA,NA,NA,NA,http://www.nasdaq.com/symbol/gst^b,AMEX
-JOB,GEE Group Inc.,2.68,2648e4,NA,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/job,AMEX
-GMO,"General Moly, Inc",0.325,3613e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gmo,AMEX
-GSB,"GlobalSCAPE, Inc.",3.42,7378e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/gsb,AMEX
+ENRJ,"EnerJex Resources, Inc.",0.22,336e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/enrj,AMEX
+ENSV,ENSERVCO Corporation,0.6439,32950000.000000004,NA,Energy,Oilfield Services/Equipment,http://www.nasdaq.com/symbol/ensv,AMEX
+ESNC,"EnSync, Inc.",0.397,2217e4,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/esnc,AMEX
+EGI,Entree Resources Ltd.,0.6027,10461e4,2017,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/egi,AMEX
+EVI,"EnviroStarm, Inc.",40,43223e4,NA,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/evi,AMEX
+ERN,Erin Energy Corp.,2.75,59112e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ern,AMEX
+ESP,Espey Mfg. & Electronics Corp.,23.962,5675e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/esp,AMEX
+EVBN,"Evans Bancorp, Inc.",41.9,20025e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/evbn,AMEX
+EPM,"Evolution Petroleum Corporation, Inc.",6.85,22649e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/epm,AMEX
+FEN,First Trust Energy Income and Growth Fund,26.51,51422e4,2004,NA,NA,http://www.nasdaq.com/symbol/fen,AMEX
+BDL,"Flanigan&#39;s Enterprises, Inc.",23.5936,4385e4,NA,Consumer Services,Restaurants,http://www.nasdaq.com/symbol/bdl,AMEX
+FSI,Flexible Solutions International Inc.,1.82,2097e4,NA,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/fsi,AMEX
+FTF,Franklin Limited Duration Income Trust,11.83,267410000.00000003,2003,NA,NA,http://www.nasdaq.com/symbol/ftf,AMEX
+FSP,Franklin Street Properties Corp.,10.74,115e7,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/fsp,AMEX
+FRD,Friedman Industries Inc.,5.68,3981e4,NA,Capital Goods,Steel/Iron Ore,http://www.nasdaq.com/symbol/frd,AMEX
+FTNW,"FTE Networks, Inc.",9.92,5553e4,NA,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/ftnw,AMEX
+GGN,"GAMCO Global Gold, Natural Reources & Income Trust",5.21,70499e4,2005,NA,NA,http://www.nasdaq.com/symbol/ggn,AMEX
+GGN^B,"GAMCO Global Gold, Natural Reources & Income Trust",24.82,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ggn^b,AMEX
+GST,Gastar Exploration Inc.,1.05,22983e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gst,AMEX
+GST^A,Gastar Exploration Inc.,17.9247,NA,NA,NA,NA,http://www.nasdaq.com/symbol/gst^a,AMEX
+GST^B,Gastar Exploration Inc.,18.8799,NA,NA,NA,NA,http://www.nasdaq.com/symbol/gst^b,AMEX
+JOB,GEE Group Inc.,2.78,2746e4,NA,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/job,AMEX
+GMO,"General Moly, Inc",0.3294,3662e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gmo,AMEX
+GSB,"GlobalSCAPE, Inc.",3.55,7658e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/gsb,AMEX
 GSAT,"Globalstar, Inc.",1.31,165e7,2006,Consumer Services,Telecommunications Equipment,http://www.nasdaq.com/symbol/gsat,AMEX
-GLOW,"Glowpoint, Inc.",0.3901,1409e4,NA,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/glow,AMEX
-GORO,Gold Resource Corporation,4.56,25943e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/goro,AMEX
-GSV,Gold Standard Ventures Corporation,1.76,41102e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/gsv,AMEX
-AUMN,Golden Minerals Company,0.42,3864e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aumn,AMEX
-GSS,"Golden Star Resources, Ltd",0.883,33605e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gss,AMEX
+GLOW,"Glowpoint, Inc.",0.36,1301e4,NA,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/glow,AMEX
+GORO,Gold Resource Corporation,4.4,25032e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/goro,AMEX
+GSV,Gold Standard Ventures Corporation,1.75,40869e4,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/gsv,AMEX
+AUMN,Golden Minerals Company,0.432,3975e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aumn,AMEX
+GSS,"Golden Star Resources, Ltd",0.89,33872e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gss,AMEX
 GV,Goldfield Corporation (The),4.9,12471e4,NA,Basic Industries,Water Supply,http://www.nasdaq.com/symbol/gv,AMEX
-GDP,Goodrich Petroleum Corporation,11,11592e4,2017,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gdp,AMEX
-GTE,Gran Tierra Energy Inc.,2.73,106e7,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gte,AMEX
-GPL,Great Panther Silver Limited,1.32,22223e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gpl,AMEX
-SIM,"Grupo Simec, S.A. de C.V.",9.29,154e7,1993,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/sim,AMEX
-GVP,"GSE Systems, Inc.",3.15,6111e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/gvp,AMEX
-GLF,"GulfMark Offshore, Inc.",28.2,8001e5,2017,Energy,Metal Fabrications,http://www.nasdaq.com/symbol/glf,AMEX
+GDP,Goodrich Petroleum Corporation,10.91,11498e4,2017,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gdp,AMEX
+GTE,Gran Tierra Energy Inc.,2.7,105e7,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gte,AMEX
+GPL,Great Panther Silver Limited,1.29,21718e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/gpl,AMEX
+SIM,"Grupo Simec, S.A. de C.V.",9.35,155e7,1993,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/sim,AMEX
+GVP,"GSE Systems, Inc.",3.25,6305e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/gvp,AMEX
+GLF,"GulfMark Offshore, Inc.",28.49,80832e4,2017,Energy,Metal Fabrications,http://www.nasdaq.com/symbol/glf,AMEX
 GLF.WS,"GulfMark Offshore, Inc.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/glf.ws,AMEX
-HEB,"Hemispherx BioPharma, Inc.",0.36,1147e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/heb,AMEX
+HEB,"Hemispherx BioPharma, Inc.",0.346,1103e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/heb,AMEX
 HCAC,Hennessy Capital Acquisition Corp. III,9.8,3144e5,2017,Finance,Business Services,http://www.nasdaq.com/symbol/hcac,AMEX
 HCAC.U,Hennessy Capital Acquisition Corp. III,NA,NA,2017,NA,NA,http://www.nasdaq.com/symbol/hcac.u,AMEX
 HCAC.WS,Hennessy Capital Acquisition Corp. III,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/hcac.ws,AMEX
-HLM^,Hillman Group Capital Trust,34.1508,NA,NA,NA,NA,http://www.nasdaq.com/symbol/hlm^,AMEX
-HMG,"HMG/Courtland Properties, Inc.",14.3999,1443e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hmg,AMEX
-HUSA,Houston American Energy Corporation,0.307,1772e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/husa,AMEX
-IBIO,"iBio, Inc.",0.1796,2071e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ibio,AMEX
-IBO,IBO (Listing Market - NYSE Amex Network B F),23.7,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ibo,AMEX
-IEC,IEC Electronics Corp.,4.11,4244e4,NA,Technology,Electrical Products,http://www.nasdaq.com/symbol/iec,AMEX
-IMUC,"ImmunoCellular Therapeutics, Ltd.",0.3086,1086e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/imuc,AMEX
+HLM^,Hillman Group Capital Trust,34.3438,NA,NA,NA,NA,http://www.nasdaq.com/symbol/hlm^,AMEX
+HMG,"HMG/Courtland Properties, Inc.",14.45,1448e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hmg,AMEX
+HUSA,Houston American Energy Corporation,0.33,1905e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/husa,AMEX
+IBIO,"iBio, Inc.",0.1771,2042e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ibio,AMEX
+IBO,IBO (Listing Market - NYSE Amex Network B F),23.54,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ibo,AMEX
+IEC,IEC Electronics Corp.,4.12,4254e4,NA,Technology,Electrical Products,http://www.nasdaq.com/symbol/iec,AMEX
+IMUC,"ImmunoCellular Therapeutics, Ltd.",0.316,1112e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/imuc,AMEX
 IMUC.WS,"ImmunoCellular Therapeutics, Ltd.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/imuc.ws,AMEX
-IMH,"Impac Mortgage Holdings, Inc.",10,2095e5,1997,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/imh,AMEX
-IMO,Imperial Oil Limited,30.43,2538e7,NA,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/imo,AMEX
-IOR,"Income Opportunity Realty Investors, Inc.",11.104,4628e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/ior,AMEX
-IGC,India Globalization Capital Inc.,1.26,3539e4,NA,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/igc,AMEX
-INFU,"InfuSystems Holdings, Inc.",2.45,5581e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/infu,AMEX
-IHT,InnSuites Hospitality Trust,1.84,1794e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/iht,AMEX
-NSPR,"InspireMD, Inc.",0.125,NA,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/nspr,AMEX
+IMH,"Impac Mortgage Holdings, Inc.",10.16,21285e4,1997,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/imh,AMEX
+IMO,Imperial Oil Limited,31.19,2601e7,NA,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/imo,AMEX
+IOR,"Income Opportunity Realty Investors, Inc.",11.0834,462e5,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/ior,AMEX
+IGC,India Globalization Capital Inc.,1,2809e4,NA,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/igc,AMEX
+INFU,"InfuSystems Holdings, Inc.",2.3,524e5,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/infu,AMEX
+IHT,InnSuites Hospitality Trust,1.75,1706e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/iht,AMEX
+NSPR,"InspireMD, Inc.",0.1284,667e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/nspr,AMEX
 NSPR.WS,"InspireMD, Inc.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/nspr.ws,AMEX
 NSPR.WS.B,"InspireMD, Inc.",NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/nspr.ws.b,AMEX
-IDN,"Intellicheck, Inc.",2.3,3447e4,1999,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/idn,AMEX
-INS,Intelligent Systems Corporation,4.4201,388e5,1992,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/ins,AMEX
-THM,International Tower Hill Mines Ltd,0.4875,7917e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/thm,AMEX
-INTT,inTest Corporation,8.525,8877e4,1997,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/intt,AMEX
-INUV,"Inuvo, Inc",0.8018,2284e4,NA,Consumer Services,Advertising,http://www.nasdaq.com/symbol/inuv,AMEX
-VKI,Invesco Advantage Municipal Income Trust II,11.28,50074e4,NA,NA,NA,http://www.nasdaq.com/symbol/vki,AMEX
-ISR,"IsoRay, Inc.",0.423,2327e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/isr,AMEX
-ISDR,Issuer Direct Corporation,16.9,5038e4,NA,Miscellaneous,Publishing,http://www.nasdaq.com/symbol/isdr,AMEX
-JRJR,"JRjr33, Inc.",0.1885,845e4,2014,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/jrjr,AMEX
-KIQ,Kelso Technologies Inc,0.505,2369e4,NA,Capital Goods,Railroads,http://www.nasdaq.com/symbol/kiq,AMEX
-KLDX,Klondex Mines Ltd.,2.78,49931e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/kldx,AMEX
-LTS,Ladenburg Thalmann Financial Services Inc,3.21,63684e4,NA,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/lts,AMEX
-LTS^A,Ladenburg Thalmann Financial Services Inc,25.3399,NA,NA,NA,NA,http://www.nasdaq.com/symbol/lts^a,AMEX
-LTSL,Ladenburg Thalmann Financial Services Inc,24.8893,NA,2017,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/ltsl,AMEX
-LAQ,"Latin America Equity Fund, Inc. (The)",26.55,19776e4,1991,NA,NA,http://www.nasdaq.com/symbol/laq,AMEX
-LEVB,"Level Brands, Inc.",4.169,3124e4,2017,Consumer Non-Durables,Package Goods/Cosmetics,http://www.nasdaq.com/symbol/levb,AMEX
-LGL,"LGL Group, Inc. (The)",5.54,1482e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/lgl,AMEX
-LBY,"Libbey, Inc.",6.78,14927e4,1993,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/lby,AMEX
-LLEX,"Lilis Energy, Inc.",5.05,26917e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/llex,AMEX
-LIQT,"LiqTech International, Inc.",0.442,1955e4,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/liqt,AMEX
-MAG,MAG Silver Corporation,12.66,108e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/mag,AMEX
-MJCO,Majesco,5.3,19364e4,2015,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/mjco,AMEX
-MHH,"Mastech Digital, Inc",9.7681,5328e4,NA,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/mhh,AMEX
-MTNB,"Matinas Biopharma Holdings, Inc.",1.18,10968e4,2017,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/mtnb,AMEX
+IDN,"Intellicheck, Inc.",2.56,3837e4,1999,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/idn,AMEX
+INS,Intelligent Systems Corporation,4.56,4003e4,1992,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/ins,AMEX
+THM,International Tower Hill Mines Ltd,0.43,6983e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/thm,AMEX
+INTT,inTest Corporation,8.65,9007e4,1997,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/intt,AMEX
+INUV,"Inuvo, Inc",0.81,2307e4,NA,Consumer Services,Advertising,http://www.nasdaq.com/symbol/inuv,AMEX
+VKI,Invesco Advantage Municipal Income Trust II,11.38,50518e4,NA,NA,NA,http://www.nasdaq.com/symbol/vki,AMEX
+ISR,"IsoRay, Inc.",0.3993,2197e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/isr,AMEX
+ISDR,Issuer Direct Corporation,18.35,547e5,NA,Miscellaneous,Publishing,http://www.nasdaq.com/symbol/isdr,AMEX
+JRJR,"JRjr33, Inc.",0.185,8289999.999999999,2014,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/jrjr,AMEX
+KIQ,Kelso Technologies Inc,0.5199,2439e4,NA,Capital Goods,Railroads,http://www.nasdaq.com/symbol/kiq,AMEX
+KLDX,Klondex Mines Ltd.,2.61,46878e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/kldx,AMEX
+LTS,Ladenburg Thalmann Financial Services Inc,3.16,62692e4,NA,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/lts,AMEX
+LTS^A,Ladenburg Thalmann Financial Services Inc,25.3108,NA,NA,NA,NA,http://www.nasdaq.com/symbol/lts^a,AMEX
+LTSL,Ladenburg Thalmann Financial Services Inc,24.74,NA,2017,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/ltsl,AMEX
+LAQ,"Latin America Equity Fund, Inc. (The)",26.72,19902e4,1991,NA,NA,http://www.nasdaq.com/symbol/laq,AMEX
+LEVB,"Level Brands, Inc.",4.35,32590000.000000004,2017,Consumer Non-Durables,Package Goods/Cosmetics,http://www.nasdaq.com/symbol/levb,AMEX
+LGL,"LGL Group, Inc. (The)",5.6174,1503e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/lgl,AMEX
+LBY,"Libbey, Inc.",7.52,16556e4,1993,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/lby,AMEX
+LLEX,"Lilis Energy, Inc.",5.11,27236e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/llex,AMEX
+LIQT,"LiqTech International, Inc.",0.5682,2513e4,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/liqt,AMEX
+MAG,MAG Silver Corporation,12.36,106e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/mag,AMEX
+MJCO,Majesco,5.37,1962e5,2015,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/mjco,AMEX
+MHH,"Mastech Digital, Inc",10.06,5488e4,NA,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/mhh,AMEX
+MTNB,"Matinas Biopharma Holdings, Inc.",1.16,10782e4,2017,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/mtnb,AMEX
 MNI,McClatchy Company (The),8.93,6863e4,1988,Consumer Services,Newspapers/Magazines,http://www.nasdaq.com/symbol/mni,AMEX
-IPB,"Merrill Lynch & Co., Inc. 6.0518% Index Plus Trust Certificate",27.657,NA,NA,Finance,Finance: Consumer Services,http://www.nasdaq.com/symbol/ipb,AMEX
-MXC,Mexco Energy Corporation,4.2,856e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/mxc,AMEX
-CCA,MFS California Insured Municipal Trust,11.4114,318e5,1999,NA,NA,http://www.nasdaq.com/symbol/cca,AMEX
+IPB,"Merrill Lynch & Co., Inc. 6.0518% Index Plus Trust Certificate",27.7,NA,NA,Finance,Finance: Consumer Services,http://www.nasdaq.com/symbol/ipb,AMEX
+MXC,Mexco Energy Corporation,3.93,801e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/mxc,AMEX
+CCA,MFS California Insured Municipal Trust,11.51,3207e4,1999,NA,NA,http://www.nasdaq.com/symbol/cca,AMEX
 MICR,"Micron Solutions, Inc.",3.5,992e4,NA,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,http://www.nasdaq.com/symbol/micr,AMEX
-MLSS,"Milestone Scientific, Inc.",1.14,3761e4,2015,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/mlss,AMEX
-MVF,"MuniVest Fund, Inc.",9.64,62176e4,NA,NA,NA,http://www.nasdaq.com/symbol/mvf,AMEX
-MZA,"MuniYield Arizona Fund, Inc.",15.945,7374e4,1993,NA,NA,http://www.nasdaq.com/symbol/mza,AMEX
-MYO,Myomo Inc.,4.08,2571e4,2017,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/myo,AMEX
-NNVC,"NanoViricides, Inc.",0.9601,6081e4,NA,Health Care,Biotechnology: Commercial Physical & Biological Resarch,http://www.nasdaq.com/symbol/nnvc,AMEX
+MLSS,"Milestone Scientific, Inc.",1.181,3896e4,2015,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/mlss,AMEX
+MVF,"MuniVest Fund, Inc.",9.61,61982e4,NA,NA,NA,http://www.nasdaq.com/symbol/mvf,AMEX
+MZA,"MuniYield Arizona Fund, Inc.",16.17,7478e4,1993,NA,NA,http://www.nasdaq.com/symbol/mza,AMEX
+MYO,Myomo Inc.,3.75,2363e4,2017,Health Care,Industrial Specialties,http://www.nasdaq.com/symbol/myo,AMEX
+NNVC,"NanoViricides, Inc.",0.8801,5574e4,NA,Health Care,Biotechnology: Commercial Physical & Biological Resarch,http://www.nasdaq.com/symbol/nnvc,AMEX
 ATEST,NASDAQ TEST STOCK,9.99,NA,NA,NA,NA,http://www.nasdaq.com/symbol/atest,AMEX
 ATEST.A,NASDAQ TEST STOCK,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/atest.a,AMEX
 ATEST.B,NASDAQ TEST STOCK,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/atest.b,AMEX
 ATEST.C,NASDAQ TEST STOCK,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/atest.c,AMEX
-NHC,National HealthCare Corporation,61.77,93871e4,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/nhc,AMEX
-NAVB,"Navidea Biopharmaceuticals, Inc.",0.3999,6489e4,NA,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/navb,AMEX
-NTIP,"Network-1 Technologies, Inc.",2.35,5671e4,NA,Miscellaneous,Multi-Sector Companies,http://www.nasdaq.com/symbol/ntip,AMEX
-NBW,Neuberger Berman California Intermediate Municipal Fund Inc.,13.67,7588e4,2002,NA,NA,http://www.nasdaq.com/symbol/nbw,AMEX
+NHC,National HealthCare Corporation,60.94,9261e5,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/nhc,AMEX
+NAVB,"Navidea Biopharmaceuticals, Inc.",0.3585,5817e4,NA,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/navb,AMEX
+NTIP,"Network-1 Technologies, Inc.",2.4,5791e4,NA,Miscellaneous,Multi-Sector Companies,http://www.nasdaq.com/symbol/ntip,AMEX
+NBW,Neuberger Berman California Intermediate Municipal Fund Inc.,13.601,755e5,2002,NA,NA,http://www.nasdaq.com/symbol/nbw,AMEX
 NHS,Neuberger Berman High Yield Strategies Fund,11.76,2298e5,NA,NA,NA,http://www.nasdaq.com/symbol/nhs,AMEX
-NBH,Neuberger Berman Intermediate Municipal Fund Inc.,14.7,27634e4,2002,NA,NA,http://www.nasdaq.com/symbol/nbh,AMEX
-NML,Neuberger Berman MLP Income Fund Inc.,9.2,52126e4,2013,NA,NA,http://www.nasdaq.com/symbol/nml,AMEX
-NBO,Neuberger Berman New York Intermediate Municipal Fund Inc.,12.2,6194e4,2002,NA,NA,http://www.nasdaq.com/symbol/nbo,AMEX
-NRO,"Neuberger Berman Real Estate Securities Income Fund, Inc.",5.48,25986e4,2003,NA,NA,http://www.nasdaq.com/symbol/nro,AMEX
-UWN,"Nevada Gold & Casinos, Inc.",2.41,4057e4,NA,Consumer Services,Services-Misc. Amusement & Recreation,http://www.nasdaq.com/symbol/uwn,AMEX
-NSU,Nevsun Resources Ltd,2.36,71322e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nsu,AMEX
-GBR,"New Concept Energy, Inc",1.49,304e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gbr,AMEX
-NEN,New England Realty Associates Limited Partnership,72.7,27129e4,NA,Consumer Services,Building operators,http://www.nasdaq.com/symbol/nen,AMEX
-NGD,New Gold Inc.,3.35,194e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ngd,AMEX
-NXE,Nexgen Energy Ltd.,2.71,91916e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nxe,AMEX
-HLTH,Nobilis Health Corp.,1.4,10893e4,2015,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/hlth,AMEX
-NAK,"Northern Dynasty Minerals, Ltd.",1.83,56338e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nak,AMEX
-NOG,"Northern Oil and Gas, Inc.",1.85,12362e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/nog,AMEX
-NBY,"NovaBay Pharmaceuticals, Inc.",3.5,5385e4,2007,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/nby,AMEX
-NG,Novagold Resources Inc.,4.02,13e8,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ng,AMEX
-NTN,"NTN Buzztime, Inc.",3.81,96e5,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/ntn,AMEX
-NES,"Nuverra Environmental Solutions, Inc.",22.5,263149999.99999997,2017,Energy,Oilfield Services/Equipment,http://www.nasdaq.com/symbol/nes,AMEX
-OCX,OncoCyte Corporation,4.95,15556e4,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/ocx,AMEX
-OGEN,"Oragenics, Inc.",0.2338,1152e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ogen,AMEX
-TIS,Orchids Paper Products Company,13,13558e4,2005,Basic Industries,Paper,http://www.nasdaq.com/symbol/tis,AMEX
-ONP,"Orient Paper, Inc.",1.33,2853e4,NA,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/onp,AMEX
-ORM,"Owens Realty Mortgage, Inc.",16,16067e4,2013,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/orm,AMEX
-PCG^A,Pacific Gas & Electric Co.,29.5,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^a,AMEX
-PCG^B,Pacific Gas & Electric Co.,25.61,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^b,AMEX
-PCG^C,Pacific Gas & Electric Co.,24.8,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^c,AMEX
-PCG^D,Pacific Gas & Electric Co.,24.9,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^d,AMEX
-PCG^E,Pacific Gas & Electric Co.,24.9,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^e,AMEX
-PCG^G,Pacific Gas & Electric Co.,24.4905,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^g,AMEX
-PCG^H,Pacific Gas & Electric Co.,24.0039,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^h,AMEX
-PCG^I,Pacific Gas & Electric Co.,23,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^i,AMEX
-PTN,"Palatin Technologies, Inc.",0.8683,16525e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ptn,AMEX
-PARR,"Par Pacific Holdings, Inc.",19.71,90253e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/parr,AMEX
-PZG,Paramount Gold Nevada Corp.,1.24,2861e4,2015,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/pzg,AMEX
-TEUM,Pareteum Corporation,2.8,12019e4,NA,Technology,EDP Services,http://www.nasdaq.com/symbol/teum,AMEX
-PRK,Park National Corporation,105.69,162e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/prk,AMEX
-BTU^,Peabody Energy Corporation,67.38,NA,NA,NA,NA,http://www.nasdaq.com/symbol/btu^,AMEX
-PED,Pedevco Corp.,0.33,2009999.9999999998,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ped,AMEX
-PFNX,Pfenex Inc.,2.7,6358e4,2014,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/pfnx,AMEX
-HNW,Pioneer Diversified High Income Trust,15.68,13066e4,2007,NA,NA,http://www.nasdaq.com/symbol/hnw,AMEX
-PLG,Platinum Group Metals Ltd.,0.308,4573e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/plg,AMEX
-PLYM,"Plymouth Industrial REIT, Inc.",18.41,702e5,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/plym,AMEX
+NBH,Neuberger Berman Intermediate Municipal Fund Inc.,14.79,27803e4,2002,NA,NA,http://www.nasdaq.com/symbol/nbh,AMEX
+NML,Neuberger Berman MLP Income Fund Inc.,9.38,531460000.00000006,2013,NA,NA,http://www.nasdaq.com/symbol/nml,AMEX
+NBO,Neuberger Berman New York Intermediate Municipal Fund Inc.,12.16,6174e4,2002,NA,NA,http://www.nasdaq.com/symbol/nbo,AMEX
+NRO,"Neuberger Berman Real Estate Securities Income Fund, Inc.",5.53,262230000.00000003,2003,NA,NA,http://www.nasdaq.com/symbol/nro,AMEX
+UWN,"Nevada Gold & Casinos, Inc.",2.67,4495e4,NA,Consumer Services,Services-Misc. Amusement & Recreation,http://www.nasdaq.com/symbol/uwn,AMEX
+NSU,Nevsun Resources Ltd,2.44,7374e5,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nsu,AMEX
+GBR,"New Concept Energy, Inc",1.5588,318e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/gbr,AMEX
+NEN,New England Realty Associates Limited Partnership,73.35,27371e4,NA,Consumer Services,Building operators,http://www.nasdaq.com/symbol/nen,AMEX
+NGD,New Gold Inc.,3.29,19e8,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ngd,AMEX
+NXE,Nexgen Energy Ltd.,2.56,86828e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nxe,AMEX
+HLTH,Nobilis Health Corp.,1.35,10504e4,2015,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/hlth,AMEX
+NAK,"Northern Dynasty Minerals, Ltd.",1.77,54491e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/nak,AMEX
+NOG,"Northern Oil and Gas, Inc.",2.05,13699e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/nog,AMEX
+NBY,"NovaBay Pharmaceuticals, Inc.",3.85,5923e4,2007,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/nby,AMEX
+NG,Novagold Resources Inc.,3.93,127e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ng,AMEX
+NTN,"NTN Buzztime, Inc.",4.21,1061e4,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/ntn,AMEX
+NES,"Nuverra Environmental Solutions, Inc.",18.18,21263e4,2017,Energy,Oilfield Services/Equipment,http://www.nasdaq.com/symbol/nes,AMEX
+OCX,OncoCyte Corporation,4.65,14614e4,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/ocx,AMEX
+OGEN,"Oragenics, Inc.",0.2349,1157e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ogen,AMEX
+TIS,Orchids Paper Products Company,12.8,133490000.00000001,2005,Basic Industries,Paper,http://www.nasdaq.com/symbol/tis,AMEX
+ONP,"Orient Paper, Inc.",1.29,2767e4,NA,Consumer Durables,Containers/Packaging,http://www.nasdaq.com/symbol/onp,AMEX
+ORM,"Owens Realty Mortgage, Inc.",16.01,16077e4,2013,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/orm,AMEX
+PCG^A,Pacific Gas & Electric Co.,28.2,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^a,AMEX
+PCG^B,Pacific Gas & Electric Co.,25.8399,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^b,AMEX
+PCG^C,Pacific Gas & Electric Co.,24.5855,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^c,AMEX
+PCG^D,Pacific Gas & Electric Co.,24.15,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^d,AMEX
+PCG^E,Pacific Gas & Electric Co.,24.65,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^e,AMEX
+PCG^G,Pacific Gas & Electric Co.,24.57,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^g,AMEX
+PCG^H,Pacific Gas & Electric Co.,23.068,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^h,AMEX
+PCG^I,Pacific Gas & Electric Co.,22.55,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pcg^i,AMEX
+PTN,"Palatin Technologies, Inc.",0.8589,16346e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/ptn,AMEX
+PARR,"Par Pacific Holdings, Inc.",19.28,88284e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/parr,AMEX
+PZG,Paramount Gold Nevada Corp.,1.3,3e7,2015,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/pzg,AMEX
+TEUM,Pareteum Corporation,2.07,8885e4,NA,Technology,EDP Services,http://www.nasdaq.com/symbol/teum,AMEX
+PRK,Park National Corporation,104,159e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/prk,AMEX
+BTU^,Peabody Energy Corporation,74.11,NA,NA,NA,NA,http://www.nasdaq.com/symbol/btu^,AMEX
+PED,Pedevco Corp.,0.3199,195e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/ped,AMEX
+PFNX,Pfenex Inc.,2.66,6264e4,2014,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/pfnx,AMEX
+HNW,Pioneer Diversified High Income Trust,15.75,131240000.00000001,2007,NA,NA,http://www.nasdaq.com/symbol/hnw,AMEX
+PLG,Platinum Group Metals Ltd.,0.304,4513e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/plg,AMEX
+PLYM,"Plymouth Industrial REIT, Inc.",18.48,7046e4,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/plym,AMEX
 PLYM^A,"Plymouth Industrial REIT, Inc.",25.15,NA,NA,NA,NA,http://www.nasdaq.com/symbol/plym^a,AMEX
-PLM,Polymet Mining Corp.,0.7304,23322e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/plm,AMEX
-PW,Power REIT,6.1411,1122e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/pw,AMEX
-PW^A,Power REIT,25.6001,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pw^a,AMEX
-PLX,"Protalix BioTherapeutics, Inc.",0.6552,9155e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/plx,AMEX
-RLGT,"Radiant Logistics, Inc.",4.62,22685e4,NA,Transportation,Oil Refining/Marketing,http://www.nasdaq.com/symbol/rlgt,AMEX
-RLGT^A,"Radiant Logistics, Inc.",26.21,NA,NA,NA,NA,http://www.nasdaq.com/symbol/rlgt^a,AMEX
-UTG,Reaves Utility Income Fund,30.81,15e8,2004,NA,NA,http://www.nasdaq.com/symbol/utg,AMEX
+PLM,Polymet Mining Corp.,0.86,2746e5,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/plm,AMEX
+PW,Power REIT,6.1579,1125e4,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/pw,AMEX
+PW^A,Power REIT,25.61,NA,NA,NA,NA,http://www.nasdaq.com/symbol/pw^a,AMEX
+PLX,"Protalix BioTherapeutics, Inc.",0.6612,9239e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/plx,AMEX
+RLGT,"Radiant Logistics, Inc.",4.6,22586e4,NA,Transportation,Oil Refining/Marketing,http://www.nasdaq.com/symbol/rlgt,AMEX
+RLGT^A,"Radiant Logistics, Inc.",25.88,NA,NA,NA,NA,http://www.nasdaq.com/symbol/rlgt^a,AMEX
+UTG,Reaves Utility Income Fund,30.94,151e7,2004,NA,NA,http://www.nasdaq.com/symbol/utg,AMEX
 REED,"Reeds, Inc.",1.55,2467e4,NA,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/reed,AMEX
-RHE,"Regional Health Properties, Inc.",0.19,378e4,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/rhe,AMEX
-RHE^A,"Regional Health Properties, Inc.",7.4,NA,NA,NA,NA,http://www.nasdaq.com/symbol/rhe^a,AMEX
+RHE,"Regional Health Properties, Inc.",0.17,338e4,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/rhe,AMEX
+RHE^A,"Regional Health Properties, Inc.",8,NA,NA,NA,NA,http://www.nasdaq.com/symbol/rhe^a,AMEX
 RWC,RELM Wireless Corporation,3.55,4915e4,NA,Technology,Radio And Television Broadcasting And Communications Equipment,http://www.nasdaq.com/symbol/rwc,AMEX
-RCG,"RENN Fund, Inc.",1.6,714e4,NA,NA,NA,http://www.nasdaq.com/symbol/rcg,AMEX
-RVP,"Retractable Technologies, Inc.",0.648,2117e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/rvp,AMEX
-RNN,"Rexahn Pharmaceuticals, Inc.",2.19,6948e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/rnn,AMEX
-REI,"Ring Energy, Inc.",14.44,78207e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/rei,AMEX
-RIF,RMR Real Estate Income Fund,18.8416,19222e4,NA,NA,NA,http://www.nasdaq.com/symbol/rif,AMEX
-SACH,Sachem Capital Corp.,3.92,6043e4,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/sach,AMEX
-SGA,"Saga Communications, Inc.",40.6,23982e4,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/sga,AMEX
-SNMP,Sanchez Midstream Partners LP,11.85,17512e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/snmp,AMEX
-SAND,Sandstorm Gold Ltd,5.21,95179e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/sand,AMEX
-SEB,Seaboard Corporation,4290.21,502e7,1996,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/seb,AMEX
-SENS,"Senseonics Holdings, Inc.",2.6,35556e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/sens,AMEX
-SVT,"Servotronics, Inc.",11.0426,2773e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/svt,AMEX
-SMTS,Sierra Metals Inc.,2.311,37595e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/smts,AMEX
-SIF,"SIFCO Industries, Inc.",6.25,3497e4,NA,Capital Goods,Aerospace,http://www.nasdaq.com/symbol/sif,AMEX
-SVM,Silvercorp Metals Inc.,2.78,46793e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/svm,AMEX
-SKY,Skyline Corporation,12.89,10816e4,NA,Basic Industries,Homebuilding,http://www.nasdaq.com/symbol/sky,AMEX
-XPL,Solitario Zinc Corp.,0.6088,3558e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/xpl,AMEX
-SCE^B,Southern California Edison Company,22.7125,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^b,AMEX
-SCE^C,Southern California Edison Company,23.57,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^c,AMEX
-SCE^D,Southern California Edison Company,23.5,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^d,AMEX
-SCE^E,Southern California Edison Company,25.06,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^e,AMEX
-SGB,Southwest Georgia Financial Corporation,20.61,525e5,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/sgb,AMEX
-LOV,"Spark Networks, Inc.",12.61,NA,2017,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/lov,AMEX
-SRCI,SRC Energy Inc.,8.61,208e7,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/srci,AMEX
+RCG,"RENN Fund, Inc.",1.504,671e4,NA,NA,NA,http://www.nasdaq.com/symbol/rcg,AMEX
+RVP,"Retractable Technologies, Inc.",0.68,2221e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/rvp,AMEX
+RNN,"Rexahn Pharmaceuticals, Inc.",2.02,6408e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/rnn,AMEX
+REI,"Ring Energy, Inc.",13.9,75282e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/rei,AMEX
+RIF,RMR Real Estate Income Fund,19.09,19476e4,NA,NA,NA,http://www.nasdaq.com/symbol/rif,AMEX
+SACH,Sachem Capital Corp.,3.94,6074e4,2017,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/sach,AMEX
+SGA,"Saga Communications, Inc.",40.45,23894e4,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/sga,AMEX
+SNMP,Sanchez Midstream Partners LP,11.1,16404e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/snmp,AMEX
+SAND,Sandstorm Gold Ltd,4.99,9116e5,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/sand,AMEX
+SEB,Seaboard Corporation,4410,516e7,1996,Finance,Investment Bankers/Brokers/Service,http://www.nasdaq.com/symbol/seb,AMEX
+SENS,"Senseonics Holdings, Inc.",2.66,36377e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/sens,AMEX
+SVT,"Servotronics, Inc.",11.1331,2796e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/svt,AMEX
+SMTS,Sierra Metals Inc.,2.48,40344e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/smts,AMEX
+SIF,"SIFCO Industries, Inc.",6.6503,3721e4,NA,Capital Goods,Aerospace,http://www.nasdaq.com/symbol/sif,AMEX
+SVM,Silvercorp Metals Inc.,2.62,441e6,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/svm,AMEX
+SKY,Skyline Corporation,12.85,10783e4,NA,Basic Industries,Homebuilding,http://www.nasdaq.com/symbol/sky,AMEX
+XPL,Solitario Zinc Corp.,0.6026,3522e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/xpl,AMEX
+SCE^B,Southern California Edison Company,23,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^b,AMEX
+SCE^C,Southern California Edison Company,23.73,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^c,AMEX
+SCE^D,Southern California Edison Company,24.1,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^d,AMEX
+SCE^E,Southern California Edison Company,25.42,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sce^e,AMEX
+SGB,Southwest Georgia Financial Corporation,24,6114e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/sgb,AMEX
+LOV,"Spark Networks, Inc.",12.65,NA,2017,Consumer Services,Other Consumer Services,http://www.nasdaq.com/symbol/lov,AMEX
+SRCI,SRC Energy Inc.,8.53,206e7,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/srci,AMEX
 SGY.WS,Stone Energy Corporation,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sgy.ws,AMEX
-STRP,Straight Path Communications Inc.,181.63,232e7,2013,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/strp,AMEX
-SSY,"SunLink Health Systems, Inc.",1.63,1494e4,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/ssy,AMEX
+STRP,Straight Path Communications Inc.,181.79,232e7,2013,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/strp,AMEX
+SSY,"SunLink Health Systems, Inc.",1.59,1457e4,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/ssy,AMEX
 SDPI,"Superior Drilling Products, Inc.",1.47,3574e4,2014,Energy,Metal Fabrications,http://www.nasdaq.com/symbol/sdpi,AMEX
-SYN,"Synthetic Biologics, Inc",0.545,7007e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/syn,AMEX
-TKAT,"Takung Art Co., Ltd.",2.7,3021e4,NA,Consumer Services,Other Specialty Stores,http://www.nasdaq.com/symbol/tkat,AMEX
-TRX,Tanzanian Royalty Exploration Corporation,0.314,3838e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/trx,AMEX
-TGB,Taseko Mines Limited,2.27,515059999.99999994,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/tgb,AMEX
-TIK,Tel-Instrument Electronics Corp.,3,977e4,NA,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/tik,AMEX
-TGC,"Tengasco, Inc.",0.81,86e5,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/tgc,AMEX
-GLU,The Gabelli Global Utility and Income Trust,21.099,8674e4,2004,NA,NA,http://www.nasdaq.com/symbol/glu,AMEX
+SYN,"Synthetic Biologics, Inc",0.508,6531e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/syn,AMEX
+TKAT,"Takung Art Co., Ltd.",2.5101,2809e4,NA,Consumer Services,Other Specialty Stores,http://www.nasdaq.com/symbol/tkat,AMEX
+TRX,Tanzanian Royalty Exploration Corporation,0.278,3398e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/trx,AMEX
+TGB,Taseko Mines Limited,2.33,528669999.99999994,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/tgb,AMEX
+TIK,Tel-Instrument Electronics Corp.,2.6,847e4,NA,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/tik,AMEX
+TGC,"Tengasco, Inc.",0.8,85e5,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/tgc,AMEX
+GLU,The Gabelli Global Utility and Income Trust,21.3,8757e4,2004,NA,NA,http://www.nasdaq.com/symbol/glu,AMEX
 GLU^A,The Gabelli Global Utility and Income Trust,50.22,NA,NA,NA,NA,http://www.nasdaq.com/symbol/glu^a,AMEX
 GGO,The Gabelli Go Anywhere Trust,18.04,2905e4,2016,NA,NA,http://www.nasdaq.com/symbol/ggo,AMEX
 GGO^A,The Gabelli Go Anywhere Trust,43.5,NA,NA,NA,NA,http://www.nasdaq.com/symbol/ggo^a,AMEX
-TMP,Tompkins Financial Corporation,83.74,127e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/tmp,AMEX
-TAT,Transatlantic Petroleum Ltd,1.19,5988e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/tat,AMEX
-TRXC,"TransEnterix, Inc.",1.94,38653e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/trxc,AMEX
-TMQ,Trilogy Metals Inc.,1.14,12048e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/tmq,AMEX
-TPHS,Trinity Place Holdings Inc.,6.8,21387e4,NA,Consumer Services,Building operators,http://www.nasdaq.com/symbol/tphs,AMEX
-TRT,Trio-Tech International,7.02,248e5,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/trt,AMEX
-HTM,U.S. Geothermal Inc.,3.5,6747e4,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/htm,AMEX
-UFAB,"Unique Fabricating, Inc.",7.685,7499e4,2015,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/ufab,AMEX
+TMP,Tompkins Financial Corporation,81.35,124e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/tmp,AMEX
+TAT,Transatlantic Petroleum Ltd,1.39,6994e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/tat,AMEX
+TRXC,"TransEnterix, Inc.",1.93,38454e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/trxc,AMEX
+TMQ,Trilogy Metals Inc.,1.09,1152e5,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/tmq,AMEX
+TPHS,Trinity Place Holdings Inc.,6.95,21859e4,NA,Consumer Services,Building operators,http://www.nasdaq.com/symbol/tphs,AMEX
+TRT,Trio-Tech International,7.01,2477e4,NA,Technology,Industrial Machinery/Components,http://www.nasdaq.com/symbol/trt,AMEX
+HTM,U.S. Geothermal Inc.,3.45,665e5,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/htm,AMEX
+UFAB,"Unique Fabricating, Inc.",7.42,724e5,2015,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/ufab,AMEX
 UAMY,United States Antimony Corporation,0.32,216e5,NA,Capital Goods,Metal Fabrications,http://www.nasdaq.com/symbol/uamy,AMEX
-UUU,"Universal Security Instruments, Inc.",1.5501,359e4,NA,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/uuu,AMEX
-UQM,UQM Technologies Inc.,1.36,7351e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/uqm,AMEX
-URG,Ur Energy Inc,0.6717,9807e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/urg,AMEX
-UEC,Uranium Energy Corp.,1.87,292e6,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/uec,AMEX
-VII,"Vicon Industries, Inc.",0.385,676e4,NA,Consumer Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/vii,AMEX
-VHC,VirnetX Holding Corp,3.8,22358e4,NA,Miscellaneous,Multi-Sector Companies,http://www.nasdaq.com/symbol/vhc,AMEX
-VGZ,Vista Gold Corporation,0.668,6641e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/vgz,AMEX
-VNRX,VolitionRX Limited,2.88,7637e4,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/vnrx,AMEX
-VISI,"Volt Information Sciences, Inc.",3.65,7669e4,NA,Technology,Professional Services,http://www.nasdaq.com/symbol/visi,AMEX
-EAD,Wells Fargo Income Opportunities Fund,8.44,59518e4,2003,NA,NA,http://www.nasdaq.com/symbol/ead,AMEX
-ERC,Wells Fargo Multi-Sector Income Fund,13.08,45701e4,2003,NA,NA,http://www.nasdaq.com/symbol/erc,AMEX
-ERH,Wells Fargo Utilities and High Income Fund,13.09,12101e4,2004,NA,NA,http://www.nasdaq.com/symbol/erh,AMEX
-WRN,Western Copper and Gold Corporation,1,9665e4,2011,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/wrn,AMEX
-WYY,WidePoint Corporation,0.6491,539e5,NA,Technology,EDP Services,http://www.nasdaq.com/symbol/wyy,AMEX
-WTT,"Wireless Telecom Group,  Inc.",2.26,5151e4,NA,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/wtt,AMEX
-XTNT,"Xtant Medical Holdings, Inc.",0.54,981e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/xtnt,AMEX
-YUMA,"Yuma Energy, Inc.",1.07,2425e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/yuma,AMEX
-ZDGE,"Zedge, Inc.",2.77,2761e4,2016,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/zdge,AMEX
-ZOM,Zomedica Pharmaceuticals Corp.,2.057,18377e4,2017,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/zom,AMEX
+UUU,"Universal Security Instruments, Inc.",1.7,393e4,NA,Consumer Non-Durables,Electronic Components,http://www.nasdaq.com/symbol/uuu,AMEX
+UQM,UQM Technologies Inc.,1.39,7514e4,NA,Capital Goods,Industrial Machinery/Components,http://www.nasdaq.com/symbol/uqm,AMEX
+URG,Ur Energy Inc,0.6836,9981e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/urg,AMEX
+UEC,Uranium Energy Corp.,1.77,27639e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/uec,AMEX
+VII,"Vicon Industries, Inc.",0.4,702e4,NA,Consumer Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/vii,AMEX
+VHC,VirnetX Holding Corp,3.7,21769e4,NA,Miscellaneous,Multi-Sector Companies,http://www.nasdaq.com/symbol/vhc,AMEX
+VGZ,Vista Gold Corporation,0.7,6959e4,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/vgz,AMEX
+VNRX,VolitionRX Limited,2.94,7796e4,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,http://www.nasdaq.com/symbol/vnrx,AMEX
+VISI,"Volt Information Sciences, Inc.",3.8,7984e4,NA,Technology,Professional Services,http://www.nasdaq.com/symbol/visi,AMEX
+EAD,Wells Fargo Income Opportunities Fund,8.4,59236e4,2003,NA,NA,http://www.nasdaq.com/symbol/ead,AMEX
+ERC,Wells Fargo Multi-Sector Income Fund,13.06,45631e4,2003,NA,NA,http://www.nasdaq.com/symbol/erc,AMEX
+ERH,Wells Fargo Utilities and High Income Fund,13.2,12202e4,2004,NA,NA,http://www.nasdaq.com/symbol/erh,AMEX
+WRN,Western Copper and Gold Corporation,1.01,9762e4,2011,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/wrn,AMEX
+WYY,WidePoint Corporation,0.6503,54e6,NA,Technology,EDP Services,http://www.nasdaq.com/symbol/wyy,AMEX
+WTT,"Wireless Telecom Group,  Inc.",2.43,5538e4,NA,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/wtt,AMEX
+XTNT,"Xtant Medical Holdings, Inc.",0.5725,104e5,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/xtnt,AMEX
+YUMA,"Yuma Energy, Inc.",1.168,2647e4,NA,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/yuma,AMEX
+ZDGE,"Zedge, Inc.",2.7493,274e5,2016,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/zdge,AMEX
+ZOM,Zomedica Pharmaceuticals Corp.,1.9771,17663e4,2017,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/zom,AMEX

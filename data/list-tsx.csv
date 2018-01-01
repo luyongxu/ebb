@@ -477,7 +477,6 @@ CM.PR.O,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.P,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.Q,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.R,Canadian Imperial Bank Of Commerce,TSX
-RIGP.UN,Canadian Investment Grade Preferred Share Fund (P2L),TSX
 LFE,Canadian Life Companies Split Corp.,TSX
 LFE.PR.B,Canadian Life Companies Split Corp.,TSX
 CNR,Canadian National Railway Company,TSX
@@ -821,8 +820,6 @@ EDV,Endeavour Mining Corporation,TSX
 EDR,Endeavour Silver Corp.,TSX
 ECI,EnerCare Inc.,TSX
 EFX,Enerflex Ltd.,TSX
-PCF.U,Energy Credit Opportunities Income Fund,TSX
-PCF.UN,Energy Credit Opportunities Income Fund,TSX
 EFR,Energy Fuels Inc.,TSX
 EFR.DB,Energy Fuels Inc.,TSX
 EFR.WT,Energy Fuels Inc.,TSX
@@ -1280,7 +1277,6 @@ ITP,Intertape Polymer Group Inc.,TSX
 ITC,Intrinsyc Technologies Corporation,TSX
 INV,INV Metals Inc.,TSX
 IFB.UN,Investment Grade Infrastructure Bond Fund,TSX
-PFU.UN,Investment Grade Managed Duration Income Fund,TSX
 IBR,Iron Bridge Resources Inc.,TSX
 XCB,iShares Canadian Corporate Bond Index ETF,TSX
 XGB,iShares Canadian Government Bond Index ETF,TSX
@@ -1380,7 +1376,6 @@ JWEL,Jamieson Wellness Inc.,TSX
 PJC.A,Jean Coutu Group (PJC) Inc. (The),TSX
 JFS.UN,JFT Strategies Fund,TSX
 JOY,Journey Energy Inc.,TSX
-RBP.UN,June 2021 Investment Grade Bond Pool,TSX
 JE,Just Energy Group Inc.,TSX
 JE.DB.B,Just Energy Group Inc.,TSX
 JE.DB.C,Just Energy Group Inc.,TSX
@@ -1426,8 +1421,6 @@ LGD,Liberty Gold Corp.,TSX
 LGD.WT,Liberty Gold Corp.,TSX
 LBS,Life & Banc Split Corp.,TSX
 LBS.PR.A,Life & Banc Split Corp.,TSX
-PFD.U,Limited Duration Investment Grade Preferred Securities Fund,TSX
-PFD.UN,Limited Duration Investment Grade Preferred Securities Fund,TSX
 LNR,Linamar Corporation,TSX
 LIQ,Liquor Stores N.A. Ltd.,TSX
 LIQ.DB.B,Liquor Stores N.A. Ltd.,TSX
@@ -1576,7 +1569,6 @@ NFI,New Flyer Industries Inc.,TSX
 NGD,New Gold Inc.,TSX
 NML,New Millennium Iron Corp.,TSX
 NAL,Newalta Corporation,TSX
-NCA,NewCastle Gold Ltd.,TSX
 NCC.A,Newfoundland Capital Corporation Limited,TSX
 NCC.B,Newfoundland Capital Corporation Limited,TSX
 NEW.A,Newgrowth Corp.,TSX
@@ -1800,7 +1792,6 @@ PUD.B,Purpose US Dividend Fund,TSX
 PME,Sentry Select Primary Metals Corp.,TSX
 PHYS.U,Sprott Physical Gold Trust,TSX
 PSLV.U,Sprott Physical Silver Trust,TSX
-PUB.UN,U.S. Banks Income & Growth Fund,TSX
 QTRH,Quarterhill Inc.,TSX
 QBR.A,Quebecor Inc.,TSX
 QBR.B,Quebecor Inc.,TSX

@@ -15,36 +15,41 @@
 
 #' # 1. Render Functions
 render_wrapper <- function(filename, output) { 
+  
+  input <- paste0("./R/", filename, ".R")
+  
   if (output == "html_document") { 
-    rmarkdown::render(input = paste0(filename, ".R"), 
-                      output_file = paste0("./Notebooks/", filename, ".html"), 
-                      knit_root_dir = ".", 
+    rmarkdown::render(input = input, 
+                      output_file <- paste0(here::here(), "/notebooks/", filename, ".html"),
+                      knit_root_dir = here::here(), 
                       output_format = "html_document")
   }
   if (output == "pdf_document") { 
-    rmarkdown::render(input = paste0(filename, ".R"), 
-                      output_file = paste0("./Notebooks/", filename, ".pdf"), 
-                      knit_root_dir = ".", 
+    rmarkdown::render(input = input, 
+                      output_file <- paste0(here::here(), "/notebooks/", filename, ".pdf"), 
+                      knit_root_dir = here::here(), 
                       output_format = "pdf_document")
   }
   if (output == "flex_dashboard") { 
-    rmarkdown::render(input = paste0(filename, ".Rmd"), 
-                      output_file = paste0("./Notebooks/", filename, ".html"), 
-                      knit_root_dir = ".", 
+    rmarkdown::render(input = input, 
+                      output_file <- paste0(here::here(), "/notebooks/", filename, ".html"), 
+                      knit_root_dir = here::here(), 
                       output_format = "flexdashboard::flex_dashboard")
   }
 } 
 
 #' # 2. Render 
-render_wrapper("EMS.001 Load Packages", "html_document")
-render_wrapper("EMS.002 Download Data", "html_document")
-render_wrapper("EMS.003 Clean Data", "html_document")
-render_wrapper("EMS.004 Plot Data", "html_document")
-render_wrapper("EMS.005 Engineer Features", "html_document")
-render_wrapper("EMS.006 Plot Features Model", "html_document")
-render_wrapper("EMS.007 Cross Validate Model", "html_document")
-render_wrapper("EMS.008 Train Model", "html_document")
-render_wrapper("EMS.009 Examine Predictions", "html_document")
+render_wrapper("01-load-packages", "html_document")
+render_wrapper("02-download-company-list", "html_document")
+render_wrapper("03-download-ohlc", "html_document")
+render_wrapper("04-download-earnings", "html_document")
+render_wrapper("05-create-train", "html_document")
+render_wrapper("06-plot-data", "html_document")
+render_wrapper("07-engineer-features", "html_document")
+render_wrapper("08-plot-features", "html_document")
+render_wrapper("09-cross-validate-model", "html_document")
+render_wrapper("10-train-model", "html_document")
+render_wrapper("11-examine-predictions", "html_document")
 
 #' # 3. Beep 
 beepr::beep(1)

@@ -14,14 +14,10 @@
 #' ---
 
 #' # 1. Source Load Packages
-source("EMS.001 Load Packages.R")
+source("./R/01-load-packages.R")
 
 #' # 2. Load Data 
-train <- read_csv("./Output/train.csv", col_types = c("Ddddddcii"))
-
-#' # 3. Unique Symbols  
-symbols <- train[["symbol"]] %>% unique()
-print(symbols) 
+train <- read_csv("./data/train.csv", col_types = c("Dddddddcidicii"))
 
 #' # 4. Add Functions 
 SNR <- function(HLC, n, ...) {
