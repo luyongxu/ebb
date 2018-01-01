@@ -1,5 +1,5 @@
 #' ---
-#' title: "Calculate Return"
+#' title: "Plot Training Data"
 #' author: "Kevin Lu"
 #' date: '`r format(Sys.Date(), "%B %d, %Y")`'
 #' output: 
@@ -9,7 +9,7 @@
 #'     toc: true 
 #'     toc_float: true
 #'     number_sections: false
-#'     fig_width: 16 
+#'     fig_width: 12
 #'     fig_height: 10 
 #' ---
 #' This script calculates the return of the strategy in the original labeled data.  
