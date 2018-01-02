@@ -15,7 +15,7 @@
 #' This script creates the training data. 
 
 #' # 1. Source Load Packages
-source("./R/01-load-packages.R")
+source(here::here("/R/01-load-packages.R"))
 
 #' # 2. Load Data 
 #' Load OHLC and original labeled data.  
@@ -55,6 +55,6 @@ train <- ohlc_data %>%
 glimpse(train)
 
 #' # 8. Save Data 
-write_csv(train, "./data/train.csv")
+write_csv(train, here::here("/data/train.csv"))
 
 

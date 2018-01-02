@@ -689,7 +689,6 @@ CMCO,Columbus McKinnon Corporation,39.98,91948e4,1996,Capital Goods,Construction
 CMCSA,Comcast Corporation,40.05,18718e7,NA,Consumer Services,Television Services,http://www.nasdaq.com/symbol/cmcsa,NASDAQ
 CBSH,"Commerce Bancshares, Inc.",55.85,626e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/cbsh,NASDAQ
 CBSHP,"Commerce Bancshares, Inc.",26.35,241e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/cbshp,NASDAQ
-CUBN,"Commerce Union Bancshares, Inc.",25.64,23133e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/cubn,NASDAQ
 CHUBA,"CommerceHub, Inc.",21.99,95254e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/chuba,NASDAQ
 CHUBK,"CommerceHub, Inc.",20.59,89189e4,NA,Technology,Computer Software: Prepackaged Software,http://www.nasdaq.com/symbol/chubk,NASDAQ
 CVGI,"Commercial Vehicle Group, Inc.",10.67,32712e4,2004,Capital Goods,Auto Parts:O.E.M.,http://www.nasdaq.com/symbol/cvgi,NASDAQ
@@ -884,10 +883,10 @@ EML,Eastern Company (The),26.2,16405e4,NA,Capital Goods,Industrial Machinery/Com
 ESDI,"Eastside Distilling, Inc.",4.03,1944e4,NA,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/esdi,NASDAQ
 ESDIW,"Eastside Distilling, Inc.",0.65,NA,NA,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/esdiw,NASDAQ
 EVGBC,Eaton Vance Global Income Builder NextShares,99.98,NA,NA,NA,NA,http://www.nasdaq.com/symbol/evgbc,NASDAQ
-EVFTC,Eaton Vance NextShares Trust II,100.05,NA,NA,NA,NA,http://www.nasdaq.com/symbol/evftc,NASDAQ
-OKDCC,Eaton Vance NextShares Trust II,100.11,NA,NA,NA,NA,http://www.nasdaq.com/symbol/okdcc,NASDAQ
 EVSTC,Eaton Vance Stock NextShares,100.02,NA,NA,NA,NA,http://www.nasdaq.com/symbol/evstc,NASDAQ
+EVFTC,Eaton Vance TABS 5-to-15 Year Laddered Municipal Bond NextShar,100.05,NA,NA,NA,NA,http://www.nasdaq.com/symbol/evftc,NASDAQ
 EVLMC,Eaton Vance TABS 5-to-15 Year Laddered Municipal Bond NextShar,99.94,NA,NA,NA,NA,http://www.nasdaq.com/symbol/evlmc,NASDAQ
+OKDCC,Eaton Vance TABS 5-to-15 Year Laddered Municipal Bond NextShar,100.11,NA,NA,NA,NA,http://www.nasdaq.com/symbol/okdcc,NASDAQ
 EBAY,eBay Inc.,37.76,3944e7,1998,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/ebay,NASDAQ
 EBAYL,eBay Inc.,26.9,NA,NA,Miscellaneous,Business Services,http://www.nasdaq.com/symbol/ebayl,NASDAQ
 EBIX,"Ebix, Inc.",79.1,249e7,NA,Technology,EDP Services,http://www.nasdaq.com/symbol/ebix,NASDAQ
@@ -1223,7 +1222,6 @@ MOGLC,Gabelli NextShares Trust,100.04,NA,NA,NA,NA,http://www.nasdaq.com/symbol/m
 GAIA,"Gaia, Inc.",12.45,18884e4,1999,Consumer Services,Movies/Entertainment,http://www.nasdaq.com/symbol/gaia,NASDAQ
 GLPG,Galapagos NV,93.76,478e7,2015,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/glpg,NASDAQ
 GALT,Galectin Therapeutics Inc.,3.32,11832e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/galt,NASDAQ
-GALE,"Galena Biopharma, Inc.",0.2619,1197e4,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/gale,NASDAQ
 GLMD,Galmed Pharmaceuticals Ltd.,9.15,11651e4,2014,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/glmd,NASDAQ
 GLPI,"Gaming and Leisure Properties, Inc.",37,787e7,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/glpi,NASDAQ
 GPIC,Gaming Partners International Corporation,11.24,8916e4,NA,Consumer Non-Durables,Recreational Products/Toys,http://www.nasdaq.com/symbol/gpic,NASDAQ
@@ -1424,7 +1422,6 @@ HMHC,Houghton Mifflin Harcourt Company,9.3,115e7,2013,Consumer Services,Books,ht
 HWCC,Houston Wire & Cable Company,7.2,11884e4,2006,Consumer Non-Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/hwcc,NASDAQ
 HOVNP,Hovnanian Enterprises Inc,7.5,375e5,NA,Capital Goods,Homebuilding,http://www.nasdaq.com/symbol/hovnp,NASDAQ
 HBMD,"Howard Bancorp, Inc.",22.05,21642e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/hbmd,NASDAQ
-HSNI,"HSN, Inc.",40.25,2109999999.9999998,NA,Consumer Services,Other Specialty Stores,http://www.nasdaq.com/symbol/hsni,NASDAQ
 HTGM,"HTG Molecular Diagnostics, Inc.",2.04,2551e4,2015,Capital Goods,Biotechnology: Laboratory Analytical Instruments,http://www.nasdaq.com/symbol/htgm,NASDAQ
 HUBG,"Hub Group, Inc.",47.9,163e7,1996,Transportation,Oil Refining/Marketing,http://www.nasdaq.com/symbol/hubg,NASDAQ
 HSON,"Hudson Global, Inc.",2.25,7035e4,NA,Technology,Professional Services,http://www.nasdaq.com/symbol/hson,NASDAQ
@@ -1797,8 +1794,6 @@ LVNTA,Liberty Interactive Corporation,54.23,464e7,NA,Consumer Services,Catalog/S
 LVNTB,Liberty Interactive Corporation,54.3,465e7,NA,Consumer Services,Catalog/Specialty Distribution,http://www.nasdaq.com/symbol/lvntb,NASDAQ
 QVCA,Liberty Interactive Corporation,24.43,1051e7,NA,Consumer Services,Catalog/Specialty Distribution,http://www.nasdaq.com/symbol/qvca,NASDAQ
 QVCB,Liberty Interactive Corporation,25.73,1107e7,NA,Consumer Services,Catalog/Specialty Distribution,http://www.nasdaq.com/symbol/qvcb,NASDAQ
-LILAV,Liberty Latin America Ltd.,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/lilav,NASDAQ
-LILKV,Liberty Latin America Ltd.,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/lilkv,NASDAQ
 BATRA,Liberty Media Corporation,22.05,NA,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/batra,NASDAQ
 BATRK,Liberty Media Corporation,22.23,11e8,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/batrk,NASDAQ
 FWONA,Liberty Media Corporation,32.73,NA,NA,Consumer Services,Broadcasting,http://www.nasdaq.com/symbol/fwona,NASDAQ
@@ -1947,7 +1942,6 @@ MLAB,"Mesa Laboratories, Inc.",125.21,47326e4,NA,Capital Goods,Industrial Machin
 MESO,Mesoblast Limited,5.8153,54715e4,2015,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/meso,NASDAQ
 CASH,"Meta Financial Group, Inc.",92.675,89584e4,1993,Finance,Savings Institutions,http://www.nasdaq.com/symbol/cash,NASDAQ
 MEOH,Methanex Corporation,60.5,507e7,NA,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/meoh,NASDAQ
-MGCD,MGC Diagnostics Corporation,11.03,4868e4,NA,Health Care,Medical/Dental Instruments,http://www.nasdaq.com/symbol/mgcd,NASDAQ
 MGEE,MGE Energy Inc.,63.15,219e7,NA,Energy,Electric Utilities: Central,http://www.nasdaq.com/symbol/mgee,NASDAQ
 MGPI,"MGP Ingredients, Inc.",76.88,129e7,NA,Consumer Non-Durables,Beverages (Production/Distribution),http://www.nasdaq.com/symbol/mgpi,NASDAQ
 MBOT,Microbot Medical Inc.,1.0199,3937e4,NA,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),http://www.nasdaq.com/symbol/mbot,NASDAQ
@@ -2813,7 +2807,6 @@ SNSS,"Sunesis Pharmaceuticals, Inc.",3.69,12638e4,2005,Health Care,Major Pharmac
 STKL,"SunOpta, Inc.",7.8,67653e4,NA,Consumer Services,Farming/Seeds/Milling,http://www.nasdaq.com/symbol/stkl,NASDAQ
 SPWR,SunPower Corporation,8.43,118e7,2005,Technology,Semiconductors,http://www.nasdaq.com/symbol/spwr,NASDAQ
 RUN,Sunrun Inc.,5.89,62897e4,2015,Capital Goods,Industrial Specialties,http://www.nasdaq.com/symbol/run,NASDAQ
-SBCP,"Sunshine Bancorp, Inc.",22.88,18364e4,2014,Finance,Savings Institutions,http://www.nasdaq.com/symbol/sbcp,NASDAQ
 SUNW,"Sunworks, Inc.",1.0438,2344e4,NA,Public Utilities,Telecommunications Equipment,http://www.nasdaq.com/symbol/sunw,NASDAQ
 SMCI,"Super Micro Computer, Inc.",20.9,102e7,2007,Technology,Computer Manufacturing,http://www.nasdaq.com/symbol/smci,NASDAQ
 SPCB,"SuperCom, Ltd.",3.9,5826e4,NA,Technology,Semiconductors,http://www.nasdaq.com/symbol/spcb,NASDAQ
@@ -3164,7 +3157,6 @@ WBA,"Walgreens Boots Alliance, Inc.",72.63,7193e7,NA,Health Care,Medical/Nursing
 WAFD,"Washington Federal, Inc.",34.25,297e7,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/wafd,NASDAQ
 WAFDW,"Washington Federal, Inc.",17.75,NA,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/wafdw,NASDAQ
 WASH,"Washington Trust Bancorp, Inc.",53.3,91787e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/wash,NASDAQ
-WFBI,WashingtonFirst Bankshares Inc,34.26,44895e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/wfbi,NASDAQ
 WSBF,"Waterstone Financial, Inc.",17.025,50206e4,NA,Finance,Savings Institutions,http://www.nasdaq.com/symbol/wsbf,NASDAQ
 WVE,WAVE Life Sciences Ltd.,35.15,97682e4,2015,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/wve,NASDAQ
 WSTG,"Wayside Technology Group, Inc.",16.7,7485e4,NA,Technology,Retail: Computer Software & Peripheral Equipment,http://www.nasdaq.com/symbol/wstg,NASDAQ
@@ -3237,10 +3229,10 @@ WVFC,WVS Financial Corp.,15.4874,311e5,NA,Finance,Banks,http://www.nasdaq.com/sy
 WYNN,"Wynn Resorts, Limited",168.61,1733e7,2002,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/wynn,NASDAQ
 XBIT,XBiotech Inc.,3.96,14033e4,2015,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/xbit,NASDAQ
 XELB,"Xcel Brands, Inc",3.3,6091e4,NA,Miscellaneous,Multi-Sector Companies,http://www.nasdaq.com/symbol/xelb,NASDAQ
+XEL,Xcel Energy Inc.,48.11,2443e7,NA,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/xel,NASDAQ
 XCRA,Xcerra Corporation,9.79,5373e5,NA,Capital Goods,Electrical Products,http://www.nasdaq.com/symbol/xcra,NASDAQ
 XNCR,"Xencor, Inc.",21.92,103e7,2013,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/xncr,NASDAQ
 XBIO,"Xenetic Biosciences, Inc.",1.9185,16719999.999999998,NA,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/xbio,NASDAQ
-XBKS,"Xenith Bankshares, Inc.",33.81,78493e4,NA,Finance,Major Banks,http://www.nasdaq.com/symbol/xbks,NASDAQ
 XENE,Xenon Pharmaceuticals Inc.,2.845,5121e4,2014,Health Care,Major Pharmaceuticals,http://www.nasdaq.com/symbol/xene,NASDAQ
 XGTI,"XG Technology, Inc",1.61,2365e4,2013,Consumer Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/xgti,NASDAQ
 XGTIW,"XG Technology, Inc",3.6,NA,2013,Consumer Durables,Telecommunications Equipment,http://www.nasdaq.com/symbol/xgtiw,NASDAQ
@@ -3344,7 +3336,6 @@ AGCO,AGCO Corporation,71.43,568e7,NA,Capital Goods,Industrial Machinery/Componen
 A,"Agilent Technologies, Inc.",66.97,2163e7,1999,Capital Goods,Biotechnology: Laboratory Analytical Instruments,http://www.nasdaq.com/symbol/a,NYSE
 AEM,Agnico Eagle Mines Limited,46.18,1073e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aem,NYSE
 ADC,Agree Realty Corporation,51.44,15e8,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/adc,NYSE
-AGU,Agrium Inc.,115,1589e7,NA,Basic Industries,Agricultural Chemicals,http://www.nasdaq.com/symbol/agu,NYSE
 AL,Air Lease Corporation,48.09,496e7,2011,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/al,NYSE
 APD,"Air Products and Chemicals, Inc.",164.08,359e8,NA,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/apd,NYSE
 AYR,Aircastle Limited,23.39,184e7,2006,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/ayr,NYSE
@@ -3498,7 +3489,6 @@ ABR^C,Arbor Realty Trust,26.1837,NA,NA,NA,NA,http://www.nasdaq.com/symbol/abr^c,
 ABRN,Arbor Realty Trust,25.444,NA,2014,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/abrn,NYSE
 ARC,"ARC Document Solutions, Inc.",2.55,11847e4,2004,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/arc,NYSE
 MT,ArcelorMittal,32.31,32939999999.999996,NA,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/mt,NYSE
-ARH^C.CL,Arch Capital Group Ltd.,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/arh^c.cl,NYSE
 ARCH,"Arch Coal, Inc.",93.16,204e7,2016,Energy,Coal Mining,http://www.nasdaq.com/symbol/arch,NYSE
 ADM,Archer-Daniels-Midland Company,40.08,2241e7,NA,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/adm,NYSE
 AROC,"Archrock, Inc.",10.5,74566e4,NA,Public Utilities,Natural Gas Distribution,http://www.nasdaq.com/symbol/aroc,NYSE
@@ -4433,7 +4423,6 @@ FHN^A,First Horizon National Corporation,25.2,NA,NA,NA,NA,http://www.nasdaq.com/
 FR,"First Industrial Realty Trust, Inc.",31.47,377e7,1994,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/fr,NYSE
 AG,First Majestic Silver Corp.,6.74,112e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ag,NYSE
 FRC,FIRST REPUBLIC BANK,86.64,1391e7,NA,NA,NA,http://www.nasdaq.com/symbol/frc,NYSE
-FRC^C.CL,FIRST REPUBLIC BANK,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^c.cl,NYSE
 FRC^D,FIRST REPUBLIC BANK,25.52,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^d,NYSE
 FRC^E,FIRST REPUBLIC BANK,26.13,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^e,NYSE
 FRC^F,FIRST REPUBLIC BANK,25.78,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^f,NYSE
@@ -4668,7 +4657,6 @@ HCP,"HCP, Inc.",26.08,1223e7,NA,Consumer Services,Real Estate Investment Trusts,
 HDB,HDFC Bank Limited,101.67,8684e7,2001,Finance,Commercial Banks,http://www.nasdaq.com/symbol/hdb,NYSE
 HR,Healthcare Realty Trust Incorporated,32.12,401e7,1993,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hr,NYSE
 HTA,"Healthcare Trust of America, Inc.",30.04,615e7,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hta,NYSE
-HLS,HealthSouth Corporation,49.41,486e7,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/hls,NYSE
 HL,Hecla Mining Company,3.97,158e7,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/hl,NYSE
 HL^B,Hecla Mining Company,53,NA,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/hl^b,NYSE
 HEI,Heico Corporation,94.35,797e7,NA,Capital Goods,Aerospace,http://www.nasdaq.com/symbol/hei,NYSE
@@ -5530,7 +5518,6 @@ POL,PolyOne Corporation,43.5,351e7,NA,Basic Industries,Major Chemicals,http://ww
 POR,Portland General Electric Company,45.58,4059999999.9999995,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/por,NYSE
 PKX,POSCO,78.13,25e9,1994,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/pkx,NYSE
 POST,"Post Holdings, Inc.",79.23,525e7,2012,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/post,NYSE
-POT,Potash Corporation of Saskatchewan Inc.,20.65,1735e7,1989,Basic Industries,Agricultural Chemicals,http://www.nasdaq.com/symbol/pot,NYSE
 PPDF,PPDAI Group Inc.,7.11,2140000000.0000002,2017,Finance,Finance: Consumer Services,http://www.nasdaq.com/symbol/ppdf,NYSE
 PPG,"PPG Industries, Inc.",116.82,2973e7,NA,Basic Industries,Paints/Coatings,http://www.nasdaq.com/symbol/ppg,NYSE
 PPX,"PPL Capital Funding, Inc.",25.59,NA,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/ppx,NYSE
@@ -5888,7 +5875,6 @@ STT^G,State Street Corporation,27.12,NA,NA,NA,NA,http://www.nasdaq.com/symbol/st
 STO,Statoil ASA,21.42,7057e7,NA,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/sto,NYSE
 SPLP,Steel Partners Holdings LP,19.55,50863e4,NA,Capital Goods,Industrial Specialties,http://www.nasdaq.com/symbol/splp,NYSE
 SPLP^A,Steel Partners Holdings LP,21.16,NA,NA,NA,NA,http://www.nasdaq.com/symbol/splp^a,NYSE
-SPLP^T,Steel Partners Holdings LP,21.195,NA,NA,NA,NA,http://www.nasdaq.com/symbol/splp^t,NYSE
 SCS,Steelcase Inc.,15.2,177e7,1998,Consumer Durables,Office Equipment/Supplies/Services,http://www.nasdaq.com/symbol/scs,NYSE
 SCA,Stellus Capital Investment Corporation,25.3298,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sca,NYSE
 SCM,Stellus Capital Investment Corporation,13.14,20953e4,2012,NA,NA,http://www.nasdaq.com/symbol/scm,NYSE
@@ -6388,7 +6374,6 @@ WPX,"WPX Energy, Inc.",14.07,56e8,2011,Energy,Oil & Gas Production,http://www.na
 WPXP,"WPX Energy, Inc.",61.85,NA,2015,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/wpxp,NYSE
 WYN,Wyndham Worldwide Corp,115.87,1171e7,NA,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/wyn,NYSE
 XFLT,XAI Octagon Floating Rate & Alternative Income Term Trust,9.4,6825e4,2017,NA,NA,http://www.nasdaq.com/symbol/xflt,NYSE
-XEL,Xcel Energy Inc.,48.11,2443e7,NA,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/xel,NYSE
 XHR,"Xenia Hotels & Resorts, Inc.",21.59,23e8,2015,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/xhr,NYSE
 XRM,"Xerium Technologies, Inc.",4.26,6973e4,2005,Basic Industries,Textiles,http://www.nasdaq.com/symbol/xrm,NYSE
 XRX,Xerox Corporation,29.15,742e7,NA,Technology,Computer peripheral equipment,http://www.nasdaq.com/symbol/xrx,NYSE

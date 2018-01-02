@@ -59,7 +59,6 @@ AGCO,AGCO Corporation,71.43,568e7,NA,Capital Goods,Industrial Machinery/Componen
 A,"Agilent Technologies, Inc.",66.97,2163e7,1999,Capital Goods,Biotechnology: Laboratory Analytical Instruments,http://www.nasdaq.com/symbol/a,NYSE
 AEM,Agnico Eagle Mines Limited,46.18,1073e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/aem,NYSE
 ADC,Agree Realty Corporation,51.44,15e8,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/adc,NYSE
-AGU,Agrium Inc.,115,1589e7,NA,Basic Industries,Agricultural Chemicals,http://www.nasdaq.com/symbol/agu,NYSE
 AL,Air Lease Corporation,48.09,496e7,2011,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/al,NYSE
 APD,"Air Products and Chemicals, Inc.",164.08,359e8,NA,Basic Industries,Major Chemicals,http://www.nasdaq.com/symbol/apd,NYSE
 AYR,Aircastle Limited,23.39,184e7,2006,Technology,Diversified Commercial Services,http://www.nasdaq.com/symbol/ayr,NYSE
@@ -213,7 +212,6 @@ ABR^C,Arbor Realty Trust,26.1837,NA,NA,NA,NA,http://www.nasdaq.com/symbol/abr^c,
 ABRN,Arbor Realty Trust,25.444,NA,2014,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/abrn,NYSE
 ARC,"ARC Document Solutions, Inc.",2.55,11847e4,2004,Consumer Services,Professional Services,http://www.nasdaq.com/symbol/arc,NYSE
 MT,ArcelorMittal,32.31,32939999999.999996,NA,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/mt,NYSE
-ARH^C.CL,Arch Capital Group Ltd.,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/arh^c.cl,NYSE
 ARCH,"Arch Coal, Inc.",93.16,204e7,2016,Energy,Coal Mining,http://www.nasdaq.com/symbol/arch,NYSE
 ADM,Archer-Daniels-Midland Company,40.08,2241e7,NA,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/adm,NYSE
 AROC,"Archrock, Inc.",10.5,74566e4,NA,Public Utilities,Natural Gas Distribution,http://www.nasdaq.com/symbol/aroc,NYSE
@@ -1148,7 +1146,6 @@ FHN^A,First Horizon National Corporation,25.2,NA,NA,NA,NA,http://www.nasdaq.com/
 FR,"First Industrial Realty Trust, Inc.",31.47,377e7,1994,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/fr,NYSE
 AG,First Majestic Silver Corp.,6.74,112e7,NA,Basic Industries,Precious Metals,http://www.nasdaq.com/symbol/ag,NYSE
 FRC,FIRST REPUBLIC BANK,86.64,1391e7,NA,NA,NA,http://www.nasdaq.com/symbol/frc,NYSE
-FRC^C.CL,FIRST REPUBLIC BANK,NA,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^c.cl,NYSE
 FRC^D,FIRST REPUBLIC BANK,25.52,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^d,NYSE
 FRC^E,FIRST REPUBLIC BANK,26.13,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^e,NYSE
 FRC^F,FIRST REPUBLIC BANK,25.78,NA,NA,NA,NA,http://www.nasdaq.com/symbol/frc^f,NYSE
@@ -1383,7 +1380,6 @@ HCP,"HCP, Inc.",26.08,1223e7,NA,Consumer Services,Real Estate Investment Trusts,
 HDB,HDFC Bank Limited,101.67,8684e7,2001,Finance,Commercial Banks,http://www.nasdaq.com/symbol/hdb,NYSE
 HR,Healthcare Realty Trust Incorporated,32.12,401e7,1993,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hr,NYSE
 HTA,"Healthcare Trust of America, Inc.",30.04,615e7,NA,Consumer Services,Real Estate Investment Trusts,http://www.nasdaq.com/symbol/hta,NYSE
-HLS,HealthSouth Corporation,49.41,486e7,NA,Health Care,Hospital/Nursing Management,http://www.nasdaq.com/symbol/hls,NYSE
 HL,Hecla Mining Company,3.97,158e7,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/hl,NYSE
 HL^B,Hecla Mining Company,53,NA,NA,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels),http://www.nasdaq.com/symbol/hl^b,NYSE
 HEI,Heico Corporation,94.35,797e7,NA,Capital Goods,Aerospace,http://www.nasdaq.com/symbol/hei,NYSE
@@ -2245,7 +2241,6 @@ POL,PolyOne Corporation,43.5,351e7,NA,Basic Industries,Major Chemicals,http://ww
 POR,Portland General Electric Company,45.58,4059999999.9999995,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/por,NYSE
 PKX,POSCO,78.13,25e9,1994,Basic Industries,Steel/Iron Ore,http://www.nasdaq.com/symbol/pkx,NYSE
 POST,"Post Holdings, Inc.",79.23,525e7,2012,Consumer Non-Durables,Packaged Foods,http://www.nasdaq.com/symbol/post,NYSE
-POT,Potash Corporation of Saskatchewan Inc.,20.65,1735e7,1989,Basic Industries,Agricultural Chemicals,http://www.nasdaq.com/symbol/pot,NYSE
 PPDF,PPDAI Group Inc.,7.11,2140000000.0000002,2017,Finance,Finance: Consumer Services,http://www.nasdaq.com/symbol/ppdf,NYSE
 PPG,"PPG Industries, Inc.",116.82,2973e7,NA,Basic Industries,Paints/Coatings,http://www.nasdaq.com/symbol/ppg,NYSE
 PPX,"PPL Capital Funding, Inc.",25.59,NA,NA,Public Utilities,Electric Utilities: Central,http://www.nasdaq.com/symbol/ppx,NYSE
@@ -2603,7 +2598,6 @@ STT^G,State Street Corporation,27.12,NA,NA,NA,NA,http://www.nasdaq.com/symbol/st
 STO,Statoil ASA,21.42,7057e7,NA,Energy,Integrated oil Companies,http://www.nasdaq.com/symbol/sto,NYSE
 SPLP,Steel Partners Holdings LP,19.55,50863e4,NA,Capital Goods,Industrial Specialties,http://www.nasdaq.com/symbol/splp,NYSE
 SPLP^A,Steel Partners Holdings LP,21.16,NA,NA,NA,NA,http://www.nasdaq.com/symbol/splp^a,NYSE
-SPLP^T,Steel Partners Holdings LP,21.195,NA,NA,NA,NA,http://www.nasdaq.com/symbol/splp^t,NYSE
 SCS,Steelcase Inc.,15.2,177e7,1998,Consumer Durables,Office Equipment/Supplies/Services,http://www.nasdaq.com/symbol/scs,NYSE
 SCA,Stellus Capital Investment Corporation,25.3298,NA,NA,NA,NA,http://www.nasdaq.com/symbol/sca,NYSE
 SCM,Stellus Capital Investment Corporation,13.14,20953e4,2012,NA,NA,http://www.nasdaq.com/symbol/scm,NYSE
@@ -3103,7 +3097,6 @@ WPX,"WPX Energy, Inc.",14.07,56e8,2011,Energy,Oil & Gas Production,http://www.na
 WPXP,"WPX Energy, Inc.",61.85,NA,2015,Energy,Oil & Gas Production,http://www.nasdaq.com/symbol/wpxp,NYSE
 WYN,Wyndham Worldwide Corp,115.87,1171e7,NA,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/wyn,NYSE
 XFLT,XAI Octagon Floating Rate & Alternative Income Term Trust,9.4,6825e4,2017,NA,NA,http://www.nasdaq.com/symbol/xflt,NYSE
-XEL,Xcel Energy Inc.,48.11,2443e7,NA,Public Utilities,Power Generation,http://www.nasdaq.com/symbol/xel,NYSE
 XHR,"Xenia Hotels & Resorts, Inc.",21.59,23e8,2015,Consumer Services,Hotels/Resorts,http://www.nasdaq.com/symbol/xhr,NYSE
 XRM,"Xerium Technologies, Inc.",4.26,6973e4,2005,Basic Industries,Textiles,http://www.nasdaq.com/symbol/xrm,NYSE
 XRX,Xerox Corporation,29.15,742e7,NA,Technology,Computer peripheral equipment,http://www.nasdaq.com/symbol/xrx,NYSE

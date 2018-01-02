@@ -16,7 +16,7 @@
 #' NASDAQ, NYSE, AMEX, and TSX. 
 
 #' # 1. Load Packages
-source("./R/01-load-packages.R")
+source(here::here("/R/01-load-packages.R"))
 
 #' # 2. Download Company List Function 
 #' Description  
@@ -116,8 +116,8 @@ print(list_tsx)
 print(list_all)
 
 #' # 6. Save Company Lists 
-write_csv(list_nasdaq, "./data/list-nasdaq.csv")
-write_csv(list_nyse, "./data/list-nyse.csv")
-write_csv(list_amex, "./data/list-amex.csv")
-write_csv(list_tsx, "./data/list-tsx.csv")
-write_csv(list_all, "./data/list-all.csv")
+write_csv(list_nasdaq, here::here("/data/list-nasdaq.csv"))
+write_csv(list_nyse, here::here("/data/list-nyse.csv"))
+write_csv(list_amex, here::here("/data/list-amex.csv"))
+write_csv(list_tsx, here::here("/data/list-tsx.csv"))
+write_csv(list_all, here::here("/data/list-all.csv"))

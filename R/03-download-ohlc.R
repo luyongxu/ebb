@@ -15,7 +15,7 @@
 #' This script downloads OHLC data using AlphaVantage or Yahoo! Finance.    
 
 #' # 1. Source Load Packages
-source("./R/01-load-packages.R")
+source(here::here("/R/01-load-packages.R"))
 
 #' # 2. Download AlphaVantage Data Function 
 #' Description  
@@ -132,5 +132,5 @@ ohlc_data <- download_yahoo_many(symbols = c(list_clean[["symbol"]], "CVE.TO", "
                                  to = Sys.Date()) 
 
 #' # 7. Save Data 
-write_csv(ohlc_data, "./data/ohlc-data.csv")
+write_csv(ohlc_data, here::here("/data/ohlc-data.csv"))
 
