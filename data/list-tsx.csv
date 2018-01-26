@@ -16,10 +16,10 @@ ARE.DB.B,Aecon Group Inc.,TSX
 AEZS,AEterna Zentaris Inc.,TSX
 AOI,Africa Oil Corp.,TSX
 AFN,Ag Growth International Inc.,TSX
-AFN.DB.A,Ag Growth International Inc.,TSX
 AFN.DB.B,Ag Growth International Inc.,TSX
 AFN.DB.C,Ag Growth International Inc.,TSX
 AFN.DB.D,Ag Growth International Inc.,TSX
+AFN.DB.E,Ag Growth International Inc.,TSX
 ACR.UN,Agellan Commercial Real Estate Investment Trust,TSX
 AGF.B,AGF Management Limited,TSX
 QCD,AGFiQ Enhanced Core Canadian Equity ETF,TSX
@@ -31,8 +31,8 @@ QMA,AGFiQ MultiAsset Allocation ETF,TSX
 QMY,AGFiQ MultiAsset Income Allocation ETF,TSX
 AJX,AgJunction Inc.,TSX
 AEM,Agnico Eagle Mines Limited,TSX
-AGU,Agrium Inc.,TSX
 AGT,AGT Food and Ingredients Inc.,TSX
+AGT.PR.A,AGT Food and Ingredients Inc.,TSX
 AIM,Aimia Inc.,TSX
 AIM.PR.A,Aimia Inc.,TSX
 AIM.PR.B,Aimia Inc.,TSX
@@ -47,7 +47,6 @@ AGI,Alamos Gold Inc.,TSX
 AGI.WT,Alamos Gold Inc.,TSX
 AGI.WT.A,Alamos Gold Inc.,TSX
 AD,Alaris Royalty Corp.,TSX
-AF,AlarmForce Industries Inc.,TSX
 IRON,Alderon Iron Ore Corp.,TSX
 AXR,Alexco Resource Corp.,TSX
 ALC,Algoma Central Corporation,TSX
@@ -114,6 +113,7 @@ ACO.Y,ATCO Ltd.,TSX
 ATH,Athabasca Oil Corporation,TSX
 ATP,Atlantic Power Corporation,TSX
 ATP.DB.D,Atlantic Power Corporation,TSX
+ATP.DB.E,Atlantic Power Corporation,TSX
 ATP.DB.U,Atlantic Power Corporation,TSX
 AZP.PR.A,Atlantic Power Preferred Equity Ltd.,TSX
 AZP.PR.B,Atlantic Power Preferred Equity Ltd.,TSX
@@ -126,7 +126,6 @@ AI.DB.B,Atrium Mortgage Investment Corporation,TSX
 AI.DB.C,Atrium Mortgage Investment Corporation,TSX
 ATA,ATS Automation Tooling Systems Inc.,TSX
 ORA,Aura Minerals Inc.,TSX
-AMI,AuRico Metals Inc.,TSX
 AUP,Aurinia Pharmaceuticals Inc.,TSX
 ACB,Aurora Cannabis Inc.,TSX
 ACB.WT,Aurora Cannabis Inc.,TSX
@@ -139,6 +138,8 @@ AVL,Avalon Advanced Materials Inc.,TSX
 AVP,Avcorp Industries Inc.,TSX
 ASO,Avesoro Resources Inc.,TSX
 AVO,Avigilon Corporation,TSX
+ASM,Avino Silver & Gold Mines Ltd.,TSX
+ASM.WT,Avino Silver & Gold Mines Ltd.,TSX
 AZZ,Azarga Uranium Corp.,TSX
 ABX,Barrick Gold Corporation,TSX
 ADC.UN,First Asset Canadian Convertibles Fund,TSX
@@ -177,7 +178,6 @@ BNS.PR.Q,Bank of Nova Scotia (The),TSX
 BNS.PR.R,Bank of Nova Scotia (The),TSX
 BNS.PR.Y,Bank of Nova Scotia (The),TSX
 BNS.PR.Z,Bank of Nova Scotia (The),TSX
-BAA,Banro Corporation,TSX
 BXS.DB.C,Barclays Bank PLC Fixed Income Notes,TSX
 BYL,Baylin Technologies Inc.,TSX
 BTE,Baytex Energy Corp.,TSX
@@ -401,6 +401,7 @@ BIP.PR.A,Brookfield Infrastructure Partners L.P.,TSX
 BIP.PR.B,Brookfield Infrastructure Partners L.P.,TSX
 BIP.PR.C,Brookfield Infrastructure Partners L.P.,TSX
 BIP.PR.D,Brookfield Infrastructure Partners L.P.,TSX
+BIP.PR.E,Brookfield Infrastructure Partners L.P.,TSX
 BIP.UN,Brookfield Infrastructure Partners L.P.,TSX
 BPO.PR.A,Brookfield Office Properties Inc.,TSX
 BPO.PR.C,Brookfield Office Properties Inc.,TSX
@@ -425,6 +426,7 @@ BEP.PR.E,Brookfield Renewable Partners L.P.,TSX
 BEP.PR.G,Brookfield Renewable Partners L.P.,TSX
 BEP.PR.I,Brookfield Renewable Partners L.P.,TSX
 BEP.PR.K,Brookfield Renewable Partners L.P.,TSX
+BEP.PR.M,Brookfield Renewable Partners L.P.,TSX
 BEP.UN,Brookfield Renewable Partners L.P.,TSX
 BRF.PR.A,Brookfield Renewable Power Preferred Equity Inc.,TSX
 BRF.PR.B,Brookfield Renewable Power Preferred Equity Inc.,TSX
@@ -442,6 +444,7 @@ BTB.DB.F,BTB Real Estate Investment Trust,TSX
 BTB.UN,BTB Real Estate Investment Trust,TSX
 BUI,Buhler Industries Inc.,TSX
 BU,Burcon Nutrascience Corporation,TSX
+BU.RT,Burcon Nutrascience Corporation,TSX
 BK,Canadian Banc Corp.,TSX
 BK.PR.A,Canadian Banc Corp.,TSX
 BCB,Cott Corporation,TSX
@@ -477,6 +480,7 @@ CM.PR.O,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.P,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.Q,Canadian Imperial Bank Of Commerce,TSX
 CM.PR.R,Canadian Imperial Bank Of Commerce,TSX
+CM.PR.S,Canadian Imperial Bank Of Commerce,TSX
 LFE,Canadian Life Companies Split Corp.,TSX
 LFE.PR.B,Canadian Life Companies Split Corp.,TSX
 CNR,Canadian National Railway Company,TSX
@@ -541,8 +545,6 @@ CLS,Celestica Inc.,TSX
 CVE,Cenovus Energy Inc.,TSX
 CEE,Centamin plc,TSX
 CG,Centerra Gold Inc.,TSX
-CEF.A,Central Fund of Canada Limited,TSX
-CEF.U,Central Fund of Canada Limited,TSX
 CHH,Centric Health Corporation,TSX
 CNT,Century Global Commodities Corporation,TSX
 CQE,Cequence Energy Ltd.,TSX
@@ -558,7 +560,6 @@ CHE.DB.C,Chemtrade Logistics Income Fund,TSX
 CHE.DB.D,Chemtrade Logistics Income Fund,TSX
 CHE.UN,Chemtrade Logistics Income Fund,TSX
 CHW,Chesswood Group Limited,TSX
-CHW.DB,Chesswood Group Limited,TSX
 CGG,China Gold International Resources Corp. Ltd.,TSX
 CKE,Chinook Energy Inc.,TSX
 CHP.UN,Choice Properties Real Estate Investment Trust,TSX
@@ -574,7 +575,6 @@ CVG,Clairvest Group Inc.,TSX
 CKI,Clarke Inc.,TSX
 CLQ,Clean TeQ Holdings Limited,TSX
 CSM,ClearStream Energy Services Inc.,TSX
-CSM.DB.A,ClearStream Energy Services Inc.,TSX
 CLR,Clearwater Seafoods Incorporated,TSX
 CNU,CNOOC Limited,TSX
 CCS.PR.C,Co-operators General Insurance Company,TSX
@@ -591,6 +591,7 @@ YCM.PR.B,Commerce Split Corp.,TSX
 CMG,Computer Modelling Group Ltd.,TSX
 CONA,Cona Resources Ltd.,TSX
 CXR,Concordia International Corp.,TSX
+COG,Condor Gold plc,TSX
 CPI,Condor Petroleum Inc.,TSX
 CFF,Conifex Timber Inc.,TSX
 CSU,Constellation Software Inc.,TSX
@@ -681,6 +682,8 @@ CHB.A,iShares U.S. High Yield Fixed Income Index ETF (CAD-Hedged),TSX
 CUD,iShares US Dividend Growers Index ETF (CAD-Hedged),TSX
 CUD.A,iShares US Dividend Growers Index ETF (CAD-Hedged),TSX
 CBT.UN,June 2020 Corporate Bond Trust,TSX
+CEF,Sprott Physical Gold and Silver Trust,TSX
+CEF.U,Sprott Physical Gold and Silver Trust,TSX
 CAGG,WisdomTree Yield Enhanced Canada Aggregate Bond Index ETF,TSX
 CAGS,WisdomTree Yield Enhanced Canada Short-Term Aggregate Bond Index ETF,TSX
 DBO,D-Box Technologies Inc.,TSX
@@ -862,7 +865,6 @@ EXN.WT,Excellon Resources Inc.,TSX
 EXN.WT.A,Excellon Resources Inc.,TSX
 MIN,Excelsior Mining Corp.,TSX
 EIF,Exchange Income Corporation,TSX
-EIF.DB.E,Exchange Income Corporation,TSX
 EIF.DB.F,Exchange Income Corporation,TSX
 EIF.DB.G,Exchange Income Corporation,TSX
 EIF.DB.H,Exchange Income Corporation,TSX
@@ -972,7 +974,7 @@ SID,First Asset U.S. TrendLeaders Index ETF,TSX
 FCR,First Capital Realty Inc.,TSX
 FCR.DB.J,First Capital Realty Inc.,TSX
 FR,First Majestic Silver Corp.,TSX
-FF,First Mining Finance Corp.,TSX
+FF,First Mining Gold Corp.,TSX
 FN,First National Financial Corporation,TSX
 FN.PR.A,First National Financial Corporation,TSX
 FN.PR.B,First National Financial Corporation,TSX
@@ -1081,6 +1083,7 @@ GGD.WT,GoGold Resources Inc.,TSX
 GSV,Gold Standard Ventures Corp.,TSX
 G,Goldcorp Inc.,TSX
 GQM,Golden Queen Mining Co. Ltd.,TSX
+GQM.RT,Golden Queen Mining Co. Ltd.,TSX
 GQM.WT,Golden Queen Mining Co. Ltd.,TSX
 GSC,Golden Star Resources Ltd.,TSX
 GGA,Goldgroup Mining Inc.,TSX
@@ -1141,7 +1144,6 @@ HER,Heron Resources Limited,TSX
 HRX,Heroux-Devtek Inc.,TSX
 HWO,High Arctic Energy Services Inc.,TSX
 HLF,High Liner Foods Incorporated,TSX
-HNZ,HNZ Group Inc.,TSX
 HLC,Holloway Lodging Corporation,TSX
 HLC.DB,Holloway Lodging Corporation,TSX
 HLC.DB.A,Holloway Lodging Corporation,TSX
@@ -1211,8 +1213,6 @@ HTH,Horizons US 7-10 Year Treasury Bond CAD Hedged ETF,TSX
 HTB,Horizons US 7-10 Year Treasury Bond ETF,TSX
 HTB.U,Horizons US 7-10 Year Treasury Bond ETF,TSX
 HZM,Horizonte Minerals Plc.,TSX
-HSB.PR.C,HSBC Bank Canada,TSX
-HSB.PR.D,HSBC Bank Canada,TSX
 HBM,Hudbay Minerals Inc.,TSX
 HBM.WT,Hudbay Minerals Inc.,TSX
 HBC,Hudson's Bay Company,TSX
@@ -1226,8 +1226,8 @@ H,Hydro One Limited,TSX
 H.IR,Hydro One Limited,TSX
 HYG,Hydrogenics Corporation,TSX
 HYD,Hyduke Energy Services Inc.,TSX
-HLP.DB.U,Mainstreet Health Investments Inc.,TSX
-HLP.U,Mainstreet Health Investments Inc.,TSX
+HLP.DB.U,Invesque Inc.,TSX
+HLP.U,Invesque Inc.,TSX
 HWF.UN,Middlefield Healthcare & Wellness Dividend Fund,TSX
 HTA,Tech Achievers Growth & Income ETF,TSX
 HTA.U,Tech Achievers Growth & Income ETF,TSX
@@ -1399,7 +1399,6 @@ KML.PR.C,Kinder Morgan Canada Limited,TSX
 KFS,Kingsway Financial Services Inc.,TSX
 KFS.WT.V,Kingsway Financial Services Inc.,TSX
 K,Kinross Gold Corporation,TSX
-KLG.DB.A,Kirkland Lake Gold Inc.,TSX
 KL,Kirkland Lake Gold Ltd.,TSX
 KDX,Klondex Mines Ltd.,TSX
 KPT,KP Tissue Inc.,TSX
@@ -1446,10 +1445,12 @@ LOW.UN,Redwood Low Volatility High Income Fund,TSX
 XMF.A,M Split Corp.,TSX
 XMF.PR.B,M Split Corp.,TSX
 XMF.PR.C,M Split Corp.,TSX
+QCN,Mackenzie Canadian Equity Index ETF,TSX
 MCSB,Mackenzie Canadian Short Term Fixed Income ETF,TSX
 MKB,Mackenzie Core Plus Canadian Fixed Income ETF,TSX
 MGB,Mackenzie Core Plus Global Fixed Income ETF,TSX
 MFT,Mackenzie Floating Rate Income ETF,TSX
+QDX,Mackenzie International Equity Index ETF,TSX
 MIVG,Mackenzie Ivy Global Equity ETF,TSX
 MKZ.UN,Mackenzie Master Limited Partnership,TSX
 MXU,Mackenzie Maximum Diversification All World Developed ex North America Index ETF,TSX
@@ -1460,6 +1461,9 @@ MEE,Mackenzie Maximum Diversification Emerging Markets Index ETF,TSX
 MUS,Mackenzie Maximum Diversification US Index ETF,TSX
 MPCF,Mackenzie Portfolio Completion ETF,TSX
 MUB,Mackenzie Unconstrained Bond ETF,TSX
+QHY,Mackenzie US High Yield Bond Index ETF (CAD Hedged) ETF,TSX
+QCE,Mackenzie US High Yield Bond Index ETF (CAD-Hedged),TSX
+QUU,Mackenzie US Large Cap Equity Index ETF,TSX
 MPC,Madison Pacific Properties Inc.,TSX
 MPC.C,Madison Pacific Properties Inc.,TSX
 MAG,MAG Silver Corp.,TSX
@@ -1497,7 +1501,6 @@ MUSC.B,Manulife Multifactor U.S. Small Cap Index ETF,TSX
 MBK.UN,Manulife U.S. Regional Bank Trust,TSX
 MFI,Maple Leaf Foods Inc.,TSX
 MOZ,Marathon Gold Corporation,TSX
-MIF.UN,Marquest Canadian Equity Income Fund,TSX
 MAR,Marret Resource Corp.,TSX
 MRE,Martinrea International Inc.,TSX
 MNR,Mason Resources Corp.,TSX
@@ -1515,7 +1518,6 @@ MGA,Mega Uranium Ltd.,TSX
 MRD,Melcor Developments Ltd.,TSX
 MR.DB,Melcor Real Estate Investment Trust,TSX
 MR.DB.A,Melcor Real Estate Investment Trust,TSX
-MR.R,Melcor Real Estate Investment Trust,TSX
 MR.UN,Melcor Real Estate Investment Trust,TSX
 MERC.U,Mercer International Inc.,TSX
 MX,Methanex Corporation,TSX
@@ -1552,6 +1554,7 @@ NPC,NAPEC Inc.,TSX
 "NA",National Bank of Canada,TSX
 NA.PR.A,National Bank of Canada,TSX
 NA.PR.C,National Bank of Canada,TSX
+NA.PR.E,National Bank of Canada,TSX
 NA.PR.S,National Bank of Canada,TSX
 NA.PR.W,National Bank of Canada,TSX
 NA.PR.X,National Bank of Canada,TSX
@@ -1574,11 +1577,11 @@ NCC.B,Newfoundland Capital Corporation Limited,TSX
 NEW.A,Newgrowth Corp.,TSX
 NEW.PR.D,Newgrowth Corp.,TSX
 NEXA,Nexa Resources S.A.,TSX
-NXC,NexC Partners Corp.,TSX
 NXE,NexGen Energy Ltd.,TSX
 NXJ,NexJ Systems Inc.,TSX
 NEXT,NextSource Materials Inc.,TSX
 NGQ,NGEx Resources Inc.,TSX
+NCP,Nickel Creek Platinum Corp.,TSX
 NHK,Nighthawk Gold Corp.,TSX
 NKO,Niko Resources Ltd.,TSX
 NKO.NT,Niko Resources Ltd.,TSX
@@ -1609,6 +1612,7 @@ NWH.DB.E,NorthWest Healthcare Properties Real Estate Investment Trust,TSX
 NWH.DB.F,NorthWest Healthcare Properties Real Estate Investment Trust,TSX
 NWH.UN,NorthWest Healthcare Properties Real Estate Investment Trust,TSX
 NG,NovaGold Resources Inc.,TSX
+NTR,Nutrien Ltd.,TSX
 NVA,NuVista Energy Ltd.,TSX
 NRI,Nuvo Pharmaceuticals Inc.,TSX
 SFD,NXT Energy Solutions Inc.,TSX
@@ -1645,7 +1649,6 @@ POU,Paramount Resources Ltd.,TSX
 PXT,Parex Resources Inc.,TSX
 PLC,Park Lawn Corporation,TSX
 PKI,Parkland Fuel Corporation,TSX
-PAR.DB.B,Partners Real Estate Investment Trust,TSX
 PAR.UN,Partners Real Estate Investment Trust,TSX
 PVS.PR.B,Partners Value Split Corp.,TSX
 PVS.PR.D,Partners Value Split Corp.,TSX
@@ -1694,7 +1697,6 @@ POM,Polymet Mining Corp.,TSX
 PAY,Posera Ltd.,TSX
 PNC.A,Postmedia Network Canada Corp.,TSX
 PNC.B,Postmedia Network Canada Corp.,TSX
-POT,Potash Corporation of Saskatchewan Inc.,TSX
 PRK,Potash Ridge Corporation,TSX
 POW,Power Corporation of Canada,TSX
 POW.PR.A,Power Corporation of Canada,TSX
@@ -1727,6 +1729,7 @@ PPS,PowerShares Canadian Preferred Share Index ETF,TSX
 PXC,PowerShares FTSE RAFI Canadian Fundamental Index ETF,TSX
 PZC,PowerShares FTSE RAFI Canadian Small-Mid Fundamental Index ETF,TSX
 PZW,PowerShares FTSE RAFI Global Small-Mid Fundamental ETF,TSX
+PZW.F,PowerShares FTSE RAFI Global Small-Mid Fundamental ETF,TSX
 PZW.U,PowerShares FTSE RAFI Global Small-Mid Fundamental ETF,TSX
 PXG,PowerShares FTSE RAFI Global+ Fundamental Index ETF,TSX
 PXG.U,PowerShares FTSE RAFI Global+ Fundamental Index ETF,TSX
@@ -1774,6 +1777,7 @@ PRP,Purpose Conservative Income Fund,TSX
 PDF,Purpose Core Dividend Fund,TSX
 PRA,Purpose Diversified Real Asset Fund,TSX
 PHR,Purpose Duration Hedged Real Estate Fund,TSX
+PDIV,Purpose Enhanced Dividend Fund,TSX
 PEU,Purpose Enhanced US Equity Fund,TSX
 PEU.B,Purpose Enhanced US Equity Fund,TSX
 PSA,Purpose High Interest Savings ETF,TSX
@@ -1790,7 +1794,9 @@ PSU.U,Purpose US Cash ETF,TSX
 PUD,Purpose US Dividend Fund,TSX
 PUD.B,Purpose US Dividend Fund,TSX
 PME,Sentry Select Primary Metals Corp.,TSX
+PHYS,Sprott Physical Gold Trust,TSX
 PHYS.U,Sprott Physical Gold Trust,TSX
+PSLV,Sprott Physical Silver Trust,TSX
 PSLV.U,Sprott Physical Silver Trust,TSX
 QTRH,Quarterhill Inc.,TSX
 QBR.A,Quebecor Inc.,TSX
@@ -1918,6 +1924,7 @@ SJR.PR.A,Shaw Communications Inc.,TSX
 SJR.PR.B,Shaw Communications Inc.,TSX
 SCL,ShawCor Ltd.,TSX
 S,Sherritt International Corporation,TSX
+S.WT,Sherritt International Corporation,TSX
 SHOP,Shopify Inc.,TSX
 SGF,Shore Gold Inc.,TSX
 SIA,Sienna Senior Living Inc.,TSX
@@ -1932,6 +1939,8 @@ SBT.U,Silver Bullion Trust,TSX
 SVM,Silvercorp Metals Inc.,TSX
 SRV.UN,SIR Royalty Income Fund,TSX
 SKG.UN,Skylon Growth & Income Trust,TSX
+SOT.DB,Slate Office REIT,TSX
+SOT.N,Slate Office REIT,TSX
 SOT.UN,Slate Office REIT,TSX
 SRT.U,Slate Retail REIT,TSX
 SRT.UN,Slate Retail REIT,TSX
@@ -1946,13 +1955,13 @@ SHLE,Source Energy Services Ltd.,TSX
 SGQ,SouthGobi Resources Ltd.,TSX
 SPE,Spartan Energy Corp.,TSX
 SEV,Spectra7 Microsystems Inc.,TSX
-SHA,Sphere FTSE Asia Sustainable Yield Index ETF,TSX
+SEV.DB.A,Spectra7 Microsystems Inc.,TSX
 SHC,Sphere FTSE Canada Sustainable Yield Index ETF,TSX
 SHZ,Sphere FTSE Emerging Markets Sustainable Yield Index ETF,TSX
 SHE,Sphere FTSE Europe Sustainable Yield Index ETF,TSX
-SHU,Sphere FTSE US Sustainable Yield Index ETF,TSX
 TOY,Spin Master Corp.,TSX
 SII,Sprott Inc.,TSX
+SPPP,Sprott Physical Platinum and Palladium Trust,TSX
 SPPP.U,Sprott Physical Platinum and Palladium Trust,TSX
 SRHI,Sprott Resource Holdings Inc.,TSX
 SRHI.WT,Sprott Resource Holdings Inc.,TSX
@@ -2040,7 +2049,6 @@ TF.DB,Timbercreek Financial Corp.,TSX
 TF.DB.A,Timbercreek Financial Corp.,TSX
 TF.DB.B,Timbercreek Financial Corp.,TSX
 TF.DB.C,Timbercreek Financial Corp.,TSX
-TGF.UN,Timbercreek Global Real Estate Fund,TSX
 TMD,Titan Medical Inc.,TSX
 TMD.WT.C,Titan Medical Inc.,TSX
 TMD.WT.F,Titan Medical Inc.,TSX
@@ -2194,7 +2202,6 @@ WJX,Wajax Corporation,TSX
 WFC,Wall Financial Corporation,TSX
 WM,Wallbridge Mining Company Limited,TSX
 WCN,"Waste Connections, Inc.",TSX
-WG,Wellgreen Platinum Ltd.,TSX
 WDO,Wesdome Gold Mines Ltd.,TSX
 WFT,West Fraser Timber Co. Ltd.,TSX
 W.PR.H,Westcoast Energy Inc.,TSX
