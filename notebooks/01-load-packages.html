@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kevin Lu" />
 
-<meta name="date" content="2017-12-31" />
+<meta name="date" content="2018-01-28" />
 
 <title>Load Packages</title>
 
@@ -245,20 +245,23 @@ div.tocify {
 
 <h1 class="title toc-ignore">Load Packages</h1>
 <h4 class="author"><em>Kevin Lu</em></h4>
-<h4 class="date"><em>December 31, 2017</em></h4>
+<h4 class="date"><em>January 28, 2018</em></h4>
 
 </div>
 
 
-<p>This script loads the necessary packages. # 1. Install Libraries Not on CRAN</p>
+<p>This script loads the necessary packages. # 1. Install Libraries Not on CRAN These packages require a one-time installation from Github.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># devtools::install_github(&quot;thomasp85/patchwork&quot;)</span></code></pre></div>
 <div id="load-libraries" class="section level1">
 <h1>2. Load libraries</h1>
-<p>The RStudio Server Amazon Machine Image provided by Louis Aslett (<a href="http://www.louisaslett.com/RStudio_AMI/" class="uri">http://www.louisaslett.com/RStudio_AMI/</a>) provides an easy way to start an ec2 instance with RStudio Server and all major libraries installed. This machine image installs packages in the “/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4” directory. When running scripts using Rscript in the command line, however, this directory is not present in the library path. This section adds the folder to the library path.</p>
-<p>Each library may depend on certain dependencies are those dependencies are loaded first before loading the parent library. When library dependencies are loaded, they may also be looking in incorrect library paths and may cause the parent library to not load. If this happens, load the dependencies manually first before loading the parent library.</p>
-<p>The load_library() function will load a package and will install the package first if necessary.</p>
+<p>Description<br />
+The load_library() function will load a package and will install the package first if necessary.</p>
+<p>Arguments<br />
+package_name: A string indicating the package name.</p>
+<p>Returns<br />
+None.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">load_library &lt;-<span class="st"> </span><span class="cf">function</span>(package_name) { 
-  library_path &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="kw">.libPaths</span>(), <span class="st">&quot;/home/rstudio/R/x86_64-pc-linux-gnu-library/3.4&quot;</span>)
+  library_path &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="kw">.libPaths</span>())
   <span class="kw">suppressWarnings</span>(<span class="kw">suppressMessages</span>({
     <span class="cf">if</span>(<span class="kw">require</span>(package_name, <span class="dt">character.only =</span> <span class="ot">TRUE</span>, <span class="dt">lib.loc =</span> library_path) <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>) {
       <span class="kw">install.packages</span>(package_name, <span class="dt">repos =</span> <span class="st">&quot;https://cloud.r-project.org/&quot;</span>)
@@ -277,7 +280,8 @@ div.tocify {
 <span class="kw">load_library</span>(<span class="st">&quot;alphavantager&quot;</span>)
 <span class="kw">load_library</span>(<span class="st">&quot;quantmod&quot;</span>)
 <span class="kw">load_library</span>(<span class="st">&quot;formattable&quot;</span>)
-<span class="kw">load_library</span>(<span class="st">&quot;patchwork&quot;</span>)</code></pre></div>
+<span class="kw">load_library</span>(<span class="st">&quot;patchwork&quot;</span>)
+<span class="kw">load_library</span>(<span class="st">&quot;here&quot;</span>)</code></pre></div>
 </div>
 <div id="options" class="section level1">
 <h1>3. Options</h1>

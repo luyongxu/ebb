@@ -43,17 +43,19 @@ combined_plot <- combined_plot %>%
 
 #' # 4. Calculate Combined Strategy Return and Buy-and-Hold Return 
 combined_plot <- combined_plot %>% 
-  bind_rows(combined_plot %>% 
-              group_by(timestamp) %>% 
-              summarise(yahoo_adjusted_close = mean(yahoo_adjusted_close), 
-                        position_label = mean(position_label), 
-                        strategy_return_01d = mean(strategy_return_01d), 
-                        buy_hold_return_01d = mean(buy_hold_return_01d)) %>% 
-              ungroup() %>%
-              mutate(symbol = "Combined", 
-                     strategy_cumulative_return = cumprod(1 + strategy_return_01d) - 1, 
-                     buy_hold_cumulative_return = cumprod(1 + buy_hold_return_01d) - 1, 
-                     earnings = 0))
+  bind_rows(
+    combined_plot %>% 
+      group_by(timestamp) %>% 
+      summarise(yahoo_close = mean(yahoo_close), 
+                position_label = mean(position_label), 
+                strategy_return_01d = mean(strategy_return_01d), 
+                buy_hold_return_01d = mean(buy_hold_return_01d)) %>% 
+      ungroup() %>%
+      mutate(symbol = "Combined", 
+             strategy_cumulative_return = cumprod(1 + strategy_return_01d) - 1, 
+             buy_hold_cumulative_return = cumprod(1 + buy_hold_return_01d) - 1, 
+             earnings = 0)
+  )
 symbols <- combined_plot %>% 
   group_by(symbol) %>% 
   filter(row_number() == n(), 
@@ -74,9 +76,9 @@ for (i in c("Combined", symbols)) {
   
   # Plot of closing price with signal overlayed as a color gradient 
   plot_signal <- df %>% 
-    mutate(yahoo_adjusted_close_earnings = ifelse(earnings == 1, yahoo_adjusted_close, NA)) %>% 
+    mutate(yahoo_close_earnings = ifelse(earnings == 1, yahoo_close, NA)) %>% 
     ggplot(aes(x = timestamp, colour = position_label)) + 
-    geom_line(aes(y = yahoo_adjusted_close), size = 1) + 
+    geom_line(aes(y = yahoo_close), size = 1) + 
     geom_vline(xintercept = as.Date("2015-11-02")) + 
     scale_colour_gradientn(limits = c(-10, 10), 
                            colours = c("#ff8000", "#b4b4b4", "#0000ff"), 
@@ -89,7 +91,7 @@ for (i in c("Combined", symbols)) {
   
   # Add back earnings announcement dates 
   if (i != "Combined") { 
-    plot_signal <- plot_signal + geom_point(aes(y = yahoo_adjusted_close_earnings), colour = "black")
+    plot_signal <- plot_signal + geom_point(aes(y = yahoo_close_earnings), colour = "black")
   }
   
   # Calculate cumulative return and sharpe ratio for subtitle label

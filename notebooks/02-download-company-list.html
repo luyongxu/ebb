@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kevin Lu" />
 
-<meta name="date" content="2017-12-31" />
+<meta name="date" content="2018-01-28" />
 
 <title>Download Company List</title>
 
@@ -245,13 +245,13 @@ div.tocify {
 
 <h1 class="title toc-ignore">Download Company List</h1>
 <h4 class="author"><em>Kevin Lu</em></h4>
-<h4 class="date"><em>December 31, 2017</em></h4>
+<h4 class="date"><em>January 28, 2018</em></h4>
 
 </div>
 
 
 <p>This script downloads a list of publically-traded companies and their associated tickers that are listed on the NASDAQ, NYSE, AMEX, and TSX. # 1. Load Packages</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(<span class="st">&quot;./R/01-load-packages.R&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/src/01-load-packages.R&quot;</span>))</code></pre></div>
 <div id="download-company-list-function" class="section level1">
 <h1>2. Download Company List Function</h1>
 <p>Description<br />
@@ -265,7 +265,7 @@ Returns a dataframe containing the companies and their symbol.</p>
   <span class="co"># For companies listed on NASDAQ, NYSE, and AMEX, use the company list at http://www.nasdaq.com/screening/company-list.aspx</span>
   <span class="cf">if</span>(exchange <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;nasdaq&quot;</span>, <span class="st">&quot;nyse&quot;</span>, <span class="st">&quot;amex&quot;</span>)) { 
     
-    <span class="co"># Download file </span>
+    <span class="co"># Download csv file from NASDAQ website  </span>
     url &lt;-<span class="st"> </span><span class="kw">str_c</span>(<span class="st">&quot;http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&amp;exchange=&quot;</span>, exchange, <span class="st">&quot;&amp;render=download&quot;</span>)
     file &lt;-<span class="st"> </span><span class="kw">read_csv</span>(url)
     
@@ -291,7 +291,7 @@ Returns a dataframe containing the companies and their symbol.</p>
     <span class="kw">return</span>(df)
   }
   
-  <span class="co"># For companies listed on TSX, use the company list at https://www.tsx.com/json/company-directory/search/tsx/</span>
+  <span class="co"># For companies listed on TSX, use the company list at https://www.tsx.com/listings/listing-with-us/listed-company-directory</span>
   <span class="cf">if</span> (exchange <span class="op">==</span><span class="st"> &quot;tsx&quot;</span>) { 
     
     <span class="co"># Initialize json endpoints </span>
@@ -306,7 +306,7 @@ Returns a dataframe containing the companies and their symbol.</p>
       <span class="co"># Download json file </span>
       url &lt;-<span class="st"> </span><span class="kw">str_c</span>(<span class="st">&quot;https://www.tsx.com/json/company-directory/search/tsx/&quot;</span>, endpoint)
       
-      <span class="co"># Clean dataframe</span>
+      <span class="co"># Clean dataframe </span>
       json_file &lt;-<span class="st"> </span><span class="kw">fromJSON</span>(url, <span class="dt">flatten =</span> <span class="ot">TRUE</span>)[[<span class="st">&quot;results&quot;</span>]]
       df &lt;-<span class="st"> </span>json_file[[<span class="st">&quot;instruments&quot;</span>]] <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">        </span><span class="kw">map_df</span>(bind_rows) <span class="op">%&gt;%</span><span class="st"> </span>
@@ -382,39 +382,39 @@ Returns a dataframe containing the companies and their symbol.</p>
 <div id="print-lists" class="section level1">
 <h1>5. Print Lists</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_nasdaq)</code></pre></div>
-<pre><code>## # A tibble: 3,285 x 9
+<pre><code>## # A tibble: 3,290 x 9
 ##    symbol                                   name last_sale market_cap
 ##     &lt;chr&gt;                                  &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;
-##  1    PIH 1347 Property Insurance Holdings, Inc.    7.2499   43390000
-##  2   TURN               180 Degree Capital Corp.    1.9700   61310000
-##  3   FLWS                1-800 FLOWERS.COM, Inc.   10.7000  691480000
-##  4   FCCY          1st Constitution Bancorp (NJ)   18.3000  147740000
-##  5   SRCE                 1st Source Corporation   49.4400 1280000000
-##  6   VNET                   21Vianet Group, Inc.    7.9900  892080000
-##  7   TWOU                               2U, Inc.   64.5000 3370000000
-##  8   JOBS                            51job, Inc.   60.7900 3760000000
-##  9   CAFD             8point3 Energy Partners LP   15.2000 1200000000
-## 10   EGHT                                8x8 Inc   14.1000 1300000000
-## # ... with 3,275 more rows, and 5 more variables: ipo_year &lt;dbl&gt;,
+##  1    PIH 1347 Property Insurance Holdings, Inc.     7.050   42190000
+##  2   TURN               180 Degree Capital Corp.     2.029   63150000
+##  3   FLWS                1-800 FLOWERS.COM, Inc.    11.650  752870000
+##  4   FCCY          1st Constitution Bancorp (NJ)    19.150  154600000
+##  5   SRCE                 1st Source Corporation    52.200 1350000000
+##  6   VNET                   21Vianet Group, Inc.     9.470 1060000000
+##  7   TWOU                               2U, Inc.    75.500 3940000000
+##  8   JOBS                            51job, Inc.    69.120 4270000000
+##  9   CAFD             8point3 Energy Partners LP    14.750 1170000000
+## 10   EGHT                                8x8 Inc    17.750 1630000000
+## # ... with 3,280 more rows, and 5 more variables: ipo_year &lt;dbl&gt;,
 ## #   sector &lt;chr&gt;, industry &lt;chr&gt;, summary_quote &lt;chr&gt;, exchange &lt;chr&gt;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_nyse)</code></pre></div>
-<pre><code>## # A tibble: 3,133 x 9
+<pre><code>## # A tibble: 3,141 x 9
 ##    symbol                   name last_sale   market_cap ipo_year
 ##     &lt;chr&gt;                  &lt;chr&gt;     &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;
-##  1    DDD 3D Systems Corporation      8.64    983770000       NA
-##  2    MMM             3M Company    235.37 140190000000       NA
-##  3   WBAI        500.com Limited     10.11    412540000     2013
-##  4   WUBA            58.com Inc.     71.57  10490000000     2013
-##  5   EGHT                8x8 Inc     14.10   1300000000       NA
-##  6    AHC  A.H. Belo Corporation      4.80    104420000       NA
-##  7   ATEN     A10 Networks, Inc.      7.72    546200000     2014
-##  8    AAC     AAC Holdings, Inc.      9.00    215990000     2014
-##  9    AIR              AAR Corp.     39.29   1360000000       NA
-## 10    AAN     Aaron&amp;#39;s,  Inc.     39.85   2890000000       NA
-## # ... with 3,123 more rows, and 4 more variables: sector &lt;chr&gt;,
+##  1    DDD 3D Systems Corporation     10.72   1220000000       NA
+##  2    MMM             3M Company    258.63 154040000000       NA
+##  3   WBAI        500.com Limited     12.17    496600000     2013
+##  4   WUBA            58.com Inc.     86.06  12610000000     2013
+##  5   EGHT                8x8 Inc     17.75   1630000000       NA
+##  6    AHC  A.H. Belo Corporation      5.00    108770000       NA
+##  7   ATEN     A10 Networks, Inc.      6.95    491720000     2014
+##  8    AAC     AAC Holdings, Inc.      9.17    220070000     2014
+##  9    AIR              AAR Corp.     40.98   1420000000       NA
+## 10    AAN     Aaron&amp;#39;s,  Inc.     42.66   3100000000       NA
+## # ... with 3,131 more rows, and 4 more variables: sector &lt;chr&gt;,
 ## #   industry &lt;chr&gt;, summary_quote &lt;chr&gt;, exchange &lt;chr&gt;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_amex)</code></pre></div>
-<pre><code>## # A tibble: 358 x 9
+<pre><code>## # A tibble: 357 x 9
 ##    symbol                                                           name
 ##     &lt;chr&gt;                                                          &lt;chr&gt;
 ##  1   XXII                                        22nd Century Group, Inc
@@ -427,11 +427,11 @@ Returns a dataframe containing the companies and their symbol.</p>
 ##  8    ISL                                     Aberdeen Israel Fund, Inc.
 ##  9    ACU                                       Acme United Corporation.
 ## 10   ATNM                                 Actinium Pharmaceuticals, Inc.
-## # ... with 348 more rows, and 7 more variables: last_sale &lt;dbl&gt;,
+## # ... with 347 more rows, and 7 more variables: last_sale &lt;dbl&gt;,
 ## #   market_cap &lt;dbl&gt;, ipo_year &lt;dbl&gt;, sector &lt;chr&gt;, industry &lt;chr&gt;,
 ## #   summary_quote &lt;chr&gt;, exchange &lt;chr&gt;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_tsx)</code></pre></div>
-<pre><code>## # A tibble: 2,232 x 3
+<pre><code>## # A tibble: 2,239 x 3
 ##    symbol                                                    name exchange
 ##     &lt;chr&gt;                                                   &lt;chr&gt;    &lt;chr&gt;
 ##  1  AW.UN                       A&amp;W Revenue Royalties Income Fund      TSX
@@ -444,31 +444,31 @@ Returns a dataframe containing the companies and their symbol.</p>
 ##  8    ACD                                  Accord Financial Corp.      TSX
 ##  9    ASP                      Acerus Pharmaceuticals Corporation      TSX
 ## 10    DRX                                          ADF Group Inc.      TSX
-## # ... with 2,222 more rows</code></pre>
+## # ... with 2,229 more rows</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_all)</code></pre></div>
-<pre><code>## # A tibble: 9,008 x 9
+<pre><code>## # A tibble: 9,027 x 9
 ##    symbol                                   name last_sale market_cap
 ##     &lt;chr&gt;                                  &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;
-##  1    PIH 1347 Property Insurance Holdings, Inc.    7.2499   43390000
-##  2   TURN               180 Degree Capital Corp.    1.9700   61310000
-##  3   FLWS                1-800 FLOWERS.COM, Inc.   10.7000  691480000
-##  4   FCCY          1st Constitution Bancorp (NJ)   18.3000  147740000
-##  5   SRCE                 1st Source Corporation   49.4400 1280000000
-##  6   VNET                   21Vianet Group, Inc.    7.9900  892080000
-##  7   TWOU                               2U, Inc.   64.5000 3370000000
-##  8   JOBS                            51job, Inc.   60.7900 3760000000
-##  9   CAFD             8point3 Energy Partners LP   15.2000 1200000000
-## 10   EGHT                                8x8 Inc   14.1000 1300000000
-## # ... with 8,998 more rows, and 5 more variables: ipo_year &lt;dbl&gt;,
+##  1    PIH 1347 Property Insurance Holdings, Inc.     7.050   42190000
+##  2   TURN               180 Degree Capital Corp.     2.029   63150000
+##  3   FLWS                1-800 FLOWERS.COM, Inc.    11.650  752870000
+##  4   FCCY          1st Constitution Bancorp (NJ)    19.150  154600000
+##  5   SRCE                 1st Source Corporation    52.200 1350000000
+##  6   VNET                   21Vianet Group, Inc.     9.470 1060000000
+##  7   TWOU                               2U, Inc.    75.500 3940000000
+##  8   JOBS                            51job, Inc.    69.120 4270000000
+##  9   CAFD             8point3 Energy Partners LP    14.750 1170000000
+## 10   EGHT                                8x8 Inc    17.750 1630000000
+## # ... with 9,017 more rows, and 5 more variables: ipo_year &lt;dbl&gt;,
 ## #   sector &lt;chr&gt;, industry &lt;chr&gt;, summary_quote &lt;chr&gt;, exchange &lt;chr&gt;</code></pre>
 </div>
 <div id="save-company-lists" class="section level1">
 <h1>6. Save Company Lists</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(list_nasdaq, <span class="st">&quot;./data/list-nasdaq.csv&quot;</span>)
-<span class="kw">write_csv</span>(list_nyse, <span class="st">&quot;./data/list-nyse.csv&quot;</span>)
-<span class="kw">write_csv</span>(list_amex, <span class="st">&quot;./data/list-amex.csv&quot;</span>)
-<span class="kw">write_csv</span>(list_tsx, <span class="st">&quot;./data/list-tsx.csv&quot;</span>)
-<span class="kw">write_csv</span>(list_all, <span class="st">&quot;./data/list-all.csv&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(list_nasdaq, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/list-nasdaq.csv&quot;</span>))
+<span class="kw">write_csv</span>(list_nyse, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/list-nyse.csv&quot;</span>))
+<span class="kw">write_csv</span>(list_amex, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/list-amex.csv&quot;</span>))
+<span class="kw">write_csv</span>(list_tsx, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/list-tsx.csv&quot;</span>))
+<span class="kw">write_csv</span>(list_all, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/list-all.csv&quot;</span>))</code></pre></div>
 </div>
 
 

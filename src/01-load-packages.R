@@ -49,6 +49,7 @@ load_library("quantmod")
 load_library("formattable")
 load_library("patchwork")
 load_library("here")
+load_library("RcppRoll")
 
 #' # 3. Options 
 #' Turn off scientific notation. 

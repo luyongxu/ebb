@@ -11,7 +11,7 @@
 
 <meta name="author" content="Kevin Lu" />
 
-<meta name="date" content="2017-12-31" />
+<meta name="date" content="2018-01-28" />
 
 <title>Download OHLC Data</title>
 
@@ -245,14 +245,14 @@ div.tocify {
 
 <h1 class="title toc-ignore">Download OHLC Data</h1>
 <h4 class="author"><em>Kevin Lu</em></h4>
-<h4 class="date"><em>December 31, 2017</em></h4>
+<h4 class="date"><em>January 28, 2018</em></h4>
 
 </div>
 
 
-<p>This script downloads OHLC data using AlphaVantage or Yahoo! Finance.<br />
+<p>This script downloads OHLC data using AlphaVantage or Yahoo! Finance. Currently Yahoo! Finance is used as the primary data source.<br />
 # 1. Source Load Packages</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(<span class="st">&quot;./R/01-load-packages.R&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">source</span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/src/01-load-packages.R&quot;</span>))</code></pre></div>
 <div id="download-alphavantage-data-function" class="section level1">
 <h1>2. Download AlphaVantage Data Function</h1>
 <p>Description<br />
@@ -348,10 +348,11 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 </div>
 <div id="create-vector-of-symbols" class="section level1">
 <h1>5. Create Vector of Symbols</h1>
-<p>Use only companies listed on the NASDAQ, NYSE, and AMEX with a market capitalization of $10 billion or greater.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">list_clean &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;./data/list-all.csv&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<p>Use only companies listed on the NASDAQ, NYSE, and AMEX with a market capitalization of $10 billion or greater or appear in the original position label data.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">symbols_a &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;./data/list-all.csv&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">filter</span>(exchange <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;NASDAQ&quot;</span>, <span class="st">&quot;NYSE&quot;</span>, <span class="st">&quot;AMEX&quot;</span>), 
-         market_cap <span class="op">&gt;=</span><span class="st"> </span><span class="dv">1000000000</span>)</code></pre></div>
+         market_cap <span class="op">&gt;=</span><span class="st"> </span><span class="dv">10000000000</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>.[[<span class="st">&quot;symbol&quot;</span>]]</code></pre></div>
 <pre><code>## Parsed with column specification:
 ## cols(
 ##   symbol = col_character(),
@@ -364,30 +365,142 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 ##   summary_quote = col_character(),
 ##   exchange = col_character()
 ## )</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(list_clean)</code></pre></div>
-<pre><code>## # A tibble: 2,482 x 9
-##    symbol                       name last_sale market_cap ipo_year
-##     &lt;chr&gt;                      &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;
-##  1   SRCE     1st Source Corporation     49.44 1280000000       NA
-##  2   TWOU                   2U, Inc.     64.50 3370000000     2014
-##  3   JOBS                51job, Inc.     60.79 3760000000     2004
-##  4   CAFD 8point3 Energy Partners LP     15.20 1200000000     2015
-##  5   EGHT                    8x8 Inc     14.10 1300000000       NA
-##  6   SHLM          A. Schulman, Inc.     37.20 1100000000     1972
-##  7   AAON                 AAON, Inc.     36.70 1930000000       NA
-##  8   ABAX               ABAXIS, Inc.     49.47 1120000000     1992
-##  9   ABMD              ABIOMED, Inc.    187.43 8290000000       NA
-## 10   ABLX                  Ablynx NV     24.98 1870000000     2017
-## # ... with 2,472 more rows, and 4 more variables: sector &lt;chr&gt;,
-## #   industry &lt;chr&gt;, summary_quote &lt;chr&gt;, exchange &lt;chr&gt;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">symbols_b &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;./data/original-clean.csv&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">symbol =</span> <span class="kw">ifelse</span>(exchange <span class="op">==</span><span class="st"> &quot;CT Equity&quot;</span>, <span class="kw">str_c</span>(symbol, <span class="st">&quot;.TO&quot;</span>), symbol)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>.[[<span class="st">&quot;symbol&quot;</span>]] <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unique</span>()</code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   id = col_integer(),
+##   timestamp = col_character(),
+##   close = col_double(),
+##   earnings = col_integer(),
+##   symbol = col_character(),
+##   exchange = col_character(),
+##   initial_trend = col_integer(),
+##   position_label = col_integer()
+## )</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">symbols &lt;-<span class="st"> </span><span class="kw">unique</span>(<span class="kw">c</span>(symbols_a, symbols_b))
+<span class="kw">print</span>(symbols)</code></pre></div>
+<pre><code>##   [1] &quot;ABMD&quot;   &quot;ATVI&quot;   &quot;ADBE&quot;   &quot;AMD&quot;    &quot;AKAM&quot;   &quot;ALXN&quot;   &quot;ALGN&quot;  
+##   [8] &quot;ALNY&quot;   &quot;GOOG&quot;   &quot;GOOGL&quot;  &quot;AABA&quot;   &quot;AMZN&quot;   &quot;DOX&quot;    &quot;AMOV&quot;  
+##  [15] &quot;AAL&quot;    &quot;AMGN&quot;   &quot;ADI&quot;    &quot;ANSS&quot;   &quot;AAPL&quot;   &quot;AMAT&quot;   &quot;ACGL&quot;  
+##  [22] &quot;ASML&quot;   &quot;TEAM&quot;   &quot;ADSK&quot;   &quot;ADP&quot;    &quot;BIDU&quot;   &quot;BIIB&quot;   &quot;BMRN&quot;  
+##  [29] &quot;BIVV&quot;   &quot;AVGO&quot;   &quot;CHRW&quot;   &quot;CA&quot;     &quot;CDNS&quot;   &quot;CBOE&quot;   &quot;CDK&quot;   
+##  [36] &quot;CDW&quot;    &quot;CELG&quot;   &quot;CERN&quot;   &quot;CHTR&quot;   &quot;CHKP&quot;   &quot;HTHT&quot;   &quot;CINF&quot;  
+##  [43] &quot;CTAS&quot;   &quot;CSCO&quot;   &quot;CTXS&quot;   &quot;CME&quot;    &quot;CGNX&quot;   &quot;CTSH&quot;   &quot;CMCSA&quot; 
+##  [50] &quot;CPRT&quot;   &quot;CSGP&quot;   &quot;COST&quot;   &quot;CSX&quot;    &quot;CTRP&quot;   &quot;XRAY&quot;   &quot;FANG&quot;  
+##  [57] &quot;DISCB&quot;  &quot;DISH&quot;   &quot;DLTR&quot;   &quot;ETFC&quot;   &quot;EBAY&quot;   &quot;EA&quot;     &quot;EQIX&quot;  
+##  [64] &quot;ERIC&quot;   &quot;EXPE&quot;   &quot;EXPD&quot;   &quot;ESRX&quot;   &quot;FB&quot;     &quot;FAST&quot;   &quot;FITB&quot;  
+##  [71] &quot;FISV&quot;   &quot;FLEX&quot;   &quot;GRMN&quot;   &quot;GILD&quot;   &quot;GRFS&quot;   &quot;HAS&quot;    &quot;HSIC&quot;  
+##  [78] &quot;HOLX&quot;   &quot;HBAN&quot;   &quot;HBANO&quot;  &quot;IAC&quot;    &quot;IDXX&quot;   &quot;INFO&quot;   &quot;ILMN&quot;  
+##  [85] &quot;INCY&quot;   &quot;INTC&quot;   &quot;IBKR&quot;   &quot;INTU&quot;   &quot;ISRG&quot;   &quot;IPGP&quot;   &quot;CSJ&quot;   
+##  [92] &quot;SHY&quot;    &quot;EMB&quot;    &quot;MBB&quot;    &quot;SCZ&quot;    &quot;IBB&quot;    &quot;DVY&quot;    &quot;PFF&quot;   
+##  [99] &quot;JBHT&quot;   &quot;JD&quot;     &quot;KLAC&quot;   &quot;LRCX&quot;   &quot;LBRDA&quot;  &quot;LBRDK&quot;  &quot;LBTYA&quot; 
+## [106] &quot;LBTYB&quot;  &quot;LBTYK&quot;  &quot;QVCA&quot;   &quot;QVCB&quot;   &quot;LSXMK&quot;  &quot;LKQ&quot;    &quot;LULU&quot;  
+## [113] &quot;MAR&quot;    &quot;MRVL&quot;   &quot;MXIM&quot;   &quot;MLCO&quot;   &quot;MELI&quot;   &quot;MCHP&quot;   &quot;MU&quot;    
+## [120] &quot;MSFT&quot;   &quot;MDLZ&quot;   &quot;MNST&quot;   &quot;MYL&quot;    &quot;NDAQ&quot;   &quot;NKTR&quot;   &quot;NTAP&quot;  
+## [127] &quot;NTES&quot;   &quot;NFLX&quot;   &quot;NWS&quot;    &quot;NTRS&quot;   &quot;NCLH&quot;   &quot;NVDA&quot;   &quot;NXPI&quot;  
+## [134] &quot;ODFL&quot;   &quot;ON&quot;     &quot;ORLY&quot;   &quot;PCAR&quot;   &quot;PAYX&quot;   &quot;PYPL&quot;   &quot;PEP&quot;   
+## [141] &quot;QQQ&quot;    &quot;PFG&quot;    &quot;QCOM&quot;   &quot;REGN&quot;   &quot;ROST&quot;   &quot;RYAAY&quot;  &quot;SBAC&quot;  
+## [148] &quot;SNI&quot;    &quot;STX&quot;    &quot;SEIC&quot;   &quot;SHPG&quot;   &quot;SIRI&quot;   &quot;SWKS&quot;   &quot;SPLK&quot;  
+## [155] &quot;SSNC&quot;   &quot;SBUX&quot;   &quot;STLD&quot;   &quot;SIVB&quot;   &quot;SYMC&quot;   &quot;SNPS&quot;   &quot;TROW&quot;  
+## [162] &quot;TTWO&quot;   &quot;AMTD&quot;   &quot;TSLA&quot;   &quot;TXN&quot;    &quot;KHC&quot;    &quot;PCLN&quot;   &quot;TIG&quot;   
+## [169] &quot;TMUS&quot;   &quot;TRMB&quot;   &quot;FOX&quot;    &quot;FOXA&quot;   &quot;ULTA&quot;   &quot;VCIT&quot;   &quot;VCSH&quot;  
+## [176] &quot;VXUS&quot;   &quot;VRSN&quot;   &quot;VRSK&quot;   &quot;VRTX&quot;   &quot;VIA&quot;    &quot;VIAB&quot;   &quot;VOD&quot;   
+## [183] &quot;WBA&quot;    &quot;WB&quot;     &quot;WDC&quot;    &quot;WLTW&quot;   &quot;WDAY&quot;   &quot;WYNN&quot;   &quot;XEL&quot;   
+## [190] &quot;XLNX&quot;   &quot;YNDX&quot;   &quot;ZION&quot;   &quot;MMM&quot;    &quot;WUBA&quot;   &quot;ABB&quot;    &quot;ABT&quot;   
+## [197] &quot;ABBV&quot;   &quot;ACN&quot;    &quot;ASX&quot;    &quot;AEG&quot;    &quot;AET&quot;    &quot;AMG&quot;    &quot;AFL&quot;   
+## [204] &quot;A&quot;      &quot;AEM&quot;    &quot;APD&quot;    &quot;ALB&quot;    &quot;AA&quot;     &quot;ARE&quot;    &quot;BABA&quot;  
+## [211] &quot;AGN&quot;    &quot;ADS&quot;    &quot;ALL&quot;    &quot;ALLY&quot;   &quot;ATUS&quot;   &quot;MO&quot;     &quot;ACH&quot;   
+## [218] &quot;ABEV&quot;   &quot;AEE&quot;    &quot;AMX&quot;    &quot;AEP&quot;    &quot;AXP&quot;    &quot;AFG&quot;    &quot;AIG&quot;   
+## [225] &quot;AMT&quot;    &quot;AWK&quot;    &quot;AMP&quot;    &quot;ABC&quot;    &quot;APH&quot;    &quot;AME&quot;    &quot;APC&quot;   
+## [232] &quot;ANDV&quot;   &quot;ANDX&quot;   &quot;BUD&quot;    &quot;NLY&quot;    &quot;ANTM&quot;   &quot;ANTX&quot;   &quot;AON&quot;   
+## [239] &quot;APA&quot;    &quot;APO&quot;    &quot;APTV&quot;   &quot;ARMK&quot;   &quot;MT&quot;     &quot;ADM&quot;    &quot;ARNC&quot;  
+## [246] &quot;ANET&quot;   &quot;AJG&quot;    &quot;AZN&quot;    &quot;T&quot;      &quot;ATH&quot;    &quot;ATHM&quot;   &quot;ALV&quot;   
+## [253] &quot;AZO&quot;    &quot;AVB&quot;    &quot;AGR&quot;    &quot;AVY&quot;    &quot;BHGE&quot;   &quot;BLL&quot;    &quot;BBVA&quot;  
+## [260] &quot;BBD&quot;    &quot;BBDO&quot;   &quot;BCH&quot;    &quot;BSBR&quot;   &quot;BSAC&quot;   &quot;SAN&quot;    &quot;CIB&quot;   
+## [267] &quot;BAC&quot;    &quot;BMO&quot;    &quot;BK&quot;     &quot;BNS&quot;    &quot;BCS&quot;    &quot;ABX&quot;    &quot;BAX&quot;   
+## [274] &quot;BBT&quot;    &quot;BCE&quot;    &quot;BDX&quot;    &quot;BBY&quot;    &quot;BHP&quot;    &quot;BBL&quot;    &quot;BLK&quot;   
+## [281] &quot;BA&quot;     &quot;BWA&quot;    &quot;BXP&quot;    &quot;BSX&quot;    &quot;BP&quot;     &quot;BAK&quot;    &quot;BMY&quot;   
+## [288] &quot;BTI&quot;    &quot;BR&quot;     &quot;BAM&quot;    &quot;BIP&quot;    &quot;BT&quot;     &quot;BG&quot;     &quot;COG&quot;   
+## [295] &quot;CPB&quot;    &quot;CM&quot;     &quot;CNI&quot;    &quot;CNQ&quot;    &quot;CP&quot;     &quot;CAJ&quot;    &quot;COF&quot;   
+## [302] &quot;CAH&quot;    &quot;KMX&quot;    &quot;CCL&quot;    &quot;CUK&quot;    &quot;CAT&quot;    &quot;CBG&quot;    &quot;CBS&quot;   
+## [309] &quot;CE&quot;     &quot;CX&quot;     &quot;CVE&quot;    &quot;CNC&quot;    &quot;CNP&quot;    &quot;CTL&quot;    &quot;GIB&quot;   
+## [316] &quot;CVX&quot;    &quot;CEA&quot;    &quot;LFC&quot;    &quot;CHL&quot;    &quot;SNP&quot;    &quot;ZNH&quot;    &quot;CHA&quot;   
+## [323] &quot;CHU&quot;    &quot;CB&quot;     &quot;CHT&quot;    &quot;CHD&quot;    &quot;CI&quot;     &quot;XEC&quot;    &quot;C&quot;     
+## [330] &quot;CFG&quot;    &quot;CLX&quot;    &quot;CMS&quot;    &quot;CNA&quot;    &quot;CNHI&quot;   &quot;KOF&quot;    &quot;KO&quot;    
+## [337] &quot;CCE&quot;    &quot;CL&quot;     &quot;CMA&quot;    &quot;CAG&quot;    &quot;CXO&quot;    &quot;COP&quot;    &quot;ED&quot;    
+## [344] &quot;STZ&quot;    &quot;CLR&quot;    &quot;GLW&quot;    &quot;COTY&quot;   &quot;BAP&quot;    &quot;CS&quot;     &quot;CRH&quot;   
+## [351] &quot;CCI&quot;    &quot;CMI&quot;    &quot;CVS&quot;    &quot;DHI&quot;    &quot;DHR&quot;    &quot;DRI&quot;    &quot;DVA&quot;   
+## [358] &quot;DE&quot;     &quot;DVMT&quot;   &quot;DAL&quot;    &quot;DB&quot;     &quot;DVN&quot;    &quot;DEO&quot;    &quot;DLR&quot;   
+## [365] &quot;DFS&quot;    &quot;DG&quot;     &quot;D&quot;      &quot;DOV&quot;    &quot;DWDP&quot;   &quot;DPS&quot;    &quot;DTE&quot;   
+## [372] &quot;DUK&quot;    &quot;DXC&quot;    &quot;EMN&quot;    &quot;ETN&quot;    &quot;ECL&quot;    &quot;EC&quot;     &quot;EIX&quot;   
+## [379] &quot;EW&quot;     &quot;LLY&quot;    &quot;EMR&quot;    &quot;ENB&quot;    &quot;ECA&quot;    &quot;ENIA&quot;   &quot;ETE&quot;   
+## [386] &quot;ETP&quot;    &quot;E&quot;      &quot;ETR&quot;    &quot;EPD&quot;    &quot;EOG&quot;    &quot;EQT&quot;    &quot;EFX&quot;   
+## [393] &quot;EQR&quot;    &quot;ESS&quot;    &quot;EL&quot;     &quot;ES&quot;     &quot;EXC&quot;    &quot;EXR&quot;    &quot;XOM&quot;   
+## [400] &quot;FDX&quot;    &quot;RACE&quot;   &quot;FCAU&quot;   &quot;FNF&quot;    &quot;FIS&quot;    &quot;FDC&quot;    &quot;FRC&quot;   
+## [407] &quot;FE&quot;     &quot;FLT&quot;    &quot;FMC&quot;    &quot;FMX&quot;    &quot;F&quot;      &quot;FTS&quot;    &quot;FTV&quot;   
+## [414] &quot;FBHS&quot;   &quot;FNV&quot;    &quot;BEN&quot;    &quot;FCX&quot;    &quot;FMS&quot;    &quot;GPS&quot;    &quot;IT&quot;    
+## [421] &quot;GD&quot;     &quot;GE&quot;     &quot;GIS&quot;    &quot;GM&quot;     &quot;GPC&quot;    &quot;GGP&quot;    &quot;GSK&quot;   
+## [428] &quot;GPN&quot;    &quot;GOL&quot;    &quot;GG&quot;     &quot;GS&quot;     &quot;AVAL&quot;   &quot;BSMX&quot;   &quot;TV&quot;    
+## [435] &quot;HAL&quot;    &quot;HRS&quot;    &quot;HIG&quot;    &quot;HCA&quot;    &quot;HCP&quot;    &quot;HDB&quot;    &quot;HSY&quot;   
+## [442] &quot;HES&quot;    &quot;HPE&quot;    &quot;HLT&quot;    &quot;HD&quot;     &quot;HMC&quot;    &quot;HON&quot;    &quot;HRL&quot;   
+## [449] &quot;HST&quot;    &quot;HPQ&quot;    &quot;HSBC&quot;   &quot;HNP&quot;    &quot;HUM&quot;    &quot;HII&quot;    &quot;IBN&quot;   
+## [456] &quot;IEX&quot;    &quot;ITW&quot;    &quot;INFY&quot;   &quot;ING&quot;    &quot;IR&quot;     &quot;INGR&quot;   &quot;ICE&quot;   
+## [463] &quot;IHG&quot;    &quot;IFF&quot;    &quot;IBM&quot;    &quot;IP&quot;     &quot;IVZ&quot;    &quot;INVH&quot;   &quot;IQV&quot;   
+## [470] &quot;IRM&quot;    &quot;ITUB&quot;   &quot;JPM&quot;    &quot;SJM&quot;    &quot;JNJ&quot;    &quot;JCI&quot;    &quot;JNPR&quot;  
+## [477] &quot;KSU&quot;    &quot;KB&quot;     &quot;K&quot;      &quot;KEY&quot;    &quot;KMB&quot;    &quot;KMI&quot;    &quot;KKR&quot;   
+## [484] &quot;KSS&quot;    &quot;PHG&quot;    &quot;KEP&quot;    &quot;KR&quot;     &quot;KYO&quot;    &quot;LB&quot;     &quot;LLL&quot;   
+## [491] &quot;LH&quot;     &quot;LVS&quot;    &quot;LTM&quot;    &quot;LEA&quot;    &quot;LDOS&quot;   &quot;LEN&quot;    &quot;LPL&quot;   
+## [498] &quot;LNC&quot;    &quot;LN&quot;     &quot;LYG&quot;    &quot;LMT&quot;    &quot;L&quot;      &quot;LOW&quot;    &quot;LYB&quot;   
+## [505] &quot;MTB&quot;    &quot;MMP&quot;    &quot;MGA&quot;    &quot;MFC&quot;    &quot;MRO&quot;    &quot;MPC&quot;    &quot;MKL&quot;   
+## [512] &quot;MMC&quot;    &quot;MLM&quot;    &quot;MAS&quot;    &quot;MA&quot;     &quot;MKC&quot;    &quot;MCD&quot;    &quot;MCK&quot;   
+## [519] &quot;MDT&quot;    &quot;MRK&quot;    &quot;MET&quot;    &quot;MTD&quot;    &quot;MGM&quot;    &quot;KORS&quot;   &quot;MFGP&quot;  
+## [526] &quot;MAA&quot;    &quot;MTU&quot;    &quot;MFG&quot;    &quot;MBT&quot;    &quot;MHK&quot;    &quot;TAP&quot;    &quot;MON&quot;   
+## [533] &quot;MCO&quot;    &quot;MS&quot;     &quot;MOS&quot;    &quot;MSI&quot;    &quot;MPLX&quot;   &quot;MSCI&quot;   &quot;NGG&quot;   
+## [540] &quot;NOV&quot;    &quot;EDU&quot;    &quot;NWL&quot;    &quot;NEM&quot;    &quot;NEE&quot;    &quot;NLSN&quot;   &quot;NKE&quot;   
+## [547] &quot;NBL&quot;    &quot;NOK&quot;    &quot;NMR&quot;    &quot;NSC&quot;    &quot;NOC&quot;    &quot;NVS&quot;    &quot;NVO&quot;   
+## [554] &quot;DCM&quot;    &quot;NUE&quot;    &quot;NTR&quot;    &quot;NVR&quot;    &quot;OXY&quot;    &quot;OMC&quot;    &quot;OKE&quot;   
+## [561] &quot;ORCL&quot;   &quot;ORAN&quot;   &quot;IX&quot;     &quot;OC&quot;     &quot;PCG&quot;    &quot;PKG&quot;    &quot;PANW&quot;  
+## [568] &quot;PH&quot;     &quot;PBA&quot;    &quot;PNR&quot;    &quot;PRGO&quot;   &quot;PTR&quot;    &quot;PBR&quot;    &quot;PFE&quot;   
+## [575] &quot;PM&quot;     &quot;PSX&quot;    &quot;PXD&quot;    &quot;PAA&quot;    &quot;PNC&quot;    &quot;PKX&quot;    &quot;PPG&quot;   
+## [582] &quot;PPL&quot;    &quot;PX&quot;     &quot;PG&quot;     &quot;PGR&quot;    &quot;PLD&quot;    &quot;PRU&quot;    &quot;PUK&quot;   
+## [589] &quot;TLK&quot;    &quot;PEG&quot;    &quot;PSA&quot;    &quot;PHM&quot;    &quot;PVH&quot;    &quot;DGX&quot;    &quot;RJF&quot;   
+## [596] &quot;RTN&quot;    &quot;O&quot;      &quot;RHT&quot;    &quot;REG&quot;    &quot;RF&quot;     &quot;RGA&quot;    &quot;RENX&quot;  
+## [603] &quot;RELX&quot;   &quot;RSG&quot;    &quot;RMD&quot;    &quot;QSR&quot;    &quot;RIO&quot;    &quot;ROK&quot;    &quot;COL&quot;   
+## [610] &quot;RCI&quot;    &quot;ROL&quot;    &quot;ROP&quot;    &quot;RY&quot;     &quot;RBS&quot;    &quot;RCL&quot;    &quot;SPGI&quot;  
+## [617] &quot;CRM&quot;    &quot;SNY&quot;    &quot;SAP&quot;    &quot;SSL&quot;    &quot;SLB&quot;    &quot;SRE&quot;    &quot;NOW&quot;   
+## [624] &quot;SJR&quot;    &quot;SHW&quot;    &quot;SHG&quot;    &quot;SHOP&quot;   &quot;SPG&quot;    &quot;SKM&quot;    &quot;SNN&quot;   
+## [631] &quot;AOS&quot;    &quot;SNAP&quot;   &quot;SNA&quot;    &quot;SQM&quot;    &quot;SNE&quot;    &quot;SO&quot;     &quot;SCCO&quot;  
+## [638] &quot;LUV&quot;    &quot;SEP&quot;    &quot;SPR&quot;    &quot;S&quot;      &quot;SQ&quot;     &quot;SWK&quot;    &quot;STT&quot;   
+## [645] &quot;STO&quot;    &quot;STM&quot;    &quot;SYK&quot;    &quot;SMFG&quot;   &quot;SLF&quot;    &quot;SU&quot;     &quot;STI&quot;   
+## [652] &quot;SYF&quot;    &quot;SYY&quot;    &quot;TSM&quot;    &quot;TAL&quot;    &quot;TPR&quot;    &quot;TRGP&quot;   &quot;TGT&quot;   
+## [659] &quot;TTM&quot;    &quot;TEL&quot;    &quot;FTI&quot;    &quot;TECK&quot;   &quot;TI&quot;     &quot;TFX&quot;    &quot;VIV&quot;   
+## [666] &quot;TEF&quot;    &quot;TU&quot;     &quot;TS&quot;     &quot;TEVA&quot;   &quot;TXT&quot;    &quot;BX&quot;     &quot;SCHW&quot;  
+## [673] &quot;COO&quot;    &quot;TRV&quot;    &quot;TMO&quot;    &quot;TRI&quot;    &quot;TIF&quot;    &quot;TSU&quot;    &quot;TWX&quot;   
+## [680] &quot;TJX&quot;    &quot;TMK&quot;    &quot;TD&quot;     &quot;TOT&quot;    &quot;TSS&quot;    &quot;TM&quot;     &quot;TRP&quot;   
+## [687] &quot;TDG&quot;    &quot;TRU&quot;    &quot;TWTR&quot;   &quot;TSN&quot;    &quot;USB&quot;    &quot;UBS&quot;    &quot;UGP&quot;   
+## [694] &quot;UN&quot;     &quot;UL&quot;     &quot;UNP&quot;    &quot;UAL&quot;    &quot;UPS&quot;    &quot;URI&quot;    &quot;UTX&quot;   
+## [701] &quot;UNH&quot;    &quot;UHS&quot;    &quot;UNM&quot;    &quot;VFC&quot;    &quot;VALE&quot;   &quot;VLO&quot;    &quot;VAR&quot;   
+## [708] &quot;VEDL&quot;   &quot;VTR&quot;    &quot;VZ&quot;     &quot;VIPS&quot;   &quot;V&quot;      &quot;VMW&quot;    &quot;VNO&quot;   
+## [715] &quot;VMC&quot;    &quot;GWW&quot;    &quot;WMT&quot;    &quot;DIS&quot;    &quot;WCN&quot;    &quot;WM&quot;     &quot;WAT&quot;   
+## [722] &quot;WEC&quot;    &quot;WFC&quot;    &quot;HCN&quot;    &quot;WLK&quot;    &quot;WBK&quot;    &quot;WRK&quot;    &quot;WY&quot;    
+## [729] &quot;WHR&quot;    &quot;WMB&quot;    &quot;WPZ&quot;    &quot;WIT&quot;    &quot;WF&quot;     &quot;WP&quot;     &quot;WPP&quot;   
+## [736] &quot;WYN&quot;    &quot;XPO&quot;    &quot;XYL&quot;    &quot;YPF&quot;    &quot;YUMC&quot;   &quot;YUM&quot;    &quot;ZBH&quot;   
+## [743] &quot;ZTS&quot;    &quot;ZTO&quot;    &quot;CQP&quot;    &quot;LNG&quot;    &quot;IMO&quot;    &quot;CVE.TO&quot; &quot;POT.TO&quot;
+## [750] &quot;SSL.TO&quot; &quot;VET.TO&quot; &quot;GRPN&quot;   &quot;HCSG&quot;   &quot;RST&quot;    &quot;TRUE&quot;   &quot;RGC&quot;   
+## [757] &quot;GDDY&quot;</code></pre>
 </div>
 <div id="download-ohlc-data" class="section level1">
 <h1>6. Download OHLC Data</h1>
 <p>Call the download_yahoo_many() function and add to the list of symbols some of the symbols that showed up in the original labeled data. The original labeled data contains some symbols that trade on the Toronto Stock Exchange which is indicated by CT Equity in the exchange field. For Yahoo! Finance, the symbol naming convention is to append .TO to the name of the symbol to pull data from those quotes on the Toronto Stock Exchange. RST is also manually added because it is below $10 billion cap.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ohlc_data &lt;-<span class="st"> </span><span class="kw">download_yahoo_many</span>(<span class="dt">symbols =</span> <span class="kw">c</span>(list_clean[[<span class="st">&quot;symbol&quot;</span>]], <span class="st">&quot;CVE.TO&quot;</span>, <span class="st">&quot;POT.TO&quot;</span>, <span class="st">&quot;SSL.TO&quot;</span>, <span class="st">&quot;VET.TO&quot;</span>, <span class="st">&quot;RST&quot;</span>), 
-                                 <span class="dt">from =</span> <span class="st">&quot;2014-01-01&quot;</span>, 
-                                 <span class="dt">to =</span> <span class="kw">Sys.Date</span>()) </code></pre></div>
-<pre><code>## [1] &quot;Downloading data for SRCE.&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ohlc_data &lt;-<span class="st"> </span><span class="kw">download_yahoo_many</span>(
+  <span class="dt">symbols =</span> symbols, 
+  <span class="dt">from =</span> <span class="st">&quot;2014-01-01&quot;</span>, 
+  <span class="dt">to =</span> <span class="kw">Sys.Date</span>()
+) </code></pre></div>
+<pre><code>## [1] &quot;Downloading data for ABMD.&quot;</code></pre>
 <pre><code>## 'getSymbols' currently uses auto.assign=TRUE by default, but will
 ## use auto.assign=FALSE in 0.5-0. You will still be able to use
 ## 'loadSymbols' to automatically load data. getOption(&quot;getSymbols.env&quot;)
@@ -402,1082 +515,233 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 ## 
 ## This message is shown once per session and may be disabled by setting
 ## options(&quot;getSymbols.yahoo.warning&quot;=FALSE).</code></pre>
-<pre><code>## [1] &quot;Downloading data for TWOU.&quot;
-## [1] &quot;Downloading data for JOBS.&quot;
-## [1] &quot;Downloading data for CAFD.&quot;
-## [1] &quot;Downloading data for EGHT.&quot;
-## [1] &quot;Downloading data for SHLM.&quot;
-## [1] &quot;Downloading data for AAON.&quot;
-## [1] &quot;Downloading data for ABAX.&quot;
-## [1] &quot;Downloading data for ABMD.&quot;
-## [1] &quot;Downloading data for ABLX.&quot;</code></pre>
-<pre><code>## Warning: ABLX contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for ACIA.&quot;
-## [1] &quot;Downloading data for ACHC.&quot;
-## [1] &quot;Downloading data for ACAD.&quot;
-## [1] &quot;Downloading data for AXDX.&quot;
-## [1] &quot;Downloading data for XLRN.&quot;
-## [1] &quot;Downloading data for ACIW.&quot;
-## [1] &quot;Downloading data for ACOR.&quot;
-## [1] &quot;Downloading data for ATVI.&quot;
-## [1] &quot;Downloading data for ACXM.&quot;
+<pre><code>## [1] &quot;Downloading data for ATVI.&quot;
 ## [1] &quot;Downloading data for ADBE.&quot;
-## [1] &quot;Downloading data for AAAP.&quot;
-## [1] &quot;Downloading data for AEIS.&quot;
 ## [1] &quot;Downloading data for AMD.&quot;
-## [1] &quot;Downloading data for AERI.&quot;
-## [1] &quot;Downloading data for AVAV.&quot;
-## [1] &quot;Downloading data for AGIO.&quot;
-## [1] &quot;Downloading data for AGNC.&quot;
-## [1] &quot;Downloading data for AGNCB.&quot;
-## [1] &quot;Downloading data for AIMT.&quot;
-## [1] &quot;Downloading data for ATSG.&quot;
 ## [1] &quot;Downloading data for AKAM.&quot;
-## [1] &quot;Downloading data for AKCA.&quot;</code></pre>
-<pre><code>## Warning: AKCA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for AKRX.&quot;
-## [1] &quot;Downloading data for ALRM.&quot;
 ## [1] &quot;Downloading data for ALXN.&quot;
 ## [1] &quot;Downloading data for ALGN.&quot;
-## [1] &quot;Downloading data for ALKS.&quot;
-## [1] &quot;Downloading data for ALGT.&quot;
-## [1] &quot;Downloading data for AHGP.&quot;
-## [1] &quot;Downloading data for ARLP.&quot;
-## [1] &quot;Downloading data for MDRX.&quot;
 ## [1] &quot;Downloading data for ALNY.&quot;
 ## [1] &quot;Downloading data for GOOG.&quot;
 ## [1] &quot;Downloading data for GOOGL.&quot;
 ## [1] &quot;Downloading data for AABA.&quot;
-## [1] &quot;Downloading data for ALTR.&quot;</code></pre>
-<pre><code>## Warning: ALTR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for AIMC.&quot;
-## [1] &quot;Downloading data for AMRN.&quot;
 ## [1] &quot;Downloading data for AMZN.&quot;
-## [1] &quot;Downloading data for AMBA.&quot;
-## [1] &quot;Downloading data for AMCX.&quot;
 ## [1] &quot;Downloading data for DOX.&quot;
-## [1] &quot;Downloading data for AMED.&quot;
-## [1] &quot;Downloading data for UHAL.&quot;
 ## [1] &quot;Downloading data for AMOV.&quot;
 ## [1] &quot;Downloading data for AAL.&quot;
-## [1] &quot;Downloading data for ANAT.&quot;
-## [1] &quot;Downloading data for AMWD.&quot;
-## [1] &quot;Downloading data for ABCB.&quot;
-## [1] &quot;Downloading data for AMSF.&quot;
 ## [1] &quot;Downloading data for AMGN.&quot;
-## [1] &quot;Downloading data for FOLD.&quot;
-## [1] &quot;Downloading data for AMKR.&quot;
-## [1] &quot;Downloading data for AFSI.&quot;
 ## [1] &quot;Downloading data for ADI.&quot;
-## [1] &quot;Downloading data for ALOG.&quot;
-## [1] &quot;Downloading data for ANAB.&quot;
-## [1] &quot;Downloading data for ANGI.&quot;
 ## [1] &quot;Downloading data for ANSS.&quot;
-## [1] &quot;Downloading data for APLS.&quot;</code></pre>
-<pre><code>## Warning: APLS contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for APOG.&quot;
-## [1] &quot;Downloading data for AINV.&quot;
-## [1] &quot;Downloading data for APPF.&quot;
-## [1] &quot;Downloading data for APPN.&quot;
 ## [1] &quot;Downloading data for AAPL.&quot;
 ## [1] &quot;Downloading data for AMAT.&quot;
 ## [1] &quot;Downloading data for ACGL.&quot;
-## [1] &quot;Downloading data for ARNA.&quot;
-## [1] &quot;Downloading data for ARCC.&quot;
-## [1] &quot;Downloading data for ARGX.&quot;
-## [1] &quot;Downloading data for AGII.&quot;
-## [1] &quot;Downloading data for ARRY.&quot;
-## [1] &quot;Downloading data for ARRS.&quot;
-## [1] &quot;Downloading data for ASND.&quot;
 ## [1] &quot;Downloading data for ASML.&quot;
-## [1] &quot;Downloading data for AZPN.&quot;
-## [1] &quot;Downloading data for ASTE.&quot;
-## [1] &quot;Downloading data for ATRO.&quot;
-## [1] &quot;Downloading data for ATHN.&quot;
-## [1] &quot;Downloading data for AY.&quot;
-## [1] &quot;Downloading data for AAWW.&quot;
 ## [1] &quot;Downloading data for TEAM.&quot;
-## [1] &quot;Downloading data for ATRI.&quot;
 ## [1] &quot;Downloading data for ADSK.&quot;
 ## [1] &quot;Downloading data for ADP.&quot;
-## [1] &quot;Downloading data for AVXS.&quot;
-## [1] &quot;Downloading data for CAR.&quot;
-## [1] &quot;Downloading data for AAXN.&quot;
 ## [1] &quot;Downloading data for BIDU.&quot;
-## [1] &quot;Downloading data for BCPC.&quot;
-## [1] &quot;Downloading data for BANF.&quot;
-## [1] &quot;Downloading data for OZRK.&quot;
-## [1] &quot;Downloading data for BANR.&quot;
-## [1] &quot;Downloading data for BZUN.&quot;
-## [1] &quot;Downloading data for BECN.&quot;
-## [1] &quot;Downloading data for BBBY.&quot;
-## [1] &quot;Downloading data for BGNE.&quot;
-## [1] &quot;Downloading data for BNCL.&quot;
-## [1] &quot;Downloading data for BGCP.&quot;
 ## [1] &quot;Downloading data for BIIB.&quot;
 ## [1] &quot;Downloading data for BMRN.&quot;
-## [1] &quot;Downloading data for TECH.&quot;
 ## [1] &quot;Downloading data for BIVV.&quot;
-## [1] &quot;Downloading data for BLKB.&quot;
-## [1] &quot;Downloading data for HAWK.&quot;
-## [1] &quot;Downloading data for BL.&quot;
-## [1] &quot;Downloading data for BLMN.&quot;
-## [1] &quot;Downloading data for BCOR.&quot;
-## [1] &quot;Downloading data for BUFF.&quot;
-## [1] &quot;Downloading data for BLUE.&quot;
-## [1] &quot;Downloading data for BPMC.&quot;
-## [1] &quot;Downloading data for BMCH.&quot;
-## [1] &quot;Downloading data for BOBE.&quot;
-## [1] &quot;Downloading data for BOFI.&quot;
-## [1] &quot;Downloading data for BOKF.&quot;
-## [1] &quot;Downloading data for BPFH.&quot;
-## [1] &quot;Downloading data for EPAY.&quot;
-## [1] &quot;Downloading data for BHF.&quot;</code></pre>
-<pre><code>## Warning: BHF contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for AVGO.&quot;
-## [1] &quot;Downloading data for BSFT.&quot;
-## [1] &quot;Downloading data for BPY.&quot;
-## [1] &quot;Downloading data for BRKL.&quot;
-## [1] &quot;Downloading data for BRKS.&quot;
-## [1] &quot;Downloading data for BRKR.&quot;
-## [1] &quot;Downloading data for BWLD.&quot;
-## [1] &quot;Downloading data for BLDR.&quot;
+## [1] &quot;Downloading data for AVGO.&quot;
 ## [1] &quot;Downloading data for CHRW.&quot;
 ## [1] &quot;Downloading data for CA.&quot;
-## [1] &quot;Downloading data for CCMP.&quot;
 ## [1] &quot;Downloading data for CDNS.&quot;
-## [1] &quot;Downloading data for CZR.&quot;
-## [1] &quot;Downloading data for CSQ.&quot;
-## [1] &quot;Downloading data for CVGW.&quot;
-## [1] &quot;Downloading data for CALD.&quot;
-## [1] &quot;Downloading data for CALM.&quot;
-## [1] &quot;Downloading data for CFFN.&quot;
-## [1] &quot;Downloading data for CTRE.&quot;
-## [1] &quot;Downloading data for CARG.&quot;
-## [1] &quot;Downloading data for CRZO.&quot;
-## [1] &quot;Downloading data for CASA.&quot;</code></pre>
-<pre><code>## Warning: CASA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CASY.&quot;
-## [1] &quot;Downloading data for CATY.&quot;
-## [1] &quot;Downloading data for CVCO.&quot;
-## [1] &quot;Downloading data for CAVM.&quot;
 ## [1] &quot;Downloading data for CBOE.&quot;
 ## [1] &quot;Downloading data for CDK.&quot;
 ## [1] &quot;Downloading data for CDW.&quot;
 ## [1] &quot;Downloading data for CELG.&quot;
-## [1] &quot;Downloading data for CLLS.&quot;
-## [1] &quot;Downloading data for CDEV.&quot;</code></pre>
-<pre><code>## Warning: CDEV contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CSFL.&quot;
-## [1] &quot;Downloading data for CENT.&quot;
-## [1] &quot;Downloading data for CENTA.&quot;
-## [1] &quot;Downloading data for CENX.&quot;
 ## [1] &quot;Downloading data for CERN.&quot;
-## [1] &quot;Downloading data for CEVA.&quot;
-## [1] &quot;Downloading data for CYOU.&quot;
-## [1] &quot;Downloading data for GTLS.&quot;
 ## [1] &quot;Downloading data for CHTR.&quot;
 ## [1] &quot;Downloading data for CHKP.&quot;
-## [1] &quot;Downloading data for CHFC.&quot;
-## [1] &quot;Downloading data for PLCE.&quot;
-## [1] &quot;Downloading data for CBPO.&quot;
 ## [1] &quot;Downloading data for HTHT.&quot;
-## [1] &quot;Downloading data for CHDN.&quot;
-## [1] &quot;Downloading data for CMCT.&quot;
-## [1] &quot;Downloading data for CMPR.&quot;
 ## [1] &quot;Downloading data for CINF.&quot;
 ## [1] &quot;Downloading data for CTAS.&quot;
-## [1] &quot;Downloading data for CRUS.&quot;
 ## [1] &quot;Downloading data for CSCO.&quot;
 ## [1] &quot;Downloading data for CTXS.&quot;
-## [1] &quot;Downloading data for CHCO.&quot;
-## [1] &quot;Downloading data for CLVS.&quot;
 ## [1] &quot;Downloading data for CME.&quot;
-## [1] &quot;Downloading data for COKE.&quot;
-## [1] &quot;Downloading data for CCOI.&quot;
 ## [1] &quot;Downloading data for CGNX.&quot;
 ## [1] &quot;Downloading data for CTSH.&quot;
-## [1] &quot;Downloading data for COHR.&quot;
-## [1] &quot;Downloading data for CIGI.&quot;
-## [1] &quot;Downloading data for COLB.&quot;
-## [1] &quot;Downloading data for COLM.&quot;
 ## [1] &quot;Downloading data for CMCSA.&quot;
-## [1] &quot;Downloading data for CBSH.&quot;
-## [1] &quot;Downloading data for CBSHP.&quot;
-## [1] &quot;Downloading data for COMM.&quot;
-## [1] &quot;Downloading data for CVLT.&quot;
-## [1] &quot;Downloading data for CNMD.&quot;
-## [1] &quot;Downloading data for CONN.&quot;
 ## [1] &quot;Downloading data for CPRT.&quot;
-## [1] &quot;Downloading data for CORT.&quot;
-## [1] &quot;Downloading data for CORE.&quot;
-## [1] &quot;Downloading data for CSOD.&quot;
 ## [1] &quot;Downloading data for CSGP.&quot;
 ## [1] &quot;Downloading data for COST.&quot;
-## [1] &quot;Downloading data for COUP.&quot;
-## [1] &quot;Downloading data for CBRL.&quot;
-## [1] &quot;Downloading data for CACC.&quot;
-## [1] &quot;Downloading data for CREE.&quot;
-## [1] &quot;Downloading data for CRESY.&quot;
-## [1] &quot;Downloading data for CRTO.&quot;
-## [1] &quot;Downloading data for CSGS.&quot;
 ## [1] &quot;Downloading data for CSX.&quot;
 ## [1] &quot;Downloading data for CTRP.&quot;
-## [1] &quot;Downloading data for CVBF.&quot;
-## [1] &quot;Downloading data for CYBR.&quot;</code></pre>
-<pre><code>## Warning: CYBR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CY.&quot;
-## [1] &quot;Downloading data for CONE.&quot;
-## [1] &quot;Downloading data for PLAY.&quot;
-## [1] &quot;Downloading data for DBVT.&quot;
-## [1] &quot;Downloading data for DNLI.&quot;
 ## [1] &quot;Downloading data for XRAY.&quot;
-## [1] &quot;Downloading data for DERM.&quot;
-## [1] &quot;Downloading data for DXCM.&quot;
 ## [1] &quot;Downloading data for FANG.&quot;
-## [1] &quot;Downloading data for DIOD.&quot;
-## [1] &quot;Downloading data for DISCA.&quot;
-## [1] &quot;Downloading data for DISCB.&quot;</code></pre>
-<pre><code>## Warning: DISCB contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for DISCK.&quot;
+## [1] &quot;Downloading data for DISCB.&quot;
 ## [1] &quot;Downloading data for DISH.&quot;
 ## [1] &quot;Downloading data for DLTR.&quot;
-## [1] &quot;Downloading data for DORM.&quot;
-## [1] &quot;Downloading data for DNKN.&quot;
-## [1] &quot;Downloading data for DVAX.&quot;
 ## [1] &quot;Downloading data for ETFC.&quot;
-## [1] &quot;Downloading data for EGBN.&quot;
-## [1] &quot;Downloading data for EWBC.&quot;
 ## [1] &quot;Downloading data for EBAY.&quot;
-## [1] &quot;Downloading data for EBIX.&quot;
-## [1] &quot;Downloading data for SATS.&quot;
-## [1] &quot;Downloading data for EDIT.&quot;
-## [1] &quot;Downloading data for ESLT.&quot;
-## [1] &quot;Downloading data for ERI.&quot;
 ## [1] &quot;Downloading data for EA.&quot;
-## [1] &quot;Downloading data for EFII.&quot;
-## [1] &quot;Downloading data for ENTA.&quot;
-## [1] &quot;Downloading data for ECPG.&quot;
-## [1] &quot;Downloading data for WIRE.&quot;
-## [1] &quot;Downloading data for ENDP.&quot;
-## [1] &quot;Downloading data for EIGI.&quot;
-## [1] &quot;Downloading data for ESGR.&quot;
-## [1] &quot;Downloading data for ENTG.&quot;
-## [1] &quot;Downloading data for EFSC.&quot;
-## [1] &quot;Downloading data for PLUS.&quot;
 ## [1] &quot;Downloading data for EQIX.&quot;
 ## [1] &quot;Downloading data for ERIC.&quot;
-## [1] &quot;Downloading data for ERIE.&quot;
-## [1] &quot;Downloading data for ESPR.&quot;
-## [1] &quot;Downloading data for ETSY.&quot;
-## [1] &quot;Downloading data for EEFT.&quot;
-## [1] &quot;Downloading data for EXAS.&quot;
-## [1] &quot;Downloading data for EXEL.&quot;
-## [1] &quot;Downloading data for EXLS.&quot;
 ## [1] &quot;Downloading data for EXPE.&quot;
 ## [1] &quot;Downloading data for EXPD.&quot;
-## [1] &quot;Downloading data for EXPO.&quot;
 ## [1] &quot;Downloading data for ESRX.&quot;
-## [1] &quot;Downloading data for XOG.&quot;
-## [1] &quot;Downloading data for EXTR.&quot;
-## [1] &quot;Downloading data for FFIV.&quot;
 ## [1] &quot;Downloading data for FB.&quot;
-## [1] &quot;Downloading data for FANH.&quot;
 ## [1] &quot;Downloading data for FAST.&quot;
-## [1] &quot;Downloading data for GSM.&quot;
-## [1] &quot;Downloading data for FGEN.&quot;
-## [1] &quot;Downloading data for ONEQ.&quot;
 ## [1] &quot;Downloading data for FITB.&quot;
-## [1] &quot;Downloading data for FNGN.&quot;
-## [1] &quot;Downloading data for FNSR.&quot;
-## [1] &quot;Downloading data for FEYE.&quot;
-## [1] &quot;Downloading data for FBNC.&quot;
-## [1] &quot;Downloading data for BUSE.&quot;
-## [1] &quot;Downloading data for FCFS.&quot;
-## [1] &quot;Downloading data for FCNCA.&quot;
-## [1] &quot;Downloading data for FFBC.&quot;
-## [1] &quot;Downloading data for FFIN.&quot;
-## [1] &quot;Downloading data for FHB.&quot;</code></pre>
-<pre><code>## Warning: FHB contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for FIBK.&quot;
-## [1] &quot;Downloading data for FRME.&quot;
-## [1] &quot;Downloading data for FMBI.&quot;
-## [1] &quot;Downloading data for FSLR.&quot;
-## [1] &quot;Downloading data for SKYY.&quot;
-## [1] &quot;Downloading data for FV.&quot;
-## [1] &quot;Downloading data for FTSM.&quot;
-## [1] &quot;Downloading data for HYLS.&quot;
-## [1] &quot;Downloading data for FEX.&quot;
-## [1] &quot;Downloading data for FTA.&quot;
-## [1] &quot;Downloading data for FTXO.&quot;
-## [1] &quot;Downloading data for QTEC.&quot;
-## [1] &quot;Downloading data for FTSL.&quot;
-## [1] &quot;Downloading data for FSV.&quot;
 ## [1] &quot;Downloading data for FISV.&quot;
-## [1] &quot;Downloading data for FIVE.&quot;
-## [1] &quot;Downloading data for FIVN.&quot;
 ## [1] &quot;Downloading data for FLEX.&quot;
-## [1] &quot;Downloading data for FLIR.&quot;
-## [1] &quot;Downloading data for FSCT.&quot;
-## [1] &quot;Downloading data for FORM.&quot;
-## [1] &quot;Downloading data for FTNT.&quot;
-## [1] &quot;Downloading data for FWRD.&quot;
-## [1] &quot;Downloading data for FMI.&quot;
-## [1] &quot;Downloading data for FOXF.&quot;
-## [1] &quot;Downloading data for FELE.&quot;
-## [1] &quot;Downloading data for FULT.&quot;
-## [1] &quot;Downloading data for GLPG.&quot;
-## [1] &quot;Downloading data for GLPI.&quot;
 ## [1] &quot;Downloading data for GRMN.&quot;
-## [1] &quot;Downloading data for GDS.&quot;
-## [1] &quot;Downloading data for GNCMA.&quot;
-## [1] &quot;Downloading data for GHDX.&quot;
-## [1] &quot;Downloading data for GNTX.&quot;
-## [1] &quot;Downloading data for THRM.&quot;
-## [1] &quot;Downloading data for ROCK.&quot;
-## [1] &quot;Downloading data for GIII.&quot;
 ## [1] &quot;Downloading data for GILD.&quot;
-## [1] &quot;Downloading data for GBCI.&quot;
-## [1] &quot;Downloading data for GBT.&quot;</code></pre>
-<pre><code>## Warning: GBT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for GLNG.&quot;
-## [1] &quot;Downloading data for GMLP.&quot;
-## [1] &quot;Downloading data for GOGL.&quot;
-## [1] &quot;Downloading data for GBDC.&quot;
-## [1] &quot;Downloading data for GPRO.&quot;
-## [1] &quot;Downloading data for GOV.&quot;
-## [1] &quot;Downloading data for LOPE.&quot;
 ## [1] &quot;Downloading data for GRFS.&quot;
-## [1] &quot;Downloading data for GRPN.&quot;
-## [1] &quot;Downloading data for OMAB.&quot;
-## [1] &quot;Downloading data for GGAL.&quot;
-## [1] &quot;Downloading data for GPOR.&quot;
-## [1] &quot;Downloading data for GWPH.&quot;
-## [1] &quot;Downloading data for HEES.&quot;
-## [1] &quot;Downloading data for HLG.&quot;</code></pre>
-<pre><code>## Warning: HLG contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for HALO.&quot;
-## [1] &quot;Downloading data for HLNE.&quot;
-## [1] &quot;Downloading data for HBHC.&quot;
 ## [1] &quot;Downloading data for HAS.&quot;
-## [1] &quot;Downloading data for HA.&quot;
-## [1] &quot;Downloading data for HDS.&quot;
-## [1] &quot;Downloading data for HCSG.&quot;
-## [1] &quot;Downloading data for HQY.&quot;
-## [1] &quot;Downloading data for HTLD.&quot;
-## [1] &quot;Downloading data for HTLF.&quot;
-## [1] &quot;Downloading data for HELE.&quot;
 ## [1] &quot;Downloading data for HSIC.&quot;
-## [1] &quot;Downloading data for MLHR.&quot;
-## [1] &quot;Downloading data for HRTX.&quot;
-## [1] &quot;Downloading data for HIMX.&quot;
-## [1] &quot;Downloading data for HMSY.&quot;
-## [1] &quot;Downloading data for HOLI.&quot;
 ## [1] &quot;Downloading data for HOLX.&quot;
-## [1] &quot;Downloading data for HOMB.&quot;
-## [1] &quot;Downloading data for HOPE.&quot;
-## [1] &quot;Downloading data for HZNP.&quot;
-## [1] &quot;Downloading data for HDP.&quot;
-## [1] &quot;Downloading data for HPT.&quot;
-## [1] &quot;Downloading data for TWNK.&quot;
-## [1] &quot;Downloading data for HMHC.&quot;
-## [1] &quot;Downloading data for HSNI.&quot;
-## [1] &quot;Downloading data for HUBG.&quot;
 ## [1] &quot;Downloading data for HBAN.&quot;
 ## [1] &quot;Downloading data for HBANO.&quot;
-## [1] &quot;Downloading data for HCM.&quot;
 ## [1] &quot;Downloading data for IAC.&quot;
-## [1] &quot;Downloading data for IBKC.&quot;
-## [1] &quot;Downloading data for IEP.&quot;
-## [1] &quot;Downloading data for ICLR.&quot;
-## [1] &quot;Downloading data for ICUI.&quot;
 ## [1] &quot;Downloading data for IDXX.&quot;
-## [1] &quot;Downloading data for RXDX.&quot;
 ## [1] &quot;Downloading data for INFO.&quot;
-## [1] &quot;Downloading data for IIVI.&quot;
-## [1] &quot;Downloading data for KANG.&quot;
-## [1] &quot;Downloading data for ILG.&quot;
 ## [1] &quot;Downloading data for ILMN.&quot;
-## [1] &quot;Downloading data for IMMU.&quot;
-## [1] &quot;Downloading data for IPXL.&quot;
-## [1] &quot;Downloading data for IMPV.&quot;
-## [1] &quot;Downloading data for INCR.&quot;
 ## [1] &quot;Downloading data for INCY.&quot;
-## [1] &quot;Downloading data for INDB.&quot;
-## [1] &quot;Downloading data for IBTX.&quot;
-## [1] &quot;Downloading data for IPCC.&quot;
-## [1] &quot;Downloading data for IOSP.&quot;
-## [1] &quot;Downloading data for INVA.&quot;
-## [1] &quot;Downloading data for INGN.&quot;
-## [1] &quot;Downloading data for INOV.&quot;
-## [1] &quot;Downloading data for NSIT.&quot;
-## [1] &quot;Downloading data for INSM.&quot;
-## [1] &quot;Downloading data for PODD.&quot;
-## [1] &quot;Downloading data for IART.&quot;
-## [1] &quot;Downloading data for IDTI.&quot;
 ## [1] &quot;Downloading data for INTC.&quot;
-## [1] &quot;Downloading data for IPAR.&quot;
 ## [1] &quot;Downloading data for IBKR.&quot;
-## [1] &quot;Downloading data for ICPT.&quot;
-## [1] &quot;Downloading data for IDCC.&quot;
-## [1] &quot;Downloading data for TILE.&quot;
-## [1] &quot;Downloading data for IBOC.&quot;
-## [1] &quot;Downloading data for ISCA.&quot;
 ## [1] &quot;Downloading data for INTU.&quot;
 ## [1] &quot;Downloading data for ISRG.&quot;
-## [1] &quot;Downloading data for ISBC.&quot;
-## [1] &quot;Downloading data for IONS.&quot;
 ## [1] &quot;Downloading data for IPGP.&quot;
-## [1] &quot;Downloading data for IRTC.&quot;
-## [1] &quot;Downloading data for IRDM.&quot;
-## [1] &quot;Downloading data for IRBT.&quot;
-## [1] &quot;Downloading data for IRWD.&quot;
-## [1] &quot;Downloading data for IRCP.&quot;
 ## [1] &quot;Downloading data for CSJ.&quot;
 ## [1] &quot;Downloading data for SHY.&quot;
-## [1] &quot;Downloading data for TLT.&quot;
-## [1] &quot;Downloading data for IEI.&quot;
-## [1] &quot;Downloading data for IEF.&quot;
-## [1] &quot;Downloading data for ISTB.&quot;
-## [1] &quot;Downloading data for IXUS.&quot;
-## [1] &quot;Downloading data for IUSG.&quot;
-## [1] &quot;Downloading data for IUSV.&quot;
-## [1] &quot;Downloading data for IUSB.&quot;
-## [1] &quot;Downloading data for XT.&quot;
-## [1] &quot;Downloading data for IGF.&quot;
-## [1] &quot;Downloading data for CIU.&quot;
 ## [1] &quot;Downloading data for EMB.&quot;
 ## [1] &quot;Downloading data for MBB.&quot;
-## [1] &quot;Downloading data for ACWX.&quot;
-## [1] &quot;Downloading data for ACWI.&quot;
-## [1] &quot;Downloading data for AAXJ.&quot;
-## [1] &quot;Downloading data for MCHI.&quot;
 ## [1] &quot;Downloading data for SCZ.&quot;
-## [1] &quot;Downloading data for EUFN.&quot;
 ## [1] &quot;Downloading data for IBB.&quot;
-## [1] &quot;Downloading data for SOXX.&quot;
-## [1] &quot;Downloading data for INDY.&quot;
-## [1] &quot;Downloading data for IJT.&quot;
 ## [1] &quot;Downloading data for DVY.&quot;
-## [1] &quot;Downloading data for SHV.&quot;
-## [1] &quot;Downloading data for CRED.&quot;
 ## [1] &quot;Downloading data for PFF.&quot;
-## [1] &quot;Downloading data for ITRI.&quot;
-## [1] &quot;Downloading data for JJSF.&quot;
 ## [1] &quot;Downloading data for JBHT.&quot;
-## [1] &quot;Downloading data for JCOM.&quot;
-## [1] &quot;Downloading data for JKHY.&quot;
-## [1] &quot;Downloading data for JACK.&quot;
-## [1] &quot;Downloading data for JRVR.&quot;
-## [1] &quot;Downloading data for JAZZ.&quot;
 ## [1] &quot;Downloading data for JD.&quot;
-## [1] &quot;Downloading data for JBLU.&quot;
-## [1] &quot;Downloading data for JUNO.&quot;
-## [1] &quot;Downloading data for KALU.&quot;
-## [1] &quot;Downloading data for KRNY.&quot;
-## [1] &quot;Downloading data for KELYA.&quot;
-## [1] &quot;Downloading data for KELYB.&quot;
 ## [1] &quot;Downloading data for KLAC.&quot;
-## [1] &quot;Downloading data for KLXI.&quot;
-## [1] &quot;Downloading data for KTOS.&quot;
-## [1] &quot;Downloading data for KLIC.&quot;
-## [1] &quot;Downloading data for LKFN.&quot;
 ## [1] &quot;Downloading data for LRCX.&quot;
-## [1] &quot;Downloading data for LAMR.&quot;
-## [1] &quot;Downloading data for LANC.&quot;
-## [1] &quot;Downloading data for LSTR.&quot;
-## [1] &quot;Downloading data for LAUR.&quot;
-## [1] &quot;Downloading data for LTXB.&quot;
-## [1] &quot;Downloading data for TREE.&quot;
-## [1] &quot;Downloading data for LXRX.&quot;
-## [1] &quot;Downloading data for LX.&quot;</code></pre>
-<pre><code>## Warning: LX contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for LGIH.&quot;
-## [1] &quot;Downloading data for LHCG.&quot;
 ## [1] &quot;Downloading data for LBRDA.&quot;
 ## [1] &quot;Downloading data for LBRDK.&quot;
-## [1] &quot;Downloading data for LEXEA.&quot;</code></pre>
-<pre><code>## Warning: LEXEA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for LEXEB.&quot;
 ## [1] &quot;Downloading data for LBTYA.&quot;
 ## [1] &quot;Downloading data for LBTYB.&quot;
 ## [1] &quot;Downloading data for LBTYK.&quot;
-## [1] &quot;Downloading data for LILA.&quot;
-## [1] &quot;Downloading data for LILAK.&quot;</code></pre>
-<pre><code>## Warning: LILAK contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for LVNTA.&quot;
-## [1] &quot;Downloading data for LVNTB.&quot;
 ## [1] &quot;Downloading data for QVCA.&quot;
 ## [1] &quot;Downloading data for QVCB.&quot;
-## [1] &quot;Downloading data for BATRK.&quot;
-## [1] &quot;Downloading data for FWONK.&quot;
 ## [1] &quot;Downloading data for LSXMK.&quot;
-## [1] &quot;Downloading data for LPNT.&quot;
-## [1] &quot;Downloading data for LGND.&quot;
-## [1] &quot;Downloading data for LECO.&quot;
-## [1] &quot;Downloading data for LFUS.&quot;
-## [1] &quot;Downloading data for LIVN.&quot;
 ## [1] &quot;Downloading data for LKQ.&quot;
-## [1] &quot;Downloading data for LOGI.&quot;
-## [1] &quot;Downloading data for LOGM.&quot;
-## [1] &quot;Downloading data for LFIN.&quot;
-## [1] &quot;Downloading data for LORL.&quot;
-## [1] &quot;Downloading data for LOXO.&quot;
-## [1] &quot;Downloading data for LPLA.&quot;
 ## [1] &quot;Downloading data for LULU.&quot;
-## [1] &quot;Downloading data for LITE.&quot;
-## [1] &quot;Downloading data for MTSI.&quot;
-## [1] &quot;Downloading data for MDGL.&quot;
-## [1] &quot;Downloading data for MGLN.&quot;
-## [1] &quot;Downloading data for MMYT.&quot;
-## [1] &quot;Downloading data for MANH.&quot;
-## [1] &quot;Downloading data for MANT.&quot;
-## [1] &quot;Downloading data for MKTX.&quot;
 ## [1] &quot;Downloading data for MAR.&quot;
-## [1] &quot;Downloading data for MRTN.&quot;
 ## [1] &quot;Downloading data for MRVL.&quot;
-## [1] &quot;Downloading data for MASI.&quot;
-## [1] &quot;Downloading data for MTCH.&quot;
-## [1] &quot;Downloading data for MAT.&quot;
-## [1] &quot;Downloading data for MATW.&quot;
 ## [1] &quot;Downloading data for MXIM.&quot;
-## [1] &quot;Downloading data for MZOR.&quot;
-## [1] &quot;Downloading data for MBFI.&quot;
-## [1] &quot;Downloading data for MGRC.&quot;
-## [1] &quot;Downloading data for MDSO.&quot;
-## [1] &quot;Downloading data for MEDP.&quot;
 ## [1] &quot;Downloading data for MLCO.&quot;
-## [1] &quot;Downloading data for MLNX.&quot;
 ## [1] &quot;Downloading data for MELI.&quot;
-## [1] &quot;Downloading data for MRCY.&quot;
-## [1] &quot;Downloading data for EBSB.&quot;
-## [1] &quot;Downloading data for MMSI.&quot;
-## [1] &quot;Downloading data for MEOH.&quot;
-## [1] &quot;Downloading data for MGEE.&quot;
-## [1] &quot;Downloading data for MGPI.&quot;
 ## [1] &quot;Downloading data for MCHP.&quot;
 ## [1] &quot;Downloading data for MU.&quot;
-## [1] &quot;Downloading data for MSCC.&quot;
 ## [1] &quot;Downloading data for MSFT.&quot;
-## [1] &quot;Downloading data for MSTR.&quot;
-## [1] &quot;Downloading data for MIME.&quot;
-## [1] &quot;Downloading data for MDXG.&quot;
-## [1] &quot;Downloading data for MB.&quot;
-## [1] &quot;Downloading data for MKSI.&quot;
-## [1] &quot;Downloading data for MINI.&quot;
-## [1] &quot;Downloading data for MNTA.&quot;
-## [1] &quot;Downloading data for MOMO.&quot;</code></pre>
-<pre><code>## Warning: MOMO contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for MDLZ.&quot;
-## [1] &quot;Downloading data for MDB.&quot;
-## [1] &quot;Downloading data for MPWR.&quot;
-## [1] &quot;Downloading data for TYPE.&quot;
-## [1] &quot;Downloading data for MNRO.&quot;
+## [1] &quot;Downloading data for MDLZ.&quot;
 ## [1] &quot;Downloading data for MNST.&quot;
-## [1] &quot;Downloading data for MORN.&quot;
-## [1] &quot;Downloading data for LABL.&quot;
 ## [1] &quot;Downloading data for MYL.&quot;
-## [1] &quot;Downloading data for MYOK.&quot;
-## [1] &quot;Downloading data for MYGN.&quot;
 ## [1] &quot;Downloading data for NDAQ.&quot;
-## [1] &quot;Downloading data for FIZZ.&quot;
-## [1] &quot;Downloading data for NGHC.&quot;
-## [1] &quot;Downloading data for NATI.&quot;
-## [1] &quot;Downloading data for NRCIB.&quot;
-## [1] &quot;Downloading data for EYE.&quot;
-## [1] &quot;Downloading data for NWLI.&quot;
-## [1] &quot;Downloading data for BABY.&quot;
-## [1] &quot;Downloading data for NAVI.&quot;
-## [1] &quot;Downloading data for NBTB.&quot;
 ## [1] &quot;Downloading data for NKTR.&quot;
-## [1] &quot;Downloading data for NEOG.&quot;
 ## [1] &quot;Downloading data for NTAP.&quot;
 ## [1] &quot;Downloading data for NTES.&quot;
 ## [1] &quot;Downloading data for NFLX.&quot;
-## [1] &quot;Downloading data for NTGR.&quot;
-## [1] &quot;Downloading data for NTCT.&quot;
-## [1] &quot;Downloading data for NBIX.&quot;
-## [1] &quot;Downloading data for NMRK.&quot;
 ## [1] &quot;Downloading data for NWS.&quot;
-## [1] &quot;Downloading data for NWSA.&quot;
-## [1] &quot;Downloading data for NXST.&quot;
-## [1] &quot;Downloading data for EGOV.&quot;
-## [1] &quot;Downloading data for NICE.&quot;
-## [1] &quot;Downloading data for NMIH.&quot;
-## [1] &quot;Downloading data for NDSN.&quot;
 ## [1] &quot;Downloading data for NTRS.&quot;
-## [1] &quot;Downloading data for NWBI.&quot;
 ## [1] &quot;Downloading data for NCLH.&quot;
-## [1] &quot;Downloading data for NOVT.&quot;</code></pre>
-<pre><code>## Warning: NOVT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for NVCR.&quot;
-## [1] &quot;Downloading data for NUAN.&quot;
-## [1] &quot;Downloading data for NTNX.&quot;
-## [1] &quot;Downloading data for NTRI.&quot;
-## [1] &quot;Downloading data for NUVA.&quot;
 ## [1] &quot;Downloading data for NVDA.&quot;
 ## [1] &quot;Downloading data for NXPI.&quot;
-## [1] &quot;Downloading data for NXTM.&quot;
-## [1] &quot;Downloading data for ORIG.&quot;
-## [1] &quot;Downloading data for OCLR.&quot;
-## [1] &quot;Downloading data for ODP.&quot;
-## [1] &quot;Downloading data for OKTA.&quot;
 ## [1] &quot;Downloading data for ODFL.&quot;
-## [1] &quot;Downloading data for ONB.&quot;
-## [1] &quot;Downloading data for OLLI.&quot;
-## [1] &quot;Downloading data for OMCL.&quot;
 ## [1] &quot;Downloading data for ON.&quot;
-## [1] &quot;Downloading data for OTEX.&quot;
-## [1] &quot;Downloading data for OPK.&quot;
-## [1] &quot;Downloading data for OSUR.&quot;
-## [1] &quot;Downloading data for ORBK.&quot;
 ## [1] &quot;Downloading data for ORLY.&quot;
-## [1] &quot;Downloading data for OSIS.&quot;
-## [1] &quot;Downloading data for OTTR.&quot;
-## [1] &quot;Downloading data for OSTK.&quot;
 ## [1] &quot;Downloading data for PCAR.&quot;
-## [1] &quot;Downloading data for PPBI.&quot;
-## [1] &quot;Downloading data for PCRX.&quot;
-## [1] &quot;Downloading data for PACW.&quot;
-## [1] &quot;Downloading data for PAAS.&quot;
-## [1] &quot;Downloading data for PZZA.&quot;
-## [1] &quot;Downloading data for PTNR.&quot;
-## [1] &quot;Downloading data for PATK.&quot;
-## [1] &quot;Downloading data for PEGI.&quot;
-## [1] &quot;Downloading data for PDCO.&quot;
-## [1] &quot;Downloading data for PTEN.&quot;
 ## [1] &quot;Downloading data for PAYX.&quot;
-## [1] &quot;Downloading data for PCTY.&quot;
 ## [1] &quot;Downloading data for PYPL.&quot;
-## [1] &quot;Downloading data for PDCE.&quot;
-## [1] &quot;Downloading data for PEGA.&quot;
-## [1] &quot;Downloading data for PENN.&quot;
-## [1] &quot;Downloading data for PBCT.&quot;
 ## [1] &quot;Downloading data for PEP.&quot;
-## [1] &quot;Downloading data for PAHC.&quot;
-## [1] &quot;Downloading data for PPC.&quot;
-## [1] &quot;Downloading data for PNK.&quot;
-## [1] &quot;Downloading data for PNFP.&quot;
-## [1] &quot;Downloading data for PLYA.&quot;
-## [1] &quot;Downloading data for PLXS.&quot;
-## [1] &quot;Downloading data for POOL.&quot;</code></pre>
-<pre><code>## Warning: POOL contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for BPOP.&quot;
-## [1] &quot;Downloading data for PTLA.&quot;
-## [1] &quot;Downloading data for PCH.&quot;
-## [1] &quot;Downloading data for POWI.&quot;
-## [1] &quot;Downloading data for PKW.&quot;
-## [1] &quot;Downloading data for PDP.&quot;
-## [1] &quot;Downloading data for PRFZ.&quot;
-## [1] &quot;Downloading data for KBWB.&quot;
 ## [1] &quot;Downloading data for QQQ.&quot;
-## [1] &quot;Downloading data for PRAA.&quot;
-## [1] &quot;Downloading data for PRAH.&quot;
-## [1] &quot;Downloading data for PINC.&quot;
-## [1] &quot;Downloading data for PSDO.&quot;</code></pre>
-<pre><code>## Warning: PSDO contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for PSMT.&quot;
-## [1] &quot;Downloading data for PRIM.&quot;
 ## [1] &quot;Downloading data for PFG.&quot;
-## [1] &quot;Downloading data for PRGS.&quot;
-## [1] &quot;Downloading data for PFPT.&quot;
-## [1] &quot;Downloading data for TQQQ.&quot;
-## [1] &quot;Downloading data for PSEC.&quot;
-## [1] &quot;Downloading data for PRTA.&quot;
-## [1] &quot;Downloading data for PTC.&quot;
-## [1] &quot;Downloading data for PBYI.&quot;
-## [1] &quot;Downloading data for QGEN.&quot;
-## [1] &quot;Downloading data for QIWI.&quot;
-## [1] &quot;Downloading data for QRVO.&quot;
 ## [1] &quot;Downloading data for QCOM.&quot;
-## [1] &quot;Downloading data for QLYS.&quot;
-## [1] &quot;Downloading data for QDEL.&quot;
-## [1] &quot;Downloading data for RDUS.&quot;
-## [1] &quot;Downloading data for RMBS.&quot;
-## [1] &quot;Downloading data for GOLD.&quot;
-## [1] &quot;Downloading data for RAVN.&quot;
-## [1] &quot;Downloading data for ROLL.&quot;
-## [1] &quot;Downloading data for RP.&quot;
-## [1] &quot;Downloading data for RRR.&quot;</code></pre>
-<pre><code>## Warning: RRR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for RDFN.&quot;</code></pre>
-<pre><code>## Warning: RDFN contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for REGN.&quot;
-## [1] &quot;Downloading data for RGNX.&quot;
-## [1] &quot;Downloading data for RNST.&quot;
-## [1] &quot;Downloading data for RGEN.&quot;
-## [1] &quot;Downloading data for ROIC.&quot;
-## [1] &quot;Downloading data for RVNC.&quot;
-## [1] &quot;Downloading data for ROKU.&quot;
+## [1] &quot;Downloading data for REGN.&quot;
 ## [1] &quot;Downloading data for ROST.&quot;
-## [1] &quot;Downloading data for RGLD.&quot;
-## [1] &quot;Downloading data for RUSHA.&quot;
-## [1] &quot;Downloading data for RUSHB.&quot;
 ## [1] &quot;Downloading data for RYAAY.&quot;
-## [1] &quot;Downloading data for STBA.&quot;
-## [1] &quot;Downloading data for SBRA.&quot;
-## [1] &quot;Downloading data for SABR.&quot;
-## [1] &quot;Downloading data for SAFT.&quot;
-## [1] &quot;Downloading data for SAGE.&quot;
-## [1] &quot;Downloading data for SAIA.&quot;
-## [1] &quot;Downloading data for SAFM.&quot;
-## [1] &quot;Downloading data for SGMO.&quot;
-## [1] &quot;Downloading data for SANM.&quot;
-## [1] &quot;Downloading data for SRPT.&quot;
 ## [1] &quot;Downloading data for SBAC.&quot;
-## [1] &quot;Downloading data for SCHL.&quot;
-## [1] &quot;Downloading data for SGMS.&quot;
 ## [1] &quot;Downloading data for SNI.&quot;
-## [1] &quot;Downloading data for SBCF.&quot;
 ## [1] &quot;Downloading data for STX.&quot;
-## [1] &quot;Downloading data for SGEN.&quot;
 ## [1] &quot;Downloading data for SEIC.&quot;
-## [1] &quot;Downloading data for SIR.&quot;
-## [1] &quot;Downloading data for SIGI.&quot;
-## [1] &quot;Downloading data for SMTC.&quot;
-## [1] &quot;Downloading data for SNH.&quot;
-## [1] &quot;Downloading data for SFBS.&quot;
-## [1] &quot;Downloading data for SHEN.&quot;
 ## [1] &quot;Downloading data for SHPG.&quot;
-## [1] &quot;Downloading data for SFLY.&quot;
-## [1] &quot;Downloading data for SBNY.&quot;
-## [1] &quot;Downloading data for SLGN.&quot;
-## [1] &quot;Downloading data for SLAB.&quot;
-## [1] &quot;Downloading data for SIMO.&quot;
-## [1] &quot;Downloading data for SPIL.&quot;
-## [1] &quot;Downloading data for SRUN.&quot;
-## [1] &quot;Downloading data for SFNC.&quot;
-## [1] &quot;Downloading data for SINA.&quot;
-## [1] &quot;Downloading data for SBGI.&quot;
 ## [1] &quot;Downloading data for SIRI.&quot;
-## [1] &quot;Downloading data for SKYW.&quot;
 ## [1] &quot;Downloading data for SWKS.&quot;
-## [1] &quot;Downloading data for SNBR.&quot;
-## [1] &quot;Downloading data for SLM.&quot;
-## [1] &quot;Downloading data for LNCE.&quot;
-## [1] &quot;Downloading data for SODA.&quot;
-## [1] &quot;Downloading data for SOHU.&quot;
-## [1] &quot;Downloading data for SEDG.&quot;
-## [1] &quot;Downloading data for SONC.&quot;
-## [1] &quot;Downloading data for SSB.&quot;
-## [1] &quot;Downloading data for SBSI.&quot;
-## [1] &quot;Downloading data for ONCE.&quot;
-## [1] &quot;Downloading data for SPPI.&quot;
-## [1] &quot;Downloading data for SAVE.&quot;
 ## [1] &quot;Downloading data for SPLK.&quot;
-## [1] &quot;Downloading data for SFM.&quot;
 ## [1] &quot;Downloading data for SSNC.&quot;
-## [1] &quot;Downloading data for SSRM.&quot;
-## [1] &quot;Downloading data for STMP.&quot;
 ## [1] &quot;Downloading data for SBUX.&quot;
-## [1] &quot;Downloading data for STFC.&quot;
-## [1] &quot;Downloading data for STBZ.&quot;
 ## [1] &quot;Downloading data for STLD.&quot;
-## [1] &quot;Downloading data for SRCL.&quot;
-## [1] &quot;Downloading data for SHOO.&quot;
-## [1] &quot;Downloading data for SFIX.&quot;</code></pre>
-<pre><code>## Warning: SFIX contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for SSYS.&quot;
-## [1] &quot;Downloading data for SNHY.&quot;
-## [1] &quot;Downloading data for SPWR.&quot;
-## [1] &quot;Downloading data for SMCI.&quot;
-## [1] &quot;Downloading data for SUPN.&quot;
 ## [1] &quot;Downloading data for SIVB.&quot;
-## [1] &quot;Downloading data for SYKE.&quot;
 ## [1] &quot;Downloading data for SYMC.&quot;
-## [1] &quot;Downloading data for SYNA.&quot;
 ## [1] &quot;Downloading data for SNPS.&quot;
-## [1] &quot;Downloading data for SYNT.&quot;
 ## [1] &quot;Downloading data for TROW.&quot;
 ## [1] &quot;Downloading data for TTWO.&quot;
-## [1] &quot;Downloading data for TLND.&quot;
-## [1] &quot;Downloading data for CGBD.&quot;
 ## [1] &quot;Downloading data for AMTD.&quot;
-## [1] &quot;Downloading data for TECD.&quot;
-## [1] &quot;Downloading data for TTEC.&quot;
-## [1] &quot;Downloading data for TELL.&quot;
-## [1] &quot;Downloading data for TERP.&quot;
-## [1] &quot;Downloading data for TSRO.&quot;
 ## [1] &quot;Downloading data for TSLA.&quot;
-## [1] &quot;Downloading data for TTEK.&quot;
-## [1] &quot;Downloading data for TCBI.&quot;
 ## [1] &quot;Downloading data for TXN.&quot;
-## [1] &quot;Downloading data for TXRH.&quot;
-## [1] &quot;Downloading data for TFSL.&quot;
-## [1] &quot;Downloading data for CG.&quot;
-## [1] &quot;Downloading data for CAKE.&quot;
-## [1] &quot;Downloading data for DSGX.&quot;
-## [1] &quot;Downloading data for ENSG.&quot;
-## [1] &quot;Downloading data for GT.&quot;
-## [1] &quot;Downloading data for HAIN.&quot;
 ## [1] &quot;Downloading data for KHC.&quot;
-## [1] &quot;Downloading data for MSG.&quot;
-## [1] &quot;Downloading data for MDCO.&quot;
-## [1] &quot;Downloading data for MIK.&quot;
-## [1] &quot;Downloading data for MIDD.&quot;
-## [1] &quot;Downloading data for NAVG.&quot;
 ## [1] &quot;Downloading data for PCLN.&quot;
-## [1] &quot;Downloading data for RMR.&quot;
-## [1] &quot;Downloading data for SMPL.&quot;
-## [1] &quot;Downloading data for TSG.&quot;</code></pre>
-<pre><code>## Warning: TSG contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for TTD.&quot;</code></pre>
-<pre><code>## Warning: TTD contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for ULTI.&quot;
-## [1] &quot;Downloading data for TXMD.&quot;
-## [1] &quot;Downloading data for TBPH.&quot;
 ## [1] &quot;Downloading data for TIG.&quot;
-## [1] &quot;Downloading data for TVTY.&quot;
-## [1] &quot;Downloading data for TIVO.&quot;
 ## [1] &quot;Downloading data for TMUS.&quot;
-## [1] &quot;Downloading data for TSEM.&quot;
-## [1] &quot;Downloading data for TOWN.&quot;
-## [1] &quot;Downloading data for TSCO.&quot;
-## [1] &quot;Downloading data for TRS.&quot;
 ## [1] &quot;Downloading data for TRMB.&quot;
-## [1] &quot;Downloading data for TRIP.&quot;
-## [1] &quot;Downloading data for TRVG.&quot;
-## [1] &quot;Downloading data for TRUE.&quot;
-## [1] &quot;Downloading data for TRMK.&quot;
-## [1] &quot;Downloading data for TTMI.&quot;
 ## [1] &quot;Downloading data for FOX.&quot;
 ## [1] &quot;Downloading data for FOXA.&quot;
-## [1] &quot;Downloading data for USCR.&quot;
-## [1] &quot;Downloading data for UBNT.&quot;
 ## [1] &quot;Downloading data for ULTA.&quot;
-## [1] &quot;Downloading data for UPL.&quot;
-## [1] &quot;Downloading data for RARE.&quot;
-## [1] &quot;Downloading data for UMBF.&quot;
-## [1] &quot;Downloading data for UMPQ.&quot;
-## [1] &quot;Downloading data for UBSH.&quot;
-## [1] &quot;Downloading data for UBSI.&quot;
-## [1] &quot;Downloading data for UCBI.&quot;
-## [1] &quot;Downloading data for UFCS.&quot;
-## [1] &quot;Downloading data for UNFI.&quot;
-## [1] &quot;Downloading data for UTHR.&quot;
-## [1] &quot;Downloading data for UNIT.&quot;
-## [1] &quot;Downloading data for OLED.&quot;
-## [1] &quot;Downloading data for UFPI.&quot;
-## [1] &quot;Downloading data for URBN.&quot;
-## [1] &quot;Downloading data for ECOL.&quot;
-## [1] &quot;Downloading data for VNQI.&quot;
 ## [1] &quot;Downloading data for VCIT.&quot;
-## [1] &quot;Downloading data for VGIT.&quot;
-## [1] &quot;Downloading data for VCLT.&quot;
-## [1] &quot;Downloading data for VMBS.&quot;
-## [1] &quot;Downloading data for VONG.&quot;
-## [1] &quot;Downloading data for VONV.&quot;
-## [1] &quot;Downloading data for VTWO.&quot;
 ## [1] &quot;Downloading data for VCSH.&quot;
-## [1] &quot;Downloading data for VTIP.&quot;
-## [1] &quot;Downloading data for VGSH.&quot;
-## [1] &quot;Downloading data for BNDX.&quot;
 ## [1] &quot;Downloading data for VXUS.&quot;
-## [1] &quot;Downloading data for VREX.&quot;
-## [1] &quot;Downloading data for VRNS.&quot;
-## [1] &quot;Downloading data for XIV.&quot;
-## [1] &quot;Downloading data for VEON.&quot;
-## [1] &quot;Downloading data for VRNT.&quot;
 ## [1] &quot;Downloading data for VRSN.&quot;
 ## [1] &quot;Downloading data for VRSK.&quot;
 ## [1] &quot;Downloading data for VRTX.&quot;
 ## [1] &quot;Downloading data for VIA.&quot;
 ## [1] &quot;Downloading data for VIAB.&quot;
-## [1] &quot;Downloading data for VSAT.&quot;
-## [1] &quot;Downloading data for VIAV.&quot;
-## [1] &quot;Downloading data for CSA.&quot;</code></pre>
-<pre><code>## Warning: CSA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for VDTH.&quot;
-## [1] &quot;Downloading data for VNOM.&quot;
-## [1] &quot;Downloading data for VIRT.&quot;
-## [1] &quot;Downloading data for VRTU.&quot;
-## [1] &quot;Downloading data for VC.&quot;</code></pre>
-<pre><code>## Warning: VC contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for VOD.&quot;
+## [1] &quot;Downloading data for VOD.&quot;
 ## [1] &quot;Downloading data for WBA.&quot;
-## [1] &quot;Downloading data for WAFD.&quot;
-## [1] &quot;Downloading data for WDFC.&quot;
-## [1] &quot;Downloading data for WEB.&quot;
 ## [1] &quot;Downloading data for WB.&quot;
-## [1] &quot;Downloading data for WEN.&quot;
-## [1] &quot;Downloading data for WERN.&quot;
-## [1] &quot;Downloading data for WSBC.&quot;
-## [1] &quot;Downloading data for WABC.&quot;
 ## [1] &quot;Downloading data for WDC.&quot;
 ## [1] &quot;Downloading data for WLTW.&quot;
-## [1] &quot;Downloading data for WING.&quot;
-## [1] &quot;Downloading data for WINS.&quot;
-## [1] &quot;Downloading data for WTFC.&quot;
-## [1] &quot;Downloading data for WETF.&quot;
-## [1] &quot;Downloading data for DGRW.&quot;
-## [1] &quot;Downloading data for WIX.&quot;
-## [1] &quot;Downloading data for WWD.&quot;
 ## [1] &quot;Downloading data for WDAY.&quot;
-## [1] &quot;Downloading data for WMGI.&quot;
-## [1] &quot;Downloading data for WSFS.&quot;
 ## [1] &quot;Downloading data for WYNN.&quot;
-## [1] &quot;Downloading data for XNCR.&quot;
+## [1] &quot;Downloading data for XEL.&quot;
 ## [1] &quot;Downloading data for XLNX.&quot;
-## [1] &quot;Downloading data for XPER.&quot;
-## [1] &quot;Downloading data for XNET.&quot;
 ## [1] &quot;Downloading data for YNDX.&quot;
-## [1] &quot;Downloading data for YERR.&quot;
-## [1] &quot;Downloading data for YY.&quot;
-## [1] &quot;Downloading data for ZLAB.&quot;
-## [1] &quot;Downloading data for ZBRA.&quot;
-## [1] &quot;Downloading data for Z.&quot;
-## [1] &quot;Downloading data for ZG.&quot;
 ## [1] &quot;Downloading data for ZION.&quot;
-## [1] &quot;Downloading data for ZGNX.&quot;
-## [1] &quot;Downloading data for ZNGA.&quot;
 ## [1] &quot;Downloading data for MMM.&quot;
 ## [1] &quot;Downloading data for WUBA.&quot;
-## [1] &quot;Downloading data for EGHT.&quot;
-## [1] &quot;Downloading data for AIR.&quot;
-## [1] &quot;Downloading data for AAN.&quot;
 ## [1] &quot;Downloading data for ABB.&quot;
 ## [1] &quot;Downloading data for ABT.&quot;
 ## [1] &quot;Downloading data for ABBV.&quot;
-## [1] &quot;Downloading data for ANF.&quot;
-## [1] &quot;Downloading data for ABM.&quot;
-## [1] &quot;Downloading data for AKR.&quot;
 ## [1] &quot;Downloading data for ACN.&quot;
-## [1] &quot;Downloading data for ACCO.&quot;
-## [1] &quot;Downloading data for ATU.&quot;
-## [1] &quot;Downloading data for AYI.&quot;
-## [1] &quot;Downloading data for GOLF.&quot;
-## [1] &quot;Downloading data for ADX.&quot;
-## [1] &quot;Downloading data for AGRO.&quot;
-## [1] &quot;Downloading data for ADNT.&quot;
-## [1] &quot;Downloading data for ATGE.&quot;</code></pre>
-<pre><code>## Warning: ATGE contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for AAP.&quot;
-## [1] &quot;Downloading data for ADSW.&quot;
-## [1] &quot;Downloading data for WMS.&quot;
 ## [1] &quot;Downloading data for ASX.&quot;
-## [1] &quot;Downloading data for ASIX.&quot;
-## [1] &quot;Downloading data for ACM.&quot;
 ## [1] &quot;Downloading data for AEG.&quot;
-## [1] &quot;Downloading data for AER.&quot;
-## [1] &quot;Downloading data for AJRD.&quot;
 ## [1] &quot;Downloading data for AET.&quot;
 ## [1] &quot;Downloading data for AMG.&quot;
 ## [1] &quot;Downloading data for AFL.&quot;
-## [1] &quot;Downloading data for AGCO.&quot;
 ## [1] &quot;Downloading data for A.&quot;
 ## [1] &quot;Downloading data for AEM.&quot;
-## [1] &quot;Downloading data for ADC.&quot;
-## [1] &quot;Downloading data for AGU.&quot;
-## [1] &quot;Downloading data for AL.&quot;
 ## [1] &quot;Downloading data for APD.&quot;
-## [1] &quot;Downloading data for AYR.&quot;
-## [1] &quot;Downloading data for AKS.&quot;
-## [1] &quot;Downloading data for ALG.&quot;
-## [1] &quot;Downloading data for AGI.&quot;
-## [1] &quot;Downloading data for ALK.&quot;
-## [1] &quot;Downloading data for AIN.&quot;
 ## [1] &quot;Downloading data for ALB.&quot;
 ## [1] &quot;Downloading data for AA.&quot;
-## [1] &quot;Downloading data for ALEX.&quot;
-## [1] &quot;Downloading data for ALX.&quot;
 ## [1] &quot;Downloading data for ARE.&quot;
-## [1] &quot;Downloading data for AQN.&quot;
 ## [1] &quot;Downloading data for BABA.&quot;
-## [1] &quot;Downloading data for Y.&quot;
-## [1] &quot;Downloading data for ATI.&quot;
-## [1] &quot;Downloading data for ALLE.&quot;
 ## [1] &quot;Downloading data for AGN.&quot;
-## [1] &quot;Downloading data for ALE.&quot;
 ## [1] &quot;Downloading data for ADS.&quot;
-## [1] &quot;Downloading data for AWF.&quot;
-## [1] &quot;Downloading data for AB.&quot;
-## [1] &quot;Downloading data for LNT.&quot;
-## [1] &quot;Downloading data for NFJ.&quot;
-## [1] &quot;Downloading data for ALSN.&quot;
 ## [1] &quot;Downloading data for ALL.&quot;
 ## [1] &quot;Downloading data for ALLY.&quot;
-## [1] &quot;Downloading data for ALDW.&quot;
-## [1] &quot;Downloading data for AOD.&quot;
-## [1] &quot;Downloading data for AYX.&quot;
 ## [1] &quot;Downloading data for ATUS.&quot;
 ## [1] &quot;Downloading data for MO.&quot;
 ## [1] &quot;Downloading data for ACH.&quot;
 ## [1] &quot;Downloading data for ABEV.&quot;
-## [1] &quot;Downloading data for AMC.&quot;
 ## [1] &quot;Downloading data for AEE.&quot;
-## [1] &quot;Downloading data for AMOV.&quot;
 ## [1] &quot;Downloading data for AMX.&quot;
-## [1] &quot;Downloading data for AAT.&quot;
-## [1] &quot;Downloading data for AXL.&quot;
-## [1] &quot;Downloading data for ACC.&quot;
-## [1] &quot;Downloading data for AEO.&quot;
 ## [1] &quot;Downloading data for AEP.&quot;
-## [1] &quot;Downloading data for AEL.&quot;
 ## [1] &quot;Downloading data for AXP.&quot;
 ## [1] &quot;Downloading data for AFG.&quot;
-## [1] &quot;Downloading data for AMH.&quot;
 ## [1] &quot;Downloading data for AIG.&quot;
-## [1] &quot;Downloading data for AWR.&quot;
 ## [1] &quot;Downloading data for AMT.&quot;
 ## [1] &quot;Downloading data for AWK.&quot;
-## [1] &quot;Downloading data for APU.&quot;
 ## [1] &quot;Downloading data for AMP.&quot;
 ## [1] &quot;Downloading data for ABC.&quot;
-## [1] &quot;Downloading data for AMN.&quot;
 ## [1] &quot;Downloading data for APH.&quot;
 ## [1] &quot;Downloading data for AME.&quot;
 ## [1] &quot;Downloading data for APC.&quot;
@@ -1486,255 +750,92 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 <pre><code>## Warning: ANDX contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for AU.&quot;
-## [1] &quot;Downloading data for BUD.&quot;
-## [1] &quot;Downloading data for AXE.&quot;
+<pre><code>## [1] &quot;Downloading data for BUD.&quot;
 ## [1] &quot;Downloading data for NLY.&quot;
-## [1] &quot;Downloading data for AMGP.&quot;
-## [1] &quot;Downloading data for AM.&quot;
-## [1] &quot;Downloading data for AR.&quot;
 ## [1] &quot;Downloading data for ANTM.&quot;
 ## [1] &quot;Downloading data for ANTX.&quot;
 ## [1] &quot;Downloading data for AON.&quot;
 ## [1] &quot;Downloading data for APA.&quot;
-## [1] &quot;Downloading data for AIV.&quot;
-## [1] &quot;Downloading data for ARI.&quot;
 ## [1] &quot;Downloading data for APO.&quot;
-## [1] &quot;Downloading data for APLE.&quot;
-## [1] &quot;Downloading data for AIT.&quot;
-## [1] &quot;Downloading data for ATR.&quot;
 ## [1] &quot;Downloading data for APTV.&quot;
-## [1] &quot;Downloading data for WTR.&quot;
 ## [1] &quot;Downloading data for ARMK.&quot;
 ## [1] &quot;Downloading data for MT.&quot;
-## [1] &quot;Downloading data for ARCH.&quot;</code></pre>
-<pre><code>## Warning: ARCH contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for ADM.&quot;
+## [1] &quot;Downloading data for ADM.&quot;
 ## [1] &quot;Downloading data for ARNC.&quot;
-## [1] &quot;Downloading data for ARCO.&quot;
-## [1] &quot;Downloading data for ARD.&quot;
-## [1] &quot;Downloading data for ARES.&quot;
 ## [1] &quot;Downloading data for ANET.&quot;
-## [1] &quot;Downloading data for ARR.&quot;
-## [1] &quot;Downloading data for AWI.&quot;
-## [1] &quot;Downloading data for ARW.&quot;
 ## [1] &quot;Downloading data for AJG.&quot;
-## [1] &quot;Downloading data for APAM.&quot;
-## [1] &quot;Downloading data for ABG.&quot;
-## [1] &quot;Downloading data for ASH.&quot;
-## [1] &quot;Downloading data for AHL.&quot;
-## [1] &quot;Downloading data for ASB.&quot;
-## [1] &quot;Downloading data for AIZ.&quot;
-## [1] &quot;Downloading data for AGO.&quot;
 ## [1] &quot;Downloading data for AZN.&quot;
-## [1] &quot;Downloading data for HOME.&quot;
 ## [1] &quot;Downloading data for T.&quot;
 ## [1] &quot;Downloading data for ATH.&quot;</code></pre>
 <pre><code>## Warning: ATH contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for ATKR.&quot;
-## [1] &quot;Downloading data for ATO.&quot;
-## [1] &quot;Downloading data for AUO.&quot;
-## [1] &quot;Downloading data for ATHM.&quot;
+<pre><code>## [1] &quot;Downloading data for ATHM.&quot;
 ## [1] &quot;Downloading data for ALV.&quot;
-## [1] &quot;Downloading data for AN.&quot;
 ## [1] &quot;Downloading data for AZO.&quot;
 ## [1] &quot;Downloading data for AVB.&quot;
 ## [1] &quot;Downloading data for AGR.&quot;
 ## [1] &quot;Downloading data for AVY.&quot;
-## [1] &quot;Downloading data for AVH.&quot;
-## [1] &quot;Downloading data for AVA.&quot;
-## [1] &quot;Downloading data for AVT.&quot;
-## [1] &quot;Downloading data for AVX.&quot;
-## [1] &quot;Downloading data for AXTA.&quot;
-## [1] &quot;Downloading data for AXS.&quot;
-## [1] &quot;Downloading data for AZUL.&quot;
-## [1] &quot;Downloading data for AZZ.&quot;
-## [1] &quot;Downloading data for BGS.&quot;
-## [1] &quot;Downloading data for BMI.&quot;
 ## [1] &quot;Downloading data for BHGE.&quot;
-## [1] &quot;Downloading data for BBN.&quot;
 ## [1] &quot;Downloading data for BLL.&quot;
-## [1] &quot;Downloading data for BANC.&quot;
 ## [1] &quot;Downloading data for BBVA.&quot;
 ## [1] &quot;Downloading data for BBD.&quot;
 ## [1] &quot;Downloading data for BBDO.&quot;
 ## [1] &quot;Downloading data for BCH.&quot;
-## [1] &quot;Downloading data for BLX.&quot;
 ## [1] &quot;Downloading data for BSBR.&quot;
 ## [1] &quot;Downloading data for BSAC.&quot;
 ## [1] &quot;Downloading data for SAN.&quot;
 ## [1] &quot;Downloading data for CIB.&quot;
-## [1] &quot;Downloading data for BXS.&quot;
 ## [1] &quot;Downloading data for BAC.&quot;
-## [1] &quot;Downloading data for BOH.&quot;
 ## [1] &quot;Downloading data for BMO.&quot;
-## [1] &quot;Downloading data for NTB.&quot;</code></pre>
-<pre><code>## Warning: NTB contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for BK.&quot;
+## [1] &quot;Downloading data for BK.&quot;
 ## [1] &quot;Downloading data for BNS.&quot;
-## [1] &quot;Downloading data for BKU.&quot;
 ## [1] &quot;Downloading data for BCS.&quot;
-## [1] &quot;Downloading data for B.&quot;
-## [1] &quot;Downloading data for CUDA.&quot;
 ## [1] &quot;Downloading data for ABX.&quot;
 ## [1] &quot;Downloading data for BAX.&quot;
 ## [1] &quot;Downloading data for BBT.&quot;
-## [1] &quot;Downloading data for BFR.&quot;
 ## [1] &quot;Downloading data for BCE.&quot;
 ## [1] &quot;Downloading data for BDX.&quot;
-## [1] &quot;Downloading data for BDC.&quot;
-## [1] &quot;Downloading data for BEL.&quot;
-## [1] &quot;Downloading data for BMS.&quot;
-## [1] &quot;Downloading data for BHE.&quot;
-## [1] &quot;Downloading data for BHLB.&quot;
-## [1] &quot;Downloading data for BERY.&quot;
 ## [1] &quot;Downloading data for BBY.&quot;
-## [1] &quot;Downloading data for BSTI.&quot;
 ## [1] &quot;Downloading data for BHP.&quot;
 ## [1] &quot;Downloading data for BBL.&quot;
-## [1] &quot;Downloading data for BIG.&quot;
-## [1] &quot;Downloading data for BIO.&quot;
-## [1] &quot;Downloading data for BITA.&quot;
-## [1] &quot;Downloading data for BKH.&quot;
-## [1] &quot;Downloading data for BKI.&quot;</code></pre>
-<pre><code>## Warning: BKI contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for BSM.&quot;</code></pre>
-<pre><code>## Warning: BSM contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for BB.&quot;</code></pre>
-<pre><code>## Warning: BB contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for HYT.&quot;
-## [1] &quot;Downloading data for BTZ.&quot;
-## [1] &quot;Downloading data for BDJ.&quot;
-## [1] &quot;Downloading data for BTT.&quot;
 ## [1] &quot;Downloading data for BLK.&quot;
-## [1] &quot;Downloading data for BXG.&quot;</code></pre>
-<pre><code>## Warning: BXG contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for BWP.&quot;
 ## [1] &quot;Downloading data for BA.&quot;
-## [1] &quot;Downloading data for BCC.&quot;
-## [1] &quot;Downloading data for BAH.&quot;
 ## [1] &quot;Downloading data for BWA.&quot;
-## [1] &quot;Downloading data for SAM.&quot;
 ## [1] &quot;Downloading data for BXP.&quot;
 ## [1] &quot;Downloading data for BSX.&quot;
-## [1] &quot;Downloading data for BOX.&quot;
-## [1] &quot;Downloading data for BYD.&quot;
-## [1] &quot;Downloading data for BPMP.&quot;
 ## [1] &quot;Downloading data for BP.&quot;
-## [1] &quot;Downloading data for BRC.&quot;
-## [1] &quot;Downloading data for BDN.&quot;
 ## [1] &quot;Downloading data for BAK.&quot;
-## [1] &quot;Downloading data for BRFS.&quot;
-## [1] &quot;Downloading data for BGG.&quot;
-## [1] &quot;Downloading data for BFAM.&quot;
-## [1] &quot;Downloading data for BEDU.&quot;
-## [1] &quot;Downloading data for EAT.&quot;
-## [1] &quot;Downloading data for BCO.&quot;
 ## [1] &quot;Downloading data for BMY.&quot;
 ## [1] &quot;Downloading data for BTI.&quot;
-## [1] &quot;Downloading data for BRX.&quot;
 ## [1] &quot;Downloading data for BR.&quot;
-## [1] &quot;Downloading data for BKD.&quot;
 ## [1] &quot;Downloading data for BAM.&quot;
-## [1] &quot;Downloading data for BBU.&quot;
 ## [1] &quot;Downloading data for BIP.&quot;
-## [1] &quot;Downloading data for BEP.&quot;
-## [1] &quot;Downloading data for BRO.&quot;
-## [1] &quot;Downloading data for BC.&quot;
 ## [1] &quot;Downloading data for BT.&quot;
-## [1] &quot;Downloading data for BPL.&quot;
-## [1] &quot;Downloading data for BKE.&quot;
-## [1] &quot;Downloading data for BVN.&quot;
 ## [1] &quot;Downloading data for BG.&quot;
-## [1] &quot;Downloading data for BURL.&quot;
-## [1] &quot;Downloading data for BWXT.&quot;
-## [1] &quot;Downloading data for CJ.&quot;
-## [1] &quot;Downloading data for CABO.&quot;
-## [1] &quot;Downloading data for CBT.&quot;
 ## [1] &quot;Downloading data for COG.&quot;
-## [1] &quot;Downloading data for CACI.&quot;
-## [1] &quot;Downloading data for CADE.&quot;
-## [1] &quot;Downloading data for CAE.&quot;
-## [1] &quot;Downloading data for CAA.&quot;
-## [1] &quot;Downloading data for CAL.&quot;
-## [1] &quot;Downloading data for CCC.&quot;
-## [1] &quot;Downloading data for CWT.&quot;
-## [1] &quot;Downloading data for ELY.&quot;
-## [1] &quot;Downloading data for CPE.&quot;
-## [1] &quot;Downloading data for CPN.&quot;
-## [1] &quot;Downloading data for CBM.&quot;
-## [1] &quot;Downloading data for CPT.&quot;
-## [1] &quot;Downloading data for CCJ.&quot;
 ## [1] &quot;Downloading data for CPB.&quot;
-## [1] &quot;Downloading data for CWH.&quot;</code></pre>
-<pre><code>## Warning: CWH contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for GOOS.&quot;
 ## [1] &quot;Downloading data for CM.&quot;
 ## [1] &quot;Downloading data for CNI.&quot;
 ## [1] &quot;Downloading data for CNQ.&quot;
 ## [1] &quot;Downloading data for CP.&quot;
 ## [1] &quot;Downloading data for CAJ.&quot;
-## [1] &quot;Downloading data for CMD.&quot;
 ## [1] &quot;Downloading data for COF.&quot;
-## [1] &quot;Downloading data for BXMT.&quot;
 ## [1] &quot;Downloading data for CAH.&quot;
-## [1] &quot;Downloading data for CSL.&quot;
 ## [1] &quot;Downloading data for KMX.&quot;
 ## [1] &quot;Downloading data for CCL.&quot;
 ## [1] &quot;Downloading data for CUK.&quot;
-## [1] &quot;Downloading data for CRS.&quot;
-## [1] &quot;Downloading data for CARS.&quot;
-## [1] &quot;Downloading data for CRI.&quot;
-## [1] &quot;Downloading data for CTLT.&quot;
 ## [1] &quot;Downloading data for CAT.&quot;
 ## [1] &quot;Downloading data for CBG.&quot;
 ## [1] &quot;Downloading data for CBS.&quot;
-## [1] &quot;Downloading data for FUN.&quot;
 ## [1] &quot;Downloading data for CE.&quot;
-## [1] &quot;Downloading data for CLS.&quot;
-## [1] &quot;Downloading data for CEL.&quot;
-## [1] &quot;Downloading data for CPAC.&quot;
 ## [1] &quot;Downloading data for CX.&quot;
 ## [1] &quot;Downloading data for CVE.&quot;
 ## [1] &quot;Downloading data for CNC.&quot;
 ## [1] &quot;Downloading data for CNP.&quot;
-## [1] &quot;Downloading data for EBR.&quot;
 ## [1] &quot;Downloading data for CTL.&quot;
-## [1] &quot;Downloading data for CF.&quot;
 ## [1] &quot;Downloading data for GIB.&quot;
-## [1] &quot;Downloading data for CRL.&quot;
-## [1] &quot;Downloading data for CLDT.&quot;
-## [1] &quot;Downloading data for CMCM.&quot;
-## [1] &quot;Downloading data for CHGG.&quot;
-## [1] &quot;Downloading data for CHE.&quot;
-## [1] &quot;Downloading data for CC.&quot;</code></pre>
-<pre><code>## Warning: CC contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CHK.&quot;
-## [1] &quot;Downloading data for CHSP.&quot;
-## [1] &quot;Downloading data for CPK.&quot;
 ## [1] &quot;Downloading data for CVX.&quot;
-## [1] &quot;Downloading data for CBI.&quot;
-## [1] &quot;Downloading data for CHS.&quot;
-## [1] &quot;Downloading data for CIM.&quot;
-## [1] &quot;Downloading data for CO.&quot;
 ## [1] &quot;Downloading data for CEA.&quot;
 ## [1] &quot;Downloading data for LFC.&quot;
 ## [1] &quot;Downloading data for CHL.&quot;
@@ -1742,474 +843,152 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 ## [1] &quot;Downloading data for ZNH.&quot;
 ## [1] &quot;Downloading data for CHA.&quot;
 ## [1] &quot;Downloading data for CHU.&quot;
-## [1] &quot;Downloading data for CMG.&quot;
-## [1] &quot;Downloading data for CHH.&quot;
 ## [1] &quot;Downloading data for CB.&quot;
 ## [1] &quot;Downloading data for CHT.&quot;
 ## [1] &quot;Downloading data for CHD.&quot;
-## [1] &quot;Downloading data for CIEN.&quot;
 ## [1] &quot;Downloading data for CI.&quot;
 ## [1] &quot;Downloading data for XEC.&quot;
-## [1] &quot;Downloading data for CNK.&quot;
-## [1] &quot;Downloading data for CISN.&quot;
-## [1] &quot;Downloading data for CIT.&quot;
 ## [1] &quot;Downloading data for C.&quot;
 ## [1] &quot;Downloading data for CFG.&quot;
-## [1] &quot;Downloading data for CLH.&quot;
-## [1] &quot;Downloading data for CCO.&quot;
-## [1] &quot;Downloading data for CEM.&quot;
-## [1] &quot;Downloading data for CLF.&quot;
 ## [1] &quot;Downloading data for CLX.&quot;
-## [1] &quot;Downloading data for CLDR.&quot;
 ## [1] &quot;Downloading data for CMS.&quot;
 ## [1] &quot;Downloading data for CNA.&quot;
 ## [1] &quot;Downloading data for CNHI.&quot;
-## [1] &quot;Downloading data for CNO.&quot;
-## [1] &quot;Downloading data for CEO.&quot;
-## [1] &quot;Downloading data for CEIX.&quot;</code></pre>
-<pre><code>## Warning: CEIX contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CNX.&quot;
 ## [1] &quot;Downloading data for KOF.&quot;
 ## [1] &quot;Downloading data for KO.&quot;
 ## [1] &quot;Downloading data for CCE.&quot;
-## [1] &quot;Downloading data for CDE.&quot;
-## [1] &quot;Downloading data for CNS.&quot;
-## [1] &quot;Downloading data for UTF.&quot;
-## [1] &quot;Downloading data for RQI.&quot;
-## [1] &quot;Downloading data for RNP.&quot;
-## [1] &quot;Downloading data for CFX.&quot;
 ## [1] &quot;Downloading data for CL.&quot;
-## [1] &quot;Downloading data for CLNS.&quot;
-## [1] &quot;Downloading data for CXP.&quot;
 ## [1] &quot;Downloading data for CMA.&quot;
-## [1] &quot;Downloading data for FIX.&quot;
-## [1] &quot;Downloading data for CMC.&quot;
-## [1] &quot;Downloading data for CBU.&quot;
-## [1] &quot;Downloading data for CIG.&quot;
-## [1] &quot;Downloading data for CBD.&quot;
-## [1] &quot;Downloading data for SBS.&quot;
-## [1] &quot;Downloading data for ELP.&quot;
-## [1] &quot;Downloading data for CCU.&quot;
-## [1] &quot;Downloading data for CODI.&quot;
-## [1] &quot;Downloading data for CMP.&quot;
 ## [1] &quot;Downloading data for CAG.&quot;
 ## [1] &quot;Downloading data for CXO.&quot;
-## [1] &quot;Downloading data for CNDT.&quot;
-## [1] &quot;Downloading data for CNNX.&quot;
 ## [1] &quot;Downloading data for COP.&quot;
 ## [1] &quot;Downloading data for ED.&quot;
 ## [1] &quot;Downloading data for STZ.&quot;
-## [1] &quot;Downloading data for CSTM.&quot;
-## [1] &quot;Downloading data for CBPX.&quot;
 ## [1] &quot;Downloading data for CLR.&quot;
-## [1] &quot;Downloading data for CVG.&quot;
-## [1] &quot;Downloading data for CTB.&quot;
-## [1] &quot;Downloading data for CPS.&quot;
-## [1] &quot;Downloading data for CPA.&quot;
-## [1] &quot;Downloading data for CLB.&quot;
-## [1] &quot;Downloading data for CXW.&quot;
-## [1] &quot;Downloading data for CLGX.&quot;
-## [1] &quot;Downloading data for COR.&quot;
 ## [1] &quot;Downloading data for GLW.&quot;
-## [1] &quot;Downloading data for CCT.&quot;</code></pre>
-<pre><code>## Warning: CCT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for OFC.&quot;
-## [1] &quot;Downloading data for CZZ.&quot;
-## [1] &quot;Downloading data for COTV.&quot;
-## [1] &quot;Downloading data for COT.&quot;
 ## [1] &quot;Downloading data for COTY.&quot;
-## [1] &quot;Downloading data for CUZ.&quot;
-## [1] &quot;Downloading data for CVA.&quot;
-## [1] &quot;Downloading data for CPL.&quot;
-## [1] &quot;Downloading data for CR.&quot;
 ## [1] &quot;Downloading data for BAP.&quot;
 ## [1] &quot;Downloading data for CS.&quot;
-## [1] &quot;Downloading data for CPG.&quot;
-## [1] &quot;Downloading data for CEQP.&quot;
 ## [1] &quot;Downloading data for CRH.&quot;
 ## [1] &quot;Downloading data for CCI.&quot;
-## [1] &quot;Downloading data for CCK.&quot;
-## [1] &quot;Downloading data for CSRA.&quot;
-## [1] &quot;Downloading data for CUBE.&quot;
-## [1] &quot;Downloading data for CUB.&quot;
-## [1] &quot;Downloading data for CFR.&quot;
 ## [1] &quot;Downloading data for CMI.&quot;
-## [1] &quot;Downloading data for CW.&quot;
-## [1] &quot;Downloading data for CVI.&quot;
-## [1] &quot;Downloading data for CVRR.&quot;
 ## [1] &quot;Downloading data for CVS.&quot;
-## [1] &quot;Downloading data for CYS.&quot;
 ## [1] &quot;Downloading data for DHI.&quot;
-## [1] &quot;Downloading data for DAN.&quot;
 ## [1] &quot;Downloading data for DHR.&quot;
 ## [1] &quot;Downloading data for DRI.&quot;
-## [1] &quot;Downloading data for DAR.&quot;
 ## [1] &quot;Downloading data for DVA.&quot;
-## [1] &quot;Downloading data for DCP.&quot;
-## [1] &quot;Downloading data for DCT.&quot;
-## [1] &quot;Downloading data for DDR.&quot;
-## [1] &quot;Downloading data for DF.&quot;
-## [1] &quot;Downloading data for DECK.&quot;
 ## [1] &quot;Downloading data for DE.&quot;
-## [1] &quot;Downloading data for DK.&quot;
 ## [1] &quot;Downloading data for DVMT.&quot;
-## [1] &quot;Downloading data for DLPH.&quot;
 ## [1] &quot;Downloading data for DAL.&quot;
-## [1] &quot;Downloading data for DEL.&quot;
-## [1] &quot;Downloading data for DLX.&quot;
-## [1] &quot;Downloading data for DESP.&quot;
 ## [1] &quot;Downloading data for DB.&quot;
 ## [1] &quot;Downloading data for DVN.&quot;
 ## [1] &quot;Downloading data for DEO.&quot;
-## [1] &quot;Downloading data for DO.&quot;
-## [1] &quot;Downloading data for DRH.&quot;
-## [1] &quot;Downloading data for DKS.&quot;
-## [1] &quot;Downloading data for DBD.&quot;
 ## [1] &quot;Downloading data for DLR.&quot;
-## [1] &quot;Downloading data for DDS.&quot;
-## [1] &quot;Downloading data for DPLO.&quot;
 ## [1] &quot;Downloading data for DFS.&quot;
-## [1] &quot;Downloading data for DLB.&quot;
 ## [1] &quot;Downloading data for DG.&quot;
-## [1] &quot;Downloading data for DM.&quot;
 ## [1] &quot;Downloading data for D.&quot;
-## [1] &quot;Downloading data for DPZ.&quot;
-## [1] &quot;Downloading data for UFS.&quot;
-## [1] &quot;Downloading data for DCI.&quot;
-## [1] &quot;Downloading data for DSL.&quot;
-## [1] &quot;Downloading data for DEI.&quot;
 ## [1] &quot;Downloading data for DOV.&quot;
 ## [1] &quot;Downloading data for DWDP.&quot;
 ## [1] &quot;Downloading data for DPS.&quot;
-## [1] &quot;Downloading data for RDY.&quot;
-## [1] &quot;Downloading data for DRQ.&quot;
-## [1] &quot;Downloading data for DST.&quot;
-## [1] &quot;Downloading data for DSW.&quot;
 ## [1] &quot;Downloading data for DTE.&quot;
-## [1] &quot;Downloading data for DNP.&quot;
 ## [1] &quot;Downloading data for DUK.&quot;
-## [1] &quot;Downloading data for DRE.&quot;
-## [1] &quot;Downloading data for DNB.&quot;
 ## [1] &quot;Downloading data for DXC.&quot;
-## [1] &quot;Downloading data for DY.&quot;
-## [1] &quot;Downloading data for DYN.&quot;
-## [1] &quot;Downloading data for ELF.&quot;
-## [1] &quot;Downloading data for SSP.&quot;
-## [1] &quot;Downloading data for EXP.&quot;</code></pre>
-<pre><code>## Warning: EXP contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for EGP.&quot;
 ## [1] &quot;Downloading data for EMN.&quot;
 ## [1] &quot;Downloading data for ETN.&quot;
-## [1] &quot;Downloading data for ETV.&quot;
-## [1] &quot;Downloading data for ETW.&quot;
-## [1] &quot;Downloading data for EV.&quot;
-## [1] &quot;Downloading data for EVT.&quot;
-## [1] &quot;Downloading data for ETG.&quot;
-## [1] &quot;Downloading data for ETY.&quot;
-## [1] &quot;Downloading data for EXG.&quot;
 ## [1] &quot;Downloading data for ECL.&quot;
 ## [1] &quot;Downloading data for EC.&quot;
 ## [1] &quot;Downloading data for EIX.&quot;
-## [1] &quot;Downloading data for EDR.&quot;
 ## [1] &quot;Downloading data for EW.&quot;
-## [1] &quot;Downloading data for EE.&quot;
-## [1] &quot;Downloading data for EGO.&quot;
 ## [1] &quot;Downloading data for LLY.&quot;
-## [1] &quot;Downloading data for ELLI.&quot;
-## [1] &quot;Downloading data for ERJ.&quot;
-## [1] &quot;Downloading data for EME.&quot;
-## [1] &quot;Downloading data for EEX.&quot;
-## [1] &quot;Downloading data for EBS.&quot;
 ## [1] &quot;Downloading data for EMR.&quot;
-## [1] &quot;Downloading data for ESRT.&quot;
-## [1] &quot;Downloading data for EIG.&quot;
-## [1] &quot;Downloading data for EDN.&quot;
-## [1] &quot;Downloading data for ENBL.&quot;
-## [1] &quot;Downloading data for EEQ.&quot;
-## [1] &quot;Downloading data for EEP.&quot;
 ## [1] &quot;Downloading data for ENB.&quot;
 ## [1] &quot;Downloading data for ECA.&quot;
 ## [1] &quot;Downloading data for ENIA.&quot;
-## [1] &quot;Downloading data for ENIC.&quot;
-## [1] &quot;Downloading data for EOCC.&quot;
-## [1] &quot;Downloading data for EGN.&quot;
-## [1] &quot;Downloading data for ENR.&quot;
-## [1] &quot;Downloading data for EPC.&quot;
 ## [1] &quot;Downloading data for ETE.&quot;
 ## [1] &quot;Downloading data for ETP.&quot;
-## [1] &quot;Downloading data for ERF.&quot;
-## [1] &quot;Downloading data for ENS.&quot;
-## [1] &quot;Downloading data for EGL.&quot;
 ## [1] &quot;Downloading data for E.&quot;
-## [1] &quot;Downloading data for ENLK.&quot;
-## [1] &quot;Downloading data for ENLC.&quot;
-## [1] &quot;Downloading data for NPO.&quot;
-## [1] &quot;Downloading data for ESV.&quot;
-## [1] &quot;Downloading data for ETM.&quot;
 ## [1] &quot;Downloading data for ETR.&quot;
 ## [1] &quot;Downloading data for EPD.&quot;
-## [1] &quot;Downloading data for ENV.&quot;
-## [1] &quot;Downloading data for EVHC.&quot;
 ## [1] &quot;Downloading data for EOG.&quot;
-## [1] &quot;Downloading data for EPAM.&quot;
-## [1] &quot;Downloading data for EPR.&quot;
 ## [1] &quot;Downloading data for EQT.&quot;
-## [1] &quot;Downloading data for EQGP.&quot;
-## [1] &quot;Downloading data for EQM.&quot;
 ## [1] &quot;Downloading data for EFX.&quot;
-## [1] &quot;Downloading data for EQC.&quot;
-## [1] &quot;Downloading data for ELS.&quot;
 ## [1] &quot;Downloading data for EQR.&quot;
-## [1] &quot;Downloading data for ESE.&quot;
-## [1] &quot;Downloading data for ESNT.&quot;
 ## [1] &quot;Downloading data for ESS.&quot;</code></pre>
 <pre><code>## Warning: ESS contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
 <pre><code>## [1] &quot;Downloading data for EL.&quot;
-## [1] &quot;Downloading data for ESL.&quot;
-## [1] &quot;Downloading data for EURN.&quot;
-## [1] &quot;Downloading data for EVR.&quot;
-## [1] &quot;Downloading data for RE.&quot;
 ## [1] &quot;Downloading data for ES.&quot;
-## [1] &quot;Downloading data for AQUA.&quot;</code></pre>
-<pre><code>## Warning: AQUA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for EXC.&quot;
-## [1] &quot;Downloading data for STAY.&quot;
-## [1] &quot;Downloading data for EXTN.&quot;
+## [1] &quot;Downloading data for EXC.&quot;
 ## [1] &quot;Downloading data for EXR.&quot;
 ## [1] &quot;Downloading data for XOM.&quot;
-## [1] &quot;Downloading data for FNB.&quot;
-## [1] &quot;Downloading data for FN.&quot;
-## [1] &quot;Downloading data for FDS.&quot;
-## [1] &quot;Downloading data for FICO.&quot;
-## [1] &quot;Downloading data for FMSA.&quot;
-## [1] &quot;Downloading data for SFUN.&quot;
-## [1] &quot;Downloading data for FBK.&quot;</code></pre>
-<pre><code>## Warning: FBK contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for FFG.&quot;
-## [1] &quot;Downloading data for FCB.&quot;
-## [1] &quot;Downloading data for FRT.&quot;
-## [1] &quot;Downloading data for FSS.&quot;
-## [1] &quot;Downloading data for FII.&quot;
 ## [1] &quot;Downloading data for FDX.&quot;
 ## [1] &quot;Downloading data for RACE.&quot;
-## [1] &quot;Downloading data for FOE.&quot;
-## [1] &quot;Downloading data for FG.&quot;
 ## [1] &quot;Downloading data for FCAU.&quot;
-## [1] &quot;Downloading data for FBR.&quot;
 ## [1] &quot;Downloading data for FNF.&quot;
 ## [1] &quot;Downloading data for FIS.&quot;
-## [1] &quot;Downloading data for FAF.&quot;
-## [1] &quot;Downloading data for FBP.&quot;
-## [1] &quot;Downloading data for FCFS.&quot;
-## [1] &quot;Downloading data for FCF.&quot;
 ## [1] &quot;Downloading data for FDC.&quot;
-## [1] &quot;Downloading data for FHN.&quot;
-## [1] &quot;Downloading data for FR.&quot;
-## [1] &quot;Downloading data for AG.&quot;
 ## [1] &quot;Downloading data for FRC.&quot;
-## [1] &quot;Downloading data for FPF.&quot;
 ## [1] &quot;Downloading data for FE.&quot;
-## [1] &quot;Downloading data for FIT.&quot;
-## [1] &quot;Downloading data for FBC.&quot;
 ## [1] &quot;Downloading data for FLT.&quot;
-## [1] &quot;Downloading data for FND.&quot;</code></pre>
-<pre><code>## Warning: FND contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for FLO.&quot;
-## [1] &quot;Downloading data for FLS.&quot;
-## [1] &quot;Downloading data for FLR.&quot;
 ## [1] &quot;Downloading data for FMC.&quot;
 ## [1] &quot;Downloading data for FMX.&quot;
-## [1] &quot;Downloading data for FL.&quot;
 ## [1] &quot;Downloading data for F.&quot;
 ## [1] &quot;Downloading data for FTS.&quot;
 ## [1] &quot;Downloading data for FTV.&quot;
-## [1] &quot;Downloading data for FTAI.&quot;</code></pre>
-<pre><code>## Warning: FTAI contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for FBHS.&quot;
-## [1] &quot;Downloading data for FET.&quot;
-## [1] &quot;Downloading data for FCPT.&quot;
+## [1] &quot;Downloading data for FBHS.&quot;
 ## [1] &quot;Downloading data for FNV.&quot;
 ## [1] &quot;Downloading data for BEN.&quot;
-## [1] &quot;Downloading data for FI.&quot;
 ## [1] &quot;Downloading data for FCX.&quot;
 ## [1] &quot;Downloading data for FMS.&quot;
-## [1] &quot;Downloading data for FDP.&quot;
-## [1] &quot;Downloading data for FSIC.&quot;
-## [1] &quot;Downloading data for FCN.&quot;
-## [1] &quot;Downloading data for GDV.&quot;
-## [1] &quot;Downloading data for GAB.&quot;
-## [1] &quot;Downloading data for GME.&quot;
 ## [1] &quot;Downloading data for GPS.&quot;
-## [1] &quot;Downloading data for GDI.&quot;
 ## [1] &quot;Downloading data for IT.&quot;
-## [1] &quot;Downloading data for GLOG.&quot;
-## [1] &quot;Downloading data for GLOP.&quot;
-## [1] &quot;Downloading data for GATX.&quot;
-## [1] &quot;Downloading data for GZT.&quot;
-## [1] &quot;Downloading data for GCP.&quot;
-## [1] &quot;Downloading data for GNRC.&quot;
-## [1] &quot;Downloading data for BGC.&quot;
 ## [1] &quot;Downloading data for GD.&quot;
 ## [1] &quot;Downloading data for GE.&quot;
 ## [1] &quot;Downloading data for GIS.&quot;
 ## [1] &quot;Downloading data for GM.&quot;
-## [1] &quot;Downloading data for GWR.&quot;
-## [1] &quot;Downloading data for GEL.&quot;
-## [1] &quot;Downloading data for G.&quot;
 ## [1] &quot;Downloading data for GPC.&quot;
-## [1] &quot;Downloading data for GNW.&quot;
-## [1] &quot;Downloading data for GEO.&quot;
-## [1] &quot;Downloading data for GGB.&quot;
-## [1] &quot;Downloading data for GTY.&quot;
 ## [1] &quot;Downloading data for GGP.&quot;
-## [1] &quot;Downloading data for GIL.&quot;
 ## [1] &quot;Downloading data for GSK.&quot;
-## [1] &quot;Downloading data for GNL.&quot;</code></pre>
-<pre><code>## Warning: GNL contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for GPN.&quot;
-## [1] &quot;Downloading data for GLOB.&quot;
-## [1] &quot;Downloading data for GMED.&quot;
-## [1] &quot;Downloading data for GMS.&quot;
-## [1] &quot;Downloading data for GDDY.&quot;
+## [1] &quot;Downloading data for GPN.&quot;
 ## [1] &quot;Downloading data for GOL.&quot;
-## [1] &quot;Downloading data for GFI.&quot;
 ## [1] &quot;Downloading data for GG.&quot;
 ## [1] &quot;Downloading data for GS.&quot;
-## [1] &quot;Downloading data for GGG.&quot;
-## [1] &quot;Downloading data for GHC.&quot;
-## [1] &quot;Downloading data for GPT.&quot;
-## [1] &quot;Downloading data for GVA.&quot;
-## [1] &quot;Downloading data for GPK.&quot;
-## [1] &quot;Downloading data for GTN.&quot;
-## [1] &quot;Downloading data for GXP.&quot;
-## [1] &quot;Downloading data for GWB.&quot;
-## [1] &quot;Downloading data for GDOT.&quot;
-## [1] &quot;Downloading data for GBX.&quot;
-## [1] &quot;Downloading data for GEF.&quot;
-## [1] &quot;Downloading data for GPI.&quot;
-## [1] &quot;Downloading data for GRUB.&quot;
-## [1] &quot;Downloading data for PAC.&quot;
-## [1] &quot;Downloading data for ASR.&quot;
 ## [1] &quot;Downloading data for AVAL.&quot;
 ## [1] &quot;Downloading data for BSMX.&quot;
-## [1] &quot;Downloading data for SUPV.&quot;
 ## [1] &quot;Downloading data for TV.&quot;
-## [1] &quot;Downloading data for GTT.&quot;
-## [1] &quot;Downloading data for GSH.&quot;
-## [1] &quot;Downloading data for GES.&quot;
-## [1] &quot;Downloading data for GWRE.&quot;
-## [1] &quot;Downloading data for HRB.&quot;
-## [1] &quot;Downloading data for FUL.&quot;
-## [1] &quot;Downloading data for HAE.&quot;
-## [1] &quot;Downloading data for HK.&quot;
 ## [1] &quot;Downloading data for HAL.&quot;
-## [1] &quot;Downloading data for HYH.&quot;
-## [1] &quot;Downloading data for HBI.&quot;
-## [1] &quot;Downloading data for HASI.&quot;
-## [1] &quot;Downloading data for HOG.&quot;
 ## [1] &quot;Downloading data for HRS.&quot;
-## [1] &quot;Downloading data for HSC.&quot;
 ## [1] &quot;Downloading data for HIG.&quot;
-## [1] &quot;Downloading data for HE.&quot;
 ## [1] &quot;Downloading data for HCA.&quot;
 ## [1] &quot;Downloading data for HCP.&quot;
 ## [1] &quot;Downloading data for HDB.&quot;
-## [1] &quot;Downloading data for HR.&quot;
-## [1] &quot;Downloading data for HTA.&quot;
-## [1] &quot;Downloading data for HLS.&quot;
-## [1] &quot;Downloading data for HL.&quot;
-## [1] &quot;Downloading data for HEI.&quot;
-## [1] &quot;Downloading data for HLX.&quot;
-## [1] &quot;Downloading data for HP.&quot;
-## [1] &quot;Downloading data for HLF.&quot;
-## [1] &quot;Downloading data for HRI.&quot;
-## [1] &quot;Downloading data for HTGC.&quot;
 ## [1] &quot;Downloading data for HSY.&quot;
-## [1] &quot;Downloading data for HTZ.&quot;
 ## [1] &quot;Downloading data for HES.&quot;
-## [1] &quot;Downloading data for HESM.&quot;
 ## [1] &quot;Downloading data for HPE.&quot;
-## [1] &quot;Downloading data for HXL.&quot;
-## [1] &quot;Downloading data for HF.&quot;
-## [1] &quot;Downloading data for HFRO.&quot;</code></pre>
-<pre><code>## Warning: HFRO contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for HIW.&quot;
-## [1] &quot;Downloading data for HI.&quot;
-## [1] &quot;Downloading data for HRC.&quot;
-## [1] &quot;Downloading data for HTH.&quot;
-## [1] &quot;Downloading data for HGV.&quot;
 ## [1] &quot;Downloading data for HLT.&quot;
-## [1] &quot;Downloading data for HNI.&quot;
-## [1] &quot;Downloading data for HEP.&quot;
-## [1] &quot;Downloading data for HFC.&quot;
 ## [1] &quot;Downloading data for HD.&quot;
 ## [1] &quot;Downloading data for HMC.&quot;
 ## [1] &quot;Downloading data for HON.&quot;
-## [1] &quot;Downloading data for HMN.&quot;
 ## [1] &quot;Downloading data for HRL.&quot;
 ## [1] &quot;Downloading data for HST.&quot;
-## [1] &quot;Downloading data for HLI.&quot;
-## [1] &quot;Downloading data for HHC.&quot;
 ## [1] &quot;Downloading data for HPQ.&quot;
-## [1] &quot;Downloading data for HRG.&quot;
 ## [1] &quot;Downloading data for HSBC.&quot;
 ## [1] &quot;Downloading data for HNP.&quot;
-## [1] &quot;Downloading data for HUBB.&quot;
-## [1] &quot;Downloading data for HUBS.&quot;
-## [1] &quot;Downloading data for HBM.&quot;
-## [1] &quot;Downloading data for HPP.&quot;
 ## [1] &quot;Downloading data for HUM.&quot;
 ## [1] &quot;Downloading data for HII.&quot;
-## [1] &quot;Downloading data for HUN.&quot;
-## [1] &quot;Downloading data for H.&quot;
-## [1] &quot;Downloading data for HY.&quot;
-## [1] &quot;Downloading data for IAG.&quot;
 ## [1] &quot;Downloading data for IBN.&quot;
-## [1] &quot;Downloading data for IDA.&quot;
 ## [1] &quot;Downloading data for IEX.&quot;
 ## [1] &quot;Downloading data for ITW.&quot;
-## [1] &quot;Downloading data for IMAX.&quot;
-## [1] &quot;Downloading data for IBA.&quot;
 ## [1] &quot;Downloading data for INFY.&quot;
 ## [1] &quot;Downloading data for ING.&quot;
 ## [1] &quot;Downloading data for IR.&quot;
-## [1] &quot;Downloading data for NGVT.&quot;
 ## [1] &quot;Downloading data for INGR.&quot;
-## [1] &quot;Downloading data for IPHI.&quot;
-## [1] &quot;Downloading data for NSP.&quot;
-## [1] &quot;Downloading data for IBP.&quot;
-## [1] &quot;Downloading data for INST.&quot;
-## [1] &quot;Downloading data for ITGR.&quot;
 ## [1] &quot;Downloading data for ICE.&quot;
 ## [1] &quot;Downloading data for IHG.&quot;
 ## [1] &quot;Downloading data for IFF.&quot;
 ## [1] &quot;Downloading data for IBM.&quot;
-## [1] &quot;Downloading data for IGT.&quot;
 ## [1] &quot;Downloading data for IP.&quot;
-## [1] &quot;Downloading data for IPG.&quot;
-## [1] &quot;Downloading data for INXN.&quot;
-## [1] &quot;Downloading data for XON.&quot;
-## [1] &quot;Downloading data for IVR.&quot;
 ## [1] &quot;Downloading data for IVZ.&quot;
 ## [1] &quot;Downloading data for INVH.&quot;</code></pre>
 <pre><code>## Warning: INVH contains missing values. Some functions will not work if
@@ -2217,894 +996,301 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
 <pre><code>## [1] &quot;Downloading data for IQV.&quot;
 ## [1] &quot;Downloading data for IRM.&quot;
-## [1] &quot;Downloading data for IRS.&quot;
-## [1] &quot;Downloading data for ICL.&quot;
-## [1] &quot;Downloading data for ITCB.&quot;
 ## [1] &quot;Downloading data for ITUB.&quot;
-## [1] &quot;Downloading data for ITT.&quot;
 ## [1] &quot;Downloading data for JPM.&quot;
 ## [1] &quot;Downloading data for SJM.&quot;
-## [1] &quot;Downloading data for JBL.&quot;
-## [1] &quot;Downloading data for JEC.&quot;
-## [1] &quot;Downloading data for JAG.&quot;</code></pre>
-<pre><code>## Warning: JAG contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for JHX.&quot;
-## [1] &quot;Downloading data for JHG.&quot;
-## [1] &quot;Downloading data for JBGS.&quot;
-## [1] &quot;Downloading data for JELD.&quot;
-## [1] &quot;Downloading data for JT.&quot;</code></pre>
-<pre><code>## Warning: JT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for JBT.&quot;
 ## [1] &quot;Downloading data for JNJ.&quot;
 ## [1] &quot;Downloading data for JCI.&quot;
-## [1] &quot;Downloading data for JLL.&quot;
 ## [1] &quot;Downloading data for JNPR.&quot;
-## [1] &quot;Downloading data for KAI.&quot;
-## [1] &quot;Downloading data for KAMN.&quot;
 ## [1] &quot;Downloading data for KSU.&quot;
-## [1] &quot;Downloading data for KS.&quot;
-## [1] &quot;Downloading data for KAR.&quot;
-## [1] &quot;Downloading data for KYN.&quot;
 ## [1] &quot;Downloading data for KB.&quot;
-## [1] &quot;Downloading data for KBH.&quot;
-## [1] &quot;Downloading data for KBR.&quot;
-## [1] &quot;Downloading data for FRAC.&quot;
 ## [1] &quot;Downloading data for K.&quot;
-## [1] &quot;Downloading data for KMPR.&quot;
-## [1] &quot;Downloading data for KMT.&quot;
-## [1] &quot;Downloading data for KW.&quot;
-## [1] &quot;Downloading data for KEN.&quot;
 ## [1] &quot;Downloading data for KEY.&quot;
-## [1] &quot;Downloading data for KEYS.&quot;
-## [1] &quot;Downloading data for KRC.&quot;
 ## [1] &quot;Downloading data for KMB.&quot;
-## [1] &quot;Downloading data for KIM.&quot;
 ## [1] &quot;Downloading data for KMI.&quot;
-## [1] &quot;Downloading data for KGC.&quot;
-## [1] &quot;Downloading data for KEX.&quot;
-## [1] &quot;Downloading data for KL.&quot;</code></pre>
-<pre><code>## Warning: KL contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for KRG.&quot;
 ## [1] &quot;Downloading data for KKR.&quot;
-## [1] &quot;Downloading data for KREF.&quot;
-## [1] &quot;Downloading data for KMG.&quot;
-## [1] &quot;Downloading data for KNX.&quot;
-## [1] &quot;Downloading data for KNL.&quot;
-## [1] &quot;Downloading data for KN.&quot;
 ## [1] &quot;Downloading data for KSS.&quot;
 ## [1] &quot;Downloading data for PHG.&quot;
-## [1] &quot;Downloading data for KOP.&quot;
 ## [1] &quot;Downloading data for KEP.&quot;
-## [1] &quot;Downloading data for KFY.&quot;
-## [1] &quot;Downloading data for KOS.&quot;
-## [1] &quot;Downloading data for KRA.&quot;
 ## [1] &quot;Downloading data for KR.&quot;
-## [1] &quot;Downloading data for KRO.&quot;
-## [1] &quot;Downloading data for KT.&quot;
 ## [1] &quot;Downloading data for KYO.&quot;
 ## [1] &quot;Downloading data for LB.&quot;
 ## [1] &quot;Downloading data for LLL.&quot;
-## [1] &quot;Downloading data for LQ.&quot;
 ## [1] &quot;Downloading data for LH.&quot;
-## [1] &quot;Downloading data for LADR.&quot;
-## [1] &quot;Downloading data for LW.&quot;
-## [1] &quot;Downloading data for LPI.&quot;
 ## [1] &quot;Downloading data for LVS.&quot;
-## [1] &quot;Downloading data for LHO.&quot;
 ## [1] &quot;Downloading data for LTM.&quot;
-## [1] &quot;Downloading data for LAZ.&quot;
-## [1] &quot;Downloading data for LZB.&quot;
-## [1] &quot;Downloading data for LCII.&quot;
 ## [1] &quot;Downloading data for LEA.&quot;
-## [1] &quot;Downloading data for LM.&quot;
-## [1] &quot;Downloading data for LEG.&quot;
 ## [1] &quot;Downloading data for LDOS.&quot;
-## [1] &quot;Downloading data for LC.&quot;
 ## [1] &quot;Downloading data for LEN.&quot;
-## [1] &quot;Downloading data for LII.&quot;
-## [1] &quot;Downloading data for LUK.&quot;
-## [1] &quot;Downloading data for LXP.&quot;
 ## [1] &quot;Downloading data for LPL.&quot;
-## [1] &quot;Downloading data for USA.&quot;
-## [1] &quot;Downloading data for LPT.&quot;
-## [1] &quot;Downloading data for LSI.&quot;
 ## [1] &quot;Downloading data for LNC.&quot;
 ## [1] &quot;Downloading data for LN.&quot;</code></pre>
 <pre><code>## Warning: LN contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for LAD.&quot;
-## [1] &quot;Downloading data for LYV.&quot;
-## [1] &quot;Downloading data for LYG.&quot;
+<pre><code>## [1] &quot;Downloading data for LYG.&quot;
 ## [1] &quot;Downloading data for LMT.&quot;
 ## [1] &quot;Downloading data for L.&quot;
-## [1] &quot;Downloading data for LOMA.&quot;</code></pre>
-<pre><code>## Warning: LOMA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for LPX.&quot;
 ## [1] &quot;Downloading data for LOW.&quot;
-## [1] &quot;Downloading data for LTC.&quot;
-## [1] &quot;Downloading data for LXFT.&quot;
-## [1] &quot;Downloading data for WLH.&quot;
 ## [1] &quot;Downloading data for LYB.&quot;
 ## [1] &quot;Downloading data for MTB.&quot;
-## [1] &quot;Downloading data for MDC.&quot;
-## [1] &quot;Downloading data for MAC.&quot;
-## [1] &quot;Downloading data for CLI.&quot;
-## [1] &quot;Downloading data for MIC.&quot;
-## [1] &quot;Downloading data for BMA.&quot;
-## [1] &quot;Downloading data for M.&quot;
 ## [1] &quot;Downloading data for MMP.&quot;
 ## [1] &quot;Downloading data for MGA.&quot;
-## [1] &quot;Downloading data for MAIN.&quot;
-## [1] &quot;Downloading data for MNK.&quot;
-## [1] &quot;Downloading data for MANU.&quot;
-## [1] &quot;Downloading data for MTW.&quot;
-## [1] &quot;Downloading data for MAN.&quot;
 ## [1] &quot;Downloading data for MFC.&quot;
 ## [1] &quot;Downloading data for MRO.&quot;
 ## [1] &quot;Downloading data for MPC.&quot;
-## [1] &quot;Downloading data for MMI.&quot;
 ## [1] &quot;Downloading data for MKL.&quot;
-## [1] &quot;Downloading data for VAC.&quot;
 ## [1] &quot;Downloading data for MMC.&quot;</code></pre>
 <pre><code>## Warning: MMC contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
 <pre><code>## [1] &quot;Downloading data for MLM.&quot;
 ## [1] &quot;Downloading data for MAS.&quot;
-## [1] &quot;Downloading data for DOOR.&quot;
-## [1] &quot;Downloading data for MTZ.&quot;
 ## [1] &quot;Downloading data for MA.&quot;
-## [1] &quot;Downloading data for MTDR.&quot;
-## [1] &quot;Downloading data for MATX.&quot;
-## [1] &quot;Downloading data for MAXR.&quot;</code></pre>
-<pre><code>## Warning: MAXR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for MMS.&quot;
-## [1] &quot;Downloading data for MXL.&quot;
 ## [1] &quot;Downloading data for MKC.&quot;
-## [1] &quot;Downloading data for MDR.&quot;
 ## [1] &quot;Downloading data for MCD.&quot;
 ## [1] &quot;Downloading data for MCK.&quot;
-## [1] &quot;Downloading data for MDU.&quot;
-## [1] &quot;Downloading data for MTL.&quot;
-## [1] &quot;Downloading data for MPW.&quot;
-## [1] &quot;Downloading data for MD.&quot;
 ## [1] &quot;Downloading data for MDT.&quot;
 ## [1] &quot;Downloading data for MRK.&quot;
-## [1] &quot;Downloading data for MCY.&quot;
-## [1] &quot;Downloading data for MDP.&quot;
-## [1] &quot;Downloading data for MTH.&quot;
-## [1] &quot;Downloading data for MTOR.&quot;
-## [1] &quot;Downloading data for MEI.&quot;
 ## [1] &quot;Downloading data for MET.&quot;
 ## [1] &quot;Downloading data for MTD.&quot;
-## [1] &quot;Downloading data for MFA.&quot;
-## [1] &quot;Downloading data for MTG.&quot;
-## [1] &quot;Downloading data for MGP.&quot;</code></pre>
-<pre><code>## Warning: MGP contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for MGM.&quot;
+## [1] &quot;Downloading data for MGM.&quot;
 ## [1] &quot;Downloading data for KORS.&quot;
 ## [1] &quot;Downloading data for MFGP.&quot;</code></pre>
 <pre><code>## Warning: MFGP contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
 <pre><code>## [1] &quot;Downloading data for MAA.&quot;
-## [1] &quot;Downloading data for MCRN.&quot;
-## [1] &quot;Downloading data for MTX.&quot;
 ## [1] &quot;Downloading data for MTU.&quot;
 ## [1] &quot;Downloading data for MFG.&quot;
 ## [1] &quot;Downloading data for MBT.&quot;
-## [1] &quot;Downloading data for MOD.&quot;
-## [1] &quot;Downloading data for MC.&quot;
 ## [1] &quot;Downloading data for MHK.&quot;
-## [1] &quot;Downloading data for MOH.&quot;
 ## [1] &quot;Downloading data for TAP.&quot;
-## [1] &quot;Downloading data for MNR.&quot;
 ## [1] &quot;Downloading data for MON.&quot;
 ## [1] &quot;Downloading data for MCO.&quot;
 ## [1] &quot;Downloading data for MS.&quot;
 ## [1] &quot;Downloading data for MOS.&quot;
 ## [1] &quot;Downloading data for MSI.&quot;
 ## [1] &quot;Downloading data for MPLX.&quot;
-## [1] &quot;Downloading data for MRC.&quot;
-## [1] &quot;Downloading data for MSA.&quot;
-## [1] &quot;Downloading data for MSM.&quot;
 ## [1] &quot;Downloading data for MSCI.&quot;
-## [1] &quot;Downloading data for MSGN.&quot;
-## [1] &quot;Downloading data for MLI.&quot;
-## [1] &quot;Downloading data for MWA.&quot;
-## [1] &quot;Downloading data for MULE.&quot;
-## [1] &quot;Downloading data for MUR.&quot;
-## [1] &quot;Downloading data for MUSA.&quot;
-## [1] &quot;Downloading data for NBR.&quot;
-## [1] &quot;Downloading data for NFG.&quot;
 ## [1] &quot;Downloading data for NGG.&quot;
-## [1] &quot;Downloading data for NHI.&quot;
 ## [1] &quot;Downloading data for NOV.&quot;
-## [1] &quot;Downloading data for NNN.&quot;
-## [1] &quot;Downloading data for SID.&quot;
-## [1] &quot;Downloading data for NSA.&quot;
-## [1] &quot;Downloading data for NSM.&quot;
-## [1] &quot;Downloading data for NAV.&quot;
-## [1] &quot;Downloading data for NCS.&quot;
-## [1] &quot;Downloading data for NCR.&quot;
-## [1] &quot;Downloading data for NP.&quot;
-## [1] &quot;Downloading data for NNI.&quot;
-## [1] &quot;Downloading data for NVRO.&quot;
-## [1] &quot;Downloading data for NMFC.&quot;
 ## [1] &quot;Downloading data for EDU.&quot;
-## [1] &quot;Downloading data for NEWR.&quot;
-## [1] &quot;Downloading data for NRZ.&quot;
-## [1] &quot;Downloading data for NYCB.&quot;
-## [1] &quot;Downloading data for NYT.&quot;
 ## [1] &quot;Downloading data for NWL.&quot;
-## [1] &quot;Downloading data for NFX.&quot;
-## [1] &quot;Downloading data for NJR.&quot;
-## [1] &quot;Downloading data for NEU.&quot;
 ## [1] &quot;Downloading data for NEM.&quot;
-## [1] &quot;Downloading data for NEXA.&quot;
-## [1] &quot;Downloading data for NEP.&quot;
 ## [1] &quot;Downloading data for NEE.&quot;
-## [1] &quot;Downloading data for NGL.&quot;
 ## [1] &quot;Downloading data for NLSN.&quot;
 ## [1] &quot;Downloading data for NKE.&quot;
-## [1] &quot;Downloading data for NI.&quot;
-## [1] &quot;Downloading data for NOAH.&quot;
-## [1] &quot;Downloading data for NE.&quot;
 ## [1] &quot;Downloading data for NBL.&quot;
-## [1] &quot;Downloading data for NBLX.&quot;
 ## [1] &quot;Downloading data for NOK.&quot;
-## [1] &quot;Downloading data for NOMD.&quot;
 ## [1] &quot;Downloading data for NMR.&quot;
-## [1] &quot;Downloading data for OSB.&quot;</code></pre>
-<pre><code>## Warning: OSB contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for JWN.&quot;
 ## [1] &quot;Downloading data for NSC.&quot;
 ## [1] &quot;Downloading data for NOC.&quot;
-## [1] &quot;Downloading data for NWN.&quot;
-## [1] &quot;Downloading data for NWE.&quot;
-## [1] &quot;Downloading data for NCLH.&quot;
 ## [1] &quot;Downloading data for NVS.&quot;
 ## [1] &quot;Downloading data for NVO.&quot;
-## [1] &quot;Downloading data for DNOW.&quot;
-## [1] &quot;Downloading data for NRG.&quot;
-## [1] &quot;Downloading data for NYLD.&quot;
 ## [1] &quot;Downloading data for DCM.&quot;
-## [1] &quot;Downloading data for NUS.&quot;
 ## [1] &quot;Downloading data for NUE.&quot;
-## [1] &quot;Downloading data for NS.&quot;
-## [1] &quot;Downloading data for NVG.&quot;
-## [1] &quot;Downloading data for NUV.&quot;
-## [1] &quot;Downloading data for NEA.&quot;
-## [1] &quot;Downloading data for NAC.&quot;
-## [1] &quot;Downloading data for JQC.&quot;
-## [1] &quot;Downloading data for NZF.&quot;
-## [1] &quot;Downloading data for NRK.&quot;
-## [1] &quot;Downloading data for JPC.&quot;
-## [1] &quot;Downloading data for JPS.&quot;
-## [1] &quot;Downloading data for NAD.&quot;
-## [1] &quot;Downloading data for BXMX.&quot;
-## [1] &quot;Downloading data for NVR.&quot;
-## [1] &quot;Downloading data for OAK.&quot;
-## [1] &quot;Downloading data for OAS.&quot;
+## [1] &quot;Downloading data for NTR.&quot;</code></pre>
+<pre><code>## Warning: NTR contains missing values. Some functions will not work if
+## objects contain missing values in the middle of the series. Consider using
+## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
+<pre><code>## [1] &quot;Downloading data for NVR.&quot;
 ## [1] &quot;Downloading data for OXY.&quot;
-## [1] &quot;Downloading data for OII.&quot;
-## [1] &quot;Downloading data for OZM.&quot;
-## [1] &quot;Downloading data for OGE.&quot;
-## [1] &quot;Downloading data for OIS.&quot;
-## [1] &quot;Downloading data for ORI.&quot;
-## [1] &quot;Downloading data for OLN.&quot;
-## [1] &quot;Downloading data for OMAM.&quot;
-## [1] &quot;Downloading data for OHI.&quot;
 ## [1] &quot;Downloading data for OMC.&quot;
-## [1] &quot;Downloading data for ASGN.&quot;
-## [1] &quot;Downloading data for OGS.&quot;
-## [1] &quot;Downloading data for OMF.&quot;
 ## [1] &quot;Downloading data for OKE.&quot;
 ## [1] &quot;Downloading data for ORCL.&quot;
 ## [1] &quot;Downloading data for ORAN.&quot;
-## [1] &quot;Downloading data for OA.&quot;
-## [1] &quot;Downloading data for OEC.&quot;
 ## [1] &quot;Downloading data for IX.&quot;
-## [1] &quot;Downloading data for ORA.&quot;
-## [1] &quot;Downloading data for OSK.&quot;
-## [1] &quot;Downloading data for OR.&quot;</code></pre>
-<pre><code>## Warning: OR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for OUT.&quot;
-## [1] &quot;Downloading data for OMI.&quot;
 ## [1] &quot;Downloading data for OC.&quot;
-## [1] &quot;Downloading data for OI.&quot;
-## [1] &quot;Downloading data for OXM.&quot;
 ## [1] &quot;Downloading data for PCG.&quot;
 ## [1] &quot;Downloading data for PKG.&quot;
 ## [1] &quot;Downloading data for PANW.&quot;
-## [1] &quot;Downloading data for PAM.&quot;
-## [1] &quot;Downloading data for P.&quot;
-## [1] &quot;Downloading data for PGRE.&quot;
-## [1] &quot;Downloading data for PK.&quot;
 ## [1] &quot;Downloading data for PH.&quot;
-## [1] &quot;Downloading data for PE.&quot;
-## [1] &quot;Downloading data for PRTY.&quot;
-## [1] &quot;Downloading data for PAYC.&quot;
-## [1] &quot;Downloading data for PBF.&quot;
-## [1] &quot;Downloading data for BTU.&quot;
-## [1] &quot;Downloading data for PSO.&quot;
-## [1] &quot;Downloading data for PEB.&quot;
 ## [1] &quot;Downloading data for PBA.&quot;
-## [1] &quot;Downloading data for PMT.&quot;
-## [1] &quot;Downloading data for PAG.&quot;
 ## [1] &quot;Downloading data for PNR.&quot;
-## [1] &quot;Downloading data for PEN.&quot;
-## [1] &quot;Downloading data for PFGC.&quot;
-## [1] &quot;Downloading data for PKI.&quot;
 ## [1] &quot;Downloading data for PRGO.&quot;
-## [1] &quot;Downloading data for PZE.&quot;
 ## [1] &quot;Downloading data for PTR.&quot;
 ## [1] &quot;Downloading data for PBR.&quot;
 ## [1] &quot;Downloading data for PFE.&quot;
 ## [1] &quot;Downloading data for PM.&quot;
 ## [1] &quot;Downloading data for PSX.&quot;
-## [1] &quot;Downloading data for PSXP.&quot;
-## [1] &quot;Downloading data for DOC.&quot;
-## [1] &quot;Downloading data for PDM.&quot;
-## [1] &quot;Downloading data for PTY.&quot;
-## [1] &quot;Downloading data for PCI.&quot;
-## [1] &quot;Downloading data for PDI.&quot;
-## [1] &quot;Downloading data for PF.&quot;
-## [1] &quot;Downloading data for PNW.&quot;
 ## [1] &quot;Downloading data for PXD.&quot;
-## [1] &quot;Downloading data for PJC.&quot;
-## [1] &quot;Downloading data for PBI.&quot;
 ## [1] &quot;Downloading data for PAA.&quot;
-## [1] &quot;Downloading data for PAGP.&quot;
-## [1] &quot;Downloading data for PLNT.&quot;</code></pre>
-<pre><code>## Warning: PLNT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for PLT.&quot;
-## [1] &quot;Downloading data for PAH.&quot;
-## [1] &quot;Downloading data for PHI.&quot;
-## [1] &quot;Downloading data for PGEM.&quot;
 ## [1] &quot;Downloading data for PNC.&quot;
-## [1] &quot;Downloading data for PNM.&quot;
-## [1] &quot;Downloading data for PII.&quot;
-## [1] &quot;Downloading data for POL.&quot;
-## [1] &quot;Downloading data for POR.&quot;
 ## [1] &quot;Downloading data for PKX.&quot;
-## [1] &quot;Downloading data for POST.&quot;
-## [1] &quot;Downloading data for POT.&quot;
-## [1] &quot;Downloading data for PPDF.&quot;</code></pre>
-<pre><code>## Warning: PPDF contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for PPG.&quot;
+## [1] &quot;Downloading data for PPG.&quot;
 ## [1] &quot;Downloading data for PPL.&quot;
-## [1] &quot;Downloading data for PQG.&quot;
 ## [1] &quot;Downloading data for PX.&quot;
-## [1] &quot;Downloading data for PBH.&quot;
-## [1] &quot;Downloading data for PVG.&quot;
-## [1] &quot;Downloading data for PRI.&quot;
-## [1] &quot;Downloading data for PRA.&quot;
 ## [1] &quot;Downloading data for PG.&quot;
 ## [1] &quot;Downloading data for PGR.&quot;
 ## [1] &quot;Downloading data for PLD.&quot;
-## [1] &quot;Downloading data for PUMP.&quot;
-## [1] &quot;Downloading data for PB.&quot;
-## [1] &quot;Downloading data for PRLB.&quot;
-## [1] &quot;Downloading data for PFS.&quot;
 ## [1] &quot;Downloading data for PRU.&quot;
 ## [1] &quot;Downloading data for PUK.&quot;
-## [1] &quot;Downloading data for PSB.&quot;
 ## [1] &quot;Downloading data for TLK.&quot;
 ## [1] &quot;Downloading data for PEG.&quot;
 ## [1] &quot;Downloading data for PSA.&quot;
 ## [1] &quot;Downloading data for PHM.&quot;
-## [1] &quot;Downloading data for PSTG.&quot;
 ## [1] &quot;Downloading data for PVH.&quot;
-## [1] &quot;Downloading data for QTWO.&quot;
-## [1] &quot;Downloading data for QEP.&quot;
-## [1] &quot;Downloading data for QTS.&quot;
-## [1] &quot;Downloading data for QUAD.&quot;
-## [1] &quot;Downloading data for KWR.&quot;
-## [1] &quot;Downloading data for QCP.&quot;
-## [1] &quot;Downloading data for PWR.&quot;
-## [1] &quot;Downloading data for QD.&quot;
 ## [1] &quot;Downloading data for DGX.&quot;
-## [1] &quot;Downloading data for QUOT.&quot;
-## [1] &quot;Downloading data for CTX.&quot;
-## [1] &quot;Downloading data for RDN.&quot;
-## [1] &quot;Downloading data for RL.&quot;
-## [1] &quot;Downloading data for RPT.&quot;
-## [1] &quot;Downloading data for RRC.&quot;
 ## [1] &quot;Downloading data for RJF.&quot;
-## [1] &quot;Downloading data for RYAM.&quot;
-## [1] &quot;Downloading data for RYN.&quot;
 ## [1] &quot;Downloading data for RTN.&quot;
-## [1] &quot;Downloading data for RLGY.&quot;
 ## [1] &quot;Downloading data for O.&quot;
 ## [1] &quot;Downloading data for RHT.&quot;
-## [1] &quot;Downloading data for RWT.&quot;
-## [1] &quot;Downloading data for RBC.&quot;
-## [1] &quot;Downloading data for RGC.&quot;
 ## [1] &quot;Downloading data for REG.&quot;
 ## [1] &quot;Downloading data for RF.&quot;
 ## [1] &quot;Downloading data for RGA.&quot;
-## [1] &quot;Downloading data for RS.&quot;
 ## [1] &quot;Downloading data for RENX.&quot;
 ## [1] &quot;Downloading data for RELX.&quot;
-## [1] &quot;Downloading data for RNR.&quot;
 ## [1] &quot;Downloading data for RSG.&quot;
 ## [1] &quot;Downloading data for RMD.&quot;
 ## [1] &quot;Downloading data for QSR.&quot;
-## [1] &quot;Downloading data for RPAI.&quot;
-## [1] &quot;Downloading data for REVG.&quot;
-## [1] &quot;Downloading data for REV.&quot;
-## [1] &quot;Downloading data for REXR.&quot;
-## [1] &quot;Downloading data for RXN.&quot;
-## [1] &quot;Downloading data for RH.&quot;
-## [1] &quot;Downloading data for RMP.&quot;
-## [1] &quot;Downloading data for RNG.&quot;
 ## [1] &quot;Downloading data for RIO.&quot;
-## [1] &quot;Downloading data for RBA.&quot;
-## [1] &quot;Downloading data for RAD.&quot;
-## [1] &quot;Downloading data for RLI.&quot;
-## [1] &quot;Downloading data for RLJ.&quot;
-## [1] &quot;Downloading data for RHI.&quot;
 ## [1] &quot;Downloading data for ROK.&quot;
 ## [1] &quot;Downloading data for COL.&quot;
 ## [1] &quot;Downloading data for RCI.&quot;
-## [1] &quot;Downloading data for ROG.&quot;
 ## [1] &quot;Downloading data for ROL.&quot;
 ## [1] &quot;Downloading data for ROP.&quot;
-## [1] &quot;Downloading data for RDC.&quot;
 ## [1] &quot;Downloading data for RY.&quot;
 ## [1] &quot;Downloading data for RBS.&quot;
 ## [1] &quot;Downloading data for RCL.&quot;
-## [1] &quot;Downloading data for RVT.&quot;
-## [1] &quot;Downloading data for RES.&quot;
-## [1] &quot;Downloading data for RPM.&quot;
-## [1] &quot;Downloading data for RSPP.&quot;
-## [1] &quot;Downloading data for R.&quot;
-## [1] &quot;Downloading data for RHP.&quot;
 ## [1] &quot;Downloading data for SPGI.&quot;
-## [1] &quot;Downloading data for SAIL.&quot;</code></pre>
-<pre><code>## Warning: SAIL contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for CRM.&quot;
-## [1] &quot;Downloading data for SBH.&quot;
+## [1] &quot;Downloading data for CRM.&quot;
 ## [1] &quot;Downloading data for SNY.&quot;
-## [1] &quot;Downloading data for SC.&quot;
 ## [1] &quot;Downloading data for SAP.&quot;
 ## [1] &quot;Downloading data for SSL.&quot;
-## [1] &quot;Downloading data for BFS.&quot;
-## [1] &quot;Downloading data for SCG.&quot;
 ## [1] &quot;Downloading data for SLB.&quot;
-## [1] &quot;Downloading data for SNDR.&quot;
-## [1] &quot;Downloading data for SWM.&quot;
-## [1] &quot;Downloading data for SAIC.&quot;
-## [1] &quot;Downloading data for SMG.&quot;
-## [1] &quot;Downloading data for SE.&quot;
-## [1] &quot;Downloading data for SEE.&quot;
-## [1] &quot;Downloading data for SEAS.&quot;
-## [1] &quot;Downloading data for WTTR.&quot;
-## [1] &quot;Downloading data for SEM.&quot;
-## [1] &quot;Downloading data for SEMG.&quot;
-## [1] &quot;Downloading data for SMI.&quot;
 ## [1] &quot;Downloading data for SRE.&quot;
-## [1] &quot;Downloading data for ST.&quot;
-## [1] &quot;Downloading data for SXT.&quot;
-## [1] &quot;Downloading data for SRG.&quot;</code></pre>
-<pre><code>## Warning: SRG contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for SCI.&quot;
-## [1] &quot;Downloading data for SERV.&quot;
 ## [1] &quot;Downloading data for NOW.&quot;
-## [1] &quot;Downloading data for SHAK.&quot;
 ## [1] &quot;Downloading data for SJR.&quot;
-## [1] &quot;Downloading data for SHLX.&quot;
 ## [1] &quot;Downloading data for SHW.&quot;
 ## [1] &quot;Downloading data for SHG.&quot;
-## [1] &quot;Downloading data for SFL.&quot;
 ## [1] &quot;Downloading data for SHOP.&quot;
-## [1] &quot;Downloading data for SSTK.&quot;
-## [1] &quot;Downloading data for SIG.&quot;
 ## [1] &quot;Downloading data for SPG.&quot;
-## [1] &quot;Downloading data for SSD.&quot;
-## [1] &quot;Downloading data for SHI.&quot;
-## [1] &quot;Downloading data for SITE.&quot;
-## [1] &quot;Downloading data for SIX.&quot;
-## [1] &quot;Downloading data for SJW.&quot;
 ## [1] &quot;Downloading data for SKM.&quot;
-## [1] &quot;Downloading data for SKX.&quot;
-## [1] &quot;Downloading data for SLG.&quot;
-## [1] &quot;Downloading data for SM.&quot;
 ## [1] &quot;Downloading data for SNN.&quot;
 ## [1] &quot;Downloading data for AOS.&quot;
 ## [1] &quot;Downloading data for SNAP.&quot;
 ## [1] &quot;Downloading data for SNA.&quot;
 ## [1] &quot;Downloading data for SQM.&quot;
-## [1] &quot;Downloading data for SOGO.&quot;</code></pre>
-<pre><code>## Warning: SOGO contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for SON.&quot;
 ## [1] &quot;Downloading data for SNE.&quot;
-## [1] &quot;Downloading data for BID.&quot;
-## [1] &quot;Downloading data for SJI.&quot;
 ## [1] &quot;Downloading data for SO.&quot;
 ## [1] &quot;Downloading data for SCCO.&quot;
 ## [1] &quot;Downloading data for LUV.&quot;
-## [1] &quot;Downloading data for SWX.&quot;
-## [1] &quot;Downloading data for SWN.&quot;
 ## [1] &quot;Downloading data for SEP.&quot;
-## [1] &quot;Downloading data for SPB.&quot;
-## [1] &quot;Downloading data for SR.&quot;
 ## [1] &quot;Downloading data for SPR.&quot;
-## [1] &quot;Downloading data for SAVE.&quot;
-## [1] &quot;Downloading data for SRC.&quot;
 ## [1] &quot;Downloading data for S.&quot;
-## [1] &quot;Downloading data for SPXC.&quot;</code></pre>
-<pre><code>## Warning: SPXC contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for FLOW.&quot;</code></pre>
-<pre><code>## Warning: FLOW contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for SQ.&quot;
-## [1] &quot;Downloading data for JOE.&quot;
-## [1] &quot;Downloading data for STAG.&quot;
-## [1] &quot;Downloading data for SMP.&quot;
-## [1] &quot;Downloading data for SXI.&quot;
+## [1] &quot;Downloading data for SQ.&quot;
 ## [1] &quot;Downloading data for SWK.&quot;
-## [1] &quot;Downloading data for STN.&quot;
-## [1] &quot;Downloading data for STWD.&quot;
 ## [1] &quot;Downloading data for STT.&quot;
 ## [1] &quot;Downloading data for STO.&quot;
-## [1] &quot;Downloading data for SCS.&quot;
-## [1] &quot;Downloading data for SCL.&quot;
-## [1] &quot;Downloading data for STE.&quot;
-## [1] &quot;Downloading data for STL.&quot;
-## [1] &quot;Downloading data for STC.&quot;
-## [1] &quot;Downloading data for SF.&quot;
 ## [1] &quot;Downloading data for STM.&quot;
-## [1] &quot;Downloading data for STOR.&quot;
 ## [1] &quot;Downloading data for SYK.&quot;
-## [1] &quot;Downloading data for SPH.&quot;
 ## [1] &quot;Downloading data for SMFG.&quot;
-## [1] &quot;Downloading data for INN.&quot;
-## [1] &quot;Downloading data for SUM.&quot;
-## [1] &quot;Downloading data for SMLP.&quot;
-## [1] &quot;Downloading data for SUI.&quot;
 ## [1] &quot;Downloading data for SLF.&quot;
 ## [1] &quot;Downloading data for SU.&quot;
-## [1] &quot;Downloading data for SUN.&quot;
-## [1] &quot;Downloading data for SHO.&quot;
 ## [1] &quot;Downloading data for STI.&quot;
-## [1] &quot;Downloading data for SPN.&quot;
-## [1] &quot;Downloading data for SWCH.&quot;
 ## [1] &quot;Downloading data for SYF.&quot;
-## [1] &quot;Downloading data for SYT.&quot;
-## [1] &quot;Downloading data for SNX.&quot;
-## [1] &quot;Downloading data for SNV.&quot;
 ## [1] &quot;Downloading data for SYY.&quot;
-## [1] &quot;Downloading data for SYX.&quot;
-## [1] &quot;Downloading data for DATA.&quot;
-## [1] &quot;Downloading data for TAHO.&quot;
-## [1] &quot;Downloading data for TLRD.&quot;
 ## [1] &quot;Downloading data for TSM.&quot;
 ## [1] &quot;Downloading data for TAL.&quot;
-## [1] &quot;Downloading data for TEGP.&quot;
-## [1] &quot;Downloading data for TEP.&quot;
-## [1] &quot;Downloading data for SKT.&quot;
 ## [1] &quot;Downloading data for TPR.&quot;
 ## [1] &quot;Downloading data for TRGP.&quot;
 ## [1] &quot;Downloading data for TGT.&quot;
-## [1] &quot;Downloading data for TARO.&quot;
 ## [1] &quot;Downloading data for TTM.&quot;
-## [1] &quot;Downloading data for TCO.&quot;
-## [1] &quot;Downloading data for TMHC.&quot;
-## [1] &quot;Downloading data for TCP.&quot;
-## [1] &quot;Downloading data for TCF.&quot;
 ## [1] &quot;Downloading data for TEL.&quot;
 ## [1] &quot;Downloading data for FTI.&quot;
 ## [1] &quot;Downloading data for TECK.&quot;
-## [1] &quot;Downloading data for TGP.&quot;
-## [1] &quot;Downloading data for GCI.&quot;
-## [1] &quot;Downloading data for TGNA.&quot;
-## [1] &quot;Downloading data for TDOC.&quot;
-## [1] &quot;Downloading data for TEO.&quot;
 ## [1] &quot;Downloading data for TI.&quot;
-## [1] &quot;Downloading data for TDY.&quot;
 ## [1] &quot;Downloading data for TFX.&quot;
 ## [1] &quot;Downloading data for VIV.&quot;
 ## [1] &quot;Downloading data for TEF.&quot;
-## [1] &quot;Downloading data for TDS.&quot;
 ## [1] &quot;Downloading data for TU.&quot;
-## [1] &quot;Downloading data for TPX.&quot;
 ## [1] &quot;Downloading data for TS.&quot;
-## [1] &quot;Downloading data for THC.&quot;
-## [1] &quot;Downloading data for TNC.&quot;
-## [1] &quot;Downloading data for TEN.&quot;
-## [1] &quot;Downloading data for TDC.&quot;
-## [1] &quot;Downloading data for TER.&quot;
-## [1] &quot;Downloading data for TEX.&quot;
-## [1] &quot;Downloading data for TX.&quot;
-## [1] &quot;Downloading data for TNH.&quot;
-## [1] &quot;Downloading data for TRNO.&quot;
 ## [1] &quot;Downloading data for TEVA.&quot;
-## [1] &quot;Downloading data for TPL.&quot;
-## [1] &quot;Downloading data for TGH.&quot;
 ## [1] &quot;Downloading data for TXT.&quot;
-## [1] &quot;Downloading data for AES.&quot;
 ## [1] &quot;Downloading data for BX.&quot;
 ## [1] &quot;Downloading data for SCHW.&quot;
 ## [1] &quot;Downloading data for COO.&quot;
-## [1] &quot;Downloading data for THG.&quot;
-## [1] &quot;Downloading data for MSG.&quot;
 ## [1] &quot;Downloading data for TRV.&quot;
 ## [1] &quot;Downloading data for TMO.&quot;
-## [1] &quot;Downloading data for TPRE.&quot;
 ## [1] &quot;Downloading data for TRI.&quot;
-## [1] &quot;Downloading data for THO.&quot;
 ## [1] &quot;Downloading data for TIF.&quot;
 ## [1] &quot;Downloading data for TSU.&quot;
-## [1] &quot;Downloading data for TIME.&quot;
 ## [1] &quot;Downloading data for TWX.&quot;
-## [1] &quot;Downloading data for TKR.&quot;
 ## [1] &quot;Downloading data for TJX.&quot;
-## [1] &quot;Downloading data for TOL.&quot;
-## [1] &quot;Downloading data for TR.&quot;
-## [1] &quot;Downloading data for BLD.&quot;
 ## [1] &quot;Downloading data for TMK.&quot;
-## [1] &quot;Downloading data for TTC.&quot;
 ## [1] &quot;Downloading data for TD.&quot;
-## [1] &quot;Downloading data for TYG.&quot;
 ## [1] &quot;Downloading data for TOT.&quot;
 ## [1] &quot;Downloading data for TSS.&quot;
 ## [1] &quot;Downloading data for TM.&quot;
-## [1] &quot;Downloading data for TRTX.&quot;</code></pre>
-<pre><code>## Warning: TRTX contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for TSLX.&quot;
-## [1] &quot;Downloading data for TAC.&quot;
 ## [1] &quot;Downloading data for TRP.&quot;
 ## [1] &quot;Downloading data for TDG.&quot;
-## [1] &quot;Downloading data for RIG.&quot;
-## [1] &quot;Downloading data for TGS.&quot;
 ## [1] &quot;Downloading data for TRU.&quot;
-## [1] &quot;Downloading data for TVPT.&quot;
-## [1] &quot;Downloading data for THS.&quot;
-## [1] &quot;Downloading data for TREX.&quot;
-## [1] &quot;Downloading data for TY.&quot;
-## [1] &quot;Downloading data for TPH.&quot;
-## [1] &quot;Downloading data for TRCO.&quot;
-## [1] &quot;Downloading data for TNET.&quot;
-## [1] &quot;Downloading data for TRN.&quot;
-## [1] &quot;Downloading data for TSE.&quot;
-## [1] &quot;Downloading data for TRTN.&quot;
-## [1] &quot;Downloading data for TGI.&quot;
-## [1] &quot;Downloading data for TROX.&quot;
-## [1] &quot;Downloading data for TBI.&quot;
-## [1] &quot;Downloading data for TUP.&quot;
-## [1] &quot;Downloading data for TKC.&quot;
-## [1] &quot;Downloading data for TRQ.&quot;
-## [1] &quot;Downloading data for TPC.&quot;
-## [1] &quot;Downloading data for TWLO.&quot;
 ## [1] &quot;Downloading data for TWTR.&quot;
-## [1] &quot;Downloading data for TWO.&quot;
-## [1] &quot;Downloading data for TYL.&quot;
 ## [1] &quot;Downloading data for TSN.&quot;
 ## [1] &quot;Downloading data for USB.&quot;
-## [1] &quot;Downloading data for SLCA.&quot;
 ## [1] &quot;Downloading data for UBS.&quot;</code></pre>
 <pre><code>## Warning: UBS contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for UGI.&quot;
-## [1] &quot;Downloading data for UGP.&quot;
-## [1] &quot;Downloading data for UA.&quot;</code></pre>
-<pre><code>## Warning: UA contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for UAA.&quot;
-## [1] &quot;Downloading data for UNF.&quot;
+<pre><code>## [1] &quot;Downloading data for UGP.&quot;
 ## [1] &quot;Downloading data for UN.&quot;
 ## [1] &quot;Downloading data for UL.&quot;
 ## [1] &quot;Downloading data for UNP.&quot;
-## [1] &quot;Downloading data for UNT.&quot;
 ## [1] &quot;Downloading data for UAL.&quot;
-## [1] &quot;Downloading data for UDR.&quot;
-## [1] &quot;Downloading data for UMC.&quot;
 ## [1] &quot;Downloading data for UPS.&quot;
 ## [1] &quot;Downloading data for URI.&quot;
-## [1] &quot;Downloading data for USM.&quot;
-## [1] &quot;Downloading data for X.&quot;
 ## [1] &quot;Downloading data for UTX.&quot;
 ## [1] &quot;Downloading data for UNH.&quot;
-## [1] &quot;Downloading data for UNVR.&quot;
-## [1] &quot;Downloading data for UVV.&quot;
-## [1] &quot;Downloading data for UHT.&quot;
 ## [1] &quot;Downloading data for UHS.&quot;
 ## [1] &quot;Downloading data for UNM.&quot;
-## [1] &quot;Downloading data for UE.&quot;
-## [1] &quot;Downloading data for USFD.&quot;
-## [1] &quot;Downloading data for USAC.&quot;
-## [1] &quot;Downloading data for USNA.&quot;
-## [1] &quot;Downloading data for USG.&quot;
-## [1] &quot;Downloading data for BIF.&quot;
 ## [1] &quot;Downloading data for VFC.&quot;
-## [1] &quot;Downloading data for MTN.&quot;
 ## [1] &quot;Downloading data for VALE.&quot;
-## [1] &quot;Downloading data for VRX.&quot;
 ## [1] &quot;Downloading data for VLO.&quot;
-## [1] &quot;Downloading data for VLP.&quot;
-## [1] &quot;Downloading data for VHI.&quot;
-## [1] &quot;Downloading data for VR.&quot;
-## [1] &quot;Downloading data for VLY.&quot;
-## [1] &quot;Downloading data for VMI.&quot;
-## [1] &quot;Downloading data for VVV.&quot;
-## [1] &quot;Downloading data for VNTV.&quot;
 ## [1] &quot;Downloading data for VAR.&quot;
-## [1] &quot;Downloading data for VGR.&quot;
-## [1] &quot;Downloading data for VVC.&quot;
 ## [1] &quot;Downloading data for VEDL.&quot;
-## [1] &quot;Downloading data for VEEV.&quot;
-## [1] &quot;Downloading data for VNTR.&quot;</code></pre>
-<pre><code>## Warning: VNTR contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for VTR.&quot;
-## [1] &quot;Downloading data for VER.&quot;
-## [1] &quot;Downloading data for PAY.&quot;
+## [1] &quot;Downloading data for VTR.&quot;
 ## [1] &quot;Downloading data for VZ.&quot;
-## [1] &quot;Downloading data for VET.&quot;
-## [1] &quot;Downloading data for VSM.&quot;
-## [1] &quot;Downloading data for VVI.&quot;
-## [1] &quot;Downloading data for VCO.&quot;
 ## [1] &quot;Downloading data for VIPS.&quot;
 ## [1] &quot;Downloading data for V.&quot;
-## [1] &quot;Downloading data for VSH.&quot;
-## [1] &quot;Downloading data for VST.&quot;
 ## [1] &quot;Downloading data for VMW.&quot;
-## [1] &quot;Downloading data for VG.&quot;
 ## [1] &quot;Downloading data for VNO.&quot;
-## [1] &quot;Downloading data for VOYA.&quot;
 ## [1] &quot;Downloading data for VMC.&quot;
-## [1] &quot;Downloading data for WPC.&quot;
-## [1] &quot;Downloading data for WRB.&quot;
-## [1] &quot;Downloading data for GRA.&quot;
 ## [1] &quot;Downloading data for GWW.&quot;
-## [1] &quot;Downloading data for WNC.&quot;
-## [1] &quot;Downloading data for WBC.&quot;
-## [1] &quot;Downloading data for WDR.&quot;
-## [1] &quot;Downloading data for WAGE.&quot;
-## [1] &quot;Downloading data for WD.&quot;
 ## [1] &quot;Downloading data for WMT.&quot;
 ## [1] &quot;Downloading data for DIS.&quot;
-## [1] &quot;Downloading data for HCC.&quot;</code></pre>
-<pre><code>## Warning: HCC contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for WPG.&quot;
-## [1] &quot;Downloading data for WRE.&quot;
 ## [1] &quot;Downloading data for WCN.&quot;
 ## [1] &quot;Downloading data for WM.&quot;
 ## [1] &quot;Downloading data for WAT.&quot;
-## [1] &quot;Downloading data for WSO.&quot;
-## [1] &quot;Downloading data for WTS.&quot;
-## [1] &quot;Downloading data for W.&quot;
-## [1] &quot;Downloading data for WFT.&quot;
-## [1] &quot;Downloading data for WBS.&quot;
 ## [1] &quot;Downloading data for WEC.&quot;
-## [1] &quot;Downloading data for WTW.&quot;
-## [1] &quot;Downloading data for WRI.&quot;
-## [1] &quot;Downloading data for WMK.&quot;
-## [1] &quot;Downloading data for WBT.&quot;</code></pre>
-<pre><code>## Warning: WBT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for WCG.&quot;
 ## [1] &quot;Downloading data for WFC.&quot;
 ## [1] &quot;Downloading data for HCN.&quot;
-## [1] &quot;Downloading data for WCC.&quot;
-## [1] &quot;Downloading data for WST.&quot;
-## [1] &quot;Downloading data for WR.&quot;
-## [1] &quot;Downloading data for WAL.&quot;
-## [1] &quot;Downloading data for WGP.&quot;
-## [1] &quot;Downloading data for WES.&quot;
-## [1] &quot;Downloading data for WU.&quot;
-## [1] &quot;Downloading data for WAB.&quot;
 ## [1] &quot;Downloading data for WLK.&quot;
 ## [1] &quot;Downloading data for WBK.&quot;
 ## [1] &quot;Downloading data for WRK.&quot;
-## [1] &quot;Downloading data for WEX.&quot;
 ## [1] &quot;Downloading data for WY.&quot;
-## [1] &quot;Downloading data for WGL.&quot;
-## [1] &quot;Downloading data for WPM.&quot;
 ## [1] &quot;Downloading data for WHR.&quot;
-## [1] &quot;Downloading data for WTM.&quot;
-## [1] &quot;Downloading data for WLL.&quot;
-## [1] &quot;Downloading data for WRD.&quot;
 ## [1] &quot;Downloading data for WMB.&quot;
 ## [1] &quot;Downloading data for WPZ.&quot;
-## [1] &quot;Downloading data for WSM.&quot;
-## [1] &quot;Downloading data for WGO.&quot;
 ## [1] &quot;Downloading data for WIT.&quot;
-## [1] &quot;Downloading data for WNS.&quot;
-## [1] &quot;Downloading data for WWW.&quot;
 ## [1] &quot;Downloading data for WF.&quot;
-## [1] &quot;Downloading data for INT.&quot;
-## [1] &quot;Downloading data for WWE.&quot;
-## [1] &quot;Downloading data for WOR.&quot;
-## [1] &quot;Downloading data for WPP.&quot;
-## [1] &quot;Downloading data for WPX.&quot;
+## [1] &quot;Downloading data for WP.&quot;</code></pre>
+<pre><code>## Warning: WP contains missing values. Some functions will not work if
+## objects contain missing values in the middle of the series. Consider using
+## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
+<pre><code>## [1] &quot;Downloading data for WPP.&quot;
 ## [1] &quot;Downloading data for WYN.&quot;
-## [1] &quot;Downloading data for XEL.&quot;
-## [1] &quot;Downloading data for XHR.&quot;
-## [1] &quot;Downloading data for XRX.&quot;
-## [1] &quot;Downloading data for XL.&quot;
 ## [1] &quot;Downloading data for XPO.&quot;
 ## [1] &quot;Downloading data for XYL.&quot;
-## [1] &quot;Downloading data for AUY.&quot;
-## [1] &quot;Downloading data for YELP.&quot;
-## [1] &quot;Downloading data for YEXT.&quot;
-## [1] &quot;Downloading data for YRD.&quot;
 ## [1] &quot;Downloading data for YPF.&quot;
 ## [1] &quot;Downloading data for YUMC.&quot;
 ## [1] &quot;Downloading data for YUM.&quot;
-## [1] &quot;Downloading data for ZAYO.&quot;
-## [1] &quot;Downloading data for ZEN.&quot;
 ## [1] &quot;Downloading data for ZBH.&quot;
 ## [1] &quot;Downloading data for ZTS.&quot;
 ## [1] &quot;Downloading data for ZTO.&quot;
-## [1] &quot;Downloading data for FAX.&quot;
-## [1] &quot;Downloading data for BTG.&quot;
-## [1] &quot;Downloading data for CEF.&quot;
-## [1] &quot;Downloading data for CCF.&quot;
-## [1] &quot;Downloading data for CQH.&quot;
 ## [1] &quot;Downloading data for CQP.&quot;
 ## [1] &quot;Downloading data for LNG.&quot;
-## [1] &quot;Downloading data for EVV.&quot;
-## [1] &quot;Downloading data for FSP.&quot;
-## [1] &quot;Downloading data for GSAT.&quot;</code></pre>
-<pre><code>## Warning: GSAT contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for GTE.&quot;
-## [1] &quot;Downloading data for SIM.&quot;
 ## [1] &quot;Downloading data for IMO.&quot;
-## [1] &quot;Downloading data for MAG.&quot;
-## [1] &quot;Downloading data for NGD.&quot;
-## [1] &quot;Downloading data for NG.&quot;
-## [1] &quot;Downloading data for PRK.&quot;
-## [1] &quot;Downloading data for UTG.&quot;
-## [1] &quot;Downloading data for SEB.&quot;
-## [1] &quot;Downloading data for SRCI.&quot;</code></pre>
-<pre><code>## Warning: SRCI contains missing values. Some functions will not work if
-## objects contain missing values in the middle of the series. Consider using
-## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
-<pre><code>## [1] &quot;Downloading data for STRP.&quot;
-## [1] &quot;Downloading data for TMP.&quot;
 ## [1] &quot;Downloading data for CVE.TO.&quot;</code></pre>
 <pre><code>## Warning: CVE.TO contains missing values. Some functions will not work if
 ## objects contain missing values in the middle of the series. Consider using
@@ -3118,11 +1304,16 @@ Returns a tidy dataframe containing the OHLC data for the symbols.</p>
 ## objects contain missing values in the middle of the series. Consider using
 ## na.omit(), na.approx(), na.fill(), etc to remove or replace them.</code></pre>
 <pre><code>## [1] &quot;Downloading data for VET.TO.&quot;
-## [1] &quot;Downloading data for RST.&quot;</code></pre>
+## [1] &quot;Downloading data for GRPN.&quot;
+## [1] &quot;Downloading data for HCSG.&quot;
+## [1] &quot;Downloading data for RST.&quot;
+## [1] &quot;Downloading data for TRUE.&quot;
+## [1] &quot;Downloading data for RGC.&quot;
+## [1] &quot;Downloading data for GDDY.&quot;</code></pre>
 </div>
 <div id="save-data" class="section level1">
 <h1>7. Save Data</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(ohlc_data, <span class="st">&quot;./data/ohlc-data.csv&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(ohlc_data, here<span class="op">::</span><span class="kw">here</span>(<span class="st">&quot;/data/ohlc-data.csv&quot;</span>))</code></pre></div>
 </div>
 
 
