@@ -220,7 +220,7 @@ combined <- combined %>%
 
 #' # 11. Relative Strength Index 
 #' #' Adds rsi.  
-i_rsi <- bind_cols(
+i_rsic <- bind_cols(
   create_indicator(combined, "C", RSI, n = 5) %>% rename(rsi_005 = value), 
   create_indicator(combined, "C", RSI, n = 10) %>% rename(rsi_010 = value), 
   create_indicator(combined, "C", RSI, n = 21) %>% rename(rsi_021 = value), 
@@ -372,240 +372,71 @@ i_williamsr <- bind_cols(
 )
 combined <- bind_cols(combined, i_williamsr)
 
+#' # 18. Money Flow Index 
+#' Adds mfi. 
+i_mfi <- bind_cols(
+  create_indicator(combined, "HLCV", MFI, n = 5) %>% rename(mfi_005 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 10) %>% rename(mfi_010 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 21) %>% rename(mfi_021 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 42) %>% rename(mfi_042 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 63) %>% rename(mfi_063 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 84) %>% rename(mfi_084 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 105) %>% rename(mfi_105 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 126) %>% rename(mfi_126 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 147) %>% rename(mfi_147 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 168) %>% rename(mfi_168 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 189) %>% rename(mfi_189 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 210) %>% rename(mfi_210 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 231) %>% rename(mfi_231 = value), 
+  create_indicator(combined, "HLCV", MFI, n = 252) %>% rename(mfi_252 = value)
+)
 
-#' 
-#' #' # 7. Average True Range (ATR)
-#' #' Adds tr, atr, trueHigh, trueLow.
-#' i_atr <- create_indicator(combined, "HLC", ATR, n = 14)
-#' tail(i_atr)
-#' combined <- bind_cols(combined, i_atr)
-#' 
-#' #' # 8. Bollinger Bands
-#' #' Adds dn, mavg, up, pctB.
-#' i_bbands <- create_indicator(combined, "HLC", BBands, n = 20,  sd = 2)
-#' tail(i_bbands)
-#' combined <- bind_cols(combined, i_bbands)
-#' 
+#' # 20. Chande Momentum Oscillator
+#' Adds cmo.
+i_cmo <- bind_cols(
+  create_indicator(combined, "C", CMO, n = 5) %>% rename(cmo_005 = value), 
+  create_indicator(combined, "C", CMO, n = 10) %>% rename(cmo_010 = value), 
+  create_indicator(combined, "C", CMO, n = 21) %>% rename(cmo_021 = value), 
+  create_indicator(combined, "C", CMO, n = 42) %>% rename(cmo_042 = value), 
+  create_indicator(combined, "C", CMO, n = 63) %>% rename(cmo_063 = value), 
+  create_indicator(combined, "C", CMO, n = 84) %>% rename(cmo_084 = value), 
+  create_indicator(combined, "C", CMO, n = 105) %>% rename(cmo_105 = value), 
+  create_indicator(combined, "C", CMO, n = 126) %>% rename(cmo_126 = value), 
+  create_indicator(combined, "C", CMO, n = 147) %>% rename(cmo_147 = value), 
+  create_indicator(combined, "C", CMO, n = 168) %>% rename(cmo_168 = value), 
+  create_indicator(combined, "C", CMO, n = 189) %>% rename(cmo_189 = value), 
+  create_indicator(combined, "C", CMO, n = 210) %>% rename(cmo_210 = value), 
+  create_indicator(combined, "C", CMO, n = 231) %>% rename(cmo_231 = value), 
+  create_indicator(combined, "C", CMO, n = 252) %>% rename(cmo_252 = value)
+)
+combined <- bind_cols(combined, i_cmo)
 
-#' 
+#' # 22. Vertical Horizonal Filter
+#' Adds vhf. 
+i_vhf <- bind_cols(
+  create_indicator(combined, "C", VHF, n = 5) %>% rename(vhf_005 = value), 
+  create_indicator(combined, "C", VHF, n = 10) %>% rename(vhf_010 = value), 
+  create_indicator(combined, "C", VHF, n = 21) %>% rename(vhf_021 = value), 
+  create_indicator(combined, "C", VHF, n = 42) %>% rename(vhf_042 = value), 
+  create_indicator(combined, "C", VHF, n = 63) %>% rename(vhf_063 = value), 
+  create_indicator(combined, "C", VHF, n = 84) %>% rename(vhf_084 = value), 
+  create_indicator(combined, "C", VHF, n = 105) %>% rename(vhf_105 = value), 
+  create_indicator(combined, "C", VHF, n = 126) %>% rename(vhf_126 = value), 
+  create_indicator(combined, "C", VHF, n = 147) %>% rename(vhf_147 = value), 
+  create_indicator(combined, "C", VHF, n = 168) %>% rename(vhf_168 = value), 
+  create_indicator(combined, "C", VHF, n = 189) %>% rename(vhf_189 = value), 
+  create_indicator(combined, "C", VHF, n = 210) %>% rename(vhf_210 = value), 
+  create_indicator(combined, "C", VHF, n = 231) %>% rename(vhf_231 = value), 
+  create_indicator(combined, "C", VHF, n = 252) %>% rename(vhf_252 = value)
+)
+combined <- bind_cols(combined, i_vhf)
 
-#' 
-
-#' 
-#' #' # 12. Close Location Value 
-#' #' Adds clv. 
-#' i_clv <- create_indicator(combined, "HLC", CLV) %>%
-#'   rename(clv = value)
-#' tail(i_clv)
-#' combined <- bind_cols(combined, i_clv)
-#' 
-
-#' 
-#' #' # 14. Chande Momentum Oscillator Close 
-#' #' Adds cmo_close.
-#' i_cmo_close <- create_indicator(combined, "C", CMO, n = 14 ) %>%
-#'   rename(cmo_close = value)
-#' tail(i_cmo_close)
-#' combined <- bind_cols(combined, i_cmo_close)
-#' 
-#' #' # 15. Chande Momentum Oscillator Volume 
-#' #' Adds cmo_volume. 
-#' i_cmo_volume <- create_indicator(combined, "V", CMO, n = 14) %>%
-#'   rename(cmo_volume = value)
-#' tail(i_cmo_volume)
-#' combined <- bind_cols(combined, i_cmo_volume)
-#' 
-#' #' # 16. Donchian Channel 
-#' #' Adds dc_high, dc_mid, dc_low. 
-#' i_donchian <- create_indicator(combined, "HL", DonchianChannel, n = 10, include.lag = FALSE) %>%
-#'   rename(dc_high = high, dc_mid = mid, dc_low = low)
-#' tail(i_donchian)
-#' combined <- bind_cols(combined, i_donchian)
-#' 
-#' #' # 17. Detrended Price Oscillator Close 
-#' #' Adds dpo_close, dpo_volume. 
-#' i_dpo_close <- create_indicator(combined, "C", DPO, n = 10,  shift = 0, percent = TRUE) %>%
-#'   rename(dpo_close = value)
-#' tail(i_dpo_close)
-#' combined <- bind_cols(combined, i_dpo_close)
-#' 
-#' #' # 18. Detrended Price Oscillator Volume 
-#' i_dpo_volume <- create_indicator(combined, "V", DPO, n = 10,  shift = 0, percent = TRUE) %>%
-#'   rename(dpo_volume = value)
-#' tail(i_dpo_volume)
-#' combined <- bind_cols(combined, i_dpo_volume)
-#' 
-#' #' # 19. DV Intermediate Oscillator 
-#' #' Adds dvi_mag, dvi_str, dvi.  
-#' i_dvi <- create_indicator(combined, "C", DVI, n = 252, wts = c(0.8, 0.2), smooth = 3,
-#'                           magnitude = c(5, 100, 5), stretch = c(10, 100, 2), exact.multiplier = 1) %>%
-#'   rename(dvi_mag = dvi.mag, dvi_str = dvi.str)
-#' tail(i_dvi)
-#' combined <- bind_cols(combined, i_dvi)
-#' 
-#' #' # 20. Ease of Movement Value 
-#' #' Adds emv, maEMV. 
-#' i_emv <- create_indicator(combined, "HLV", EMV, n = 9,  vol.divisor = 1)
-#' tail(i_emv)
-#' combined <- bind_cols(combined, i_dvi)
-#' 
-#' #' # 21. Guppy Multiple Moving Averages 
-#' #' Adds short_lag_x, long_lag_x. 
-#' i_gmma <- create_indicator(combined, "C", GMMA, short = c(3, 5, 8, 10, 12, 15),
-#'                            long = c(30, 35, 40, 45, 50, 60))
-#' colnames(i_gmma) <- str_replace_all(colnames(i_gmma), " ", "_")
-#' tail(i_gmma)
-#' combined <- bind_cols(combined, i_gmma)
-#' 
-#' #' # 22. Know Sure Thing 
-#' #' Adds kst, kst_signal. 
-#' i_kst <- create_indicator(combined, "C", KST, n = c(10, 10, 10, 15), nROC = c(10, 15, 20, 30),
-#'                           nSig = 9,  wts = 1:4) %>%
-#'   rename(kst_signal = signal)
-#' tail(i_kst)
-#' combined <- bind_cols(combined, i_kst)
-#' 
-
-#' 
-#' #' # 24. MACD Volume 
-#' #' Adds macd_volume, macd_signal_volume. 
-#' i_macd_volume <- create_indicator(combined, "V", MACD, nFast = 12, nSlow = 26, nSig = 9, percent = TRUE) %>%
-#'   rename(macd_volume = macd, macd_signal_volume = signal)
-#' tail(i_macd_volume)
-#' combined <- bind_cols(combined, i_macd_volume)
-#' 
-#' #' # 25. Money Flow Index 
-#' #' Adds mfi. 
-#' i_mfi <- create_indicator(combined, "HLCV", MFI, n = 14) %>%
-#'   rename(mfi = value)
-#' tail(i_mfi)
-#' combined <- bind_cols(combined, i_mfi)
-#' 
-#' #' # 26. On Balance Volume 
-#' #' Adds obv. 
-#' i_obv <- create_indicator(combined, "CV", OBV) %>%
-#'   rename(obv = value)
-#' tail(i_obv)
-#' combined <- bind_cols(combined, i_obv)
-#' 
-#' #' # 27. Volatility Bands 
-#' #' Adds pbands_dn, pbands_center, pbands_up.  
-#' i_pbands <- create_indicator(combined, "C", PBands, n = 20,
-#'                              sd = 2, fastn = 2, centered = FALSE, lavg = FALSE) %>%
-#'   rename(pbands_dn = dn, pbands_center = center, pbands_up = up)
-#' tail(i_pbands)
-#' combined <- bind_cols(combined, i_pbands)
-#' 
-
-#' 
-#' #' # 29. Percent Rank Close 
-#' #' Adds percent_rank_close. 
-#' i_percent_rank_close <- create_indicator(combined, "C", runPercentRank, n = 252, cumulative = FALSE, exact.multiplier = 0.5) %>%
-#'   rename(percent_rank_close = value)
-#' tail(i_percent_rank_close)
-#' combined <- bind_cols(combined, i_percent_rank_close)
-#' 
-#' #' # 30. Percent Rank Volume 
-#' #' Adds percent_rank_volume.  
-#' i_percent_rank_volume <- create_indicator(combined, "V", runPercentRank, n = 252, cumulative = FALSE, exact.multiplier = 0.5) %>%
-#'   rename(percent_rank_volume = value)
-#' tail(i_percent_rank_volume)
-#' combined <- bind_cols(combined, i_percent_rank_volume)
-#' 
-#' #' # 31. Parabolic Stop and Reverse 
-#' #' Adds sar.  
-#' i_sar <- create_indicator(combined, "HL", SAR, accel = c(0.02, 0.2)) %>%
-#'   rename(sar = value)
-#' tail(i_sar)
-#' combined <- bind_cols(combined, i_sar)
-#' 
-
-#' 
-#' #' # 33. Stochastic Oscillator 
-#' #' Adds fastK, fastD, slowD. 
-#' i_stoch <- create_indicator(combined, "HLC", stoch, nFastK = 14, nFastD = 3, nSlowD = 3, bounded = TRUE, smooth = 1)
-#' tail(i_stoch)
-#' combined <- bind_cols(combined, i_stoch)
-#' 
-#' #' # 34. Stochastic Momentum Index 
-#' #' Adds smi. SMI function in TTR produces an error. Debug later.  
-#' i_smi <- create_indicator(combined, "HLC", SMI, n = 13, nFast = 2, nSlow = 25, nSig = 9,  bounded = TRUE)
-#' 
-#' #' # 35. Trend Detection Index 
-#' #' Adds tdi, di.  
-#' i_tdi <- create_indicator(combined, "C", TDI, n = 20, multiple = 2)
-#' tail(i_tdi)
-#' combined <- bind_cols(combined, i_tdi)
-#' 
-#' #' # 36. Triple Smoothed Exponential Oscillator 
-#' #' Adds trix, trix_signal. 
-#' i_trix <- create_indicator(combined, "C", TRIX, n = 20, nSig = 9,  percent = TRUE) %>%
-#'   rename(trix = TRIX, trix_signal = signal)
-#' tail(i_trix)
-#' combined <- bind_cols(combined, i_trix)
-#' 
-#' #' # 37. Ultimate Oscillator 
-#' #' Adds ultimate_oscillator. 
-#' i_ultimate <- create_indicator(combined, "HLC", ultimateOscillator, n = c(7, 14, 28), wts = c(4, 2, 1)) %>%
-#'   rename(ultimate_oscillator = value)
-#' tail(i_ultimate)
-#' combined <- bind_cols(combined, i_ultimate)
-#' 
-#' #' # 38. Vertical Horizonal Filter
-#' #' Adds vhf. 
-#' i_vhf <- create_indicator(combined, "C", VHF, n = 28) %>%
-#'   rename(vhf = value)
-#' tail(i_vhf)
-#' combined <- bind_cols(combined, i_vhf)
-#' 
-#' #' # 39. Volatility Indicators 
-#' #' Adds volatility_close, volatility_garman, volatility_parkinson, volatility_rogers, volatility_garman2, volatility_yang. 
-#' i_volatility_close <- create_indicator(combined, "OHLC", volatility, n = 30, calc = "close", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_close = value)
-#' i_volatility_garman <- create_indicator(combined, "OHLC", volatility, n = 30, calc = "garman.klass", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_garman = value)
-#' i_volatility_parkinson <- create_indicator(combined, "OHLC", volatility, calc = "parkinson", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_parkinson = value)
-#' i_volatility_rogers <- create_indicator(combined, "OHLC", volatility, n = 30, calc = "rogers.satchell", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_rogers = value)
-#' i_volatility_garman2 <- create_indicator(combined, "OHLC", volatility, n = 30, calc = "gk.yz", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_garman2 = value)
-#' i_volatility_yang <- create_indicator(combined, "OHLC", volatility, n = 30, calc = "yang.zhang", N = 260, mean0 = FALSE) %>%
-#'   rename(volatility_yang = value)
-#' tail(i_volatility_close)
-#' tail(i_volatility_garman)
-#' tail(i_volatility_parkinson)
-#' tail(i_volatility_rogers)
-#' tail(i_volatility_garman2)
-#' tail(i_volatility_yang)
-#' combined <- bind_cols(combined, i_volatility_close)
-#' combined <- bind_cols(combined, i_volatility_garman)
-#' combined <- bind_cols(combined, i_volatility_parkinson)
-#' combined <- bind_cols(combined, i_volatility_rogers)
-#' combined <- bind_cols(combined, i_volatility_garman2)
-#' combined <- bind_cols(combined, i_volatility_yang)
-#' 
-#' #' # 40. Williams Accumulation Distribution 
-#' #' Adds williams_ad. 
-#' i_williamsad <- create_indicator(combined, "HLC", williamsAD) %>%
-#'   rename(williams_ad = value)
-#' tail(i_williamsad)
-#' combined <- bind_cols(combined, i_williamsad)
-#' 
-
-#' 
-#' #' # 42. Zig Zag 
-#' i_zigzag <- create_indicator(combined, "HL", ZigZag, change = 10, percent = TRUE, retrace = FALSE, lastExtreme = TRUE) %>%
-#'   rename(zigzag = value)
-#' tail(i_zigzag)
-#' combined <- bind_cols(combined, i_zigzag)
-
-#' # 43. Split into Train and Test 
+#' # 23. Split into Train and Test 
 train <- combined %>%
   filter(is.na(position_label) == FALSE)
 test <- combined %>%
   filter(is.na(position_label) == TRUE)
 
-#' # 44. Save Data 
+#' # 24. Save Data 
 write_csv(train, "./data/train.csv")
 write_csv(test, "./data/test.csv")

@@ -222,3 +222,17 @@ ggplot(train, aes(x = factor(position_label))) +
   geom_boxplot(aes(y = williamsr_005), fill = "blue", alpha = 0.5)
 ggplot(train, aes(x = factor(position_label))) + 
   geom_boxplot(aes(y = williamsr_252), fill = "blue", alpha = 0.5)
+
+#' # 17. Money Flow Index
+ggplot(train, aes(x = timestamp)) +
+  geom_line(aes(y = mfi_005, colour = position_label), size = 1) + 
+  geom_hline(yintercept = 0) + 
+  plot_layers_b
+ggplot(train, aes(x = timestamp)) + 
+  geom_line(aes(y = mfi_252, colour = position_label), size = 1) + 
+  geom_hline(yintercept = 0) + 
+  plot_layers_b
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = mfi_005), fill = "blue", alpha = 0.5)
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = mfi_252), fill = "blue", alpha = 0.5)
