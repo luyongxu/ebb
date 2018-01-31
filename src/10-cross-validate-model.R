@@ -19,24 +19,24 @@ source(here::here("/src/01-load-packages.R"))
 #' # 2. Start Parallelization 
 parallelStartSocket(2)
 
-#' # 2. Load Training Data 
+#' # 3. Load Training Data 
 train <- read_csv(here::here("/data/train.csv"))
 glimpse(train) 
 
-#' # 3. Remove Incomplete Observations 
-mlr_train <- train
+#' # 4. Remove Incomplete Observations 
+mlr_train <- train %>% 
+  filter(is.na(return_252) == FALSE)
 
-#' # 4. Save Fold ID 
+#' # 5. Save Fold ID 
 fold_id <- mlr_train %>% .[["id"]]
 
-#' # 5. Select Features and Position Label
+#' # 6. Select Features and Position Label
 mlr_train <- mlr_train %>% 
-  mutate(intercept = 1) %>% 
-  select(intercept, position_label) %>% 
+  select(return_252, position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
 
-#' # 6. Make Task 
+#' # 7. Make Task 
 mlr_task <- makeRegrTask(
   id = "mlr_task", 
   data = mlr_train, 
