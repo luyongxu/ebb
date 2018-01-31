@@ -33,6 +33,7 @@ fold_id <- mlr_train %>% .[["id"]]
 #' # 6. Select Features and Position Label
 mlr_train <- mlr_train %>% 
   select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
+         matches("positive_"), 
          position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
