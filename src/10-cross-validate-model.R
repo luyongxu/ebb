@@ -32,7 +32,7 @@ fold_id <- mlr_train %>% .[["id"]]
 
 #' # 6. Select Features and Position Label
 mlr_train <- mlr_train %>% 
-  select(matches("return_"), position_label) %>% 
+  select(matches("return_"), matches("drawdown_"), position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
 
@@ -76,34 +76,34 @@ print(mlr_resample[["aggr"]])
 
 
 
-#' # 8. Make Parameter Set 
-mlr_param <- makeParamSet( 
-  makeNumericParam("C", lower = 0.01, upper = 0.10)
-)
-print(mlr_param)
-
-#' # 9. Make Tune Control 
-mlr_tunecontrol <- makeTuneControlRandom(
-  maxit = 100L
-)
-print(mlr_tunecontrol)
-
-#' # 11. Tune Parameters 
-mlr_tune <- tuneParams(
-  learner = mlr_learner, 
-  task = mlr_task, 
-  resampling = mlr_cv, 
-  par.set = mlr_param, 
-  control = mlr_tunecontrol
-)
-print(mlr_tune)
-
-#' # 13. Make Resample Instance 
-mlr_rinstance <- makeResampleInstance( 
-  desc = mlr_cv, 
-  task = mlr_task
-)
-print(mlr_rinstance)
-
-
-parallelStop()
+#' #' # 8. Make Parameter Set 
+#' mlr_param <- makeParamSet( 
+#'   makeNumericParam("C", lower = 0.01, upper = 0.10)
+#' )
+#' print(mlr_param)
+#' 
+#' #' # 9. Make Tune Control 
+#' mlr_tunecontrol <- makeTuneControlRandom(
+#'   maxit = 100L
+#' )
+#' print(mlr_tunecontrol)
+#' 
+#' #' # 11. Tune Parameters 
+#' mlr_tune <- tuneParams(
+#'   learner = mlr_learner, 
+#'   task = mlr_task, 
+#'   resampling = mlr_cv, 
+#'   par.set = mlr_param, 
+#'   control = mlr_tunecontrol
+#' )
+#' print(mlr_tune)
+#' 
+#' #' # 13. Make Resample Instance 
+#' mlr_rinstance <- makeResampleInstance( 
+#'   desc = mlr_cv, 
+#'   task = mlr_task
+#' )
+#' print(mlr_rinstance)
+#' 
+#' 
+#' parallelStop()
