@@ -16,22 +16,16 @@
 #' # 1. Source Cross Validate Model 
 source("EMS.005 Cross Validate Model.R")
 
-#' # 2. Train Model 
-xgb_model <- xgb.train(data = xgb_train, 
-                       params = xgb_params, 
-                       nrounds = xgb_nrounds)
 
-#' # 3. Save Model 
-xgb.save(xgb_model, "./Output/xgb_model.model")
+#' # 6. Train Learner 
+model <- train(learner = learner, task = task)
+print(model)
 
-#' # 4. Plot Importance
-xgb_importance <- xgb.importance(model = xgb_model, 
-                                 feature_names = xgb_features)
-xgb.plot.importance(xgb_importance)
+#' # 7. Predict 
+pred <- predict(object = model, task = task)
 
-#' # 5. Generate Predictions 
-results <- test %>% 
-  mutate(pred = predict(xgb_model, xgb_test))
+#' # 8. Evaluate Performance 
+performance(pred, measures = list(rsq, mse, mae, rmse, timetrain), model = model)
 
-#' # 6. Save Predictions 
-write_csv(results, "./Output/results.csv")
+
+list_learners <- listLearners()

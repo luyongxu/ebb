@@ -220,7 +220,7 @@ combined <- combined %>%
 
 #' # 11. Relative Strength Index 
 #' #' Adds rsi.  
-i_rsic <- bind_cols(
+i_rsi <- bind_cols(
   create_indicator(combined, "C", RSI, n = 5) %>% rename(rsi_005 = value), 
   create_indicator(combined, "C", RSI, n = 10) %>% rename(rsi_010 = value), 
   create_indicator(combined, "C", RSI, n = 21) %>% rename(rsi_021 = value), 
@@ -390,6 +390,7 @@ i_mfi <- bind_cols(
   create_indicator(combined, "HLCV", MFI, n = 231) %>% rename(mfi_231 = value), 
   create_indicator(combined, "HLCV", MFI, n = 252) %>% rename(mfi_252 = value)
 )
+combined <- bind_cols(combined, i_mfi)
 
 #' # 20. Chande Momentum Oscillator
 #' Adds cmo.
@@ -411,7 +412,7 @@ i_cmo <- bind_cols(
 )
 combined <- bind_cols(combined, i_cmo)
 
-#' # 22. Vertical Horizonal Filter
+#' # 21. Vertical Horizonal Filter
 #' Adds vhf. 
 i_vhf <- bind_cols(
   create_indicator(combined, "C", VHF, n = 5) %>% rename(vhf_005 = value), 
@@ -431,11 +432,15 @@ i_vhf <- bind_cols(
 )
 combined <- bind_cols(combined, i_vhf)
 
+#' # 22. Clean Combined 
+combined <- combined %>% 
+  ungroup() %>% 
+  as_tibble()
+combined[do.call(cbind, lapply(combined, is.nan))] <- NA
+  
 #' # 23. Split into Train and Test 
-train <- combined %>%
-  filter(is.na(position_label) == FALSE)
-test <- combined %>%
-  filter(is.na(position_label) == TRUE)
+train <- combined %>% filter(is.na(position_label) == FALSE)
+test <- combined %>% filter(is.na(position_label) == TRUE) 
 
 #' # 24. Save Data 
 write_csv(train, "./data/train.csv")

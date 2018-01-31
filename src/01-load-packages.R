@@ -31,7 +31,7 @@ load_library <- function(package_name) {
   library_path <- c(.libPaths())
   suppressWarnings(suppressMessages({
     if(require(package_name, character.only = TRUE, lib.loc = library_path) == FALSE) {
-      install.packages(package_name, repos = "https://cloud.r-project.org/")
+      install.packages(package_name, repos = "https://cloud.r-project.org/", dependencies = TRUE)
       require(package_name, character.only = TRUE, lib.loc = library_path)
     }
   }))
@@ -50,6 +50,7 @@ load_library("formattable")
 load_library("patchwork")
 load_library("here")
 load_library("RcppRoll")
+load_library("mlr")
 
 #' # 3. Options 
 #' Turn off scientific notation. 

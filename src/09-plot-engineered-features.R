@@ -226,13 +226,39 @@ ggplot(train, aes(x = factor(position_label))) +
 #' # 17. Money Flow Index
 ggplot(train, aes(x = timestamp)) +
   geom_line(aes(y = mfi_005, colour = position_label), size = 1) + 
-  geom_hline(yintercept = 0) + 
+  geom_hline(yintercept = 50) + 
   plot_layers_b
 ggplot(train, aes(x = timestamp)) + 
   geom_line(aes(y = mfi_252, colour = position_label), size = 1) + 
-  geom_hline(yintercept = 0) + 
+  geom_hline(yintercept = 50) + 
   plot_layers_b
 ggplot(train, aes(x = factor(position_label))) + 
   geom_boxplot(aes(y = mfi_005), fill = "blue", alpha = 0.5)
 ggplot(train, aes(x = factor(position_label))) + 
   geom_boxplot(aes(y = mfi_252), fill = "blue", alpha = 0.5)
+
+#' # 18. Chande Momentum Oscillator
+ggplot(train, aes(x = timestamp)) +
+  geom_line(aes(y = cmo_005, colour = position_label), size = 1) + 
+  geom_hline(yintercept = 0) + 
+  plot_layers_b
+ggplot(train, aes(x = timestamp)) + 
+  geom_line(aes(y = cmo_252, colour = position_label), size = 1) + 
+  geom_hline(yintercept = 0) + 
+  plot_layers_b
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = cmo_005), fill = "blue", alpha = 0.5)
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = cmo_252), fill = "blue", alpha = 0.5)
+
+#' # 19. Vertical Horizonal Filter 
+ggplot(train, aes(x = timestamp)) +
+  geom_line(aes(y = vhf_005, colour = position_label), size = 1)
+  plot_layers_b
+ggplot(train, aes(x = timestamp)) + 
+  geom_line(aes(y = vhf_252, colour = position_label), size = 1)
+  plot_layers_b
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = vhf_005), fill = "blue", alpha = 0.5)
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = vhf_252), fill = "blue", alpha = 0.5)
