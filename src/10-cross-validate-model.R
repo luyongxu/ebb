@@ -16,26 +16,23 @@
 #' # 1. Source Load Packages
 source(here::here("/src/01-load-packages.R"))
 
+#' # 2. Start Parallelization 
+parallelStartSocket(2)
+
 #' # 2. Load Training Data 
 train <- read_csv(here::here("/data/train.csv"))
 glimpse(train) 
 
 #' # 3. Remove Incomplete Observations 
-mlr_train <- train %>% 
-  filter(is.na(return_252) == FALSE, 
-         is.na(chaikinvol_252) == FALSE)
+mlr_train <- train
 
 #' # 4. Save Fold ID 
 fold_id <- mlr_train %>% .[["id"]]
 
 #' # 5. Select Features and Position Label
 mlr_train <- mlr_train %>% 
-  select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
-         matches("positive_"), matches("volatility_"), matches("rsi_"), 
-         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
-         matches("cci_"), matches("chaikinvol_"), matches("cmf_"), 
-         matches("snr_"), matches("williamsr_"), matches("mfi_"), 
-         matches("cmo_"), matches("vhf_"), position_label) %>% 
+  mutate(intercept = 1) %>% 
+  select(intercept, position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
 
@@ -55,7 +52,7 @@ mlr_learner <- makeLearner(
 )
 print(mlr_learner)
 
-#' # 8. Make Resample Description 
+#' # 10. Make Resample Description 
 mlr_cv <- makeResampleDesc(
   method = "CV", 
   iters = 26, 
@@ -63,7 +60,7 @@ mlr_cv <- makeResampleDesc(
 )
 print(mlr_cv)
 
-#' # 9. Resample Learner
+#' # 12. Resample Learner
 set.seed(5) 
 mlr_resample <- resample(
   learner = mlr_learner, 
@@ -76,10 +73,37 @@ print(mlr_resample[["measures.train"]])
 print(mlr_resample[["measures.test"]])
 print(mlr_resample[["aggr"]])
 
-#' # 10. Make Resample Instance 
+
+
+
+#' # 8. Make Parameter Set 
+mlr_param <- makeParamSet( 
+  makeNumericParam("C", lower = 0.01, upper = 0.10)
+)
+print(mlr_param)
+
+#' # 9. Make Tune Control 
+mlr_tunecontrol <- makeTuneControlRandom(
+  maxit = 100L
+)
+print(mlr_tunecontrol)
+
+#' # 11. Tune Parameters 
+mlr_tune <- tuneParams(
+  learner = mlr_learner, 
+  task = mlr_task, 
+  resampling = mlr_cv, 
+  par.set = mlr_param, 
+  control = mlr_tunecontrol
+)
+print(mlr_tune)
+
+#' # 13. Make Resample Instance 
 mlr_rinstance <- makeResampleInstance( 
   desc = mlr_cv, 
   task = mlr_task
 )
 print(mlr_rinstance)
 
+
+parallelStop()

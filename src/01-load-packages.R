@@ -51,6 +51,8 @@ load_library("patchwork")
 load_library("here")
 load_library("RcppRoll")
 load_library("mlr")
+load_library("MLmetrics")
+load_library("parallelMap")
 
 #' # 3. Options 
 #' Turn off scientific notation. 
