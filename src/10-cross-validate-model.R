@@ -25,7 +25,8 @@ glimpse(train)
 
 #' # 4. Remove Incomplete Observations 
 mlr_train <- train %>% 
-  filter(is.na(return_252) == FALSE)
+  filter(is.na(return_252) == FALSE, 
+         is.na(chaikinvol_252) == FALSE)
 
 #' # 5. Save Fold ID 
 fold_id <- mlr_train %>% .[["id"]]
@@ -35,7 +36,7 @@ mlr_train <- mlr_train %>%
   select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
          matches("positive_"), matches("volatility_"), matches("rsi_"), 
          matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
-         matches("cci_"), 
+         matches("cci_"), matches("chaikinvol_")
          position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
