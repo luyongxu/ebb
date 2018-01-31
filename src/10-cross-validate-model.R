@@ -36,7 +36,7 @@ mlr_train <- mlr_train %>%
   select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
          matches("positive_"), matches("volatility_"), matches("rsi_"), 
          matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
-         matches("cci_"), matches("chaikinvol_")
+         matches("cci_"), matches("chaikinvol_"), matches("cmf_"), 
          position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
