@@ -13,35 +13,43 @@
 #'     fig_height: 5 
 #' ---
 
+# Candidate learners:
+# regr.extraTrees
+# regr.gbm
+# regr.glmnet
+# regr.ksvm
+# regr.lm
+# regr.penalized.lasso
+# regr.penalized.ridge
+# regr.randomForest
+# regr.ranger
+# regr.rpart
+# regr.xgboost
+
 #' # 1. Source Load Packages
 source(here::here("/src/01-load-packages.R"))
 
-#' # 2. Start Parallelization 
-parallelStartSocket(2)
-
-#' # 3. Load Training Data 
+#' # 2. Load Training Data 
 train <- read_csv(here::here("/data/train.csv"))
 glimpse(train) 
 
-#' # 4. Remove Incomplete Observations 
+#' # 3. Save Fold ID 
+#' The fold is is used to block obsevations together so that all observations that belong to a 
+#' single stock always are all assigned to train or all assigned to test.  
+fold_id <- train %>% .[["id"]] 
+
+#' # 4. Select Features 
 mlr_train <- train %>% 
-  filter(is.na(return_252) == FALSE, 
-         is.na(chaikinvol_252) == FALSE)
-
-#' # 5. Save Fold ID 
-fold_id <- mlr_train %>% .[["id"]]
-
-#' # 6. Select Features and Position Label
-mlr_train <- mlr_train %>% 
-  select(matches("return_"), matches("drawdown_"), 
-         matches("positive_"), matches("rsi_"), 
-         matches("aroon_"), matches("cci_"), 
-         matches("cmf_"), matches("snr_"), 
-         matches("vhf_"), position_label) %>% 
+  select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
+         matches("positive_"), matches("volatility_"), matches("rsi_"), 
+         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
+         matches("cci_"), matches("chaikinvol_"), matches("cmf_"), 
+         matches("snr_"), matches("williamsr_"), matches("mfi_"), 
+         matches("cmo_"), matches("vhf_"), position_label) %>% 
   as.data.frame()
 glimpse(mlr_train)
 
-#' # 7. Make Task 
+#' # 5. Make Task 
 mlr_task <- makeRegrTask(
   id = "mlr_task", 
   data = mlr_train, 
@@ -50,20 +58,55 @@ mlr_task <- makeRegrTask(
 )
 print(mlr_task)
 
-#' # 7. Make Learner 
+#' # 6. Make Learner 
+#' Choose learner with default paramaters. Parameters will be tuned in a later step. 
+#' Also add necessary preprocessing steps (centering, scaling, dealing with missings). 
 mlr_learner <- makeLearner(
-  cl = "regr.lm", 
-  predict.type = "se"
+  cl = "regr.rpart"
+)
+print(mlr_learner) 
+print(mlr_learner[["par.set"]]) 
+mlr_learner <- makePreprocWrapperCaret(
+  learner = mlr_learner, 
+  ppc.na.remove = TRUE
 )
 print(mlr_learner)
+print(mlr_learner[["par.set"]])
 
-#' # 10. Make Resample Description 
+#' # 7. Make Resample Description 
 mlr_cv <- makeResampleDesc(
   method = "CV", 
   iters = 26, 
   predict = "both"
 )
 print(mlr_cv)
+
+#' # 8. Make Parameter Set
+mlr_param <- makeParamSet(
+  makeDiscreteParam("minsplit", values = seq(10, 100, 1)), 
+  makeDiscreteParam("maxdepth", values = seq(1, 8, 1))
+)
+print(mlr_param)
+
+#' # 9. Tune Parameters
+mlr_tune <- tuneParams(
+  learner = mlr_learner,
+  task = mlr_task,
+  resampling = mlr_cv,
+  par.set = mlr_param,
+  control = makeTuneControlRandom(maxit = 20L)
+)
+print(mlr_tune)
+
+#' # 11. Make New Learner 
+#' Make a new learner with optimal paramaters as determined by paramter tuning.  
+mlr_learner <- makeLearner(
+  cl = "regr.rpart"
+)
+mlr_learner <- makePreprocWrapperCaret(
+  learner = mlr_learner, 
+  ppc.na.remove = TRUE
+)
 
 #' # 12. Resample Learner
 set.seed(5) 
@@ -78,37 +121,12 @@ print(mlr_resample[["measures.train"]])
 print(mlr_resample[["measures.test"]])
 print(mlr_resample[["aggr"]])
 
+#' # 13. Make Resample Instance
+mlr_rinstance <- makeResampleInstance(
+  desc = mlr_cv,
+  task = mlr_task
+)
+print(mlr_rinstance)
 
 
 
-#' #' # 8. Make Parameter Set 
-#' mlr_param <- makeParamSet( 
-#'   makeNumericParam("C", lower = 0.01, upper = 0.10)
-#' )
-#' print(mlr_param)
-#' 
-#' #' # 9. Make Tune Control 
-#' mlr_tunecontrol <- makeTuneControlRandom(
-#'   maxit = 100L
-#' )
-#' print(mlr_tunecontrol)
-#' 
-#' #' # 11. Tune Parameters 
-#' mlr_tune <- tuneParams(
-#'   learner = mlr_learner, 
-#'   task = mlr_task, 
-#'   resampling = mlr_cv, 
-#'   par.set = mlr_param, 
-#'   control = mlr_tunecontrol
-#' )
-#' print(mlr_tune)
-#' 
-#' #' # 13. Make Resample Instance 
-#' mlr_rinstance <- makeResampleInstance( 
-#'   desc = mlr_cv, 
-#'   task = mlr_task
-#' )
-#' print(mlr_rinstance)
-#' 
-#' 
-#' parallelStop()
