@@ -14,23 +14,23 @@
 #' ---
 
 # Candidate learners:
-# regr.extraTrees
-# regr.gbm
+# regr.lm
+# regr.rpart
 # regr.glmnet
 # regr.ksvm
-# regr.lm
-# regr.penalized.lasso
-# regr.penalized.ridge
 # regr.randomForest
 # regr.ranger
-# regr.rpart
+# regr.extraTrees
+# regr.gbm
 # regr.xgboost
 
 #' # 1. Source Load Packages
 source(here::here("/src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_csv(here::here("/data/train.csv"))
+train <- read_csv(here::here("/data/train.csv")) %>% 
+  filter(is.na(return_252) == FALSE, 
+         is.na(chaikinvol_252) == FALSE)
 glimpse(train) 
 
 #' # 3. Save Fold ID 
@@ -62,12 +62,14 @@ print(mlr_task)
 #' Choose learner with default paramaters. Parameters will be tuned in a later step. 
 #' Also add necessary preprocessing steps (centering, scaling, dealing with missings). 
 mlr_learner <- makeLearner(
-  cl = "regr.rpart"
+  cl = "regr.glmnet"
 )
 print(mlr_learner) 
 print(mlr_learner[["par.set"]]) 
 mlr_learner <- makePreprocWrapperCaret(
   learner = mlr_learner, 
+  ppc.center = TRUE, 
+  ppc.scale = TRUE,
   ppc.na.remove = TRUE
 )
 print(mlr_learner)
@@ -83,8 +85,7 @@ print(mlr_cv)
 
 #' # 8. Make Parameter Set
 mlr_param <- makeParamSet(
-  makeDiscreteParam("minsplit", values = seq(10, 100, 1)), 
-  makeDiscreteParam("maxdepth", values = seq(1, 8, 1))
+  makeNumericParam("lambda1", lower = 0, upper = 1)
 )
 print(mlr_param)
 
@@ -98,18 +99,20 @@ mlr_tune <- tuneParams(
 )
 print(mlr_tune)
 
-#' # 11. Make New Learner 
+#' # 10. Make New Learner 
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
-  cl = "regr.rpart", 
-  maxdepth = 2
+  cl = "regr.glmnet", 
+  alpha = 1
 )
 mlr_learner <- makePreprocWrapperCaret(
   learner = mlr_learner, 
+  ppc.center = TRUE, 
+  ppc.scale = TRUE, 
   ppc.na.remove = TRUE
 )
 
-#' # 12. Resample Learner
+#' # 11. Resample Learner
 set.seed(5) 
 mlr_resample <- resample(
   learner = mlr_learner, 
@@ -128,6 +131,3 @@ mlr_rinstance <- makeResampleInstance(
   task = mlr_task
 )
 print(mlr_rinstance)
-
-
-
