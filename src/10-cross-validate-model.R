@@ -62,7 +62,7 @@ print(mlr_task)
 #' Choose learner with default paramaters. Parameters will be tuned in a later step. 
 #' Also add necessary preprocessing steps (centering, scaling, dealing with missings). 
 mlr_learner <- makeLearner(
-  cl = "regr.glmnet"
+  cl = "regr.randomForest"
 )
 print(mlr_learner) 
 print(mlr_learner[["par.set"]]) 
@@ -85,7 +85,8 @@ print(mlr_cv)
 
 #' # 8. Make Parameter Set
 mlr_param <- makeParamSet(
-  makeNumericParam("lambda1", lower = 0, upper = 1)
+  makeNumericParam("alpha", lower = 1, upper = 1), 
+  makeNumericParam("s", lower = 0, upper = 0.3)
 )
 print(mlr_param)
 
@@ -103,7 +104,8 @@ print(mlr_tune)
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
   cl = "regr.glmnet", 
-  alpha = 0.5
+  alpha = 1, 
+  s = 0.03
 )
 mlr_learner <- makePreprocWrapperCaret(
   learner = mlr_learner, 
