@@ -101,7 +101,8 @@ print(mlr_tune)
 #' # 11. Make New Learner 
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
-  cl = "regr.rpart"
+  cl = "regr.rpart", 
+  maxdepth = 2
 )
 mlr_learner <- makePreprocWrapperCaret(
   learner = mlr_learner, 
