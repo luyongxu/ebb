@@ -103,7 +103,7 @@ print(mlr_tune)
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
   cl = "regr.glmnet", 
-  alpha = 1
+  alpha = 0.5
 )
 mlr_learner <- makePreprocWrapperCaret(
   learner = mlr_learner, 
