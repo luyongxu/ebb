@@ -66,14 +66,14 @@ mlr_learner <- makeLearner(
 )
 print(mlr_learner) 
 print(mlr_learner[["par.set"]]) 
-mlr_learner <- makePreprocWrapperCaret(
-  learner = mlr_learner, 
-  ppc.center = TRUE, 
-  ppc.scale = TRUE,
-  ppc.na.remove = TRUE
-)
-print(mlr_learner)
-print(mlr_learner[["par.set"]])
+# mlr_learner <- makePreprocWrapperCaret(
+#   learner = mlr_learner, 
+#   ppc.center = FALSE, 
+#   ppc.scale = FALSE,
+#   ppc.na.remove = TRUE
+# )
+# print(mlr_learner)
+# print(mlr_learner[["par.set"]])
 
 #' # 7. Make Resample Description 
 mlr_cv <- makeResampleDesc(
@@ -83,36 +83,38 @@ mlr_cv <- makeResampleDesc(
 )
 print(mlr_cv)
 
-#' # 8. Make Parameter Set
-mlr_param <- makeParamSet(
-  makeNumericParam("alpha", lower = 1, upper = 1), 
-  makeNumericParam("s", lower = 0, upper = 0.3)
-)
-print(mlr_param)
-
-#' # 9. Tune Parameters
-mlr_tune <- tuneParams(
-  learner = mlr_learner,
-  task = mlr_task,
-  resampling = mlr_cv,
-  par.set = mlr_param,
-  control = makeTuneControlRandom(maxit = 20L)
-)
-print(mlr_tune)
+#' #' # 8. Make Parameter Set
+#' mlr_param <- makeParamSet(
+#'   makeDiscreteParam("ntree", values = c(250, 500, 1500)), 
+#'   makeDiscreteParam("mtry", values = seq(20, 80, 1)), 
+#'   makeDiscreteParam("nodesize", values = seq(5, 100, 1))
+#' )
+#' print(mlr_param)
+#' 
+#' #' # 9. Tune Parameters
+#' mlr_tune <- tuneParams(
+#'   learner = mlr_learner,
+#'   task = mlr_task,
+#'   resampling = mlr_cv,
+#'   par.set = mlr_param,
+#'   control = makeTuneControlRandom(maxit = 50L)
+#' )
+#' print(mlr_tune)
 
 #' # 10. Make New Learner 
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
-  cl = "regr.glmnet", 
-  alpha = 1, 
-  s = 0.03
+  cl = "regr.randomForest", 
+  ntree = 500, 
+  mtry = 2, 
+  nodesize = 100
 )
-mlr_learner <- makePreprocWrapperCaret(
-  learner = mlr_learner, 
-  ppc.center = TRUE, 
-  ppc.scale = TRUE, 
-  ppc.na.remove = TRUE
-)
+# mlr_learner <- makePreprocWrapperCaret(
+#   learner = mlr_learner, 
+#   ppc.center = TRUE, 
+#   ppc.scale = TRUE, 
+#   ppc.na.remove = TRUE
+# )
 
 #' # 11. Resample Learner
 set.seed(5) 
