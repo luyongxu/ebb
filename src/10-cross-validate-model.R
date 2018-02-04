@@ -104,7 +104,12 @@ print(mlr_cv)
 #' # 10. Make New Learner 
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
-  cl = "regr.ranger"
+  cl = "regr.ranger", 
+  num.trees = 500, 
+  mtry = 2, 
+  min.node.size = 30, 
+  splitrule = "maxstat", 
+  sample.fraction = 0.9
 )
 # mlr_learner <- makePreprocWrapperCaret(
 #   learner = mlr_learner, 
