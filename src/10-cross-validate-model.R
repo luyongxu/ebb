@@ -62,7 +62,7 @@ print(mlr_task)
 #' Choose learner with default paramaters. Parameters will be tuned in a later step. 
 #' Also add necessary preprocessing steps (centering, scaling, dealing with missings). 
 mlr_learner <- makeLearner(
-  cl = "regr.ranger"
+  cl = "regr.extraTrees"
 )
 print(mlr_learner) 
 print(mlr_learner[["par.set"]]) 
@@ -104,12 +104,10 @@ print(mlr_cv)
 #' # 10. Make New Learner 
 #' Make a new learner with optimal paramaters as determined by paramter tuning.  
 mlr_learner <- makeLearner(
-  cl = "regr.ranger", 
-  num.trees = 500, 
+  cl = "regr.extraTrees", 
+  ntree = 1500, 
   mtry = 2, 
-  min.node.size = 30, 
-  splitrule = "maxstat", 
-  sample.fraction = 0.9
+  nodesize = 30
 )
 # mlr_learner <- makePreprocWrapperCaret(
 #   learner = mlr_learner, 
