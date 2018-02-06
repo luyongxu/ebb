@@ -28,113 +28,65 @@
 source(here::here("/src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_csv(here::here("/data/train.csv")) %>% 
-  filter(is.na(return_252) == FALSE, 
-         is.na(chaikinvol_252) == FALSE)
+train <- read_csv(here::here("/data/train.csv"))
 glimpse(train) 
 
-#' # 3. Save Fold ID 
-#' The fold is is used to block obsevations together so that all observations that belong to a 
-#' single stock always are all assigned to train or all assigned to test.  
-fold_id <- train %>% .[["id"]] 
-
-#' # 4. Select Features 
-mlr_train <- train %>% 
+#' # 3. Select Features 
+xgb_features <- train %>% 
   select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
          matches("positive_"), matches("volatility_"), matches("rsi_"), 
          matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
          matches("cci_"), matches("chaikinvol_"), matches("cmf_"), 
          matches("snr_"), matches("williamsr_"), matches("mfi_"), 
-         matches("cmo_"), matches("vhf_"), position_label) %>% 
-  as.data.frame()
-glimpse(mlr_train)
+         matches("cmo_"), matches("vhf_")) %>% 
+  colnames()
 
-#' # 5. Make Task 
-mlr_task <- makeRegrTask(
-  id = "mlr_task", 
-  data = mlr_train, 
-  target = "position_label", 
-  blocking = factor(fold_id)
-)
-print(mlr_task)
+#' # 4. Set Parameters 
+xgb_params <- list(booster = "gbtree", 
+                   eta = 0.1, 
+                   gamma = 0.1, 
+                   max_depth = 3, 
+                   min_child_weight = 3, 
+                   subsample = 0.5, 
+                   colsample_bytree = 0.3, 
+                   lambda = 0, 
+                   alpha = 0, 
+                   objective = "reg:linear", 
+                   eval_metric = "rmse")
 
-#' # 6. Make Learner 
-#' Choose learner with default paramaters. Parameters will be tuned in a later step. 
-#' Also add necessary preprocessing steps (centering, scaling, dealing with missings). 
-mlr_learner <- makeLearner(
-  cl = "regr.gbm"
-)
-print(mlr_learner) 
-print(mlr_learner[["par.set"]]) 
-# mlr_learner <- makePreprocWrapperCaret(
-#   learner = mlr_learner, 
-#   ppc.center = FALSE, 
-#   ppc.scale = FALSE,
-#   ppc.na.remove = TRUE
-# )
-# print(mlr_learner)
-# print(mlr_learner[["par.set"]])
+#' # 5. Create XGB Data Objects
+xgb_train <- xgb.DMatrix(data = as.matrix(train[, xgb_features]), 
+                         label = as.matrix(train[, "position_label"]))
 
-#' # 7. Make Resample Description 
-mlr_cv <- makeResampleDesc(
-  method = "CV", 
-  iters = 26, 
-  predict = "both"
-)
-print(mlr_cv)
+#' # 6. Generate Fold IDs 
+#' Generate a list of test fold indices such that all observations that belong to a single 
+#' symbol are assigned to one fold. 
+xgb_folds <- vector("list", length(unique(train[["id"]])))
+for (id in unique(train[["id"]])) { 
+  xgb_folds[[id]] <- which(train[["id"]] %in% id)
+}
 
-#' #' # 8. Make Parameter Set
-#' mlr_param <- makeParamSet(
-#'   makeDiscreteParam("ntree", values = c(250, 500, 1500)), 
-#'   makeDiscreteParam("mtry", values = seq(20, 80, 1)), 
-#'   makeDiscreteParam("nodesize", values = seq(5, 100, 1))
-#' )
-#' print(mlr_param)
-#' 
-#' #' # 9. Tune Parameters
-#' mlr_tune <- tuneParams(
-#'   learner = mlr_learner,
-#'   task = mlr_task,
-#'   resampling = mlr_cv,
-#'   par.set = mlr_param,
-#'   control = makeTuneControlRandom(maxit = 50L)
-#' )
-#' print(mlr_tune)
+#' # 7. Cross Validate For Parameter Tuning
+set.seed(5)
+xgb_cv <- xgb.cv(params = xgb_params, 
+                 data = xgb_train, 
+                 nrounds = 1000, 
+                 showsd = TRUE, 
+                 folds = xgb_folds, 
+                 print_every_n = 1, 
+                 early_stopping_rounds = 10, 
+                 prediction = TRUE)
 
-#' # 10. Make New Learner 
-#' Make a new learner with optimal paramaters as determined by paramter tuning.  
-mlr_learner <- makeLearner(
-  cl = "regr.gbm", 
-  n.trees = 300, 
-  interaction.depth = 1, 
-  n.minobsinnode = 30, 
-  shrinkage = 0.1, 
-  bag.fraction = 0.5, 
-  train.fraction = 1
-)
-# mlr_learner <- makePreprocWrapperCaret(
-#   learner = mlr_learner, 
-#   ppc.center = TRUE, 
-#   ppc.scale = TRUE, 
-#   ppc.na.remove = TRUE
-# )
+#' # 8. Extract and Save Predictions 
+train_pred <- train %>% mutate(pred = xgb_cv[["pred"]])
+write_csv(train_pred, here::here("/data/train-pred.csv"))
 
-#' # 11. Resample Learner
-set.seed(5) 
-mlr_resample <- resample(
-  learner = mlr_learner, 
-  task = mlr_task, 
-  resampling = mlr_cv, 
-  measures = list(mse, setAggregation(mse, train.mean), timetrain)
-)
-print(mlr_resample)
-print(mlr_resample[["measures.train"]])
-print(mlr_resample[["measures.test"]])
-print(mlr_resample[["aggr"]])
 
-#' # 13. Make Resample Instance
-mlr_rinstance <- makeResampleInstance(
-  desc = mlr_cv,
-  task = mlr_task
-)
-print(mlr_rinstance)
+
+
+
+
+
+
+
+

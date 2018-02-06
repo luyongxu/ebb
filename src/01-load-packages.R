@@ -17,6 +17,7 @@
 #' # 1. Install Libraries Not on CRAN 
 #' These packages require a one-time installation from Github.  
 # devtools::install_github("thomasp85/patchwork")
+# devtools::install_github("mlr-org/mlr")
 
 #' # 2. Load libraries 
 #' Description  
@@ -53,6 +54,7 @@ load_library("RcppRoll")
 load_library("mlr")
 load_library("MLmetrics")
 load_library("parallelMap")
+load_library("xgboost")
 
 #' # 3. Options 
 #' Turn off scientific notation. 
