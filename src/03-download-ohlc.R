@@ -118,15 +118,15 @@ download_yahoo_many <- function(symbols, from, to) {
 #' # 5. Create Vector of Symbols
 #' Use only companies listed on the NASDAQ, NYSE, and AMEX with a market capitalization of $10 billion or greater or 
 #' appear in the original position label data.  
-symbols_a <- read_csv("./data/list-all.csv") %>% 
+symbols_us <- read_csv("./data/list-all.csv") %>% 
   filter(exchange %in% c("NASDAQ", "NYSE", "AMEX"), 
          market_cap >= 10000000000) %>% 
   .[["symbol"]]
-symbols_b <- read_csv("./data/original-clean.csv") %>% 
+symbols_original <- read_csv("./data/original-clean.csv") %>% 
   mutate(symbol = ifelse(exchange == "CT Equity", str_c(symbol, ".TO"), symbol)) %>% 
   .[["symbol"]] %>% 
   unique()
-symbols <- unique(c(symbols_a, symbols_b))
+symbols <- unique(c(symbols_us, symbols_original))
 print(symbols)
 
 #' # 6. Download OHLC Data 

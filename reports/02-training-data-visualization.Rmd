@@ -7,7 +7,7 @@ urlcolor: blue
 ---
 
 ```{r setup, include = FALSE}
-source(here::here("/src/06-plot-data.R"))
+source(here::here("/src/06-plot-combined.R"))
 ```
 
 ## 1. Introduction 

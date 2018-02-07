@@ -128,57 +128,57 @@ SNR <- function (HLC, n, ...) {
 #' # 6. Rolling Return 
 combined <- combined %>% 
   group_by(symbol) %>% 
-  mutate(return_001 = yahoo_close / lag(yahoo_close, n = 1) - 1, 
-         return_005 = yahoo_close / lag(yahoo_close, n = 5) - 1, 
-         return_010 = yahoo_close / lag(yahoo_close, n = 10) - 1, 
-         return_021 = yahoo_close / lag(yahoo_close, n = 21) - 1, 
-         return_042 = yahoo_close / lag(yahoo_close, n = 42) - 1, 
-         return_063 = yahoo_close / lag(yahoo_close, n = 63) - 1, 
-         return_084 = yahoo_close / lag(yahoo_close, n = 84) - 1, 
-         return_105 = yahoo_close / lag(yahoo_close, n = 105) - 1, 
-         return_126 = yahoo_close / lag(yahoo_close, n = 126) - 1, 
-         return_147 = yahoo_close / lag(yahoo_close, n = 147) - 1, 
-         return_168 = yahoo_close / lag(yahoo_close, n = 168) - 1, 
-         return_189 = yahoo_close / lag(yahoo_close, n = 189) - 1, 
-         return_210 = yahoo_close / lag(yahoo_close, n = 210) - 1, 
-         return_231 = yahoo_close / lag(yahoo_close, n = 231) - 1, 
-         return_252 = yahoo_close / lag(yahoo_close, n = 252) - 1)
+  mutate(return_001 = (yahoo_close / lag(yahoo_close, n = 1) - 1) * 100, 
+         return_005 = (yahoo_close / lag(yahoo_close, n = 5) - 1) * 100, 
+         return_010 = (yahoo_close / lag(yahoo_close, n = 10) - 1) * 100, 
+         return_021 = (yahoo_close / lag(yahoo_close, n = 21) - 1) * 100, 
+         return_042 = (yahoo_close / lag(yahoo_close, n = 42) - 1) * 100, 
+         return_063 = (yahoo_close / lag(yahoo_close, n = 63) - 1) * 100, 
+         return_084 = (yahoo_close / lag(yahoo_close, n = 84) - 1) * 100, 
+         return_105 = (yahoo_close / lag(yahoo_close, n = 105) - 1) * 100, 
+         return_126 = (yahoo_close / lag(yahoo_close, n = 126) - 1) * 100, 
+         return_147 = (yahoo_close / lag(yahoo_close, n = 147) - 1) * 100, 
+         return_168 = (yahoo_close / lag(yahoo_close, n = 168) - 1) * 100, 
+         return_189 = (yahoo_close / lag(yahoo_close, n = 189) - 1) * 100, 
+         return_210 = (yahoo_close / lag(yahoo_close, n = 210) - 1) * 100, 
+         return_231 = (yahoo_close / lag(yahoo_close, n = 231) - 1) * 100, 
+         return_252 = (yahoo_close / lag(yahoo_close, n = 252) - 1) * 100)
 
 #' # 7. Rolling Drawdown 
 combined <- combined %>% 
   group_by(symbol) %>% 
-  mutate(drawdown_005 = yahoo_close / roll_maxr(yahoo_close, n = 5) - 1, 
-         drawdown_010 = yahoo_close / roll_maxr(yahoo_close, n = 10) - 1, 
-         drawdown_021 = yahoo_close / roll_maxr(yahoo_close, n = 21) - 1, 
-         drawdown_042 = yahoo_close / roll_maxr(yahoo_close, n = 42) - 1, 
-         drawdown_063 = yahoo_close / roll_maxr(yahoo_close, n = 63) - 1, 
-         drawdown_084 = yahoo_close / roll_maxr(yahoo_close, n = 84) - 1, 
-         drawdown_105 = yahoo_close / roll_maxr(yahoo_close, n = 105) - 1, 
-         drawdown_126 = yahoo_close / roll_maxr(yahoo_close, n = 126) - 1, 
-         drawdown_147 = yahoo_close / roll_maxr(yahoo_close, n = 147) - 1, 
-         drawdown_168 = yahoo_close / roll_maxr(yahoo_close, n = 168) - 1, 
-         drawdown_189 = yahoo_close / roll_maxr(yahoo_close, n = 189) - 1, 
-         drawdown_210 = yahoo_close / roll_maxr(yahoo_close, n = 210) - 1, 
-         drawdown_231 = yahoo_close / roll_maxr(yahoo_close, n = 231) - 1, 
-         drawdown_252 = yahoo_close / roll_maxr(yahoo_close, n = 252) - 1)
+  mutate(drawdown_005 = (yahoo_close / roll_maxr(yahoo_close, n = 5) - 1) * 100, 
+         drawdown_010 = (yahoo_close / roll_maxr(yahoo_close, n = 10) - 1) * 100, 
+         drawdown_021 = (yahoo_close / roll_maxr(yahoo_close, n = 21) - 1) * 100, 
+         drawdown_042 = (yahoo_close / roll_maxr(yahoo_close, n = 42) - 1) * 100, 
+         drawdown_063 = (yahoo_close / roll_maxr(yahoo_close, n = 63) - 1) * 100, 
+         drawdown_084 = (yahoo_close / roll_maxr(yahoo_close, n = 84) - 1) * 100, 
+         drawdown_105 = (yahoo_close / roll_maxr(yahoo_close, n = 105) - 1) * 100, 
+         drawdown_126 = (yahoo_close / roll_maxr(yahoo_close, n = 126) - 1) * 100, 
+         drawdown_147 = (yahoo_close / roll_maxr(yahoo_close, n = 147) - 1) * 100, 
+         drawdown_168 = (yahoo_close / roll_maxr(yahoo_close, n = 168) - 1) * 100, 
+         drawdown_189 = (yahoo_close / roll_maxr(yahoo_close, n = 189) - 1) * 100, 
+         drawdown_210 = (yahoo_close / roll_maxr(yahoo_close, n = 210) - 1) * 100, 
+         drawdown_231 = (yahoo_close / roll_maxr(yahoo_close, n = 231) - 1) * 100, 
+         drawdown_252 = (yahoo_close / roll_maxr(yahoo_close, n = 252) - 1) * 100)
 
 #' # 8. Rolling Drawup 
 combined <- combined %>% 
   group_by(symbol) %>% 
-  mutate(drawup_005 = yahoo_close / roll_minr(yahoo_close, n = 5) - 1, 
-         drawup_010 = yahoo_close / roll_minr(yahoo_close, n = 10) - 1, 
-         drawup_021 = yahoo_close / roll_minr(yahoo_close, n = 21) - 1, 
-         drawup_042 = yahoo_close / roll_minr(yahoo_close, n = 42) - 1, 
-         drawup_063 = yahoo_close / roll_minr(yahoo_close, n = 63) - 1, 
-         drawup_084 = yahoo_close / roll_minr(yahoo_close, n = 84) - 1, 
-         drawup_105 = yahoo_close / roll_minr(yahoo_close, n = 105) - 1, 
-         drawup_126 = yahoo_close / roll_minr(yahoo_close, n = 126) - 1, 
-         drawup_147 = yahoo_close / roll_minr(yahoo_close, n = 147) - 1, 
-         drawup_168 = yahoo_close / roll_minr(yahoo_close, n = 168) - 1, 
-         drawup_189 = yahoo_close / roll_minr(yahoo_close, n = 189) - 1, 
-         drawup_210 = yahoo_close / roll_minr(yahoo_close, n = 210) - 1, 
-         drawup_231 = yahoo_close / roll_minr(yahoo_close, n = 231) - 1, 
-         drawup_252 = yahoo_close / roll_minr(yahoo_close, n = 252) - 1)
+  mutate(drawup_005 = (yahoo_close / roll_minr(yahoo_close, n = 5) - 1) * 100, 
+         drawup_010 = (yahoo_close / roll_minr(yahoo_close, n = 10) - 1) * 100, 
+         drawup_021 = (yahoo_close / roll_minr(yahoo_close, n = 21) - 1) * 100, 
+         drawup_042 = (yahoo_close / roll_minr(yahoo_close, n = 42) - 1) * 100, 
+         drawup_063 = (yahoo_close / roll_minr(yahoo_close, n = 63) - 1) * 100, 
+         drawup_084 = (yahoo_close / roll_minr(yahoo_close, n = 84) - 1) * 100, 
+         drawup_105 = (yahoo_close / roll_minr(yahoo_close, n = 105) - 1) * 100, 
+         drawup_126 = (yahoo_close / roll_minr(yahoo_close, n = 126) - 1) * 100, 
+         drawup_147 = (yahoo_close / roll_minr(yahoo_close, n = 147) - 1) * 100, 
+         drawup_168 = (yahoo_close / roll_minr(yahoo_close, n = 168) - 1) * 100, 
+         drawup_189 = (yahoo_close / roll_minr(yahoo_close, n = 189) - 1) * 100, 
+         drawup_210 = (yahoo_close / roll_minr(yahoo_close, n = 210) - 1) * 100, 
+         drawup_231 = (yahoo_close / roll_minr(yahoo_close, n = 231) - 1) * 100, 
+         drawup_252 = (yahoo_close / roll_minr(yahoo_close, n = 252) - 1) * 100)
 
 #' # 9. Rolling Number of Positive Days 
 combined <- combined %>% 
@@ -433,9 +433,6 @@ i_vhf <- bind_cols(
 combined <- bind_cols(combined, i_vhf)
 
 #' # 22. Clean Combined 
-combined <- combined %>% 
-  ungroup() %>% 
-  as_tibble()
 combined[do.call(cbind, lapply(combined, is.nan))] <- NA
   
 #' # 23. Split into Train and Test 

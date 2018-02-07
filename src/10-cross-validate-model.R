@@ -13,17 +13,6 @@
 #'     fig_height: 5 
 #' ---
 
-# Candidate learners:
-# regr.lm
-# regr.rpart
-# regr.glmnet
-# regr.ksvm
-# regr.randomForest
-# regr.ranger
-# regr.extraTrees
-# regr.gbm
-# regr.xgboost
-
 #' # 1. Source Load Packages
 source(here::here("/src/01-load-packages.R"))
 
@@ -32,25 +21,21 @@ train <- read_csv(here::here("/data/train.csv"))
 glimpse(train) 
 
 #' # 3. Select Features 
-xgb_features <- train %>% 
-  select(matches("return_"), matches("drawdown_"), matches("drawup_"), 
-         matches("positive_"), matches("volatility_"), matches("rsi_"), 
-         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"), 
-         matches("cci_"), matches("chaikinvol_"), matches("cmf_"), 
-         matches("snr_"), matches("williamsr_"), matches("mfi_"), 
-         matches("cmo_"), matches("vhf_")) %>% 
+xgb_features <- train %>%
+  select(matches("return_"), matches("drawdown_"), matches("drawup_"),
+         matches("positive_"), matches("volatility_"), matches("rsi_"),
+         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"),
+         matches("cci_"), matches("chaikinvol_"), matches("cmf_"),
+         matches("snr_"), matches("williamsr_"), matches("mfi_"),
+         matches("cmo_"), matches("vhf_")) %>%
   colnames()
 
 #' # 4. Set Parameters 
-xgb_params <- list(booster = "gbtree", 
-                   eta = 0.1, 
-                   gamma = 0.1, 
-                   max_depth = 3, 
-                   min_child_weight = 3, 
-                   subsample = 0.5, 
-                   colsample_bytree = 0.3, 
-                   lambda = 0, 
-                   alpha = 0, 
+xgb_params <- list(booster = "gblinear", 
+                   eta = 0.01, 
+                   lambda = 1, 
+                   alpha = 30,  
+                   lambda_bias = 0.0, 
                    objective = "reg:linear", 
                    eval_metric = "rmse")
 
@@ -67,6 +52,8 @@ for (id in unique(train[["id"]])) {
 }
 
 #' # 7. Cross Validate For Parameter Tuning
+# Best iteration:
+# [436]	train-rmse:1.689105+0.024000	test-rmse:1.716970+0.622092
 set.seed(5)
 xgb_cv <- xgb.cv(params = xgb_params, 
                  data = xgb_train, 
@@ -74,19 +61,19 @@ xgb_cv <- xgb.cv(params = xgb_params,
                  showsd = TRUE, 
                  folds = xgb_folds, 
                  print_every_n = 1, 
-                 early_stopping_rounds = 10, 
+                 early_stopping_rounds = 20,
                  prediction = TRUE)
 
-#' # 8. Extract and Save Predictions 
-train_pred <- train %>% mutate(pred = xgb_cv[["pred"]])
+#' # 8. Extract and Score Predictions 
+#' Cap predictions beyond the -10 or +10 range to -10 or +10. 
+train_pred <- train %>% 
+  mutate(pred = xgb_cv[["pred"]], 
+         pred = ifelse(pred >= 10, 10, pred), 
+         pred = ifelse(pred <= -10, -10, pred))
+MSE(train_pred[["pred"]], train_pred[["position_label"]])
+
+#' # 9. Save Predictions 
 write_csv(train_pred, here::here("/data/train-pred.csv"))
-
-
-
-
-
-
-
 
 
 
