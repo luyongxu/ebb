@@ -52,9 +52,11 @@ load_library("patchwork")
 load_library("here")
 load_library("RcppRoll")
 load_library("mlr")
+load_library("caret") 
 load_library("MLmetrics")
 load_library("parallelMap")
 load_library("xgboost")
+load_library("feather")
 
 #' # 3. Options 
 #' Turn off scientific notation. 

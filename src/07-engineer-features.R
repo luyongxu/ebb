@@ -22,8 +22,8 @@ combined <- read_csv(here::here("/data/combined.csv"), col_types = c("Dddddddcid
 #' # 3. Choose Data to Calculate Features 
 #' Can choose either training data for training the model or test data for prediction. Move this option into 
 #' a command line argument later.  
-data_source <- "train"
-if (data_source == "train") { 
+generate_train_or_test <- "test"
+if (generate_train_or_test == "train") { 
   train_symbols <- combined %>% 
     filter(source == "train") %>% 
     .[["symbol"]] %>% 
@@ -31,9 +31,13 @@ if (data_source == "train") {
   combined <- combined %>% 
     filter(symbol %in% train_symbols)
 }
-if (data_source =="test") { 
+if (generate_train_or_test =="test") { 
   combined <- combined %>% 
-    filter(timestamp >= Sys.Date() - 400)
+    filter(timestamp >= Sys.Date() - 730)
+  combined <- combined %>% 
+    left_join(combined %>% count(symbol)) %>% 
+    filter(n >= 252) %>% 
+    select(-n)
 }
 
 #' # 4. Technical Indicator Function 
@@ -440,5 +444,10 @@ train <- combined %>% filter(is.na(position_label) == FALSE)
 test <- combined %>% filter(is.na(position_label) == TRUE) 
 
 #' # 24. Save Data 
-write_csv(train, "./data/train.csv")
-write_csv(test, "./data/test.csv")
+if (generate_train_or_test == "train") { 
+  write_feather(train, here::here("/data/train.feather"))
+}
+if (generate_train_or_test == "test") { 
+  write_feather(test, here::here("/data/test.feather"))
+}
+

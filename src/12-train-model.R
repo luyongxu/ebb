@@ -13,19 +13,41 @@
 #'     fig_height: 5 
 #' ---
 
-#' # 1. Source Cross Validate Model 
-source("EMS.005 Cross Validate Model.R")
+#' # 1. Source Load Packages
+source(here::here("/src/01-load-packages.R"))
+
+#' # 2. Load Training Data 
+train <- read_csv(here::here("/data/train.csv"))
+glimpse(train) 
+
+#' # 3. Select Features 
+xgb_features <- train %>%
+  select(matches("return_"), matches("drawdown_"), matches("drawup_"),
+         matches("positive_"), matches("volatility_"), matches("rsi_"),
+         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"),
+         matches("cci_"), matches("chaikinvol_"), matches("cmf_"),
+         matches("snr_"), matches("williamsr_"), matches("mfi_"),
+         matches("cmo_"), matches("vhf_")) %>%
+  colnames()
+
+#' # 4. Set Parameters 
+xgb_params <- list(booster = "gblinear", 
+                   eta = 0.01, 
+                   lambda = 1, 
+                   alpha = 30,  
+                   lambda_bias = 0.0, 
+                   objective = "reg:linear", 
+                   eval_metric = "rmse")
+
+#' # 5. Create XGB Data Objects
+xgb_train <- xgb.DMatrix(data = as.matrix(train[, xgb_features]), 
+                         label = as.matrix(train[, "position_label"]))
+
+#' # 6. Train XGB Model 
+xgb_model <- xgb.train(params = xgb_params, data = xgb_train, nrounds = 4341)
+xgb_importance <- xgb.importance(model = xgb_model)
+
+#' # 7. Save XGB Model 
+xgb.save(xgb_model, here::here("./output/xgboost.model"))
 
 
-#' # 6. Train Learner 
-model <- train(learner = learner, task = task)
-print(model)
-
-#' # 7. Predict 
-pred <- predict(object = model, task = task)
-
-#' # 8. Evaluate Performance 
-performance(pred, measures = list(rsq, mse, mae, rmse, timetrain), model = model)
-
-
-list_learners <- listLearners()

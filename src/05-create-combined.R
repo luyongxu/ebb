@@ -50,23 +50,16 @@ combined <- ohlc_data %>%
   filter(is.na(yahoo_adjusted_close) == FALSE) %>% 
   arrange(symbol, timestamp)
 
-#' # 7. Filter Symbols 
-#' Filter observations to companies that have at least one year of trade history. 
-combined <- combined %>% 
-  left_join(combined %>% count(symbol)) %>% 
-  filter(n >= 252) %>% 
-  select(-n)
-
-#' # 8. Create Train and Test Labels 
+#' # 7. Create Train and Test Labels 
 combined <- combined %>% 
   mutate(source = ifelse(is.na(position_label) == TRUE, "test", "train"))
 
-#' # 9. Print Data 
+#' # 8. Print Data 
 print(combined)
 glimpse(combined)
 summary(combined)
 
-#' # 10. Save Data 
+#' # 9. Save Data 
 write_csv(combined, here::here("/data/combined.csv"))
 
 

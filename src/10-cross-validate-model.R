@@ -32,7 +32,7 @@ xgb_features <- train %>%
 
 #' # 4. Set Parameters 
 xgb_params <- list(booster = "gblinear", 
-                   eta = 0.01, 
+                   eta = 0.001, 
                    lambda = 1, 
                    alpha = 30,  
                    lambda_bias = 0.0, 
@@ -53,11 +53,11 @@ for (id in unique(train[["id"]])) {
 
 #' # 7. Cross Validate For Parameter Tuning
 # Best iteration:
-# [436]	train-rmse:1.689105+0.024000	test-rmse:1.716970+0.622092
+# [30]	train-rmse:1.203154+0.023987	test-rmse:1.709590+0.728223
 set.seed(5)
 xgb_cv <- xgb.cv(params = xgb_params, 
                  data = xgb_train, 
-                 nrounds = 1000, 
+                 nrounds = 100000, 
                  showsd = TRUE, 
                  folds = xgb_folds, 
                  print_every_n = 1, 
