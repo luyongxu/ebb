@@ -47,7 +47,8 @@ xgb_train <- xgb.DMatrix(data = as.matrix(train[, xgb_features]),
 xgb_model <- xgb.train(params = xgb_params, data = xgb_train, nrounds = 4341)
 xgb_importance <- xgb.importance(model = xgb_model)
 
-#' # 7. Save XGB Model 
+#' # 7. Save XGB Model and Importance
 xgb.save(xgb_model, here::here("./output/xgboost.model"))
+write_csv(xgb_importance, here::here("./output/xgb_importance.csv"))
 
 

@@ -1,1034 +1,976 @@
 name,symbol,market_cap,earnings_date,fiscal_quarter,consensus_eps,number_ests,last_year_earnings_date,last_year_eps,earnings_type
-"Blue Hills Bancorp, Inc.",BHBK,54056e4,2018-01-24,Dec 2017,0.16,1,2017-01-25,0.17,estimated
-Farmers National Banc Corp.,FMNB,42142e4,2018-01-24,Dec 2017,0.23,1,2017-01-25,0.2,estimated
-"Gardner Denver Holdings, Inc.",GDI,704e7,2018-01-24,Dec 2017,0.41,2,NA,NA,estimated
-LINE Corporation,LN,98e8,2018-01-24,Dec 2017,NA,0,NA,NA,estimated
-"MainSource Financial Group, Inc.",MSFG,101e7,2018-01-24,Dec 2017,0.56,1,2017-01-25,0.5,estimated
-Meredith Corporation,MDP,303e7,2018-01-24,Dec 2017,0.91,2,2017-01-25,1.3,estimated
-"The First Bancshares, Inc.",FBMS,36903e4,2018-01-24,Dec 2017,0.48,1,2017-01-25,0.3,estimated
-Two River Bancorp,TRCB,15062e4,2018-01-24,Dec 2017,0.26,1,2017-01-25,0.29,estimated
-"Virtus Investment Partners, Inc.",VRTS,92839e4,2018-01-24,Dec 2017,2.39,3,2017-01-25,1.75,estimated
-8point3 Energy Partners LP,CAFD,118e7,2018-01-25,Nov 2017,0.08,8,NA,NA,estimated
-"Advanced Semiconductor Engineering, Inc.",ASX,1239e7,2018-01-25,Dec 2017,NA,0,2017-01-26,0.14,estimated
-Charter Financial Corp.,CHFN,27798e4,2018-01-25,Dec 2017,0.24,1,2017-01-26,0.33,estimated
-Community Bankers Trust Corporation.,ESXB,18189e4,2018-01-25,Dec 2017,0.11,1,2017-01-26,0.12,estimated
-"Eagle Bancorp Montana, Inc.",EBMT,10026e4,2018-01-25,Dec 2017,0.32,2,2017-01-26,0.37,estimated
-First Bancorp,FBNC,108e7,2018-01-25,Dec 2017,0.53,3,2017-01-26,0.4,estimated
-"Heartland Express, Inc.",HTLD,194e7,2018-01-25,Dec 2017,0.1,6,2017-01-26,0.16,estimated
-"HomeTrust Bancshares, Inc.",HTBI,49491e4,2018-01-25,Dec 2017,0.29,1,2017-01-26,0.17,estimated
-"Industrias Bachoco, S.A. de C.V.",IBA,311e7,2018-01-25,Dec 2017,0.62,1,2017-01-26,0.95,estimated
-"Lakeland Bancorp, Inc.",LBAI,94232e4,2018-01-25,Dec 2017,0.29,2,2017-01-26,0.26,estimated
-"Safety, Income & Growth Inc.",SAFE,32451e4,2018-01-25,Dec 2017,0.16,2,NA,NA,estimated
-"Super Micro Computer, Inc.",SMCI,11e8,2018-01-25,Dec 2017,0.37,3,2017-01-26,0.43,estimated
-Sussex Bancorp,SBBX,21915e4,2018-01-25,Dec 2017,0.31,1,2017-01-26,0.32,estimated
-Unilever NV,UN,16582e7,2018-01-25,Dec 2017,NA,0,NA,NA,estimated
-Unilever PLC,UL,6987e7,2018-01-25,Dec 2017,NA,0,NA,NA,estimated
-Access National Corporation,ANCX,58945e4,2018-01-26,Dec 2017,0.41,1,2017-01-20,0.28,estimated
-AZZ Inc.,AZZ,121e7,2018-01-26,Nov 2017,0.62,1,2017-01-06,0.7,estimated
-"Bridge Bancorp, Inc.",BDGE,69379e4,2018-01-26,Dec 2017,0.5,1,2017-01-27,0.5,estimated
-CNB Financial Corporation,CCNE,42978e4,2018-01-26,Dec 2017,0.3,1,2017-01-27,0.35,estimated
-Comp En De Mn Cemig ADS,CIG,28e8,2018-01-26,Dec 2017,NA,0,NA,NA,estimated
-LCNB Corporation,LCNB,19788e4,2018-01-26,Dec 2017,0.32,1,2017-01-27,0.37,estimated
-"Select Bancorp, Inc.",SLCT,18874e4,2018-01-26,Dec 2017,0.19,1,2017-01-27,0.14,estimated
-"Southern National Bancorp of Virginia, Inc.",SONA,38936e4,2018-01-26,Dec 2017,0.24,1,2017-01-27,0.21,estimated
-Sumitomo Mitsui Financial Group Inc,SMFG,66930000000.00001,2018-01-26,Dec 2017,NA,0,2017-01-27,0.25,estimated
-Venator Materials PLC,VNTR,237e7,2018-01-26,Dec 2017,0.68,4,NA,NA,estimated
-BankFinancial Corporation,BFIN,28103e4,2018-01-29,Dec 2017,0.17,2,2017-01-30,0.12,estimated
-"Citizens Financial Services, Inc.",CZFS,NA,2018-01-29,Dec 2017,0.61,1,2017-01-30,0.9,estimated
-"DHT Holdings, Inc.",DHT,54661e4,2018-01-29,Dec 2017,-0.02,6,2017-01-30,0.18,estimated
-Dorian LPG Ltd.,LPG,42439e4,2018-01-29,Dec 2017,-0.19,3,2017-01-30,-0.36,estimated
-"German American Bancorp, Inc.",GABC,80003e4,2018-01-29,Dec 2017,0.42,2,2017-01-30,0.44,estimated
-GGP Inc.,GGP,2258e7,2018-01-29,Dec 2017,0.47,7,2017-01-30,0.43,estimated
-"Guaranty Bancshares, Inc.",GNTY,3478e5,2018-01-29,Dec 2017,NA,0,NA,NA,estimated
-Northrim BanCorp Inc,NRIM,23233e4,2018-01-29,Dec 2017,0.51,1,2017-01-30,0.51,estimated
-Rayonier Advanced Materials Inc.,RYAM,1e9,2018-01-29,Dec 2017,0.15,2,2017-01-30,0.18,estimated
-"Summit Financial Group, Inc.",SMMF,325e6,2018-01-29,Dec 2017,0.53,1,2017-01-30,0.44,estimated
-The First of Long Island Corporation,FLIC,69583e4,2018-01-29,Dec 2017,0.38,1,2017-01-30,0.31,estimated
-TriCo Bancshares,TCBK,87692e4,2018-01-29,Dec 2017,0.57,3,2017-01-30,0.54,estimated
-Banco De Chile,BCH,1714e7,2018-01-30,Dec 2017,1.39,2,2017-01-31,1.11,estimated
-"Canon, Inc.",CAJ,4252e7,2018-01-30,Dec 2017,0.56,1,2017-01-31,0.26,estimated
-"CB Financial Services, Inc.",CBFV,12816e4,2018-01-30,Dec 2017,0.48,1,2017-01-31,0.49,estimated
-CNX Resources Corporation,CNX,33e8,2018-01-30,Dec 2017,-0.05,2,2017-01-31,0,estimated
-CommerceWest Bank,CWBK,NA,2018-01-30,Dec 2017,0.35,1,2017-01-24,0.32,estimated
-HDFC Bank Limited,HDB,9081e7,2018-01-30,Dec 2017,0.84,1,NA,0.67,estimated
-"Home Bancorp, Inc.",HBCP,39674e4,2018-01-30,Dec 2017,0.63,2,2017-01-24,0.6,estimated
-"HopFed Bancorp, Inc.",HFBC,9869e4,2018-01-30,Dec 2017,0.18,1,2017-01-31,0.18,estimated
-ICICI Bank Limited,IBN,3565e7,2018-01-30,Dec 2017,0.07,1,2017-01-31,0.11,estimated
-Key Tronic Corporation,KTCC,7596e4,2018-01-30,Dec 2017,0.11,1,2017-01-31,0.14,estimated
-Kyocera Corporation,KYO,2503e7,2018-01-30,Dec 2017,NA,0,2017-01-31,0.89,estimated
-Oritani Financial Corp.,ORIT,7613e5,2018-01-30,Dec 2017,0.27,2,2017-01-24,0.26,estimated
-"Overstock.com, Inc.",OSTK,2029999999.9999998,2018-01-30,Dec 2017,-0.03,1,2017-01-31,0.12,estimated
-"Southern First Bancshares, Inc.",SFST,32021e4,2018-01-30,Dec 2017,0.54,1,NA,0.49,estimated
-"Twin Disc, Incorporated",TWIN,31774e4,2018-01-30,Dec 2017,0.03,1,2017-01-31,-0.21,estimated
-"SmartFinancial, Inc.",SMBK,24101e4,2018-01-31,Dec 2017,0.2,1,2017-01-18,0.22,estimated
-1st Constitution Bancorp (NJ),FCCY,15702e4,2018-02-01,Dec 2017,0.26,2,2017-02-02,0.25,estimated
-"Altice USA, Inc.",ATUS,165e8,2018-02-01,Dec 2017,-0.01,3,NA,NA,estimated
-"ASV Holdings, Inc.",ASV,8252e4,2018-02-01,Dec 2017,0.07,3,NA,NA,estimated
-"Aviragen Therapeutics, Inc.",AVIR,2296e4,2018-02-01,Dec 2017,NA,0,2017-02-02,-0.23,estimated
-Callaway Golf Company,ELY,144e7,2018-02-01,Dec 2017,-0.18,10,2017-02-02,-0.18,estimated
-Carpenter Technology Corporation,CRS,251e7,2018-02-01,Dec 2017,0.51,4,2017-02-02,0.15,estimated
-Central Garden & Pet Company,CENT,213e7,2018-02-01,Dec 2017,0.15,2,2017-02-02,0.12,estimated
-Central Garden & Pet Company,CENTA,2069999999.9999998,2018-02-01,Dec 2017,NA,0,2017-02-02,0.12,estimated
-"Emerald Expositions Events, Inc.",EEX,155e7,2018-02-01,Dec 2017,-0.06,3,NA,NA,estimated
-ePlus inc.,PLUS,111e7,2018-02-01,Dec 2017,0.9,2,2017-02-01,0.95,estimated
-"EQT GP Holdings, LP",EQGP,765e7,2018-02-01,Dec 2017,0.28,3,2017-02-02,0.22,estimated
-"Floor & Decor Holdings, Inc.",FND,461e7,2018-02-01,Dec 2017,0.18,7,NA,NA,estimated
-Hanesbrands Inc.,HBI,832e7,2018-02-01,Dec 2017,0.52,8,2017-02-02,0.53,estimated
-"Haynes International, Inc.",HAYN,46549e4,2018-02-01,Dec 2017,-0.38,2,2017-02-02,-0.06,estimated
-ITUS Corporation,ITUS,10132e4,2018-02-01,Oct 2017,-0.12,1,NA,-0.12,estimated
-"Mesa Laboratories, Inc.",MLAB,48445e4,2018-02-01,Dec 2017,0.61,1,2017-02-02,1.19,estimated
-New York Times Company (The),NYT,364e7,2018-02-01,Dec 2017,0.3,2,2017-02-02,0.3,estimated
-OncoSec Medical Incorporated,ONCS,6961e4,2018-02-01,Oct 2017,-0.23,1,2016-12-08,-0.29,estimated
-Park Hotels & Resorts Inc.,PK,636e7,2018-02-01,Dec 2017,0.61,7,NA,NA,estimated
-PennyMac Mortgage Investment Trust,PMT,104e7,2018-02-01,Dec 2017,0.34,2,2017-02-02,0.44,estimated
-"Solaris Oilfield Infrastructure, Inc.",SOI,95278e4,2018-02-01,Dec 2017,0.19,5,NA,NA,estimated
-"Suburban Propane Partners, L.P.",SPH,154e7,2018-02-01,Dec 2017,0.87,3,2017-02-02,0.56,estimated
-"Surmodics, Inc.",SRDX,38928e4,2018-02-01,Dec 2017,-0.05,1,2017-02-02,0.19,estimated
-U.S. Gold Corp.,USAU,3367e4,2018-02-01,Oct 2017,-0.22,1,2016-12-15,-0.28,estimated
-"Western New England Bancorp, Inc.",WNEB,33391e4,2018-02-01,Dec 2017,0.13,2,2017-02-02,0.12,estimated
-Xplore Technologies Corp,XPLR,2976e4,2018-02-01,Dec 2017,0.02,1,2017-02-02,0.02,estimated
-"XpresSpa Group, Inc.",XSPA,3079e4,2018-02-01,Dec 2017,-0.12,1,NA,-0.24,estimated
-Cambrex Corporation,CBM,185e7,2018-02-02,Dec 2017,1.1,3,2017-02-03,1.18,estimated
-"Salisbury Bancorp, Inc.",SAL,12537e4,2018-02-02,Dec 2017,0.65,1,2017-02-03,0.55,estimated
-"SK Telecom Co., Ltd.",SKM,1772e7,2018-02-02,Dec 2017,NA,0,2017-02-03,0.69,estimated
-Trilogy Metals Inc.,TMQ,15122e4,2018-02-02,Nov 2017,-0.02,1,2017-02-03,-0.03,estimated
-Vistra Energy Corp.,VST,843e7,2018-02-02,Dec 2017,0.03,2,NA,NA,estimated
-"Akcea Therapeutics, Inc.",AKCA,124e7,2018-02-05,Dec 2017,-0.23,3,NA,NA,estimated
-"Allison Transmission Holdings, Inc.",ALSN,635e7,2018-02-05,Dec 2017,0.59,8,2017-02-06,0.36,estimated
-American Superconductor Corporation,AMSC,113e6,2018-02-05,Dec 2017,-0.41,2,2017-02-06,-0.24,estimated
-"Arrowhead Pharmaceuticals, Inc.",ARWR,543e6,2018-02-05,Dec 2017,-0.18,3,2017-02-06,-0.17,estimated
-"Centennial Resource Development, Inc.",CDEV,564e7,2018-02-05,Dec 2017,0.11,6,NA,NA,estimated
-"Delta Apparel, Inc.",DLA,14393e4,2018-02-05,Dec 2017,-0.06,1,2017-02-06,-0.08,estimated
-Kamada Ltd.,KMDA,23151e4,2018-02-05,Dec 2017,0.06,1,2017-02-06,-0.05,estimated
-Myomo Inc.,MYO,3107e4,2018-02-05,Dec 2017,-0.33,1,NA,NA,estimated
-Newell Brands Inc.,NWL,1216e7,2018-02-05,Dec 2017,0.74,11,2017-02-06,0.8,estimated
-Nordic American Tankers Limited,NAT,256910000.00000003,2018-02-05,Dec 2017,-0.15,5,2017-02-06,-0.02,estimated
-"Park City Group, Inc.",PCYG,17502e4,2018-02-05,Dec 2017,0.06,1,2017-02-06,0.06,estimated
-"PetIQ, Inc.",PETQ,528460000.00000006,2018-02-05,Dec 2017,0.07,5,NA,NA,estimated
-RGC Resources Inc.,RGCO,18814e4,2018-02-05,Dec 2017,0.34,1,2017-02-06,0.31,estimated
-Ryanair Holdings plc,RYAAY,2864e7,2018-02-05,Dec 2017,0.5,1,2017-02-06,0.41,estimated
-Scorpio Bulkers Inc.,SALT,62169e4,2018-02-05,Dec 2017,-0.02,7,2017-02-06,-0.29,estimated
-"Stellar Biotechnologies, Inc.",SBOT,101e5,2018-02-05,Dec 2017,-0.14,1,2017-02-06,-0.15,estimated
-Toyota Motor Corp Ltd Ord,TM,20626e7,2018-02-05,Dec 2017,2.84,1,2017-02-06,2.92,estimated
-"TPG RE Finance Trust, Inc.",TRTX,115e7,2018-02-05,Dec 2017,0.39,3,NA,NA,estimated
-"Veritone, Inc.",VERI,36994e4,2018-02-05,Dec 2017,-0.65,3,NA,NA,estimated
-"A-Mark Precious Metals, Inc.",AMRK,971e5,2018-02-06,Dec 2017,-0.12,1,2017-02-07,0.39,estimated
-"AnaptysBio, Inc.",ANAB,267e7,2018-02-06,Dec 2017,-0.41,5,NA,NA,estimated
-Anavex Life Sciences Corp.,AVXL,13532e4,2018-02-06,Dec 2017,NA,0,2017-02-07,-0.08,estimated
-Ardmore Shipping Corporation,ASC,24678e4,2018-02-06,Dec 2017,-0.13,8,2017-02-07,-0.11,estimated
-Arlington Asset Investment Corp,AI,31912e4,2018-02-06,Dec 2017,0.2,1,2017-02-07,-1.79,estimated
-"Buffalo Wild Wings, Inc.",BWLD,244e7,2018-02-06,Dec 2017,1.56,12,2017-02-07,0.87,estimated
-"CareTrust REIT, Inc.",CTRE,12e8,2018-02-06,Dec 2017,0.31,5,2017-02-07,0.28,estimated
-Carvana Co.,CVNA,NA,2018-02-06,Dec 2017,-0.34,8,NA,NA,estimated
-CDW Corporation,CDW,1154e7,2018-02-06,Dec 2017,0.93,6,2017-02-07,0.81,estimated
-"DHI Group, Inc.",DHX,9295e4,2018-02-06,Dec 2017,0.04,1,2017-02-07,0.11,estimated
-EMCORE Corporation,EMKR,18904e4,2018-02-06,Dec 2017,0.04,2,2017-02-07,0.1,estimated
-"Euronet Worldwide, Inc.",EEFT,506e7,2018-02-06,Dec 2017,1.06,4,2017-02-07,0.93,estimated
-First Financial Corporation Indiana,THFF,56963e4,2018-02-06,Dec 2017,0.7,2,2017-02-07,0.68,estimated
-GW Pharmaceuticals Plc,GWPH,347e7,2018-02-06,Dec 2017,-2.03,5,2017-02-07,-0.77,estimated
-"Healthcare Services Group, Inc.",HCSG,399e7,2018-02-06,Dec 2017,0.33,4,2017-02-07,0.28,estimated
-"Kala Pharmaceuticals, Inc.",KALA,3661e5,2018-02-06,Dec 2017,-0.37,3,NA,NA,estimated
-KKR Real Estate Finance Trust Inc.,KREF,106e7,2018-02-06,Dec 2017,0.34,1,NA,NA,estimated
-"Myriad Genetics, Inc.",MYGN,283e7,2018-02-06,Dec 2017,0.24,9,2017-02-07,0.26,estimated
-NGL ENERGY PARTNERS LP,NGL,2049999999.9999998,2018-02-06,Dec 2017,0.19,3,2017-02-07,-0.07,estimated
-Oasis Midstream Partners LP,OMP,523820000.00000006,2018-02-06,Dec 2017,0.41,4,NA,NA,estimated
-Omnicom Group Inc.,OMC,1768e7,2018-02-06,Dec 2017,1.54,4,2017-02-07,1.47,estimated
-Oxford Lane Capital Corp.,OXLC,2554e5,2018-02-06,Dec 2017,NA,0,2017-02-07,0.38,estimated
-"P.A.M. Transportation Services, Inc.",PTSI,23889e4,2018-02-06,Dec 2017,NA,0,2017-02-07,0.11,estimated
-"pdvWireless, Inc.",PDVW,514710000.00000006,2018-02-06,Dec 2017,-0.61,1,2017-02-07,-0.51,estimated
-Regional Management Corp.,RM,32772e4,2018-02-06,Dec 2017,0.6,2,2017-02-07,0.56,estimated
-Sabre Corporation,SABR,57e8,2018-02-06,Dec 2017,0.22,4,2017-02-07,0.25,estimated
-"Spirit Airlines, Inc.",SAVE,279e7,2018-02-06,Dec 2017,0.71,9,2017-02-07,0.77,estimated
-"TCG BDC, Inc.",CGBD,113e7,2018-02-06,Dec 2017,0.4,3,NA,NA,estimated
-Transdigm Group Incorporated,TDG,1594e7,2018-02-06,Dec 2017,2.64,3,2017-02-07,2.45,estimated
-Tucows Inc.,TCX,58e7,2018-02-06,Dec 2017,0.74,1,2017-02-07,0.26,estimated
-Vulcan Materials Company,VMC,1833e7,2018-02-06,Dec 2017,0.74,5,2017-02-07,0.69,estimated
-"White Mountains Insurance Group, Ltd.",WTM,319e7,2018-02-06,Dec 2017,0.34,1,2017-02-07,4.7,estimated
-"Zillow Group, Inc.",ZG,8369999999.999999,2018-02-06,Dec 2017,0.04,4,2017-02-07,0.05,estimated
-Banco Bilbao Viscaya Argentaria S.A.,BBVA,6308e7,2018-02-07,Dec 2017,NA,0,2017-02-01,0.1,estimated
-Blue Capital Reinsurance Holdings Ltd.,BCRH,10995e4,2018-02-07,Dec 2017,0.53,2,2017-02-01,0.46,estimated
-"Bottomline Technologies, Inc.",EPAY,15e8,2018-02-07,Dec 2017,0.11,2,2017-02-01,0.06,estimated
+"AnaptysBio, Inc.",ANAB,263e7,2018-02-06,Dec 2017,-0.41,5,NA,NA,estimated
+"CareTrust REIT, Inc.",CTRE,114e7,2018-02-06,Dec 2017,0.31,5,2017-02-07,0.28,estimated
+"Kala Pharmaceuticals, Inc.",KALA,31534e4,2018-02-06,Dec 2017,-0.37,3,NA,NA,estimated
+Oasis Midstream Partners LP,OMP,49384e4,2018-02-06,Dec 2017,0.41,4,NA,NA,estimated
+Omnicom Group Inc.,OMC,1738e7,2018-02-06,Dec 2017,1.54,4,2017-02-07,1.47,estimated
+Oxford Lane Capital Corp.,OXLC,26019e4,2018-02-06,Dec 2017,NA,0,2017-02-07,0.38,estimated
+"P.A.M. Transportation Services, Inc.",PTSI,23536e4,2018-02-06,Dec 2017,NA,0,2017-02-07,0.11,estimated
 "Cannae Holdings, Inc.",CNNE,NA,2018-02-07,Dec 2017,-0.07,1,NA,-0.03,estimated
-"Cavium, Inc.",CAVM,61e8,2018-02-07,Dec 2017,0.44,4,2017-02-01,0.22,estimated
-Hamilton Beach Brands Holding Company,HBB,36029e4,2018-02-07,Dec 2017,1.51,1,NA,NA,estimated
-"Ingles Markets, Incorporated",IMKTA,72631e4,2018-02-07,Dec 2017,NA,0,2017-02-01,0.68,estimated
-Kennametal Inc.,KMT,4030000000.0000005,2018-02-07,Dec 2017,0.53,6,2017-02-01,0.24,estimated
-Lannett Co Inc,LCI,86521e4,2018-02-07,Dec 2017,0.86,4,2017-02-01,0.92,estimated
-"Manitowoc Company, Inc. (The)",MTW,148e7,2018-02-07,Dec 2017,-0.06,8,2017-02-01,-0.92,estimated
-MutualFirst Financial Inc.,MFSF,27932e4,2018-02-07,Dec 2017,0.49,2,2017-02-01,0.43,estimated
-"PC Connection, Inc.",CNXN,71946e4,2018-02-07,Dec 2017,0.53,2,2017-02-01,0.53,estimated
-"PennyMac Financial Services, Inc.",PFSI,529820000.00000006,2018-02-07,Dec 2017,0.68,2,2017-02-01,1,estimated
-"Pixelworks, Inc.",PXLW,21202e4,2018-02-07,Dec 2017,-0.05,3,2017-02-01,0.01,estimated
-ProPetro Holding Corp.,PUMP,172e7,2018-02-07,Dec 2017,0.37,5,NA,NA,estimated
-"Shutterfly, Inc.",SFLY,171e7,2018-02-07,Dec 2017,2.91,3,2017-02-01,2.63,estimated
-Southern Copper Corporation,SCCO,3869e7,2018-02-07,Dec 2017,0.59,2,NA,0.22,estimated
-Universal Technical Institute Inc,UTI,6954e4,2018-02-07,Dec 2017,0,1,2017-02-01,-0.09,estimated
-"Worldpay, Inc.",WP,252e8,2018-02-07,Dec 2017,0.9,13,2017-02-01,0.69,estimated
-"Aileron Therapeutics, Inc.",ALRN,1388e5,2018-02-08,Dec 2017,-0.46,3,NA,NA,estimated
-"Amtech Systems, Inc.",ASYS,15453e4,2018-02-08,Dec 2017,0.26,2,2017-02-09,0,estimated
-Applied DNA Sciences Inc,APDN,4818e4,2018-02-08,Dec 2017,NA,0,2017-02-09,-0.16,estimated
-"ARC Group Worldwide, Inc.",ARCW,4031e4,2018-02-08,Dec 2017,-0.02,1,2017-02-09,-0.03,estimated
-Array BioPharma Inc.,ARRY,291e7,2018-02-08,Dec 2017,-0.23,8,2017-02-09,-0.14,estimated
-"Athenex, Inc.",ATNX,87573e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
-Blue Bird Corporation,BLBD,48288e4,2018-02-08,Dec 2017,0.02,2,2017-02-09,-0.42,estimated
-Bright Horizons Family Solutions Inc.,BFAM,577e7,2018-02-08,Dec 2017,0.63,2,2017-02-09,0.52,estimated
-Cameco Corporation,CCJ,376e7,2018-02-08,Dec 2017,0.29,1,2017-02-09,0.17,estimated
-"Castle Brands, Inc.",ROX,19027e4,2018-02-08,Dec 2017,NA,0,2017-02-09,0,estimated
-Cel-Sci Corporation,CVM,2787e4,2018-02-08,Dec 2017,NA,0,2017-02-09,0.25,estimated
-Cemex S.A.B. de C.V.,CX,1203e7,2018-02-08,Dec 2017,NA,0,2017-02-09,0.13,estimated
-Cemtrex Inc.,CETX,3177e4,2018-02-08,Dec 2017,0.18,1,2017-02-09,0.14,estimated
-"Civitas Solutions, Inc.",CIVI,65524e4,2018-02-08,Dec 2017,0.16,3,2017-02-09,0.11,estimated
-"Computer Programs and Systems, Inc.",CPSI,41269e4,2018-02-08,Dec 2017,0.37,9,2017-02-09,0.29,estimated
-Cubic Corporation,CUB,163e7,2018-02-08,Dec 2017,-0.01,2,2017-02-09,-0.11,estimated
-CVS Health Corporation,CVS,8265e7,2018-02-08,Dec 2017,1.88,16,2017-02-09,1.71,estimated
-Dana Incorporated,DAN,481e7,2018-02-08,Dec 2017,0.53,5,2017-02-09,0.59,estimated
-"Daseke, Inc.",DSKE,68034e4,2018-02-08,Dec 2017,-0.07,3,NA,NA,estimated
-"Determine, Inc.",DTRM,2754e4,2018-02-08,Dec 2017,-0.17,2,2017-02-09,-0.13,estimated
-"Digital Turbine, Inc.",APPS,14589e4,2018-02-08,Dec 2017,-0.02,3,2017-02-09,-0.08,estimated
-"Dova Pharmaceuticals, Inc.",DOVA,77163e4,2018-02-08,Dec 2017,-0.36,3,NA,NA,estimated
-DTE Energy Company,DTE,1901e7,2018-02-08,Dec 2017,1.2,4,2017-02-09,0.81,estimated
-Echelon Corporation,ELON,217e5,2018-02-08,Dec 2017,-0.28,1,2017-02-09,-0.22,estimated
-eGain Corporation,EGAN,15523e4,2018-02-08,Dec 2017,-0.04,2,2017-02-09,-0.04,estimated
-Ellington Residential Mortgage REIT,EARN,15483e4,2018-02-08,Dec 2017,0.43,1,2017-02-09,0.47,estimated
-Energen Corporation,EGN,54e8,2018-02-08,Dec 2017,0.39,12,2017-02-09,-0.27,estimated
-"Exela Technologies, Inc.",XELA,98528e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
-Good Times Restaurants Inc.,GTIM,3117e4,2018-02-08,Dec 2017,-0.07,1,2017-02-09,-0.05,estimated
-"Immunomedics, Inc.",IMMU,285e7,2018-02-08,Dec 2017,-0.1,2,2017-02-09,-0.16,estimated
-"Innoviva, Inc.",INVA,164e7,2018-02-08,Dec 2017,0.44,3,2017-02-09,0.21,estimated
-iPass Inc.,IPAS,33340000.000000004,2018-02-08,Dec 2017,-0.06,1,2017-02-09,-0.02,estimated
-Kemper Corporation,KMPR,355e7,2018-02-08,Dec 2017,0.2,2,2017-02-09,0.56,estimated
-"Liquidity Services, Inc.",LQDT,16287e4,2018-02-08,Dec 2017,-0.33,2,2017-02-09,-0.27,estimated
-McClatchy Company (The),MNI,694e5,2018-02-08,Dec 2017,0.72,1,2017-02-09,1.68,estimated
-"Medical Properties Trust, Inc.",MPW,484e7,2018-02-08,Dec 2017,0.35,10,2017-02-09,0.31,estimated
-"Mersana Therapeutics, Inc.",MRSN,3661e5,2018-02-08,Dec 2017,-0.5,2,NA,NA,estimated
-"Monolithic Power Systems, Inc.",MPWR,488e7,2018-02-08,Dec 2017,0.53,3,2017-02-09,0.4,estimated
-"Motorcar Parts of America, Inc.",MPAA,529559999.99999994,2018-02-08,Dec 2017,0.55,3,2017-02-09,0.58,estimated
-Navios Maritime Acquisition Corporation,NNA,13168e4,2018-02-08,Dec 2017,-0.04,2,2017-02-09,0.11,estimated
-"NuVasive, Inc.",NUVA,261e7,2018-02-08,Dec 2017,0.56,9,2017-02-09,0.53,estimated
-NVIDIA Corporation,NVDA,14323e7,2018-02-08,Jan 2018,1.16,9,2017-02-09,0.99,estimated
-Ovid Therapeutics Inc.,OVID,21405e4,2018-02-08,Dec 2017,-0.42,2,NA,NA,estimated
-"Palatin Technologies, Inc.",PTN,17887e4,2018-02-08,Dec 2017,NA,0,2017-02-09,-0.06,estimated
-Paramount Gold Nevada Corp.,PZG,3138e4,2018-02-08,Dec 2017,-0.07,1,2017-02-09,-0.12,estimated
-PLx Pharma Inc.,PLXP,628e5,2018-02-08,Dec 2017,-0.53,2,NA,NA,estimated
-"Plymouth Industrial REIT, Inc.",PLYM,6848e4,2018-02-08,Dec 2017,0.08,1,NA,NA,estimated
-Quarterhill Inc.,QTRH,21834e4,2018-02-08,Dec 2017,0.04,1,2017-02-09,0.07,estimated
-"Ranger Energy Services, Inc.",RNGR,16196e4,2018-02-08,Dec 2017,0.01,2,NA,NA,estimated
-"RCI Hospitality Holdings, Inc.",RICK,2902e5,2018-02-08,Dec 2017,0.43,2,2017-02-09,0.31,estimated
-Redfin Corporation,RDFN,182e7,2018-02-08,Dec 2017,-0.04,7,NA,NA,estimated
-Regal Entertainment Group,RGC,358e7,2018-02-08,Dec 2017,0.34,6,2017-02-09,0.33,estimated
-"RumbleOn, Inc.",RMBL,65290000.00000001,2018-02-08,Dec 2017,-0.14,1,NA,NA,estimated
+Hamilton Beach Brands Holding Company,HBB,35086e4,2018-02-07,Dec 2017,1.51,1,NA,NA,estimated
+"Ingles Markets, Incorporated",IMKTA,61894e4,2018-02-07,Dec 2017,NA,0,2017-02-01,0.68,estimated
+ProPetro Holding Corp.,PUMP,137e7,2018-02-07,Dec 2017,0.37,5,NA,NA,estimated
+Southern Copper Corporation,SCCO,365e8,2018-02-07,Dec 2017,0.59,2,NA,0.22,estimated
+"Worldpay, Inc.",WP,2396e7,2018-02-07,Dec 2017,0.9,13,2017-02-01,0.69,estimated
+8point3 Energy Partners LP,CAFD,97195e4,2018-02-08,Nov 2017,0.1,6,NA,NA,estimated
+"Aileron Therapeutics, Inc.",ALRN,11996e4,2018-02-08,Dec 2017,-0.46,3,NA,NA,estimated
+"Altice USA, Inc.",ATUS,1504e7,2018-02-08,Dec 2017,-0.01,3,NA,NA,estimated
+"ARC Group Worldwide, Inc.",ARCW,3655e4,2018-02-08,Dec 2017,-0.02,1,2017-02-09,-0.03,estimated
+"ASV Holdings, Inc.",ASV,784e5,2018-02-08,Dec 2017,0.07,3,NA,NA,estimated
+"Athenex, Inc.",ATNX,85079e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
+"Castle Brands, Inc.",ROX,19027e4,2018-02-08,Dec 2017,0,1,2017-02-09,0,estimated
+Cel-Sci Corporation,CVM,2404e4,2018-02-08,Dec 2017,NA,0,2017-02-09,0.25,estimated
+Cemtrex Inc.,CETX,286e5,2018-02-08,Dec 2017,0.18,1,2017-02-09,0.14,estimated
+"Daseke, Inc.",DSKE,64089e4,2018-02-08,Dec 2017,-0.07,3,NA,NA,estimated
+"Dova Pharmaceuticals, Inc.",DOVA,7724e5,2018-02-08,Dec 2017,-0.36,3,NA,NA,estimated
+Echelon Corporation,ELON,2165e4,2018-02-08,Dec 2017,-0.28,1,2017-02-09,-0.22,estimated
+"Emerald Expositions Events, Inc.",EEX,152e7,2018-02-08,Dec 2017,-0.06,3,NA,NA,estimated
+"Exela Technologies, Inc.",XELA,81448e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
+"Heartland Express, Inc.",HTLD,179e7,2018-02-08,Dec 2017,0.1,6,2017-01-26,0.16,estimated
+"Mersana Therapeutics, Inc.",MRSN,32651e4,2018-02-08,Dec 2017,-0.5,2,NA,NA,estimated
+Ovid Therapeutics Inc.,OVID,18182e4,2018-02-08,Dec 2017,-0.42,2,NA,NA,estimated
+Paramount Gold Nevada Corp.,PZG,2884e4,2018-02-08,Dec 2017,-0.07,1,2017-02-09,-0.12,estimated
+PLx Pharma Inc.,PLXP,5713e4,2018-02-08,Dec 2017,-0.53,2,NA,NA,estimated
+"Plymouth Industrial REIT, Inc.",PLYM,67069999.99999999,2018-02-08,Dec 2017,0.08,1,NA,NA,estimated
+"Ranger Energy Services, Inc.",RNGR,15432e4,2018-02-08,Dec 2017,0.01,2,NA,NA,estimated
+"RCI Hospitality Holdings, Inc.",RICK,27212e4,2018-02-08,Dec 2017,0.43,2,2017-02-09,0.31,estimated
+Redfin Corporation,RDFN,187e7,2018-02-08,Dec 2017,-0.04,8,NA,NA,estimated
+Regal Entertainment Group,RGC,364e7,2018-02-08,Dec 2017,0.34,6,2017-02-09,0.33,estimated
+"RumbleOn, Inc.",RMBL,6012e4,2018-02-08,Dec 2017,-0.14,1,NA,NA,estimated
 S&W Seed Company,SANW,NA,2018-02-08,Dec 2017,0,5,2017-02-09,0.03,estimated
-Sensient Technologies Corporation,SXT,324e7,2018-02-08,Dec 2017,0.84,1,2017-02-09,0.8,estimated
-"Sienna Biopharmaceuticals, Inc.",SNNA,37332e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
-"Sonoma Pharmaceuticals, Inc.",SNOA,2367e4,2018-02-08,Dec 2017,-0.63,1,2017-02-09,0.18,estimated
-Stewart Information Services Corporation,STC,109e7,2018-02-08,Dec 2017,NA,0,2017-02-09,0.71,estimated
-TEGNA Inc.,GCI,135e7,2018-02-08,Dec 2017,0.47,3,2017-02-09,0.5,estimated
-The RMR Group Inc.,RMR,206e7,2018-02-08,Dec 2017,0.49,1,2017-02-09,0.45,estimated
-Veru Inc.,VERU,701e5,2018-02-08,Dec 2017,-0.03,1,2017-02-09,-0.04,estimated
-"ViaSat, Inc.",VSAT,453e7,2018-02-08,Dec 2017,-0.15,1,2017-02-09,0.12,estimated
-"Vocera Communications, Inc.",VCRA,78155e4,2018-02-08,Dec 2017,-0.01,7,2017-02-09,-0.13,estimated
-"Aethlon Medical, Inc.",AEMD,2249e4,2018-02-09,Dec 2017,-0.12,2,2017-02-10,-0.15,estimated
-"American Axle & Manufacturing Holdings, Inc.",AXL,202e7,2018-02-09,Dec 2017,0.76,7,2017-02-10,0.78,estimated
-Calpine Corporation,CPN,545e7,2018-02-09,Dec 2017,0.13,3,2017-02-10,-0.4,estimated
-"DelMar Pharmaceuticals, Inc.",DMPI,2959e4,2018-02-09,Dec 2017,-0.15,1,2017-02-10,-0.13,estimated
-IEC Electronics Corp.,IEC,403e5,2018-02-09,Dec 2017,0.04,1,2017-02-10,-0.09,estimated
-Intellipharmaceutics International Inc.,IPCI,2933e4,2018-02-09,Nov 2017,-0.08,3,2017-02-10,-0.14,estimated
-"Knoll, Inc.",KNL,115e7,2018-02-09,Dec 2017,0.43,2,2017-02-10,0.44,estimated
-Nexa Resources S.A.,NEXA,273e7,2018-02-09,Dec 2017,0.42,3,NA,-0.68,estimated
-"Alpine Immune Sciences, Inc.",ALPN,16144e4,2018-02-12,Dec 2017,-0.44,1,2017-02-13,-2,estimated
-"Amkor Technology, Inc.",AMKR,24e8,2018-02-12,Dec 2017,0.19,1,2017-02-13,0.42,estimated
-"Argo Group International Holdings, Ltd.",AGII,189e7,2018-02-12,Dec 2017,0.89,1,2017-02-13,0.65,estimated
-Azure Power Global Limited,AZRE,42615e4,2018-02-12,Dec 2017,-0.15,1,2017-02-13,-0.34,estimated
-"AzurRx BioPharma, Inc.",AZRX,3705e4,2018-02-12,Dec 2017,-0.23,2,NA,NA,estimated
-"Bridgeline Digital, Inc.",BLIN,1037e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.1,estimated
-Brookdale Senior Living Inc.,BKD,183e7,2018-02-12,Dec 2017,-0.23,2,2017-02-13,0.44,estimated
-Bruker Corporation,BRKR,551e7,2018-02-12,Dec 2017,0.49,9,2017-02-13,0.46,estimated
-"Calyxt, Inc.",CLXT,72002e4,2018-02-12,Dec 2017,-0.21,2,NA,NA,estimated
-Clementia Pharmaceuticals Inc.,CMTA,57789e4,2018-02-12,Dec 2017,-0.34,3,NA,NA,estimated
-"Corium International, Inc.",CORI,48362e4,2018-02-12,Dec 2017,-0.43,2,2017-02-13,-0.46,estimated
-"CSW Industrials, Inc.",CSWI,77932e4,2018-02-12,Dec 2017,0.29,1,2017-02-13,0.26,estimated
-Dynatronics Corporation,DYNT,1452e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.19,estimated
-Ellington Financial LLC,EFC,48274e4,2018-02-12,Dec 2017,0.26,2,2017-02-13,0.27,estimated
-ESSA Pharma Inc.,EPIX,611e4,2018-02-12,Dec 2017,NA,0,2017-02-13,0.05,estimated
-"Five Point Holdings, LLC",FPH,88459e4,2018-02-12,Dec 2017,-0.05,1,NA,NA,estimated
-"Flowers Foods, Inc.",FLO,404e7,2018-02-12,Dec 2017,0.14,2,2017-02-13,0.16,estimated
-Gulfport Energy Corporation,GPOR,229e7,2018-02-12,Dec 2017,0.38,11,2017-02-13,0.34,estimated
-"Insperity, Inc.",NSP,258e7,2018-02-12,Dec 2017,0.37,4,2017-02-13,0.22,estimated
-"Inuvo, Inc",INUV,2421e4,2018-02-12,Dec 2017,0,2,2017-02-13,-0.01,estimated
-Invitae Corporation,NVTA,37221e4,2018-02-12,Dec 2017,-0.61,4,2017-02-13,-0.69,estimated
-IRSA Inversiones Y Representaciones S.A.,IRS,166e7,2018-02-12,Dec 2017,NA,0,2017-02-13,0.39,estimated
-"Krystal Biotech, Inc.",KRYS,9777e4,2018-02-12,Dec 2017,NA,0,NA,NA,estimated
-"LEAP THERAPEUTICS, INC.",LPTX,8462e4,2018-02-12,Dec 2017,-0.77,1,NA,NA,estimated
-Metropolitan Bank Holding Corp.,MCB,35792e4,2018-02-12,Dec 2017,0.47,2,NA,NA,estimated
-"MIDSTATES PETROLEUM COMPANY, INC.",MPO,45413e4,2018-02-12,Dec 2017,0.32,1,NA,NA,estimated
-"Moxian, Inc.",MOXC,23989e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.04,estimated
-National Retail Properties,NNN,629e7,2018-02-12,Dec 2017,0.64,9,2017-02-13,0.62,estimated
-"NCS Multistage Holdings, Inc.",NCSM,79568e4,2018-02-12,Dec 2017,-0.05,3,NA,NA,estimated
-Netshoes (Cayman) Limited,NETS,27923e4,2018-02-12,Dec 2017,-0.23,1,NA,NA,estimated
-PQ Group Holdings Inc.,PQG,23e8,2018-02-12,Dec 2017,0.12,4,NA,NA,estimated
-"Quantenna Communications, Inc.",QTNA,49556e4,2018-02-12,Dec 2017,-0.1,3,2017-02-13,0,estimated
-Restaurant Brands International Inc.,QSR,1511e7,2018-02-12,Dec 2017,0.57,6,2017-02-13,0.44,estimated
-Rosehill Resources Inc.,ROSE,28732e4,2018-02-12,Dec 2017,-0.12,1,NA,NA,estimated
-Scorpio Tankers Inc.,STNG,83767e4,2018-02-12,Dec 2017,-0.08,7,2017-02-13,-0.18,estimated
-Service Corporation International,SCI,749e7,2018-02-12,Dec 2017,0.45,4,2017-02-13,0.47,estimated
-"Snyder's-Lance, Inc.",LNCE,487e7,2018-02-12,Dec 2017,0.41,2,2017-02-13,0.38,estimated
-Student Transportation Inc,STB,58167e4,2018-02-12,Dec 2017,0.06,3,2017-02-13,0.07,estimated
-"Switch, Inc.",SWCH,417e7,2018-02-12,Dec 2017,-0.22,5,NA,NA,estimated
-"TIER REIT, Inc.",TIER,95112e4,2018-02-12,Dec 2017,0.41,2,2017-02-13,0.4,estimated
-"VistaGen Therapeutics, Inc.",VTGN,3649e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.34,estimated
-"WideOpenWest, Inc.",WOW,91612e4,2018-02-12,Dec 2017,0.3,2,NA,NA,estimated
-"Acorda Therapeutics, Inc.",ACOR,125e7,2018-02-13,Dec 2017,1.03,7,2017-02-14,-0.07,estimated
-Adesto Technologies Corporation,IOTS,15009e4,2018-02-13,Dec 2017,0.02,1,2017-02-14,-0.09,estimated
-Aircastle Limited,AYR,19e8,2018-02-13,Dec 2017,0.58,1,2017-02-14,0.86,estimated
-AllianceBernstein Holding L.P.,AB,257e7,2018-02-13,Dec 2017,0.66,2,2017-02-14,0.67,estimated
-"AMAG Pharmaceuticals, Inc.",AMAG,51823e4,2018-02-13,Dec 2017,-0.08,3,2017-02-14,-0.31,estimated
-"Aqua Metals, Inc.",AQMS,3938e4,2018-02-13,Dec 2017,-0.24,2,2017-02-14,-0.3,estimated
-Axovant Sciences Ltd.,AXON,23373e4,2018-02-13,Dec 2017,-0.48,5,2017-02-14,-0.48,estimated
-Biohaven Pharmaceutical Holding Company Ltd.,BHVN,116e7,2018-02-13,Dec 2017,-1.33,3,NA,NA,estimated
-Boyd Gaming Corporation,BYD,445e7,2018-02-13,Dec 2017,0.25,7,2017-02-14,0.38,estimated
-CAE Inc,CAE,496e7,2018-02-13,Dec 2017,0.22,3,2017-02-14,0.2,estimated
-Caesars Entertainment Corporation,CZR,975e7,2018-02-13,Dec 2017,0.13,2,2017-02-14,-3.88,estimated
-"CAI International, Inc.",CAI,59866e4,2018-02-13,Dec 2017,0.86,4,2017-02-14,-0.09,estimated
-Capella Education Company,CPLA,93804e4,2018-02-13,Dec 2017,1.03,3,2017-02-14,0.97,estimated
-"CarGurus, Inc.",CARG,361e7,2018-02-13,Dec 2017,0.01,2,NA,NA,estimated
-"Charles River Laboratories International, Inc.",CRL,508e7,2018-02-13,Dec 2017,1.26,11,2017-02-14,1.21,estimated
-"China Green Agriculture, Inc.",CGA,613e5,2018-02-13,Dec 2017,0.14,1,2017-02-14,0.15,estimated
-"Consumer Portfolio Services, Inc.",CPSS,9625e4,2018-02-13,Dec 2017,0.16,2,2017-02-14,0.26,estimated
-ContraVir Pharmaceuticals Inc,CTRV,2489e4,2018-02-13,Dec 2017,NA,0,2017-02-14,-0.11,estimated
-Credit Suisse Group,CS,5013e7,2018-02-13,Dec 2017,NA,0,2017-02-14,-1.1,estimated
-"Deciphera Pharmaceuticals, Inc.",DCPH,88258e4,2018-02-13,Dec 2017,-0.41,2,NA,NA,estimated
-"Diamondback Energy, Inc.",FANG,1245e7,2018-02-13,Dec 2017,1.49,16,2017-02-14,0.9,estimated
-Diana Shipping inc.,DSX,41391e4,2018-02-13,Dec 2017,-0.16,8,2017-02-14,-0.38,estimated
-"EnLink Midstream Partners, LP",ENLK,64e8,2018-02-13,Dec 2017,0.06,10,2017-02-14,-0.18,estimated
-"EnLink Midstream, LLC",ENLC,352e7,2018-02-13,Dec 2017,0.17,5,2017-02-14,-0.02,estimated
-"EnSync, Inc.",ESNC,2298e4,2018-02-13,Dec 2017,-0.06,2,2017-02-14,-0.09,estimated
-"Fossil Group, Inc.",FOSL,47315e4,2018-02-13,Dec 2017,0.4,5,2017-02-14,1.36,estimated
-Franklin Street Properties Corp.,FSP,114e7,2018-02-13,Dec 2017,0.25,4,2017-02-14,0.25,estimated
-GEE Group Inc.,JOB,2964e4,2018-02-13,Dec 2017,-0.17,1,2017-02-14,0.01,estimated
-"Genomic Health, Inc.",GHDX,12e8,2018-02-13,Dec 2017,0.09,8,2017-02-14,0.04,estimated
-Grupo Financiero Galicia S.A.,GGAL,848e7,2018-02-13,Dec 2017,0.94,2,2017-02-14,0.88,estimated
-"Invuity, Inc.",IVTY,9341e4,2018-02-13,Dec 2017,-0.5,6,2017-02-14,-0.56,estimated
-IPG Photonics Corporation,IPGP,139e8,2018-02-13,Dec 2017,1.74,5,2017-02-14,1.39,estimated
-"IQVIA Holdings, Inc.",IQV,2175e7,2018-02-13,Dec 2017,1.34,13,2017-02-14,1.09,estimated
-ITT Inc.,ITT,5e9,2018-02-13,Dec 2017,0.59,9,2017-02-14,0.48,estimated
-Kornit Digital Ltd.,KRNT,54313e4,2018-02-13,Dec 2017,0.02,3,2017-02-14,0.13,estimated
-LendingClub Corporation,LC,169e7,2018-02-13,Dec 2017,-0.02,7,2017-02-14,-0.08,estimated
-"Lincoln Electric Holdings, Inc.",LECO,656e7,2018-02-13,Dec 2017,0.97,8,2017-02-14,0.81,estimated
-"MAM Software Group, Inc.",MAMS,922e5,2018-02-13,Dec 2017,0.02,1,2017-02-14,0.02,estimated
-"Martin Marietta Materials, Inc.",MLM,1497e7,2018-02-13,Dec 2017,1.44,4,2017-02-14,1.55,estimated
-Masimo Corporation,MASI,471e7,2018-02-13,Dec 2017,0.61,5,2017-02-14,0.51,estimated
-"MediciNova, Inc.",MNOV,27725e4,2018-02-13,Dec 2017,-0.09,1,NA,-0.04,estimated
-"Mustang Bio, Inc.",MBIO,31557e4,2018-02-13,Dec 2017,-0.24,1,NA,NA,estimated
-Navios Maritime Partners LP,NMM,32663e4,2018-02-13,Dec 2017,0.01,4,2017-02-14,0.09,estimated
-"Neurocrine Biosciences, Inc.",NBIX,769e7,2018-02-13,Dec 2017,0.15,11,2017-02-14,-0.51,estimated
-ObsEva SA,OBSV,37837e4,2018-02-13,Dec 2017,-0.53,3,NA,NA,estimated
-"Ohr Pharmaceuticals, Inc.",OHRP,188e5,2018-02-13,Dec 2017,NA,0,2017-02-14,-0.21,estimated
-Orchids Paper Products Company,TIS,16103e4,2018-02-13,Dec 2017,-0.05,2,2017-02-14,0.25,estimated
-"Owens & Minor, Inc.",OMI,133e7,2018-02-13,Dec 2017,0.51,4,2017-02-14,0.52,estimated
-Potbelly Corporation,PBPB,31377e4,2018-02-13,Dec 2017,0.07,4,2017-02-14,0.15,estimated
-Prothena Corporation plc,PRTA,169e7,2018-02-13,Dec 2017,-1.44,5,2017-02-14,-1.41,estimated
-"Rhythm Pharmaceuticals, Inc.",RYTM,83653e4,2018-02-13,Dec 2017,-0.55,1,NA,NA,estimated
-"SolarEdge Technologies, Inc.",SEDG,157e7,2018-02-13,Dec 2017,0.51,3,2017-02-14,0.22,estimated
-Tata Motors Ltd,TTM,2108e7,2018-02-13,Dec 2017,NA,0,NA,-0.22,estimated
-"Tile Shop Hldgs, Inc.",TTS,51897e4,2018-02-13,Dec 2017,0.05,4,2017-02-14,0.07,estimated
-"T-Mobile US, Inc.",TMUS,5357e7,2018-02-13,Dec 2017,0.37,17,2017-02-14,0.45,estimated
-"Tower International, Inc.",TOWR,64459e4,2018-02-13,Dec 2017,1.13,2,2017-02-14,1.02,estimated
-"Trupanion, Inc.",TRUP,105e7,2018-02-13,Dec 2017,-0.03,3,2017-02-14,-0.06,estimated
-"Tyme Technologies, Inc.",TYME,4609e5,2018-02-13,Dec 2017,-0.06,1,NA,-0.04,estimated
-Viper Energy Partners LP,VNOM,291e7,2018-02-13,Dec 2017,0.29,6,2017-02-14,0.19,estimated
-World Fuel Services Corporation,INT,186e7,2018-02-13,Dec 2017,0.62,2,2017-02-14,0.03,estimated
-"YogaWorks, Inc.",YOGA,4811e4,2018-02-13,Dec 2017,-0.28,1,NA,NA,estimated
-"Alnylam Pharmaceuticals, Inc.",ALNY,1332e7,2018-02-14,Dec 2017,-1.39,8,2017-02-08,-1.32,estimated
-Applied Genetic Technologies Corporation,AGTC,8504e4,2018-02-14,Dec 2017,-0.09,3,2017-02-08,0.11,estimated
-"Broadridge Financial Solutions, Inc.",BR,1123e7,2018-02-14,Dec 2017,0.58,3,2017-02-08,0.39,estimated
-BRT Apartments Corp.,BRT,18594e4,2018-02-14,Dec 2017,0.2,2,2017-02-08,0.21,estimated
-"CalAtlantic Group, Inc.",CAA,713e7,2018-02-14,Dec 2017,1.31,8,2017-02-08,1.26,estimated
-Camtek Ltd.,CAMT,24438e4,2018-02-14,Dec 2017,0.1,1,2017-02-08,0.07,estimated
-Cars.com Inc.,CARS,213e7,2018-02-14,Dec 2017,0.28,1,NA,NA,estimated
-Cision Ltd.,CISN,14e8,2018-02-14,Dec 2017,0.19,1,NA,NA,estimated
-"Compass Minerals International, Inc.",CMP,253e7,2018-02-14,Dec 2017,1.49,3,2017-02-08,1.35,estimated
-"CoreCivic, Inc.",CXW,269e7,2018-02-14,Dec 2017,0.55,3,2017-02-08,0.72,estimated
-Cray Inc,CRAY,101e7,2018-02-14,Dec 2017,0.22,3,2017-02-08,1.31,estimated
-Dun & Bradstreet Corporation (The),DNB,45e8,2018-02-14,Dec 2017,3.03,6,2017-02-08,2.99,estimated
-"Equifax, Inc.",EFX,1522e7,2018-02-14,Dec 2017,1.35,9,2017-02-08,1.42,estimated
-"Evolution Petroleum Corporation, Inc.",EPM,25955e4,2018-02-14,Dec 2017,0.07,2,2017-02-08,0.07,estimated
-"Farmers & Merchants Bancorp, Inc.",FMAO,369e6,2018-02-14,Dec 2017,0.35,1,2017-02-08,0.34,estimated
-"FleetCor Technologies, Inc.",FLT,1904e7,2018-02-14,Dec 2017,2.14,7,2017-02-08,1.78,estimated
-"Flotek Industries, Inc.",FTK,35516e4,2018-02-14,Dec 2017,-0.02,1,2017-02-08,-0.06,estimated
-Fluidigm Corporation,FLDM,259709999.99999997,2018-02-14,Dec 2017,-0.25,1,2017-02-08,-0.61,estimated
-"FormFactor, Inc.",FORM,108e7,2018-02-14,Dec 2017,0.23,4,2017-02-08,0.16,estimated
-"Forrester Research, Inc.",FORR,80169e4,2018-02-14,Dec 2017,0.21,1,2017-02-08,0.31,estimated
-"Forterra, Inc.",FRTA,56951e4,2018-02-14,Dec 2017,-0.22,2,NA,NA,estimated
-"G1 Therapeutics, Inc.",GTHX,74718e4,2018-02-14,Dec 2017,-0.58,3,NA,NA,estimated
-Gladstone Capital Corporation,GLAD,24768e4,2018-02-14,Dec 2017,0.21,2,2017-02-08,0.21,estimated
-Golden Ocean Group Limited,GOGL,132e7,2018-02-14,Dec 2017,0.13,3,2017-02-08,0.06,estimated
-Goodrich Petroleum Corporation,GDP,12731e4,2018-02-14,Dec 2017,-0.01,6,NA,NA,estimated
-Green Plains Partners LP,GPP,5742e5,2018-02-14,Dec 2017,0.47,4,2017-02-08,0.5,estimated
-"Green Plains, Inc.",GPRE,75944e4,2018-02-14,Dec 2017,-0.11,4,2017-02-08,0.47,estimated
-HNI Corporation,HNI,173e7,2018-02-14,Dec 2017,0.44,2,2017-02-08,0.82,estimated
-"Hostess Brands, Inc.",TWNK,185e7,2018-02-14,Dec 2017,0.15,4,NA,NA,estimated
-"Insight Enterprises, Inc.",NSIT,136e7,2018-02-14,Dec 2017,0.79,3,2017-02-08,0.72,estimated
-"Just Energy Group, Inc.",JE,63755e4,2018-02-14,Dec 2017,0.13,2,2017-02-08,0.73,estimated
-"Key Energy Services, Inc.",KEG,33664e4,2018-02-14,Dec 2017,-1.33,2,NA,NA,estimated
-"LivePerson, Inc.",LPSN,70239e4,2018-02-14,Dec 2017,-0.02,4,2017-02-08,-0.07,estimated
-Markel Corporation,MKL,1558e7,2018-02-14,Dec 2017,8.55,2,2017-02-08,9.11,estimated
-Matrix Service Company,MTRX,49485e4,2018-02-14,Dec 2017,0.16,1,2017-02-08,0.2,estimated
-Mattersight Corporation,MATR,9329e4,2018-02-14,Dec 2017,-0.1,1,2017-02-08,-0.13,estimated
-"MEI Pharma, Inc.",MEIP,8328e4,2018-02-14,Dec 2017,-0.26,3,2017-02-08,0.32,estimated
-"Omega Healthcare Investors, Inc.",OHI,552e7,2018-02-14,Dec 2017,0.76,5,2017-02-08,0.88,estimated
-"Orion Energy Systems, Inc.",OESX,2315e4,2018-02-14,Dec 2017,-0.06,3,2017-02-08,-0.04,estimated
-OrthoPediatrics Corp.,KIDS,23758e4,2018-02-14,Dec 2017,-0.13,2,NA,NA,estimated
-"PCM, Inc.",PCMI,10544e4,2018-02-14,Dec 2017,0.53,2,2017-02-08,0.51,estimated
-Pilgrim's Pride Corporation,PPC,752e7,2018-02-14,Dec 2017,0.58,3,2017-02-08,0.28,estimated
-"Pluristem Therapeutics, Inc.",PSTI,16001e4,2018-02-14,Dec 2017,-0.09,2,2017-02-08,-0.08,estimated
-Prospect Capital Corporation,PSEC,247e7,2018-02-14,Dec 2017,0.18,2,2017-02-08,0.24,estimated
-Quidel Corporation,QDEL,165e7,2018-02-14,Dec 2017,-0.14,1,2017-02-08,-0.06,estimated
-"Radiant Logistics, Inc.",RLGT,24894e4,2018-02-14,Dec 2017,0.05,2,2017-02-08,0.1,estimated
-"Select Energy Services, Inc.",WTTR,208e7,2018-02-14,Dec 2017,0.12,4,NA,NA,estimated
-Sleep Number Corporation,SNBR,158e7,2018-02-14,Dec 2017,0.2,7,2017-02-08,0.25,estimated
-"Synchronoss Technologies, Inc.",SNCR,38677e4,2018-02-14,Dec 2017,0.08,1,2017-02-08,0.09,estimated
-Terreno Realty Corporation,TRNO,195e7,2018-02-14,Dec 2017,0.29,7,NA,0.22,estimated
-"The Ensign Group, Inc.",ENSG,12e8,2018-02-14,Dec 2017,0.36,3,2017-02-08,0.26,estimated
-The Goodyear Tire & Rubber Company,GT,874e7,2018-02-14,Dec 2017,0.73,5,2017-02-08,0.95,estimated
-"Thermon Group Holdings, Inc.",THR,77661e4,2018-02-14,Dec 2017,0.16,1,2017-02-08,0.16,estimated
-Tocagen Inc.,TOCA,28506e4,2018-02-14,Dec 2017,-0.53,1,NA,NA,estimated
-WGL Holdings Inc,WGL,435e7,2018-02-14,Dec 2017,1.26,3,2017-02-08,1.24,estimated
-Zymeworks Inc.,ZYME,30227e4,2018-02-14,Dec 2017,-0.62,2,NA,NA,estimated
-"Agios Pharmaceuticals, Inc.",AGIO,429e7,2018-02-15,Dec 2017,-1.65,5,2017-02-16,-1.34,estimated
-Altisource Portfolio Solutions S.A.,ASPS,54806e4,2018-02-15,Dec 2017,0.61,2,2017-02-16,0.55,estimated
-"BCB Bancorp, Inc. (NJ)",BCBP,23374e4,2018-02-15,Dec 2017,0.21,1,2017-02-16,0.2,estimated
-"Blucora, Inc.",BCOR,111e7,2018-02-15,Dec 2017,-0.31,2,2017-02-16,-0.21,estimated
-"Bluerock Residential Growth REIT, Inc.",BRG,21787e4,2018-02-15,Dec 2017,0.04,3,2017-02-16,0.18,estimated
-"Build-A-Bear Workshop, Inc.",BBW,14007e4,2018-02-15,Dec 2017,0.34,3,2017-02-16,0.31,estimated
-"CBIZ, Inc.",CBZ,91327e4,2018-02-15,Dec 2017,0.01,1,2017-02-16,-0.01,estimated
-Ciner Resources LP,CINR,53695e4,2018-02-15,Dec 2017,0.55,2,2017-02-16,0.49,estimated
-"Cohu, Inc.",COHU,65572e4,2018-02-15,Dec 2017,0.26,3,2017-02-16,0.18,estimated
-Cooper-Standard Holdings Inc.,CPS,228e7,2018-02-15,Dec 2017,3.17,4,2017-02-16,2.8,estimated
-"CVR Partners, LP",UAN,39649e4,2018-02-15,Dec 2017,-0.14,1,2017-02-16,-0.13,estimated
-"CVR Refining, LP",CVRR,246e7,2018-02-15,Dec 2017,0.3,1,2017-02-16,-0.07,estimated
-"Cytokinetics, Incorporated",CYTK,53615e4,2018-02-15,Dec 2017,-0.71,4,2017-02-16,0.16,estimated
-DaVita Inc.,DVA,1447e7,2018-02-15,Dec 2017,0.91,6,2017-02-16,0.98,estimated
-Encore Wire Corporation,WIRE,105e7,2018-02-15,Dec 2017,0.47,1,2017-02-16,0.55,estimated
-Euroseas Ltd.,ESEA,2045e4,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.45,estimated
-"Five9, Inc.",FIVN,143e7,2018-02-15,Dec 2017,-0.03,6,2017-02-16,-0.04,estimated
-Flowserve Corporation,FLS,588e7,2018-02-15,Dec 2017,0.52,10,2017-02-16,0.72,estimated
-"Genesis Energy, L.P.",GEL,307e7,2018-02-15,Dec 2017,0.36,4,2017-02-16,0.19,estimated
-"Genocea Biosciences, Inc.",GNCA,7235e4,2018-02-15,Dec 2017,-0.38,2,2017-02-16,-0.56,estimated
-"GNC Holdings, Inc.",GNC,34957e4,2018-02-15,Dec 2017,0.25,2,2017-02-16,0.07,estimated
-"Grand Canyon Education, Inc.",LOPE,443e7,2018-02-15,Dec 2017,1.1,3,2017-02-16,1.01,estimated
-Grupo Supervielle S.A.,SUPV,238e7,2018-02-15,Dec 2017,0.51,2,2017-02-16,0.47,estimated
-"Himax Technologies, Inc.",HIMX,144e7,2018-02-15,Dec 2017,0.15,2,2017-02-16,0.03,estimated
-"Independence Realty Trust, Inc.",IRT,80595e4,2018-02-15,Dec 2017,0.19,4,2017-02-16,0.17,estimated
-IntriCon Corporation,IIN,132229999.99999999,2018-02-15,Dec 2017,0.06,1,2017-02-16,-0.12,estimated
-Keysight Technologies Inc.,KEYS,857e7,2018-02-15,Jan 2018,0.32,4,2017-02-16,0.46,estimated
-Liberty Global plc,LBTYA,3092e7,2018-02-15,Dec 2017,-1.86,1,2017-02-16,2.45,estimated
-Liberty Latin America Ltd.,LILA,4030000000.0000005,2018-02-15,Dec 2017,-0.13,2,2017-02-16,-0.07,estimated
-"Marchex, Inc.",MCHX,15022e4,2018-02-15,Dec 2017,-0.02,1,2017-02-16,-0.09,estimated
-Mazor Robotics Ltd.,MZOR,163e7,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.18,estimated
-Melco Resorts & Entertainment Limited,MLCO,1411e7,2018-02-15,Dec 2017,0.23,2,2017-02-16,0.13,estimated
-"Navigant Consulting, Inc.",NCI,92069e4,2018-02-15,Dec 2017,0.4,3,2017-02-16,0.3,estimated
-"Orchid Island Capital, Inc.",ORC,43139e4,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.72,estimated
-"Patrick Industries, Inc.",PATK,18e8,2018-02-15,Dec 2017,0.73,4,2017-02-16,0.59,estimated
-PAVmed Inc.,PAVM,302e5,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.13,estimated
-Pool Corporation,POOL,546e7,2018-02-15,Dec 2017,0.17,3,2017-02-16,0.06,estimated
-"Rocky Brands, Inc.",RCKY,13569e4,2018-02-15,Dec 2017,0.25,1,2017-02-16,0.18,estimated
-Select Income REIT,SIR,2089999999.9999998,2018-02-15,Dec 2017,0.69,2,2017-02-16,0.71,estimated
-"Standard Motor Products, Inc.",SMP,105e7,2018-02-15,Dec 2017,0.39,2,2017-02-16,0.42,estimated
-"Strayer Education, Inc.",STRA,104e7,2018-02-15,Dec 2017,1.28,2,2017-02-16,0.95,estimated
-"Syntel, Inc.",SYNT,195e7,2018-02-15,Dec 2017,0.4,7,2017-02-16,0.57,estimated
-"T2 Biosystems, Inc.",TTOO,18593e4,2018-02-15,Dec 2017,-0.42,3,2017-02-16,-0.47,estimated
-Textainer Group Holdings Limited,TGH,15e8,2018-02-15,Dec 2017,0.19,3,2017-02-16,-0.24,estimated
-"The Trade Desk, Inc.",TTD,2029999999.9999998,2018-02-15,Dec 2017,0.42,2,2017-02-16,0.24,estimated
-Time Inc.,TIME,184e7,2018-02-15,Dec 2017,0.78,2,2017-02-16,0.75,estimated
-"Town Sports International Holdings, Inc.",CLUB,16275e4,2018-02-15,Dec 2017,-0.02,1,2017-02-16,-0.01,estimated
-TransCanada Corporation,TRP,4128e7,2018-02-15,Dec 2017,0.63,4,2017-02-16,0.56,estimated
-"Trinity Industries, Inc.",TRN,544e7,2018-02-15,Dec 2017,0.42,6,2017-02-16,0.44,estimated
-Ultragenyx Pharmaceutical Inc.,RARE,247e7,2018-02-15,Dec 2017,-2.01,7,2017-02-16,-1.75,estimated
-Universal Electronics Inc.,UEIC,68095e4,2018-02-15,Dec 2017,0.6,3,2017-02-16,0.57,estimated
-"US Ecology, Inc.",ECOL,114e7,2018-02-15,Dec 2017,0.62,3,2017-02-16,0.36,estimated
-"Viveve Medical, Inc.",VIVE,847e5,2018-02-15,Dec 2017,-0.46,4,2017-02-16,-0.55,estimated
-"West Pharmaceutical Services, Inc.",WST,75e8,2018-02-15,Dec 2017,0.62,4,2017-02-16,0.54,estimated
-Yandex N.V.,YNDX,1251e7,2018-02-15,Dec 2017,0.16,2,2017-02-16,0.12,estimated
-ZIOPHARM Oncology Inc,ZIOP,67006e4,2018-02-15,Dec 2017,-0.13,5,2017-02-16,-0.11,estimated
-"Aaron's,  Inc.",AAN,302e7,2018-02-16,Dec 2017,0.54,7,2017-02-17,0.5,estimated
-Aegon NV,AEG,1426e7,2018-02-16,Dec 2017,NA,0,2017-02-17,0.25,estimated
-"Ardelyx, Inc.",ARDX,37315e4,2018-02-16,Dec 2017,-0.39,2,2017-02-17,-0.66,estimated
-Astronics Corporation,ATRO,132e7,2018-02-16,Dec 2017,0.44,2,2017-02-17,0.33,estimated
-"Banco Latinoamericano de Comercio Exterior, S.A.",BLX,119e7,2018-02-16,Dec 2017,0.55,1,2017-02-17,0.34,estimated
-"Bloomin' Brands, Inc.",BLMN,2e9,2018-02-16,Dec 2017,0.39,8,2017-02-17,0.31,estimated
-"Controladora Vuela Compania de Aviacion, S.A.B. de C.V.",VLRS,83601e4,2018-02-16,Dec 2017,0.22,2,2017-02-17,0.46,estimated
-DENTSPLY SIRONA Inc.,XRAY,1443e7,2018-02-16,Dec 2017,0.81,10,2017-02-17,0.67,estimated
-"Despegar.com, Corp.",DESP,2069999999.9999998,2018-02-16,Dec 2017,0.12,2,NA,NA,estimated
-Enbridge Energy Management LLC,EEQ,141e7,2018-02-16,Dec 2017,0.19,3,NA,-0.02,estimated
-GasLog LP.,GLOG,164e7,2018-02-16,Dec 2017,0.06,7,2017-02-17,0.02,estimated
-"Gibraltar Industries, Inc.",ROCK,121e7,2018-02-16,Dec 2017,0.34,2,2017-02-17,0.3,estimated
-Gol Linhas Aereas Inteligentes S.A.,GOL,2884e7,2018-02-16,Dec 2017,0.15,1,2017-02-17,0,estimated
-Granite Construction Incorporated,GVA,268e7,2018-02-16,Dec 2017,0.68,4,2017-02-17,0.4,estimated
-J.M. Smucker Company (The),SJM,1472e7,2018-02-16,Jan 2018,2.16,7,2017-02-17,2,estimated
-Liberty Broadband Corporation,LBRDK,1732e7,2018-02-16,Dec 2017,0.28,1,NA,0.25,estimated
-Liberty Broadband Corporation,LBRDA,1722e7,2018-02-16,Dec 2017,0.24,2,NA,0.25,estimated
-"LifePoint Health, Inc.",LPNT,193e7,2018-02-16,Dec 2017,0.81,10,2017-02-17,1.09,estimated
-Materion Corporation,MTRN,101e7,2018-02-16,Dec 2017,0.38,3,2017-02-17,0.28,estimated
-Monotype Imaging Holdings Inc.,TYPE,102e7,2018-02-16,Dec 2017,0.04,1,2017-02-17,0.07,estimated
-"National Health Investors, Inc.",NHI,298e7,2018-02-16,Dec 2017,1.33,6,2017-02-17,1.27,estimated
-"Pain Therapeutics, Inc.",PTIE,4914e4,2018-02-16,Dec 2017,NA,0,2017-02-17,-0.42,estimated
-ReWalk Robotics Ltd,RWLK,2427e4,2018-02-16,Dec 2017,-0.22,1,2017-02-17,-0.54,estimated
-"Ruth's Hospitality Group, Inc.",RUTH,73973e4,2018-02-16,Dec 2017,0.38,4,2017-02-17,0.3,estimated
-"Targa Resources, Inc.",TRGP,1078e7,2018-02-16,Dec 2017,-0.02,9,NA,0.03,estimated
-V.F. Corporation,VFC,3198e7,2018-02-16,Dec 2017,1.02,11,2017-02-17,0.97,estimated
-"America's Car-Mart, Inc.",CRMT,33891e4,2018-02-19,Jan 2018,0.54,3,2017-02-20,0.35,estimated
-"Borqs Technologies, Inc.",BRQS,20023e4,2018-02-19,Dec 2017,-0.07,1,NA,NA,estimated
-"Community Health Systems, Inc.",CYH,63903e4,2018-02-19,Dec 2017,-0.36,10,2017-02-20,0.46,estimated
-"Helix Energy Solutions Group, Inc.",HLX,12e8,2018-02-19,Dec 2017,-0.01,5,2017-02-20,-0.05,estimated
-Nordson Corporation,NDSN,857e7,2018-02-19,Jan 2018,1.35,8,2017-02-20,0.86,estimated
-Rogers Corporation,ROG,31e8,2018-02-19,Dec 2017,1.42,1,2017-02-20,0.94,estimated
-United Insurance Holdings Corp.,UIHC,8384e5,2018-02-19,Dec 2017,0.57,2,2017-02-20,-0.49,estimated
-Vipshop Holdings Limited,VIPS,993e7,2018-02-19,Dec 2017,0.15,1,2017-02-20,0.19,estimated
-Advance Auto Parts Inc,AAP,894e7,2018-02-20,Dec 2017,0.65,10,2017-02-21,1,estimated
-AngloGold Ashanti Limited,AU,479e7,2018-02-20,Dec 2017,NA,0,NA,NA,estimated
-"ARC Document Solutions, Inc.",ARC,11382e4,2018-02-20,Dec 2017,0,1,2017-02-21,0.06,estimated
-"Astec Industries, Inc.",ASTE,145e7,2018-02-20,Dec 2017,0.45,6,2017-02-21,0.53,estimated
-"Avangrid, Inc.",AGR,1509e7,2018-02-20,Dec 2017,0.61,4,2017-02-21,0.67,estimated
-BanColombia S.A.,CIB,1105e7,2018-02-20,Dec 2017,0.86,3,NA,1.57,estimated
-Baozun Inc.,BZUN,21e8,2018-02-20,Dec 2017,NA,0,2017-02-21,0.16,estimated
-"Computer Task Group, Incorporated",CTG,8025e4,2018-02-20,Dec 2017,0.06,2,2017-02-21,0.07,estimated
-"Copart, Inc.",CPRT,104e8,2018-02-20,Jan 2018,0.37,5,2017-02-21,0.29,estimated
-"Cracker Barrel Old Country Store, Inc.",CBRL,4179999999.9999995,2018-02-20,Jan 2018,2.26,3,2017-02-21,2.19,estimated
-CYREN Ltd.,CYRN,11463e4,2018-02-20,Dec 2017,-0.08,1,2017-02-21,-0.05,estimated
-"Daktronics, Inc.",DAKT,42117e4,2018-02-20,Jan 2018,-0.02,1,2017-02-21,-0.12,estimated
-Danaos Corporation,DAC,15372e4,2018-02-20,Dec 2017,0.21,1,2017-02-21,0.21,estimated
-"DASAN Zhone Solutions, Inc.",DZSI,15994e4,2018-02-20,Dec 2017,NA,0,2017-02-21,-0.35,estimated
-"Depomed, Inc.",DEPO,50159e4,2018-02-20,Dec 2017,-0.22,2,2017-02-21,-0.72,estimated
-"Dillard's, Inc.",DDS,195e7,2018-02-20,Jan 2018,1.63,3,2017-02-21,1.85,estimated
-Encompass Health Corporation,EHC,528e7,2018-02-20,Dec 2017,0.66,7,2017-02-21,0.72,estimated
-"Entellus Medical, Inc.",ENTL,61277e4,2018-02-20,Dec 2017,-0.44,3,2017-02-21,-0.39,estimated
-Eros International PLC,EROS,67363e4,2018-02-20,Dec 2017,0.1,2,2017-02-21,0.13,estimated
-Eversource Energy,ES,2046e7,2018-02-20,Dec 2017,0.76,5,2017-02-21,0.72,estimated
-Exact Sciences Corporation,EXAS,602e7,2018-02-20,Dec 2017,-0.29,6,2017-02-21,-0.34,estimated
-"Exactech, Inc.",EXAC,72119e4,2018-02-20,Dec 2017,0.38,1,2017-02-21,0.34,estimated
-"First Solar, Inc.",FSLR,736e7,2018-02-20,Dec 2017,-0.32,9,2017-02-21,1.24,estimated
-Foamix Pharmaceuticals Ltd.,FOMX,25043e4,2018-02-20,Dec 2017,-0.45,1,2017-02-21,-0.31,estimated
-"Franklin Electric Co., Inc.",FELE,213e7,2018-02-20,Dec 2017,0.45,3,2017-02-21,0.38,estimated
-Gentherm Inc,THRM,115e7,2018-02-20,Dec 2017,0.53,6,2017-02-21,0.68,estimated
-Gladstone Land Corporation,LAND,18111e4,2018-02-20,Dec 2017,0.15,1,2017-02-21,0.14,estimated
-"HCI Group, Inc.",HCI,34423e4,2018-02-20,Dec 2017,0.82,1,2017-02-21,0.47,estimated
-"HealthStream, Inc.",HSTM,77699e4,2018-02-20,Dec 2017,0.03,6,2017-02-21,0.02,estimated
-"Henry Schein, Inc.",HSIC,1226e7,2018-02-20,Dec 2017,0.97,11,2017-02-21,0.94,estimated
-Hi-Crush Partners LP,HCLP,121e7,2018-02-20,Dec 2017,0.51,6,2017-02-21,-0.11,estimated
-HSBC Holdings plc,HSBC,22042e7,2018-02-20,Dec 2017,0.6,1,NA,-0.51,estimated
-"Innophos Holdings, Inc.",IPHS,92274e4,2018-02-20,Dec 2017,0.56,1,2017-02-21,0.52,estimated
-Intercontinental Hotels Group,IHG,1289e7,2018-02-20,Dec 2017,NA,0,NA,NA,estimated
-"Ironwood Pharmaceuticals, Inc.",IRWD,236e7,2018-02-20,Dec 2017,-0.18,5,2017-02-21,-0.12,estimated
-Kaiser Aluminum Corporation,KALU,192e7,2018-02-20,Dec 2017,1.22,5,2017-02-21,1.27,estimated
-"KAR Auction Services, Inc",KAR,739e7,2018-02-20,Dec 2017,0.52,6,2017-02-21,0.45,estimated
-"Lantheus Holdings, Inc.",LNTH,9114e5,2018-02-20,Dec 2017,0.16,2,2017-02-21,0.18,estimated
-"LeMaitre Vascular, Inc.",LMAT,65559e4,2018-02-20,Dec 2017,0.19,3,2017-02-21,0.13,estimated
-"Lumber Liquidators Holdings, Inc",LL,87051e4,2018-02-20,Dec 2017,0.09,8,2017-02-21,-0.2,estimated
-Macquarie Infrastructure Corporation,MIC,565e7,2018-02-20,Dec 2017,0.61,2,2017-02-21,0.89,estimated
-Macy's Inc,M,8109999999.999999,2018-02-20,Jan 2018,2.66,7,2017-02-21,2.02,estimated
-Magic Software Enterprises Ltd.,MGIC,40707e4,2018-02-20,Dec 2017,0.13,2,2017-02-21,0.1,estimated
-"Matson, Inc.",MATX,132e7,2018-02-20,Dec 2017,0.3,4,2017-02-21,0.44,estimated
-"McDermott International, Inc.",MDR,253e7,2018-02-20,Dec 2017,-0.01,2,2017-02-21,0.02,estimated
-MediWound Ltd.,MDWD,12577e4,2018-02-20,Dec 2017,-0.16,4,2017-02-21,-0.09,estimated
-"Merit Medical Systems, Inc.",MMSI,235e7,2018-02-20,Dec 2017,0.32,6,2017-02-21,0.31,estimated
-"Momenta Pharmaceuticals, Inc.",MNTA,126e7,2018-02-20,Dec 2017,0.06,1,2017-02-21,0.6,estimated
-"Nautilus Group, Inc. (The)",NLS,39919e4,2018-02-20,Dec 2017,0.31,4,2017-02-21,0.38,estimated
-New Media Investment Group Inc.,NEWM,91539e4,2018-02-20,Dec 2017,NA,0,2017-02-21,0.31,estimated
-New Residential Investment Corp.,NRZ,549e7,2018-02-20,Dec 2017,0.54,4,2017-02-21,0.62,estimated
-"New York Mortgage Trust, Inc.",NYMT,67448e4,2018-02-20,Dec 2017,0.13,1,2017-02-21,0.09,estimated
-"Papa John's International, Inc.",PZZA,227e7,2018-02-20,Dec 2017,0.69,3,2017-02-21,0.69,estimated
-"PGT Innovations, Inc.",PGTI,8343e5,2018-02-20,Dec 2017,0.14,3,2017-02-21,0.1,estimated
-"Quanta Services, Inc.",PWR,602e7,2018-02-20,Dec 2017,0.39,7,2017-02-21,0.52,estimated
-"Red Robin Gourmet Burgers, Inc.",RRGB,69143e4,2018-02-20,Dec 2017,0.55,6,2017-02-21,0.35,estimated
-"Restoration Robotics, Inc.",HAIR,12324e4,2018-02-20,Dec 2017,-0.16,1,NA,NA,estimated
-Ritchie Bros. Auctioneers Incorporated,RBA,344e7,2018-02-20,Dec 2017,0.21,7,2017-02-21,0.3,estimated
-Sandstorm Gold Ltd,SAND,96641e4,2018-02-20,Dec 2017,0.02,2,2017-02-21,0.01,estimated
-"Scripps Networks Interactive, Inc",SNI,1147e7,2018-02-20,Dec 2017,1.25,7,2017-02-21,1.02,estimated
-Sea Limited,SE,417e7,2018-02-20,Dec 2017,-0.66,2,2017-02-17,NA,estimated
-"Sonic Automotive, Inc.",SAH,95894e4,2018-02-20,Dec 2017,0.79,5,2017-02-21,0.66,estimated
-"StarTek, Inc.",SRT,21147e4,2018-02-20,Dec 2017,-0.01,1,2017-02-21,0.07,estimated
-"Sunstone Hotel Investors, Inc.",SHO,384e7,2018-02-20,Dec 2017,0.25,10,2017-02-21,0.29,estimated
-"Superior Energy Services, Inc.",SPN,171e7,2018-02-20,Dec 2017,-0.32,10,2017-02-21,-0.74,estimated
-Terex Corporation,TEX,4059999999.9999995,2018-02-20,Dec 2017,0.25,9,2017-02-21,0.07,estimated
-Ternium S.A.,TX,657e7,2018-02-20,Dec 2017,0.57,1,2017-02-21,0.6,estimated
-"The Chefs' Warehouse, Inc.",CHEF,60055e4,2018-02-20,Dec 2017,0.22,2,2017-02-21,0.18,estimated
-"The Hackett Group, Inc.",HCKT,45764e4,2018-02-20,Dec 2017,0.21,5,2017-02-21,0.2,estimated
-Tronox Limited,TROX,229e7,2018-02-20,Dec 2017,0.04,1,2017-02-21,-0.14,estimated
-"Valeritas Holdings, Inc.",VLRX,2439e4,2018-02-20,Dec 2017,-1.69,2,2017-02-21,-6.16,estimated
-"Verisk Analytics, Inc.",VRSK,16239999999.999998,2018-02-20,Dec 2017,0.77,9,2017-02-21,0.8,estimated
-"Versartis, Inc.",VSAR,7699e4,2018-02-20,Dec 2017,-1.05,2,2017-02-21,-0.64,estimated
-"Vishay Precision Group, Inc.",VPG,3622e5,2018-02-20,Dec 2017,0.31,2,2017-02-21,0.26,estimated
-Westlake Chemical Corporation,WLK,1462e7,2018-02-20,Dec 2017,1.66,7,2017-02-21,0.87,estimated
-Westlake Chemical Partners LP,WLKP,78814e4,2018-02-20,Dec 2017,0.43,1,2017-02-21,0.39,estimated
-Wright Medical Group N.V.,WMGI,244e7,2018-02-20,Dec 2017,0.04,15,2017-02-21,-0.06,estimated
-Xcerra Corporation,XCRA,55047e4,2018-02-20,Jan 2018,0.14,2,2017-02-21,0.06,estimated
-Alkermes plc,ALKS,92e8,2018-02-21,Dec 2017,-0.01,2,2017-02-15,-0.04,estimated
-"Analog Devices, Inc.",ADI,33909999999.999996,2018-02-21,Jan 2018,1.29,13,2017-02-15,0.94,estimated
-Anika Therapeutics Inc.,ANIK,91533e4,2018-02-21,Dec 2017,0.41,2,2017-02-15,0.54,estimated
-Annaly Capital Management Inc,NLY,1278e7,2018-02-21,Dec 2017,0.29,3,2017-02-15,0.3,estimated
-"Applied Materials, Inc.",AMAT,589e8,2018-02-21,Jan 2018,0.97,9,2017-02-15,0.67,estimated
-Arcturus Therapeutics Ltd.,ARCT,9232e4,2018-02-21,Dec 2017,NA,0,2017-02-15,-1.54,estimated
-"ARMOUR Residential REIT, Inc.",ARR,104e7,2018-02-21,Dec 2017,NA,0,2017-02-15,0.71,estimated
-"Blackhawk Network Holdings, Inc.",HAWK,258e7,2018-02-21,Dec 2017,0.87,1,2017-02-15,0.9,estimated
-"Carriage Services, Inc.",CSV,43399e4,2018-02-21,Dec 2017,0.39,1,2017-02-15,0.36,estimated
-"CF Industries Holdings, Inc.",CF,943e7,2018-02-21,Dec 2017,-0.11,6,2017-02-15,-0.39,estimated
-Colliers International Group Inc.,CIGI,234e7,2018-02-21,Dec 2017,1.23,1,2017-02-15,1.2,estimated
-"CommerceHub, Inc.",CHUBA,89969e4,2018-02-21,Dec 2017,0.23,3,2017-02-15,0.14,estimated
-Compugen Ltd.,CGEN,16234e4,2018-02-21,Dec 2017,NA,0,2017-02-15,-0.17,estimated
-Covanta Holding Corporation,CVA,216e7,2018-02-21,Dec 2017,0.2,4,2017-02-15,0.08,estimated
-"Crown Crafts, Inc.",CRWS,7413e4,2018-02-21,Dec 2017,0.2,1,2017-02-15,0.19,estimated
-"CryoLife, Inc.",CRY,6957e5,2018-02-21,Dec 2017,0.09,2,2017-02-15,0.12,estimated
-"Dynex Capital, Inc.",DX,38171e4,2018-02-21,Dec 2017,NA,0,2017-02-15,0.2,estimated
-Entergy Corporation,ETR,1407e7,2018-02-21,Dec 2017,0.42,5,2017-02-15,0.31,estimated
-Gladstone Commercial Corporation,GOOD,56895e4,2018-02-21,Dec 2017,0.38,2,2017-02-15,0.38,estimated
-"Groupon, Inc.",GRPN,309e7,2018-02-21,Dec 2017,0.05,6,2017-02-15,0.03,estimated
-"Healthcare Trust of America, Inc.",HTA,576e7,2018-02-21,Dec 2017,0.42,9,2017-02-15,0.42,estimated
-Huntsman Corporation,HUN,8439999999.999999,2018-02-21,Dec 2017,0.64,5,2017-02-15,0.3,estimated
-"iRhythm Technologies, Inc.",IRTC,142e7,2018-02-21,Dec 2017,-0.35,3,2017-02-15,-0.37,estimated
-"Jaguar Health, Inc.",JAGX,1309e4,2018-02-21,Dec 2017,NA,0,NA,-0.28,estimated
-JMP Group LLC,JMP,11803e4,2018-02-21,Dec 2017,0.06,1,2017-02-15,0.13,estimated
-"Laredo Petroleum, Inc.",LPI,24e8,2018-02-21,Dec 2017,0.19,10,2017-02-15,0.16,estimated
-Lattice Semiconductor Corporation,LSCC,78337e4,2018-02-21,Dec 2017,0.02,3,2017-02-15,0.07,estimated
-"LightPath Technologies, Inc.",LPTH,6366e4,2018-02-21,Dec 2017,0.01,1,2017-02-15,0.05,estimated
-Macro Bank Inc.,BMA,723e7,2018-02-21,Dec 2017,2.69,2,2017-02-15,1.88,estimated
-"Neenah, Inc.",NP,16e8,2018-02-21,Dec 2017,0.92,2,2017-02-15,1.1,estimated
-"NetApp, Inc.",NTAP,16670000000.000002,2018-02-21,Jan 2018,0.74,7,2017-02-15,0.72,estimated
-Och-Ziff Capital Management Group LLC,OZM,129e7,2018-02-21,Dec 2017,0.21,3,2017-02-15,0.01,estimated
-"Oil States International, Inc.",OIS,195e7,2018-02-21,Dec 2017,-0.23,8,2017-02-15,-0.2,estimated
-"Omnicell, Inc.",OMCL,195e7,2018-02-21,Dec 2017,0.23,1,2017-02-15,0,estimated
-PHH Corp,PHH,30529e4,2018-02-21,Dec 2017,-1.68,1,2017-02-15,-1.86,estimated
-"Photronics, Inc.",PLAB,58004e4,2018-02-21,Jan 2018,0.05,2,2017-02-15,0.03,estimated
-"Rush Enterprises, Inc.",RUSHA,218e7,2018-02-21,Dec 2017,0.55,4,2017-02-15,0.31,estimated
-"Schweitzer-Mauduit International, Inc.",SWM,143e7,2018-02-21,Dec 2017,0.61,1,2017-02-15,0.8,estimated
-"Shineco, Inc.",TYHT,4712e4,2018-02-21,Dec 2017,NA,0,2017-02-15,0.14,estimated
-SodaStream International Ltd.,SODA,165e7,2018-02-21,Dec 2017,0.78,2,2017-02-15,0.71,estimated
-"Spring Bank Pharmaceuticals, Inc.",SBPH,15969e4,2018-02-21,Dec 2017,-0.65,2,2017-02-15,-0.51,estimated
-"Synopsys, Inc.",SNPS,1367e7,2018-02-21,Jan 2018,0.65,3,2017-02-15,0.56,estimated
-"Tallgrass Energy GP, LP",TEGP,4070000000.0000005,2018-02-21,Dec 2017,0.21,3,2017-02-15,0.17,estimated
-"The Andersons, Inc.",ANDE,97128e4,2018-02-21,Dec 2017,0.38,1,2017-02-15,0.36,estimated
-TiVo Corporation,TIVO,174e7,2018-02-21,Dec 2017,0.26,1,2017-02-15,0.36,estimated
-Turkcell Iletisim Hizmetleri AS,TKC,95e8,2018-02-21,Dec 2017,NA,0,2017-02-15,0.24,estimated
-Vanda Pharmaceuticals Inc.,VNDA,77051e4,2018-02-21,Dec 2017,-0.12,3,2017-02-15,-0.01,estimated
-Williams Partners LP,WPZ,4192e7,2018-02-21,Dec 2017,0.44,6,2017-02-15,0.24,estimated
-"2U, Inc.",TWOU,384e7,2018-02-22,Dec 2017,0,4,2017-02-23,-0.05,estimated
-"A V Homes, Inc.",AVHI,40757e4,2018-02-22,Dec 2017,0.41,1,2017-02-23,0.68,estimated
-"AAON, Inc.",AAON,189e7,2018-02-22,Dec 2017,0.24,1,2017-02-23,0.21,estimated
-"Acacia Communications, Inc.",ACIA,141e7,2018-02-22,Dec 2017,0.08,2,2017-02-23,1.55,estimated
-"Acadia Healthcare Company, Inc.",ACHC,298e7,2018-02-22,Dec 2017,0.55,8,2017-02-23,0.59,estimated
-"Achillion Pharmaceuticals, Inc.",ACHN,39565e4,2018-02-22,Dec 2017,-0.15,3,2017-02-23,-0.03,estimated
-Acme United Corporation.,ACU,8149e4,2018-02-22,Dec 2017,0.23,1,2017-02-23,0.15,estimated
-"Alder BioPharmaceuticals, Inc.",ALDR,115e7,2018-02-22,Dec 2017,-1.08,4,2017-02-23,-0.97,estimated
-American Homes 4 Rent,AMH,589e7,2018-02-22,Dec 2017,0.26,5,2017-02-23,0.26,estimated
-"American Software, Inc.",AMSWA,38596e4,2018-02-22,Jan 2018,0.05,1,2017-02-23,0.08,estimated
-American States Water Company,AWR,2109999999.9999998,2018-02-22,Dec 2017,0.35,2,2017-02-23,0.3,estimated
-"Archrock Partners, L.P.",APLP,103e7,2018-02-22,Dec 2017,0.09,3,2017-02-23,0.16,estimated
-"Archrock, Inc.",AROC,74875e4,2018-02-22,Dec 2017,-0.03,2,2017-02-23,-0.06,estimated
-Ashford Inc.,AINC,18747e4,2018-02-22,Dec 2017,1.64,1,2017-02-23,0.07,estimated
-Atlas Air Worldwide Holdings,AAWW,149e7,2018-02-22,Dec 2017,2.08,4,2017-02-23,2.24,estimated
-"B&G Foods, Inc.",BGS,22e8,2018-02-22,Dec 2017,0.59,2,2017-02-23,0.29,estimated
-"Baidu, Inc.",BIDU,8824e7,2018-02-22,Dec 2017,1.65,2,2017-02-23,1.6,estimated
-Barclays PLC,BCS,5058e7,2018-02-22,Dec 2017,0.13,1,2017-02-23,0.02,estimated
-"Benefitfocus, Inc.",BNFT,79434e4,2018-02-22,Dec 2017,-0.21,5,2017-02-23,-0.24,estimated
-"Bio-Rad Laboratories, Inc.",BIO,771e7,2018-02-22,Dec 2017,1.28,3,2017-02-23,1.25,estimated
-"BJ's Restaurants, Inc.",BJRI,79748e4,2018-02-22,Dec 2017,0.33,9,2017-02-23,0.55,estimated
-BRF S.A.,BRFS,947e7,2018-02-22,Dec 2017,0.06,1,2017-02-23,-0.17,estimated
-British American Tobacco p.l.c.,BTI,15734e7,2018-02-22,Dec 2017,2,1,NA,NA,estimated
-"BroadSoft, Inc.",BSFT,174e7,2018-02-22,Dec 2017,0.99,2,2017-02-23,0.49,estimated
-"Broadwind Energy, Inc.",BWEN,3923e4,2018-02-22,Dec 2017,-0.3,2,2017-02-23,0.03,estimated
-California Water  Service Group Holding,CWT,208e7,2018-02-22,Dec 2017,0.24,3,2017-02-23,0.31,estimated
-Canadian Imperial Bank of Commerce,CM,4364e7,2018-02-22,Jan 2018,2.21,4,2017-02-23,2.17,estimated
-Career Education Corporation,CECO,87265e4,2018-02-22,Dec 2017,0.05,1,2017-02-23,0.04,estimated
-"Carrizo Oil & Gas, Inc.",CRZO,18e8,2018-02-22,Dec 2017,0.58,10,2017-02-23,0.44,estimated
-"Carter's, Inc.",CRI,576e7,2018-02-22,Dec 2017,2.2,5,2017-02-23,1.79,estimated
-Century Aluminum Company,CENX,208e7,2018-02-22,Dec 2017,0.23,3,2017-02-23,-0.12,estimated
-"Chart Industries, Inc.",GTLS,159e7,2018-02-22,Dec 2017,0.32,5,2017-02-23,0,estimated
-"China Biologic Products Holdings, Inc.",CBPO,227e7,2018-02-22,Dec 2017,1.11,1,2017-02-23,0.71,estimated
-Cinemark Holdings Inc,CNK,421e7,2018-02-22,Dec 2017,0.48,6,2017-02-23,0.64,estimated
-"Clear Channel Outdoor Holdings, Inc.",CCO,173e7,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.28,estimated
-"Cogent Communications Holdings, Inc.",CCOI,2069999999.9999998,2018-02-22,Dec 2017,0.12,10,2017-02-23,0.09,estimated
-"Comfort Systems USA, Inc.",FIX,165e7,2018-02-22,Dec 2017,0.51,2,2017-02-23,0.45,estimated
-"Consolidated Communications Holdings, Inc.",CNSL,89183e4,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.1,estimated
-"Continental Building Products, Inc.",CBPX,112e7,2018-02-22,Dec 2017,0.32,4,2017-02-23,0.31,estimated
-Cosan Limited,CZZ,295e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
-Crescent Point Energy Corporation,CPG,481e7,2018-02-22,Dec 2017,0.06,2,2017-02-23,0.13,estimated
-Denbury Resources Inc.,DNR,103e7,2018-02-22,Dec 2017,0.06,4,2017-02-23,-0.02,estimated
-Dynegy Inc.,DYN,183e7,2018-02-22,Dec 2017,-0.34,2,2017-02-23,-0.7,estimated
-Eldorado Gold Corporation,EGO,109e7,2018-02-22,Dec 2017,0.01,4,2017-02-23,0,estimated
-"EMCOR Group, Inc.",EME,484e7,2018-02-22,Dec 2017,0.86,3,2017-02-23,0.72,estimated
-"Emergent Biosolutions, Inc.",EBS,251e7,2018-02-22,Dec 2017,0.6,3,2017-02-23,0.74,estimated
-Encore Capital Group Inc,ECPG,109e7,2018-02-22,Dec 2017,0.93,5,2017-02-23,0.72,estimated
-"Energy Focus, Inc.",EFOI,3332e4,2018-02-22,Dec 2017,-0.15,4,2017-02-23,-0.27,estimated
-"Enviva Partners, LP",EVA,75926e4,2018-02-22,Dec 2017,0.35,1,2017-02-23,0.28,estimated
-Erie Indemnity Company,ERIE,618e7,2018-02-22,Dec 2017,0.76,1,2017-02-23,0.87,estimated
-"Escalade, Incorporated",ESCA,18897e4,2018-02-22,Dec 2017,0.28,1,2017-02-23,0.24,estimated
-"Eyegate Pharmaceuticals, Inc.",EYEG,2065e4,2018-02-22,Dec 2017,-0.25,2,2017-02-23,-0.38,estimated
-"Financial Engines, Inc.",FNGN,185e7,2018-02-22,Dec 2017,0.28,5,2017-02-23,0.19,estimated
-"Five Prime Therapeutics, Inc.",FPRX,62229e4,2018-02-22,Dec 2017,-1.29,4,2017-02-23,-0.73,estimated
-Fortress Transportation and Infrastructure Investors LLC,FTAI,149e7,2018-02-22,Dec 2017,0.14,2,2017-02-23,0.04,estimated
-Frank's International N.V.,FI,164e7,2018-02-22,Dec 2017,-0.11,5,2017-02-23,-0.18,estimated
-"Gap, Inc. (The)",GPS,1345e7,2018-02-22,Jan 2018,0.58,12,2017-02-23,0.51,estimated
-"Gildan Activewear, Inc.",GIL,731e7,2018-02-22,Dec 2017,0.31,6,2017-02-23,0.32,estimated
-Great Plains Energy Inc,GXP,677e7,2018-02-22,Dec 2017,0.15,5,2017-02-23,0.13,estimated
-"Grupo Aeroportuario Del Pacifico, S.A. de C.V.",PAC,606e7,2018-02-22,Dec 2017,NA,0,2017-02-23,1.07,estimated
-"H&E Equipment Services, Inc.",HEES,145e7,2018-02-22,Dec 2017,0.41,3,2017-02-23,0.35,estimated
-"Hannon Armstrong Sustainable Infrastructure Capital, Inc.",HASI,114e7,2018-02-22,Dec 2017,0.27,3,2017-02-23,0.23,estimated
-Hecla Mining Company,HL,164e7,2018-02-22,Dec 2017,0.02,3,2017-02-23,0.03,estimated
-"Hercules Capital, Inc.",HTGC,11e8,2018-02-22,Dec 2017,0.29,6,2017-02-23,0.43,estimated
-"Heron Therapeutics, Inc.",HRTX,155e7,2018-02-22,Dec 2017,-0.79,7,2017-02-23,-1.22,estimated
-Hewlett Packard Enterprise Company,HPE,2627e7,2018-02-22,Jan 2018,0.23,8,2017-02-23,0.45,estimated
-"HFF, Inc.",HF,187e7,2018-02-22,Dec 2017,0.82,1,2017-02-23,0.7,estimated
-Houghton Mifflin Harcourt Company,HMHC,108e7,2018-02-22,Dec 2017,-0.91,4,2017-02-23,-0.7,estimated
-Huron Consulting Group Inc.,HURN,91616e4,2018-02-22,Dec 2017,0.74,3,2017-02-23,0.58,estimated
-"InnerWorkings, Inc.",INWK,55001e4,2018-02-22,Dec 2017,0.13,4,2017-02-23,0.12,estimated
-"Insmed, Inc.",INSM,216e7,2018-02-22,Dec 2017,-0.67,5,2017-02-23,-1.1,estimated
-Integra LifeSciences Holdings Corporation,IART,409e7,2018-02-22,Dec 2017,0.56,9,2017-02-23,0.52,estimated
-"Intercept Pharmaceuticals, Inc.",ICPT,155e7,2018-02-22,Dec 2017,-3.4,10,2017-02-23,-4.84,estimated
-"InterDigital, Inc.",IDCC,273e7,2018-02-22,Dec 2017,2.41,2,2017-02-23,3.85,estimated
-Intuit Inc.,INTU,429e8,2018-02-22,Jan 2018,0.08,7,2017-02-23,0.07,estimated
-Iridium Communications Inc,IRDM,125e7,2018-02-22,Dec 2017,0.11,4,2017-02-23,0.19,estimated
-"JAKKS Pacific, Inc.",JAKK,7017e4,2018-02-22,Dec 2017,-0.23,2,2017-02-23,-0.47,estimated
-Kadant Inc,KAI,112e7,2018-02-22,Dec 2017,1.08,2,2017-02-23,0.69,estimated
-Kennedy-Wilson Holdings Inc.,KW,261e7,2018-02-22,Dec 2017,0.28,1,2017-02-23,0.14,estimated
-Kohl's Corporation,KSS,1122e7,2018-02-22,Jan 2018,1.77,8,2017-02-23,1.44,estimated
-Koppers Holdings Inc.,KOP,99163e4,2018-02-22,Dec 2017,0.46,2,2017-02-23,0.4,estimated
-La Jolla Pharmaceutical Company,LJPC,82092e4,2018-02-22,Dec 2017,-1.25,5,2017-02-23,-1.44,estimated
-Ladder Capital Corp,LADR,166e7,2018-02-22,Dec 2017,0.4,1,2017-02-23,0.32,estimated
-"Lawson Products, Inc.",LAWS,21953e4,2018-02-22,Dec 2017,0.16,2,2017-02-23,-0.34,estimated
-Leaf Group Ltd.,LFGR,18757e4,2018-02-22,Dec 2017,-0.27,1,2017-02-23,-0.26,estimated
-"LendingTree, Inc.",TREE,439e7,2018-02-22,Dec 2017,0.73,3,2017-02-23,0.69,estimated
-Ligand Pharmaceuticals Incorporated,LGND,351e7,2018-02-22,Dec 2017,0.92,1,2017-02-23,-0.15,estimated
-"Live Nation Entertainment, Inc.",LYV,934e7,2018-02-22,Dec 2017,-1.06,6,2017-02-23,-0.58,estimated
-LKQ Corporation,LKQ,1315e7,2018-02-22,Dec 2017,0.42,9,2017-02-23,0.35,estimated
-Marcus Corporation (The),MCS,74469e4,2018-02-22,Dec 2017,0.42,2,2017-02-23,0.31,estimated
-Marriot Vacations Worldwide Corporation,VAC,392e7,2018-02-22,Dec 2017,1.16,4,2017-02-23,1.83,estimated
-"MasTec, Inc.",MTZ,437e7,2018-02-22,Dec 2017,0.33,7,2017-02-23,0.68,estimated
-Maxar Technologies Ltd.,MAXR,355e7,2018-02-22,Dec 2017,1.07,2,NA,1.17,estimated
-Milacron Holdings Corp.,MCRN,133e7,2018-02-22,Dec 2017,0.39,5,2017-02-23,0.47,estimated
-"MiMedx Group, Inc",MDXG,174e7,2018-02-22,Dec 2017,0.11,1,2017-02-23,0.05,estimated
-MSA Safety Incorporporated,MSA,303e7,2018-02-22,Dec 2017,0.96,3,2017-02-23,0.78,estimated
-"National CineMedia, Inc.",NCMI,51889e4,2018-02-22,Dec 2017,0.2,4,2017-02-23,0.24,estimated
-Nevro Corp.,NVRO,245e7,2018-02-22,Dec 2017,-0.14,7,2017-02-23,-0.34,estimated
-Nevsun Resources Ltd,NSU,70718e4,2018-02-22,Dec 2017,NA,0,2017-02-23,-0.05,estimated
-"Nordstrom, Inc.",JWN,825e7,2018-02-22,Jan 2018,1.24,9,2017-02-23,1.37,estimated
-"Obalon Therapeutics, Inc.",OBLN,7134e4,2018-02-22,Dec 2017,-0.48,2,2017-02-23,-0.51,estimated
-OGE Energy Corporation,OGE,645e7,2018-02-22,Dec 2017,0.28,2,2017-02-23,0.29,estimated
-Orange,ORAN,4868e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
-Orion Engineered Carbons S.A,OEC,173e7,2018-02-22,Dec 2017,0.42,3,2017-02-23,0.41,estimated
-Pegasystems Inc.,PEGA,398e7,2018-02-22,Dec 2017,0.05,2,2017-02-23,0.12,estimated
-"Pinnacle Foods, Inc.",PF,705e7,2018-02-22,Dec 2017,0.94,8,2017-02-23,0.79,estimated
-"Radius Health, Inc.",RDUS,175e7,2018-02-22,Dec 2017,-1.49,4,2017-02-23,-1.22,estimated
-"RE/MAX Holdings, Inc.",RMAX,87689e4,2018-02-22,Dec 2017,0.46,5,2017-02-23,0.41,estimated
-Redhill Biopharma Ltd.,RDHL,11849e4,2018-02-22,Dec 2017,-0.65,3,2017-02-23,-0.7,estimated
-"Redwood Trust, Inc.",RWT,115e7,2018-02-22,Dec 2017,0.34,1,2017-02-23,0.33,estimated
-RELX N.V.,RENX,4479e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
-RELX PLC,RELX,4569e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
-RH,RH,221e7,2018-02-22,Jan 2018,1.55,11,2017-02-23,0.68,estimated
-"RTI Surgical, Inc.",RTIX,267660000.00000003,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.01,estimated
-"Safe Bulkers, Inc",SB,37057e4,2018-02-22,Dec 2017,0,5,2017-02-23,-0.09,estimated
-"Sage Therapeutics, Inc.",SAGE,762e7,2018-02-22,Dec 2017,-2.04,14,2017-02-23,-1.5,estimated
-Select Medical Holdings Corporation,SEM,224e7,2018-02-22,Dec 2017,0.19,3,2017-02-23,0.12,estimated
-Semgroup Corporation,SEMG,234e7,2018-02-22,Dec 2017,0.02,4,2017-02-23,0.18,estimated
-"Senseonics Holdings, Inc.",SENS,43761e4,2018-02-22,Dec 2017,-0.14,2,2017-02-23,-0.1,estimated
-"ServiceMaster Global Holdings, Inc.",SERV,712e7,2018-02-22,Dec 2017,0.34,4,2017-02-23,0.44,estimated
-"Shell Midstream Partners, L.P.",SHLX,555e7,2018-02-22,Dec 2017,0.34,4,2017-02-23,0.34,estimated
-Sibanye Gold Limited,SBGL,5529e4,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
-"South Jersey Industries, Inc.",SJI,239e7,2018-02-22,Dec 2017,0.41,3,2017-02-23,0.42,estimated
-Southwestern Energy Company,SWN,296e7,2018-02-22,Dec 2017,0.12,11,2017-02-23,0.08,estimated
+"Sienna Biopharmaceuticals, Inc.",SNNA,33786e4,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
+Unilever NV,UN,14987e7,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
+Unilever PLC,UL,14686e7,2018-02-08,Dec 2017,NA,0,NA,NA,estimated
+"XpresSpa Group, Inc.",XSPA,2552e4,2018-02-08,Dec 2017,-0.1,1,NA,-0.24,estimated
+AZZ Inc.,AZZ,11e8,2018-02-09,Nov 2017,0.62,1,2017-01-06,0.7,estimated
+Calpine Corporation,CPN,542e7,2018-02-09,Dec 2017,0.13,3,2017-02-10,-0.4,estimated
+Comp En De Mn Cemig ADS,CIG,293e7,2018-02-09,Dec 2017,NA,0,NA,NA,estimated
+"DelMar Pharmaceuticals, Inc.",DMPI,2851e4,2018-02-09,Dec 2017,-0.15,1,2017-02-10,-0.13,estimated
+Intellipharmaceutics International Inc.,IPCI,254e5,2018-02-09,Nov 2017,-0.08,3,2017-02-10,-0.14,estimated
+"Select Bancorp, Inc.",SLCT,18325e4,2018-02-09,Dec 2017,0.19,1,2017-01-27,0.14,estimated
+"SK Telecom Co., Ltd.",SKM,1595e7,2018-02-09,Dec 2017,NA,0,2017-02-03,0.69,estimated
+"Akcea Therapeutics, Inc.",AKCA,152e7,2018-02-12,Dec 2017,-0.23,3,NA,NA,estimated
+"Alpine Immune Sciences, Inc.",ALPN,1477e5,2018-02-12,Dec 2017,-0.44,1,2017-02-13,-2,estimated
+"Argo Group International Holdings, Ltd.",AGII,175e7,2018-02-12,Dec 2017,0.89,1,2017-02-13,0.65,estimated
+"Arrowhead Pharmaceuticals, Inc.",ARWR,50858e4,2018-02-12,Dec 2017,-0.18,3,2017-02-06,-0.17,estimated
+"AzurRx BioPharma, Inc.",AZRX,3658e4,2018-02-12,Dec 2017,-0.24,3,NA,NA,estimated
+"Bridgeline Digital, Inc.",BLIN,953e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.1,estimated
+Brookdale Senior Living Inc.,BKD,191e7,2018-02-12,Dec 2017,-0.23,2,2017-02-13,0.44,estimated
+"Calyxt, Inc.",CLXT,62116e4,2018-02-12,Dec 2017,-0.21,2,NA,NA,estimated
+Clementia Pharmaceuticals Inc.,CMTA,49892e4,2018-02-12,Dec 2017,-0.34,3,NA,NA,estimated
+Dynatronics Corporation,DYNT,1255e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.19,estimated
+ESSA Pharma Inc.,EPIX,662e4,2018-02-12,Dec 2017,NA,0,2017-02-13,0.05,estimated
+"Five Point Holdings, LLC",FPH,8048e5,2018-02-12,Dec 2017,-0.05,1,NA,NA,estimated
+IRSA Inversiones Y Representaciones S.A.,IRS,152e7,2018-02-12,Dec 2017,NA,0,2017-02-13,0.39,estimated
+"Krystal Biotech, Inc.",KRYS,9889e4,2018-02-12,Dec 2017,NA,0,NA,NA,estimated
+"LEAP THERAPEUTICS, INC.",LPTX,7919e4,2018-02-12,Dec 2017,-0.77,1,NA,NA,estimated
+"MIDSTATES PETROLEUM COMPANY, INC.",MPO,37106e4,2018-02-12,Dec 2017,0.32,1,NA,NA,estimated
+"Moxian, Inc.",MOXC,23453e4,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.04,estimated
+Myomo Inc.,MYO,2571e4,2018-02-12,Dec 2017,NA,0,NA,NA,estimated
+National Retail Properties,NNN,57e8,2018-02-12,Dec 2017,0.64,9,2017-02-13,0.62,estimated
+"NCS Multistage Holdings, Inc.",NCSM,67624e4,2018-02-12,Dec 2017,-0.05,3,NA,NA,estimated
+Netshoes (Cayman) Limited,NETS,21284e4,2018-02-12,Dec 2017,-0.23,1,NA,NA,estimated
+"PetIQ, Inc.",PETQ,49238e4,2018-02-12,Dec 2017,0.07,5,NA,NA,estimated
+PQ Group Holdings Inc.,PQG,199e7,2018-02-12,Dec 2017,0.12,4,NA,NA,estimated
+Rosehill Resources Inc.,ROSE,24889e4,2018-02-12,Dec 2017,-0.03,2,NA,NA,estimated
+"Snyder's-Lance, Inc.",LNCE,486e7,2018-02-12,Dec 2017,0.41,2,2017-02-13,0.38,estimated
+"Switch, Inc.",SWCH,377e7,2018-02-12,Dec 2017,-0.22,5,NA,NA,estimated
+Toyota Motor Corp Ltd Ord,TM,20432e7,2018-02-12,Dec 2017,2.84,1,2017-02-06,2.92,estimated
+"VistaGen Therapeutics, Inc.",VTGN,26e6,2018-02-12,Dec 2017,NA,0,2017-02-13,-0.34,estimated
+"WideOpenWest, Inc.",WOW,87706e4,2018-02-12,Dec 2017,0.3,2,NA,NA,estimated
+"AMAG Pharmaceuticals, Inc.",AMAG,45633e4,2018-02-13,Dec 2017,-0.33,3,2017-02-14,-0.31,estimated
+"Aqua Metals, Inc.",AQMS,3448e4,2018-02-13,Dec 2017,-0.24,2,2017-02-14,-0.3,estimated
+Axovant Sciences Ltd.,AXON,21542e4,2018-02-13,Dec 2017,-0.49,6,2017-02-14,-0.48,estimated
+Biohaven Pharmaceutical Holding Company Ltd.,BHVN,117e7,2018-02-13,Dec 2017,-1.33,3,NA,NA,estimated
+"CAI International, Inc.",CAI,47245e4,2018-02-13,Dec 2017,0.86,4,2017-02-14,-0.09,estimated
+"CarGurus, Inc.",CARG,324e7,2018-02-13,Dec 2017,0.01,2,NA,NA,estimated
+"CB Financial Services, Inc.",CBFV,12325e4,2018-02-13,Dec 2017,0.48,1,2017-01-31,0.49,estimated
+"China Green Agriculture, Inc.",CGA,532e5,2018-02-13,Dec 2017,0.14,1,2017-02-14,0.15,estimated
+ContraVir Pharmaceuticals Inc,CTRV,1987e4,2018-02-13,Dec 2017,NA,0,2017-02-14,-0.11,estimated
+"Deciphera Pharmaceuticals, Inc.",DCPH,86009e4,2018-02-13,Dec 2017,-0.41,2,NA,NA,estimated
+GEE Group Inc.,JOB,2693e4,2018-02-13,Dec 2017,-0.17,1,2017-02-14,0.01,estimated
+"Genomic Health, Inc.",GHDX,117e7,2018-02-13,Dec 2017,0.09,7,2017-02-14,0.04,estimated
+Grupo Financiero Galicia S.A.,GGAL,796e7,2018-02-13,Dec 2017,0.94,2,2017-02-14,0.88,estimated
+HDFC Bank Limited,HDB,8627e7,2018-02-13,Dec 2017,0.84,1,NA,0.67,estimated
+ICICI Bank Limited,IBN,33200000000.000004,2018-02-13,Dec 2017,0.1,1,2017-01-31,0.11,estimated
+LendingClub Corporation,LC,158e7,2018-02-13,Dec 2017,-0.02,7,2017-02-14,-0.08,estimated
+"MediciNova, Inc.",MNOV,35126e4,2018-02-13,Dec 2017,-0.09,1,NA,-0.04,estimated
+"Mustang Bio, Inc.",MBIO,28698e4,2018-02-13,Dec 2017,-0.24,1,NA,NA,estimated
+ObsEva SA,OBSV,46952e4,2018-02-13,Dec 2017,-0.53,3,NA,NA,estimated
+"Ohr Pharmaceuticals, Inc.",OHRP,1742e4,2018-02-13,Dec 2017,NA,0,2017-02-14,-0.21,estimated
+Orchids Paper Products Company,TIS,1386e5,2018-02-13,Dec 2017,-0.05,2,2017-02-14,0.25,estimated
+"Overstock.com, Inc.",OSTK,161e7,2018-02-13,Dec 2017,-0.03,1,2017-01-31,0.12,estimated
+Potbelly Corporation,PBPB,29641e4,2018-02-13,Dec 2017,0.07,4,2017-02-14,0.15,estimated
+"Rhythm Pharmaceuticals, Inc.",RYTM,77542e4,2018-02-13,Dec 2017,-0.55,1,NA,NA,estimated
+"Southern First Bancshares, Inc.",SFST,31984e4,2018-02-13,Dec 2017,0.54,1,NA,0.49,estimated
+Tata Motors Ltd,TTM,1977e7,2018-02-13,Dec 2017,NA,0,NA,-0.22,estimated
+"Tyme Technologies, Inc.",TYME,37872e4,2018-02-13,Dec 2017,-0.06,1,NA,-0.04,estimated
+World Fuel Services Corporation,INT,171e7,2018-02-13,Dec 2017,0.62,2,2017-02-14,0.03,estimated
+"YogaWorks, Inc.",YOGA,4548e4,2018-02-13,Dec 2017,-0.28,1,NA,NA,estimated
+BRT Apartments Corp.,BRT,15915e4,2018-02-14,Dec 2017,0.2,2,2017-02-08,0.21,estimated
+"CalAtlantic Group, Inc.",CAA,635e7,2018-02-14,Dec 2017,1.21,8,2017-02-08,1.26,estimated
+Cars.com Inc.,CARS,198e7,2018-02-14,Dec 2017,0.28,1,NA,NA,estimated
+Cray Inc,CRAY,92603e4,2018-02-14,Dec 2017,0.22,3,2017-02-08,1.31,estimated
+"Equifax, Inc.",EFX,1412e7,2018-02-14,Dec 2017,1.35,9,2017-02-08,1.42,estimated
+"Farmers & Merchants Bancorp, Inc.",FMAO,36464e4,2018-02-14,Dec 2017,0.35,1,2017-02-08,0.34,estimated
+"Flotek Industries, Inc.",FTK,28754e4,2018-02-14,Dec 2017,-0.02,1,2017-02-08,-0.06,estimated
+"Forterra, Inc.",FRTA,44802e4,2018-02-14,Dec 2017,-0.22,2,NA,NA,estimated
+"G1 Therapeutics, Inc.",GTHX,61027e4,2018-02-14,Dec 2017,-0.58,3,NA,NA,estimated
+"Gardner Denver Holdings, Inc.",GDI,643e7,2018-02-14,Dec 2017,0.41,2,NA,NA,estimated
+Golden Ocean Group Limited,GOGL,12e8,2018-02-14,Dec 2017,0.13,3,2017-02-08,0.06,estimated
+Goodrich Petroleum Corporation,GDP,11424e4,2018-02-14,Dec 2017,-0.05,6,NA,NA,estimated
+"Hostess Brands, Inc.",TWNK,169e7,2018-02-14,Dec 2017,0.15,4,NA,NA,estimated
+"Key Energy Services, Inc.",KEG,26907e4,2018-02-14,Dec 2017,-1.33,2,NA,NA,estimated
+"MEI Pharma, Inc.",MEIP,8624e4,2018-02-14,Dec 2017,-0.26,3,2017-02-08,0.32,estimated
+OrthoPediatrics Corp.,KIDS,21764e4,2018-02-14,Dec 2017,-0.13,2,NA,NA,estimated
+"PCM, Inc.",PCMI,9719e4,2018-02-14,Dec 2017,0.53,2,2017-02-08,0.51,estimated
+"Pluristem Therapeutics, Inc.",PSTI,15352e4,2018-02-14,Dec 2017,-0.08,2,2017-02-08,-0.08,estimated
+"Select Energy Services, Inc.",WTTR,18e8,2018-02-14,Dec 2017,0.12,4,NA,NA,estimated
+"Synchronoss Technologies, Inc.",SNCR,34068e4,2018-02-14,Dec 2017,0.08,1,2017-02-08,0.09,estimated
+Terreno Realty Corporation,TRNO,182e7,2018-02-14,Dec 2017,0.29,7,NA,0.22,estimated
+Tocagen Inc.,TOCA,24524e4,2018-02-14,Dec 2017,-0.53,1,NA,NA,estimated
+WGL Holdings Inc,WGL,439e7,2018-02-14,Dec 2017,1.26,3,2017-02-08,1.24,estimated
+Zymeworks Inc.,ZYME,30736e4,2018-02-14,Dec 2017,-0.62,2,NA,NA,estimated
+Altisource Portfolio Solutions S.A.,ASPS,45961e4,2018-02-15,Dec 2017,0.61,2,2017-02-16,0.55,estimated
+"BCB Bancorp, Inc. (NJ)",BCBP,22322e4,2018-02-15,Dec 2017,0.21,1,2017-02-16,0.2,estimated
+"Build-A-Bear Workshop, Inc.",BBW,13291e4,2018-02-15,Dec 2017,0.34,3,2017-02-16,0.31,estimated
+Ciner Resources LP,CINR,54898e4,2018-02-15,Dec 2017,0.55,2,2017-02-16,0.49,estimated
+"CVR Partners, LP",UAN,34438e4,2018-02-15,Dec 2017,-0.14,1,2017-02-16,-0.13,estimated
+"CVR Refining, LP",CVRR,23e8,2018-02-15,Dec 2017,0.3,1,2017-02-16,-0.07,estimated
+Encore Wire Corporation,WIRE,99809e4,2018-02-15,Dec 2017,0.47,1,2017-02-16,0.55,estimated
+Euroseas Ltd.,ESEA,1978e4,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.45,estimated
+"Genocea Biosciences, Inc.",GNCA,8173e4,2018-02-15,Dec 2017,-0.38,2,2017-02-16,-0.56,estimated
+"GNC Holdings, Inc.",GNC,3479e5,2018-02-15,Dec 2017,0.24,3,2017-02-16,0.07,estimated
+Keysight Technologies Inc.,KEYS,8470000000.000001,2018-02-15,Jan 2018,0.32,4,2017-02-16,0.46,estimated
+Liberty Latin America Ltd.,LILA,376e7,2018-02-15,Dec 2017,-0.13,2,2017-02-16,-0.07,estimated
+"Marchex, Inc.",MCHX,15153e4,2018-02-15,Dec 2017,-0.02,1,2017-02-16,-0.09,estimated
+"Navigant Consulting, Inc.",NCI,89682e4,2018-02-15,Dec 2017,0.4,3,2017-02-16,0.3,estimated
+PAVmed Inc.,PAVM,2855e4,2018-02-15,Dec 2017,NA,0,2017-02-16,-0.13,estimated
+Pool Corporation,POOL,524e7,2018-02-15,Dec 2017,0.17,3,2017-02-16,0.06,estimated
+"Rocky Brands, Inc.",RCKY,12497e4,2018-02-15,Dec 2017,0.25,1,2017-02-16,0.18,estimated
+"Standard Motor Products, Inc.",SMP,108e7,2018-02-15,Dec 2017,0.39,2,2017-02-16,0.42,estimated
+"T2 Biosystems, Inc.",TTOO,16802e4,2018-02-15,Dec 2017,-0.42,3,2017-02-16,-0.47,estimated
+"Town Sports International Holdings, Inc.",CLUB,14808e4,2018-02-15,Dec 2017,-0.02,1,2017-02-16,-0.01,estimated
+Ultragenyx Pharmaceutical Inc.,RARE,224e7,2018-02-15,Dec 2017,-2,8,2017-02-16,-1.75,estimated
+Universal Electronics Inc.,UEIC,6459e5,2018-02-15,Dec 2017,0.6,3,2017-02-16,0.57,estimated
+"Viveve Medical, Inc.",VIVE,744e5,2018-02-15,Dec 2017,-0.46,4,2017-02-16,-0.55,estimated
+ZIOPHARM Oncology Inc,ZIOP,58347e4,2018-02-15,Dec 2017,-0.13,5,2017-02-16,-0.11,estimated
+"Ardelyx, Inc.",ARDX,31373e4,2018-02-16,Dec 2017,-0.39,2,2017-02-17,-0.66,estimated
+Astronics Corporation,ATRO,113e7,2018-02-16,Dec 2017,0.44,2,2017-02-17,0.33,estimated
+"Banco Latinoamericano de Comercio Exterior, S.A.",BLX,111e7,2018-02-16,Dec 2017,0.55,1,2017-02-17,0.34,estimated
+DENTSPLY SIRONA Inc.,XRAY,1339e7,2018-02-16,Dec 2017,0.81,10,2017-02-17,0.67,estimated
+"Despegar.com, Corp.",DESP,204e7,2018-02-16,Dec 2017,0.12,2,NA,NA,estimated
+Enbridge Energy Management LLC,EEQ,633e7,2018-02-16,Dec 2017,0.19,3,NA,-0.02,estimated
+"Gibraltar Industries, Inc.",ROCK,106e7,2018-02-16,Dec 2017,0.34,2,2017-02-17,0.3,estimated
+Liberty Broadband Corporation,LBRDK,165e8,2018-02-16,Dec 2017,0.28,1,NA,0.25,estimated
+Liberty Broadband Corporation,LBRDA,16420000000.000002,2018-02-16,Dec 2017,0.24,2,NA,0.25,estimated
+ReWalk Robotics Ltd,RWLK,2427e4,2018-02-16,Dec 2017,NA,0,2017-02-17,-0.54,estimated
+"Targa Resources, Inc.",TRGP,1026e7,2018-02-16,Dec 2017,-0.02,9,NA,0.03,estimated
+"Borqs Technologies, Inc.",BRQS,27955e4,2018-02-19,Dec 2017,-0.07,1,NA,NA,estimated
+"Community Health Systems, Inc.",CYH,64706e4,2018-02-19,Dec 2017,-0.36,11,2017-02-20,0.46,estimated
+Rogers Corporation,ROG,281e7,2018-02-19,Dec 2017,1.42,1,2017-02-20,0.94,estimated
+"Astec Industries, Inc.",ASTE,137e7,2018-02-20,Dec 2017,0.45,6,2017-02-21,0.53,estimated
+BanColombia S.A.,CIB,106e8,2018-02-20,Dec 2017,0.86,3,NA,1.57,estimated
+Baozun Inc.,BZUN,185e7,2018-02-20,Dec 2017,NA,0,2017-02-21,0.16,estimated
+"Copart, Inc.",CPRT,965e7,2018-02-20,Jan 2018,0.37,5,2017-02-21,0.29,estimated
+"Cracker Barrel Old Country Store, Inc.",CBRL,408e7,2018-02-20,Jan 2018,2.32,3,2017-02-21,2.19,estimated
+"Daktronics, Inc.",DAKT,41361e4,2018-02-20,Jan 2018,-0.02,1,2017-02-21,-0.12,estimated
+"Depomed, Inc.",DEPO,42975e4,2018-02-20,Dec 2017,-0.22,2,2017-02-21,-0.72,estimated
+"Dillard's, Inc.",DDS,183e7,2018-02-20,Jan 2018,1.73,3,2017-02-21,1.85,estimated
+"Entellus Medical, Inc.",ENTL,61799e4,2018-02-20,Dec 2017,-0.44,3,2017-02-21,-0.39,estimated
+Eros International PLC,EROS,70425e4,2018-02-20,Dec 2017,0.1,2,2017-02-21,0.13,estimated
+Eversource Energy,ES,1803e7,2018-02-20,Dec 2017,0.76,6,2017-02-21,0.72,estimated
+Exact Sciences Corporation,EXAS,577e7,2018-02-20,Dec 2017,-0.29,6,2017-02-21,-0.34,estimated
+"Exactech, Inc.",EXAC,71182e4,2018-02-20,Dec 2017,0.38,1,2017-02-21,0.34,estimated
+"First Solar, Inc.",FSLR,657e7,2018-02-20,Dec 2017,-0.31,8,2017-02-21,1.24,estimated
+Foamix Pharmaceuticals Ltd.,FOMX,24781e4,2018-02-20,Dec 2017,-0.45,1,2017-02-21,-0.31,estimated
+"HealthStream, Inc.",HSTM,72245e4,2018-02-20,Dec 2017,0.03,6,2017-02-21,0.02,estimated
+"Innophos Holdings, Inc.",IPHS,82705e4,2018-02-20,Dec 2017,0.56,1,2017-02-21,0.52,estimated
+"Lantheus Holdings, Inc.",LNTH,75575e4,2018-02-20,Dec 2017,0.16,2,2017-02-21,0.18,estimated
+"LeMaitre Vascular, Inc.",LMAT,66059e4,2018-02-20,Dec 2017,0.19,3,2017-02-21,0.13,estimated
+"Lumber Liquidators Holdings, Inc",LL,74062e4,2018-02-20,Dec 2017,0.09,8,2017-02-21,-0.2,estimated
+Macquarie Infrastructure Corporation,MIC,539e7,2018-02-20,Dec 2017,0.61,2,2017-02-21,0.89,estimated
+MediWound Ltd.,MDWD,11766e4,2018-02-20,Dec 2017,-0.16,4,2017-02-21,-0.09,estimated
+"Merit Medical Systems, Inc.",MMSI,218e7,2018-02-20,Dec 2017,0.32,6,2017-02-21,0.31,estimated
+"Nautilus Group, Inc. (The)",NLS,36541e4,2018-02-20,Dec 2017,0.31,4,2017-02-21,0.38,estimated
+New Residential Investment Corp.,NRZ,508e7,2018-02-20,Dec 2017,0.54,4,2017-02-21,0.62,estimated
+"New York Mortgage Trust, Inc.",NYMT,61743e4,2018-02-20,Dec 2017,0.13,1,2017-02-21,0.09,estimated
+"Quanta Services, Inc.",PWR,533e7,2018-02-20,Dec 2017,0.39,7,2017-02-21,0.52,estimated
+"Red Robin Gourmet Burgers, Inc.",RRGB,69661e4,2018-02-20,Dec 2017,0.55,6,2017-02-21,0.35,estimated
+"Restoration Robotics, Inc.",HAIR,12527e4,2018-02-20,Dec 2017,-0.16,1,NA,NA,estimated
+Ritchie Bros. Auctioneers Incorporated,RBA,333e7,2018-02-20,Dec 2017,0.21,6,2017-02-21,0.3,estimated
+Sandstorm Gold Ltd,SAND,86958e4,2018-02-20,Dec 2017,0.02,2,2017-02-21,0.01,estimated
+Sea Limited,SE,366e7,2018-02-20,Dec 2017,-0.66,2,2017-02-17,NA,estimated
+"StarTek, Inc.",SRT,17644e4,2018-02-20,Dec 2017,-0.01,1,2017-02-21,0.07,estimated
+"Valeritas Holdings, Inc.",VLRX,2268e4,2018-02-20,Dec 2017,-1.69,2,2017-02-21,-6.16,estimated
+"Versartis, Inc.",VSAR,64459999.99999999,2018-02-20,Dec 2017,-0.88,1,2017-02-21,-0.64,estimated
+Xcerra Corporation,XCRA,5395e5,2018-02-20,Jan 2018,0.14,2,2017-02-21,0.06,estimated
+Arcturus Therapeutics Ltd.,ARCT,6764e4,2018-02-21,Dec 2017,NA,0,2017-02-15,-1.54,estimated
+"ARMOUR Residential REIT, Inc.",ARR,94079e4,2018-02-21,Dec 2017,NA,0,2017-02-15,0.71,estimated
+"Blackhawk Network Holdings, Inc.",HAWK,251e7,2018-02-21,Dec 2017,0.87,1,2017-02-15,0.9,estimated
+Compugen Ltd.,CGEN,13678e4,2018-02-21,Dec 2017,NA,0,2017-02-15,-0.17,estimated
+"CryoLife, Inc.",CRY,64149e4,2018-02-21,Dec 2017,0.09,2,2017-02-15,0.12,estimated
+JMP Group LLC,JMP,11117e4,2018-02-21,Dec 2017,0.06,1,2017-02-15,0.13,estimated
+"Laredo Petroleum, Inc.",LPI,21e8,2018-02-21,Dec 2017,0.17,11,2017-02-15,0.16,estimated
+"LightPath Technologies, Inc.",LPTH,5827e4,2018-02-21,Dec 2017,0.01,1,2017-02-15,0.05,estimated
+"Schweitzer-Mauduit International, Inc.",SWM,129e7,2018-02-21,Dec 2017,0.61,1,2017-02-15,0.8,estimated
+"Shineco, Inc.",TYHT,3471e4,2018-02-21,Dec 2017,NA,0,2017-02-15,0.14,estimated
+"Spring Bank Pharmaceuticals, Inc.",SBPH,15865e4,2018-02-21,Dec 2017,-0.65,2,2017-02-15,-0.51,estimated
+"AAON, Inc.",AAON,177e7,2018-02-22,Dec 2017,0.24,1,2017-02-23,0.21,estimated
+"Achillion Pharmaceuticals, Inc.",ACHN,40254e4,2018-02-22,Dec 2017,-0.15,3,2017-02-23,-0.03,estimated
+Acme United Corporation.,ACU,814e5,2018-02-22,Dec 2017,0.23,1,2017-02-23,0.15,estimated
+"Alder BioPharmaceuticals, Inc.",ALDR,94302e4,2018-02-22,Dec 2017,-1.08,4,2017-02-23,-0.97,estimated
+American States Water Company,AWR,192e7,2018-02-22,Dec 2017,0.35,2,2017-02-23,0.3,estimated
+"BJ's Restaurants, Inc.",BJRI,76963e4,2018-02-22,Dec 2017,0.33,9,2017-02-23,0.55,estimated
+British American Tobacco p.l.c.,BTI,14631e7,2018-02-22,Dec 2017,2,1,NA,NA,estimated
+California Water  Service Group Holding,CWT,187e7,2018-02-22,Dec 2017,0.24,3,2017-02-23,0.31,estimated
+Canadian Imperial Bank of Commerce,CM,4101e7,2018-02-22,Jan 2018,2.23,4,2017-02-23,2.17,estimated
+"Carrizo Oil & Gas, Inc.",CRZO,149e7,2018-02-22,Dec 2017,0.56,10,2017-02-23,0.44,estimated
+"Carter's, Inc.",CRI,569e7,2018-02-22,Dec 2017,2.2,5,2017-02-23,1.79,estimated
+"China Biologic Products Holdings, Inc.",CBPO,2109999999.9999998,2018-02-22,Dec 2017,1.11,1,2017-02-23,0.71,estimated
+Cinemark Holdings Inc,CNK,4230000000.0000005,2018-02-22,Dec 2017,0.47,6,2017-02-23,0.64,estimated
+"Clear Channel Outdoor Holdings, Inc.",CCO,167e7,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.28,estimated
+"Comfort Systems USA, Inc.",FIX,151e7,2018-02-22,Dec 2017,0.51,2,2017-02-23,0.45,estimated
+"Consolidated Communications Holdings, Inc.",CNSL,82949e4,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.1,estimated
+Cosan Limited,CZZ,291e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
+Dynegy Inc.,DYN,171e7,2018-02-22,Dec 2017,-0.43,2,2017-02-23,-0.7,estimated
+Eldorado Gold Corporation,EGO,96075e4,2018-02-22,Dec 2017,0.01,5,2017-02-23,0,estimated
+"Emergent Biosolutions, Inc.",EBS,234e7,2018-02-22,Dec 2017,0.6,3,2017-02-23,0.74,estimated
+Encore Capital Group Inc,ECPG,102e7,2018-02-22,Dec 2017,0.93,5,2017-02-23,0.72,estimated
+"Energy Focus, Inc.",EFOI,2905e4,2018-02-22,Dec 2017,-0.15,4,2017-02-23,-0.27,estimated
+"Escalade, Incorporated",ESCA,17963e4,2018-02-22,Dec 2017,0.28,1,2017-02-23,0.24,estimated
+"Eyegate Pharmaceuticals, Inc.",EYEG,1256e4,2018-02-22,Dec 2017,-0.25,2,2017-02-23,-0.38,estimated
+"Financial Engines, Inc.",FNGN,176e7,2018-02-22,Dec 2017,0.28,5,2017-02-23,0.19,estimated
+"Five Prime Therapeutics, Inc.",FPRX,56559e4,2018-02-22,Dec 2017,-1.29,4,2017-02-23,-0.73,estimated
+Frank's International N.V.,FI,143e7,2018-02-22,Dec 2017,-0.11,5,2017-02-23,-0.18,estimated
+"Grupo Aeroportuario Del Pacifico, S.A. de C.V.",PAC,566e7,2018-02-22,Dec 2017,NA,0,2017-02-23,1.07,estimated
+"H&E Equipment Services, Inc.",HEES,133e7,2018-02-22,Dec 2017,0.42,2,2017-02-23,0.35,estimated
+"Hannon Armstrong Sustainable Infrastructure Capital, Inc.",HASI,106e7,2018-02-22,Dec 2017,0.27,3,2017-02-23,0.23,estimated
+"Heron Therapeutics, Inc.",HRTX,138e7,2018-02-22,Dec 2017,-0.78,7,2017-02-23,-1.22,estimated
+Hewlett Packard Enterprise Company,HPE,248e8,2018-02-22,Jan 2018,0.23,8,2017-02-23,0.45,estimated
+"HFF, Inc.",HF,176e7,2018-02-22,Dec 2017,0.85,1,2017-02-23,0.7,estimated
+Huron Consulting Group Inc.,HURN,88739e4,2018-02-22,Dec 2017,0.74,3,2017-02-23,0.58,estimated
+"Insmed, Inc.",INSM,2009999999.9999998,2018-02-22,Dec 2017,-0.67,5,2017-02-23,-1.1,estimated
+Kadant Inc,KAI,104e7,2018-02-22,Dec 2017,1.08,2,2017-02-23,0.69,estimated
+Koppers Holdings Inc.,KOP,84019e4,2018-02-22,Dec 2017,0.46,2,2017-02-23,0.4,estimated
+La Jolla Pharmaceutical Company,LJPC,86743e4,2018-02-22,Dec 2017,-1.25,5,2017-02-23,-1.44,estimated
+Ladder Capital Corp,LADR,161e7,2018-02-22,Dec 2017,0.4,1,2017-02-23,0.32,estimated
+"Lawson Products, Inc.",LAWS,19865e4,2018-02-22,Dec 2017,0.16,2,2017-02-23,-0.34,estimated
+Leaf Group Ltd.,LFGR,1636e5,2018-02-22,Dec 2017,-0.27,1,2017-02-23,-0.26,estimated
+"Live Nation Entertainment, Inc.",LYV,914e7,2018-02-22,Dec 2017,-1.05,8,2017-02-23,-0.58,estimated
+Marriot Vacations Worldwide Corporation,VAC,374e7,2018-02-22,Dec 2017,1.16,4,2017-02-23,1.83,estimated
+"MasTec, Inc.",MTZ,431e7,2018-02-22,Dec 2017,0.33,7,2017-02-23,0.68,estimated
+Maxar Technologies Ltd.,MAXR,331e7,2018-02-22,Dec 2017,1.1,3,NA,1.17,estimated
+"MiMedx Group, Inc",MDXG,182e7,2018-02-22,Dec 2017,0.11,1,2017-02-23,0.05,estimated
+MSA Safety Incorporporated,MSA,284e7,2018-02-22,Dec 2017,0.96,3,2017-02-23,0.78,estimated
+"National CineMedia, Inc.",NCMI,530669999.99999994,2018-02-22,Dec 2017,0.2,4,2017-02-23,0.24,estimated
+Nevro Corp.,NVRO,228e7,2018-02-22,Dec 2017,-0.14,7,2017-02-23,-0.34,estimated
+"Obalon Therapeutics, Inc.",OBLN,7203e4,2018-02-22,Dec 2017,-0.48,2,2017-02-23,-0.51,estimated
+Orange,ORAN,453e8,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
+Pegasystems Inc.,PEGA,376e7,2018-02-22,Dec 2017,0.05,2,2017-02-23,0.12,estimated
+"Pinnacle Foods, Inc.",PF,697e7,2018-02-22,Dec 2017,0.94,8,2017-02-23,0.79,estimated
+"Radius Health, Inc.",RDUS,161e7,2018-02-22,Dec 2017,-1.48,5,2017-02-23,-1.22,estimated
+"RE/MAX Holdings, Inc.",RMAX,82468e4,2018-02-22,Dec 2017,0.46,4,2017-02-23,0.41,estimated
+Redhill Biopharma Ltd.,RDHL,12721e4,2018-02-22,Dec 2017,-0.65,3,2017-02-23,-0.7,estimated
+"Redwood Trust, Inc.",RWT,113e7,2018-02-22,Dec 2017,0.34,1,2017-02-23,0.33,estimated
+RELX N.V.,RENX,4398e7,2018-02-22,Dec 2017,NA,0,NA,NA,estimated
+RH,RH,194e7,2018-02-22,Jan 2018,1.55,11,2017-02-23,0.68,estimated
+"RTI Surgical, Inc.",RTIX,2707e5,2018-02-22,Dec 2017,0.04,2,2017-02-23,0.01,estimated
+"Sage Therapeutics, Inc.",SAGE,738e7,2018-02-22,Dec 2017,-2.04,14,2017-02-23,-1.5,estimated
+"Senseonics Holdings, Inc.",SENS,35693e4,2018-02-22,Dec 2017,-0.14,2,2017-02-23,-0.1,estimated
+"South Jersey Industries, Inc.",SJI,213e7,2018-02-22,Dec 2017,0.41,3,2017-02-23,0.42,estimated
 "Spartan Motors, Inc.",SPAR,50022e4,2018-02-22,Dec 2017,0.09,3,2017-02-23,0.04,estimated
-Splunk Inc.,SPLK,1299e7,2018-02-22,Jan 2018,-0.17,6,2017-02-23,-2.47,estimated
-"Sprouts Farmers Market, Inc.",SFM,371e7,2018-02-22,Dec 2017,0.15,9,2017-02-23,0.12,estimated
-SPX Corporation,SPXC,139e7,2018-02-22,Dec 2017,0.62,1,2017-02-23,0.69,estimated
-SRC Energy Inc.,SRCI,231e7,2018-02-22,Dec 2017,0.24,11,2017-02-23,0.03,estimated
-SSR Mining Inc.,SSRM,108e7,2018-02-22,Dec 2017,0.14,1,2017-02-23,0.26,estimated
-Stamps.com Inc.,STMP,357e7,2018-02-22,Dec 2017,2.14,1,2017-02-23,2.48,estimated
-"STARWOOD PROPERTY TRUST, INC.",STWD,548e7,2018-02-22,Dec 2017,0.47,2,2017-02-23,0.46,estimated
-"StealthGas, Inc.",GASS,1722e5,2018-02-22,Dec 2017,0.04,1,2017-02-23,0.04,estimated
-Stone Energy Corporation,SGY,76737e4,2018-02-22,Dec 2017,0.2,1,2017-02-23,-27.68,estimated
-"Summit Midstream Partners, LP",SMLP,164e7,2018-02-22,Dec 2017,0.21,2,2017-02-23,0.16,estimated
-"Superior Uniform Group, Inc.",SGC,36503e4,2018-02-22,Dec 2017,0.29,1,2017-02-23,0.27,estimated
-Teekay Corporation,TK,80238e4,2018-02-22,Dec 2017,0.15,1,2017-02-23,-0.22,estimated
-Teekay LNG Partners L.P.,TGP,161e7,2018-02-22,Dec 2017,0.3,3,2017-02-23,0.22,estimated
-Teekay Offshore Partners L.P.,TOO,115e7,2018-02-22,Dec 2017,0.1,1,2017-02-23,-0.03,estimated
-Teekay Tankers Ltd.,TNK,36619e4,2018-02-22,Dec 2017,-0.06,5,2017-02-23,0.03,estimated
-Teleflex Incorporated,TFX,1253e7,2018-02-22,Dec 2017,2.4,6,2017-02-23,2.13,estimated
-Telefonica SA,TEF,541e8,2018-02-22,Dec 2017,NA,0,2017-02-23,1.12,estimated
-Tennant Company,TNC,124e7,2018-02-22,Dec 2017,0.35,2,2017-02-23,0.85,estimated
-"TherapeuticsMD, Inc.",TXMD,139e7,2018-02-22,Dec 2017,-0.09,6,2017-02-23,-0.12,estimated
-Third Point Reinsurance Ltd.,TPRE,156e7,2018-02-22,Dec 2017,0.45,3,2017-02-23,-0.45,estimated
-Tutor Perini Corporation,TPC,129e7,2018-02-22,Dec 2017,0.5,3,2017-02-23,0.6,estimated
-Unit Corporation,UNT,139e7,2018-02-22,Dec 2017,0.15,4,2017-02-23,0.23,estimated
-Universal Display Corporation,OLED,791e7,2018-02-22,Dec 2017,0.82,3,2017-02-23,0.55,estimated
-"Universal Logistics Holdings, Inc.",ULH,70126e4,2018-02-22,Dec 2017,NA,0,2017-02-23,0.1,estimated
-VALE S.A.,VALE,68430000000.00001,2018-02-22,Dec 2017,0.24,4,2017-02-23,0.53,estimated
-Visteon Corporation,VC,408e7,2018-02-22,Dec 2017,1.72,7,2017-02-23,1.82,estimated
-W.P. Carey Inc.,WPC,704e7,2018-02-22,Dec 2017,1.13,4,2017-02-23,1.22,estimated
-"WageWorks, Inc.",WAGE,24e8,2018-02-22,Dec 2017,0.28,4,2017-02-23,0.24,estimated
-Zebra Technologies Corporation,ZBRA,657e7,2018-02-22,Dec 2017,1.98,6,2017-02-23,1.82,estimated
-"Zoe's Kitchen, Inc.",ZOES,28902e4,2018-02-22,Dec 2017,-0.13,6,2017-02-23,-0.07,estimated
-ADMA Biologics Inc,ADMA,1722e5,2018-02-23,Dec 2017,-0.51,2,2017-02-24,-0.35,estimated
-"American Railcar Industries, Inc.",ARII,77099e4,2018-02-23,Dec 2017,0.48,4,2017-02-24,1.16,estimated
-Berkshire Hathaway Inc.,BRK.B,28062e7,2018-02-23,Dec 2017,1.76,2,2017-02-25,1.78,estimated
-Berkshire Hathaway Inc.,BRK.A,25011e7,2018-02-23,Dec 2017,NA,0,2017-02-25,NA,estimated
-"Boise Cascade, L.L.C.",BCC,174e7,2018-02-23,Dec 2017,0.28,2,2017-02-24,0.03,estimated
-Cabot Oil & Gas Corporation,COG,1277e7,2018-02-23,Dec 2017,0.13,6,2017-02-24,0.01,estimated
+SRC Energy Inc.,SRCI,212e7,2018-02-22,Dec 2017,0.26,11,2017-02-23,0.03,estimated
+Stamps.com Inc.,STMP,35e8,2018-02-22,Dec 2017,2.14,1,2017-02-23,2.48,estimated
+"StealthGas, Inc.",GASS,16861e4,2018-02-22,Dec 2017,0.05,1,2017-02-23,0.04,estimated
+Stone Energy Corporation,SGY,64037e4,2018-02-22,Dec 2017,0.22,1,2017-02-23,-27.68,estimated
+"Superior Uniform Group, Inc.",SGC,35789e4,2018-02-22,Dec 2017,0.29,1,2017-02-23,0.27,estimated
+Teekay Corporation,TK,77899e4,2018-02-22,Dec 2017,0.15,1,2017-02-23,-0.22,estimated
+Teekay LNG Partners L.P.,TGP,148e7,2018-02-22,Dec 2017,0.32,3,2017-02-23,0.22,estimated
+Teekay Offshore Partners L.P.,TOO,95541e4,2018-02-22,Dec 2017,0.1,1,2017-02-23,-0.03,estimated
+Teekay Tankers Ltd.,TNK,31867e4,2018-02-22,Dec 2017,-0.06,5,2017-02-23,0.03,estimated
+Teleflex Incorporated,TFX,1185e7,2018-02-22,Dec 2017,2.4,6,2017-02-23,2.13,estimated
+Tennant Company,TNC,112e7,2018-02-22,Dec 2017,0.35,2,2017-02-23,0.85,estimated
+Third Point Reinsurance Ltd.,TPRE,148e7,2018-02-22,Dec 2017,0.45,3,2017-02-23,-0.45,estimated
+Tutor Perini Corporation,TPC,109e7,2018-02-22,Dec 2017,0.5,3,2017-02-23,0.6,estimated
+"Universal Logistics Holdings, Inc.",ULH,67145e4,2018-02-22,Dec 2017,NA,0,2017-02-23,0.1,estimated
+W.P. Carey Inc.,WPC,651e7,2018-02-22,Dec 2017,1.13,4,2017-02-23,1.22,estimated
+"WageWorks, Inc.",WAGE,227e7,2018-02-22,Dec 2017,0.28,4,2017-02-23,0.24,estimated
+Zebra Technologies Corporation,ZBRA,619e7,2018-02-22,Dec 2017,1.98,6,2017-02-23,1.82,estimated
+ADMA Biologics Inc,ADMA,17266e4,2018-02-23,Dec 2017,-0.51,2,2017-02-24,-0.35,estimated
+"American Railcar Industries, Inc.",ARII,69141e4,2018-02-23,Dec 2017,0.48,4,2017-02-24,1.16,estimated
+Berkshire Hathaway Inc.,BRK.B,261399999999.99997,2018-02-23,Dec 2017,1.76,2,2017-02-25,1.78,estimated
+Berkshire Hathaway Inc.,BRK.A,23318e7,2018-02-23,Dec 2017,NA,0,2017-02-25,NA,estimated
+"Boise Cascade, L.L.C.",BCC,161e7,2018-02-23,Dec 2017,0.28,2,2017-02-24,0.03,estimated
 Calgon Carbon Corporation,CCC,108e7,2018-02-23,Dec 2017,0.14,1,2017-02-24,0.05,estimated
-"Calumet Specialty Products Partners, L.P.",CLMT,61047e4,2018-02-23,Dec 2017,-0.56,2,2017-02-24,-0.98,estimated
-Coca Cola Femsa S.A.B. de C.V.,KOF,16379999999.999998,2018-02-23,Dec 2017,0.98,1,2017-02-24,0.85,estimated
-Companhia Brasileira de Distribuicao,CBD,649e7,2018-02-23,Dec 2017,0.3,1,NA,0.22,estimated
-"Comstock Resources, Inc.",CRK,14965e4,2018-02-23,Dec 2017,-1.08,3,2017-02-24,-2.58,estimated
-"Del Frisco's Restaurant Group, Inc.",DFRG,3724e5,2018-02-23,Dec 2017,0.42,4,2017-02-24,0.37,estimated
-Digirad Corporation,DRAD,5013e4,2018-02-23,Dec 2017,NA,0,2017-02-24,0.15,estimated
-E.W. Scripps Company (The),SSP,134e7,2018-02-23,Dec 2017,0.05,2,2017-02-24,0.46,estimated
-Eagle Point Credit Company Inc.,ECC,33852e4,2018-02-23,Dec 2017,0.45,1,2017-02-24,0.46,estimated
-EchoStar Corporation,SATS,586e7,2018-02-23,Dec 2017,0.11,2,2017-02-24,0.4,estimated
-"Foot Locker, Inc.",FL,636e7,2018-02-23,Jan 2018,1.23,12,2017-02-24,1.37,estimated
-Galapagos NV,GLPG,586e7,2018-02-23,Dec 2017,-0.71,3,2017-02-24,1.05,estimated
-HMS Holdings Corp,HMSY,146e7,2018-02-23,Dec 2017,0.18,6,2017-02-24,0.18,estimated
-"J.C. Penney Company, Inc. Holding Company",JCP,119e7,2018-02-23,Jan 2018,0.45,8,2017-02-24,0.64,estimated
-"KBR, Inc.",KBR,297e7,2018-02-23,Dec 2017,0.3,4,2017-02-24,-0.59,estimated
-"Magellan Health, Inc.",MGLN,242e7,2018-02-23,Dec 2017,2.19,3,2017-02-24,1.67,estimated
-"Magna International, Inc.",MGA,2099e7,2018-02-23,Dec 2017,1.59,7,2017-02-24,1.24,estimated
-Materialise NV,MTLS,64079e4,2018-02-23,Dec 2017,0.01,2,2017-02-24,0.01,estimated
-MGE Energy Inc.,MGEE,2089999999.9999998,2018-02-23,Dec 2017,NA,0,2017-02-24,0.42,estimated
-"Pearson, Plc",PSO,777e7,2018-02-23,Dec 2017,NA,0,NA,NA,estimated
-Physicians Realty Trust,DOC,299e7,2018-02-23,Dec 2017,0.27,9,2017-02-24,0.27,estimated
-Public Service Enterprise Group Incorporated,PEG,2587e7,2018-02-23,Dec 2017,0.56,5,2017-02-24,0.54,estimated
-RAIT Financial Trust,RAS,4754e4,2018-02-23,Dec 2017,0.01,1,2017-02-24,NA,estimated
-Realogy Holdings Corp.,RLGY,36e8,2018-02-23,Dec 2017,0.23,6,2017-02-24,0.28,estimated
-Rowan Companies plc,RDC,197e7,2018-02-23,Dec 2017,-0.29,12,2017-02-24,0.08,estimated
-Royal Bank Of Canada,RY,12418e7,2018-02-23,Jan 2018,1.54,4,2017-02-24,1.4,estimated
-Royal Bank Scotland plc (The),RBS,5163e7,2018-02-23,Dec 2017,0.1,1,2017-02-24,0.19,estimated
-"Telephone and Data Systems, Inc.",TDS,299e7,2018-02-23,Dec 2017,-0.02,2,2017-02-24,-0.05,estimated
-United States Cellular Corporation,USM,298e7,2018-02-23,Dec 2017,-0.08,3,2017-02-24,-0.07,estimated
-58.com Inc.,WUBA,1236e7,2018-02-26,Dec 2017,0.54,1,2017-02-27,-0.14,estimated
-"AAC Holdings, Inc.",AAC,21719e4,2018-02-26,Dec 2017,0.04,2,2017-02-27,0.15,estimated
-"Accelerate Diagnostics, Inc.",AXDX,165e7,2018-02-26,Dec 2017,-0.33,2,2017-02-27,-0.31,estimated
-Altra Industrial Motion Corp.,AIMC,156e7,2018-02-26,Dec 2017,0.49,2,2017-02-27,0.41,estimated
-American Woodmark Corporation,AMWD,245e7,2018-02-26,Jan 2018,0.89,1,2017-02-27,0.89,estimated
-"AmTrust Financial Services, Inc.",AFSI,257e7,2018-02-26,Dec 2017,0.24,3,2017-02-27,0.38,estimated
-"Anthera Pharmaceuticals, Inc.",ANTH,4037e4,2018-02-26,Dec 2017,-0.72,3,2017-02-27,-2.88,estimated
-"AppFolio, Inc.",APPF,148e7,2018-02-26,Dec 2017,0.04,3,2017-02-27,-0.04,estimated
-Armstrong World Industries Inc,AWI,338e7,2018-02-26,Dec 2017,0.66,2,2017-02-27,0.45,estimated
-Atlantica Yield plc,AY,21e8,2018-02-26,Dec 2017,-0.19,1,2017-02-27,-0.15,estimated
-Belmond Ltd.,BEL,152e7,2018-02-26,Dec 2017,-0.05,2,2017-02-27,0.01,estimated
-"BioCryst Pharmaceuticals, Inc.",BCRX,47543e4,2018-02-26,Dec 2017,-0.15,6,2017-02-27,-0.06,estimated
-"Black Stone Minerals, L.P.",BSM,373e7,2018-02-26,Dec 2017,0.16,1,2017-02-27,0.01,estimated
-"BWX Technologies, Inc.",BWXT,636e7,2018-02-26,Dec 2017,0.48,5,2017-02-27,0.46,estimated
-Chesapeake Utilities Corporation,CPK,124e7,2018-02-26,Dec 2017,0.85,3,2017-02-27,0.73,estimated
-"Compania Cervecerias Unidas, S.A.",CCU,542e7,2018-02-26,Dec 2017,0.45,1,2017-02-27,0.45,estimated
-Crawford & Company,CRD.B,22369e4,2018-02-26,Dec 2017,0.18,3,2017-02-27,0.15,estimated
-Dynagas LNG Partners LP,DLNG,42304e4,2018-02-26,Dec 2017,0.18,5,2017-02-27,0.44,estimated
-"eHealth, Inc.",EHTH,35755e4,2018-02-26,Dec 2017,-1.3,5,2017-02-24,-0.9,estimated
-Emerge Energy Services LP,EMES,27375e4,2018-02-26,Dec 2017,0.31,5,2017-02-27,-0.77,estimated
-ENSCO plc,ESV,29e8,2018-02-26,Dec 2017,-0.27,11,2017-02-27,0.09,estimated
-Evogene Ltd.,EVGN,10043e4,2018-02-26,Dec 2017,-0.18,1,2017-02-27,-0.26,estimated
-"Exelixis, Inc.",EXEL,901e7,2018-02-26,Dec 2017,0.12,8,2017-02-27,0.12,estimated
-"Fiesta Restaurant Group, Inc.",FRGI,54445e4,2018-02-26,Dec 2017,0.13,4,2017-02-27,0.27,estimated
-Fomento Economico Mexicano S.A.B. de C.V.,FMX,3554e7,2018-02-26,Dec 2017,1.08,2,2017-02-27,0.9,estimated
-"Freightcar America, Inc.",RAIL,20031e4,2018-02-26,Dec 2017,-0.35,4,2017-02-27,0.07,estimated
-Frontier Communications Corporation,FTR,65042e4,2018-02-26,Dec 2017,-1.12,6,2017-02-27,-0.6,estimated
-"Fulgent Genetics, Inc.",FLGT,9108e4,2018-02-26,Dec 2017,-0.03,1,2017-02-27,0.05,estimated
-"Global Net Lease, Inc.",GNL,126e7,2018-02-26,Dec 2017,0.51,1,2017-02-27,0.63,estimated
-"Globus Medical, Inc.",GMED,444e7,2018-02-26,Dec 2017,0.35,7,2017-02-27,0.31,estimated
-Gogo Inc.,GOGO,8712e5,2018-02-26,Dec 2017,-0.47,9,2017-02-27,-0.34,estimated
-Great Panther Silver Limited,GPL,22226e4,2018-02-26,Dec 2017,0,2,2017-02-27,-0.01,estimated
-Grupo Aeroportuario del Centro Norte S.A.B. de C.V.,OMAB,208e7,2018-02-26,Dec 2017,NA,0,2017-02-27,0.56,estimated
-"Halyard Health, Inc.",HYH,227e7,2018-02-26,Dec 2017,0.49,4,2017-02-27,0.5,estimated
-"Heidrick & Struggles International, Inc.",HSII,50158e4,2018-02-26,Dec 2017,0.31,4,2017-02-27,0.23,estimated
-"Hertz Global Holdings, Inc",HTZ,192e7,2018-02-26,Dec 2017,-0.58,4,2017-02-27,-0.71,estimated
-Horizon Pharma plc,HZNP,256e7,2018-02-26,Dec 2017,0.22,5,2017-02-27,0.5,estimated
-Ideal Power Inc.,IPWR,1847e4,2018-02-26,Dec 2017,-0.17,6,2017-02-27,-0.29,estimated
-"Installed Building Products, Inc.",IBP,234e7,2018-02-26,Dec 2017,0.43,2,2017-02-27,0.35,estimated
-Insulet Corporation,PODD,449e7,2018-02-26,Dec 2017,-0.08,13,2017-02-27,-0.16,estimated
-Integer Holdings Corporation,ITGR,16e8,2018-02-26,Dec 2017,0.77,3,2017-02-27,0.87,estimated
-Ituran Location and Control Ltd.,ITRN,72759e4,2018-02-26,Dec 2017,NA,0,2017-02-27,0.44,estimated
-JinkoSolar Holding Company Limited,JKS,72969e4,2018-02-26,Dec 2017,0.23,1,2017-02-27,0.66,estimated
-John Bean Technologies Corporation,JBT,363e7,2018-02-26,Dec 2017,1.08,6,2017-02-27,0.85,estimated
-"Kindred Healthcare, Inc.",KND,74564e4,2018-02-26,Dec 2017,0.2,2,2017-02-27,0.08,estimated
-Kosmos Energy Ltd.,KOS,29e8,2018-02-26,Dec 2017,-0.05,2,2017-02-27,-0.01,estimated
-Kraton Corporation,KRA,163e7,2018-02-26,Dec 2017,0.79,2,2017-02-27,0.29,estimated
-"Kratos Defense & Security Solutions, Inc.",KTOS,115e7,2018-02-26,Dec 2017,0.04,4,2017-02-27,0,estimated
-Leucadia National Corporation,LUK,977e7,2018-02-26,Dec 2017,0.47,1,2017-02-27,0.37,estimated
-"Maiden Holdings, Ltd.",MHLD,63469e4,2018-02-26,Dec 2017,0.19,1,2017-02-27,-0.81,estimated
-MDC Partners Inc.,MDCA,45191e4,2018-02-26,Dec 2017,0.21,2,2017-02-27,0.38,estimated
-"Medpace Holdings, Inc.",MEDP,135e7,2018-02-26,Dec 2017,0.39,6,2017-02-27,0.35,estimated
-Mesoblast Limited,MESO,532539999.99999994,2018-02-26,Dec 2017,-0.19,1,2017-02-26,-0.26,estimated
-National General Holdings Corp,NGHC,221e7,2018-02-26,Dec 2017,0.21,3,2017-02-27,0.3,estimated
-Noah Holdings Ltd.,NOAH,295e7,2018-02-26,Dec 2017,NA,0,2017-02-27,0.27,estimated
-Northwest Natural Gas Company,NWN,169e7,2018-02-26,Dec 2017,0.97,1,2017-02-27,1,estimated
-"Novavax, Inc.",NVAX,7996e5,2018-02-26,Dec 2017,-0.15,4,2017-02-27,-0.21,estimated
-NutriSystem Inc,NTRI,133e7,2018-02-26,Dec 2017,0.41,4,2017-02-27,0.29,estimated
-OncoCyte Corporation,OCX,13357e4,2018-02-26,Dec 2017,-0.13,1,2017-02-27,-0.11,estimated
-"ONEOK, Inc.",OKE,2354e7,2018-02-26,Dec 2017,0.51,6,2017-02-27,0.43,estimated
-"OptiNose, Inc.",OPTN,73177e4,2018-02-26,Dec 2017,-0.46,2,NA,NA,estimated
-Orthofix International N.V.,OFIX,105e7,2018-02-26,Dec 2017,0.5,2,2017-02-27,0.42,estimated
-"Preferred Apartment Communities, Inc.",APTS,62817e4,2018-02-26,Dec 2017,0.35,3,2017-02-27,0.32,estimated
-"RealPage, Inc.",RP,4019999999.9999995,2018-02-26,Dec 2017,0.17,3,2017-02-27,0.14,estimated
-"Revance Therapeutics, Inc.",RVNC,121e7,2018-02-26,Dec 2017,-0.98,3,2017-02-27,-0.95,estimated
-"Rexahn Pharmaceuticals, Inc.",RNN,7346e4,2018-02-26,Dec 2017,-0.14,3,2017-02-27,0,estimated
-"Ritter Pharmaceuticals, Inc.",RTTR,1701e4,2018-02-26,Dec 2017,-0.05,2,2017-02-27,-0.74,estimated
-"RSP Permian, Inc.",RSPP,646e7,2018-02-26,Dec 2017,0.31,16,2017-02-27,0.1,estimated
-Senior Housing Properties Trust,SNH,43e8,2018-02-26,Dec 2017,0.39,6,2017-02-27,0.5,estimated
-"Shutterstock, Inc.",SSTK,165e7,2018-02-26,Dec 2017,0.23,4,2017-02-27,0.29,estimated
-Sotheby's,BID,289e7,2018-02-26,Dec 2017,1.34,1,2017-02-27,1.35,estimated
-"Southwest Gas Holdings, Inc.",SWX,362e7,2018-02-26,Dec 2017,1.5,2,2017-02-27,1.37,estimated
-Sun Hydraulics Corporation,SNHY,19e8,2018-02-26,Dec 2017,0.33,1,2017-02-27,0.12,estimated
-"Sykes Enterprises, Incorporated",SYKE,135e7,2018-02-26,Dec 2017,0.4,4,2017-02-27,0.52,estimated
-"Tactile Systems Technology, Inc.",TCMD,56327e4,2018-02-26,Dec 2017,0.14,3,2017-02-27,0.13,estimated
-"Tarena International, Inc.",TEDU,76489e4,2018-02-26,Dec 2017,NA,0,2017-02-27,0.25,estimated
-"TC PipeLines, LP",TCP,393e7,2018-02-26,Dec 2017,0.76,4,2017-02-27,0.7,estimated
-Tenet Healthcare Corporation,THC,186e7,2018-02-26,Dec 2017,1.3,10,2017-02-27,0.06,estimated
-The AES Corporation,AES,759e7,2018-02-26,Dec 2017,0.32,3,2017-02-27,0.35,estimated
-The Priceline Group Inc.,PCLN,9508e7,2018-02-26,Dec 2017,14.1,13,2017-02-27,14.21,estimated
-"Theravance Biopharma, Inc.",TBPH,157e7,2018-02-26,Dec 2017,-1.15,2,2017-02-27,-1.36,estimated
-Vermilion Energy Inc.,VET,484e7,2018-02-26,Dec 2017,0.16,1,2017-02-27,-0.02,estimated
-vTv Therapeutics Inc.,VTVT,25331e4,2018-02-26,Dec 2017,-0.42,2,2017-02-27,-0.42,estimated
-"Wheeler Real Estate Investment Trust, Inc.",WHLR,6033e4,2018-02-26,Dec 2017,0.34,1,2017-02-27,0.16,estimated
-"Workday, Inc.",WDAY,2422e7,2018-02-26,Jan 2018,-0.35,32,2017-02-27,-0.45,estimated
-ZTO Express (Cayman) Inc.,ZTO,1148e7,2018-02-26,Dec 2017,0.24,1,2017-02-27,0.15,estimated
-3D Systems Corporation,DDD,121e7,2018-02-27,Dec 2017,-0.04,6,2017-02-28,0.06,estimated
-ACADIA Pharmaceuticals Inc.,ACAD,381e7,2018-02-27,Dec 2017,-0.58,6,2017-02-28,-0.65,estimated
-"Adamas Pharmaceuticals, Inc.",ADMS,93325e4,2018-02-27,Dec 2017,-1.15,4,2017-02-28,-0.68,estimated
-Aegion Corp,AEGN,82976e4,2018-02-27,Dec 2017,0.23,3,2017-02-28,0.44,estimated
-Amarin Corporation plc,AMRN,116e7,2018-02-27,Dec 2017,-0.04,3,2017-02-28,-0.05,estimated
-"Ambarella, Inc.",AMBA,167e7,2018-02-27,Jan 2018,0.08,2,2017-02-28,0.54,estimated
-"AMC Entertainment Holdings, Inc.",AMC,17e8,2018-02-27,Dec 2017,0.29,3,2017-02-28,0.37,estimated
-Amedisys Inc,AMED,187e7,2018-02-27,Dec 2017,0.59,7,2017-02-28,0.44,estimated
-"Ascent Capital Group, Inc.",ASCMA,12906e4,2018-02-27,Dec 2017,-2.22,2,2017-02-28,-1.51,estimated
-"AtriCure, Inc.",ATRC,59054e4,2018-02-27,Dec 2017,-0.21,4,2017-02-28,-0.27,estimated
-"AutoZone, Inc.",AZO,2151e7,2018-02-27,Feb 2018,8.63,9,2017-02-28,8.08,estimated
-Avianca Holdings S.A.,AVH,104e7,2018-02-27,Dec 2017,0.3,1,NA,0.29,estimated
-"Axon Enterprise, Inc.",AAXN,146e7,2018-02-27,Dec 2017,-0.03,3,2017-02-28,0.12,estimated
-Babcock,BW,260329999.99999997,2018-02-27,Dec 2017,0.04,1,2017-02-28,-1.6,estimated
-Bank Of Montreal,BMO,5427e7,2018-02-27,Jan 2018,1.6,3,2017-02-28,1.71,estimated
-Bank of Nova Scotia (The),BNS,7943e7,2018-02-27,Jan 2018,1.31,4,2017-02-28,1.19,estimated
-"Barnes & Noble Education, Inc",BNED,33638e4,2018-02-27,Jan 2018,NA,0,2017-02-28,0.09,estimated
-"Bazaarvoice, Inc.",BV,47134e4,2018-02-27,Jan 2018,-0.02,2,2017-02-28,-0.02,estimated
-Big 5 Sporting Goods Corporation,BGFV,130699999.99999999,2018-02-27,Dec 2017,0.23,1,2017-02-28,0.33,estimated
-"Bravo Brio Restaurant Group, Inc.",BBRG,4485e4,2018-02-27,Dec 2017,0.1,1,2017-02-28,0.12,estimated
-Buenaventura Mining Company Inc.,BVN,4030000000.0000005,2018-02-27,Dec 2017,0.28,2,2017-02-28,-1.55,estimated
-"Cable One, Inc.",CABO,4099999999.9999995,2018-02-27,Dec 2017,5.87,4,2017-02-28,4.23,estimated
-Capital Senior Living Corporation,CSU,36265e4,2018-02-27,Dec 2017,-0.07,1,2017-02-28,-0.08,estimated
-"Cheniere Energy Partners LP Holdings, LLC",CQH,671e7,2018-02-27,Dec 2017,0.47,3,2017-02-28,0.02,estimated
-"Cheniere Energy Partners, LP",CQP,1528e7,2018-02-27,Dec 2017,0.4,4,2017-02-28,0.39,estimated
-Chicago Bridge & Iron Company N.V.,CBI,218e7,2018-02-27,Dec 2017,0.44,4,2017-02-28,0.85,estimated
-"Churchill Downs, Incorporated",CHDN,399e7,2018-02-27,Dec 2017,0.62,2,2017-02-28,0.68,estimated
-"Chuy's Holdings, Inc.",CHUY,46597e4,2018-02-27,Dec 2017,0.2,6,2017-02-28,0.18,estimated
-"Colony NorthStar, Inc.",CLNS,541e7,2018-02-27,Dec 2017,0.24,1,2017-02-28,0.2,estimated
-CrossAmerica Partners LP,CAPL,81632e4,2018-02-27,Dec 2017,0.06,4,2017-02-28,0.04,estimated
-"Culp, Inc.",CULP,40228e4,2018-02-27,Jan 2018,0.42,3,2017-02-28,0.47,estimated
-CyberOptics Corporation,CYBE,11164e4,2018-02-27,Dec 2017,-0.1,2,2017-02-28,0.11,estimated
-Darling Ingredients Inc.,DAR,317e7,2018-02-27,Dec 2017,0.11,3,2017-02-28,0.25,estimated
-"Dermira, Inc.",DERM,126e7,2018-02-27,Dec 2017,-1.31,1,2017-02-28,-0.21,estimated
-"DexCom, Inc.",DXCM,511e7,2018-02-27,Dec 2017,0.03,12,2017-02-28,-0.09,estimated
-"Diplomat Pharmacy, Inc.",DPLO,182e7,2018-02-27,Dec 2017,0.17,9,2017-02-28,0.08,estimated
-Domino's Pizza Inc,DPZ,959e7,2018-02-27,Dec 2017,1.94,8,2017-02-28,1.48,estimated
-"Donnelley Financial Solutions, Inc.",DFIN,7195e5,2018-02-27,Dec 2017,0.04,1,2017-02-28,0.1,estimated
-"Dril-Quip, Inc.",DRQ,2049999999.9999998,2018-02-27,Dec 2017,0.03,6,2017-02-28,0.23,estimated
-Drive Shack Inc.,DS,35625e4,2018-02-27,Dec 2017,-0.07,1,2017-02-28,0.1,estimated
-"Ebix, Inc.",EBIX,264e7,2018-02-27,Dec 2017,0.75,2,2017-02-28,0.76,estimated
-Eclipse Resources Corporation,ECR,71835e4,2018-02-27,Dec 2017,-0.03,3,2017-02-28,-0.02,estimated
-Embotelladora Andina S.A.,AKO.B,375e7,2018-02-27,Dec 2017,0.39,1,2017-02-28,0.35,estimated
-Endo International plc,ENDP,166e7,2018-02-27,Dec 2017,0.62,8,2017-02-28,1.77,estimated
-"Enphase Energy, Inc.",ENPH,17876e4,2018-02-27,Dec 2017,-0.05,3,2017-02-28,-0.18,estimated
-Envision Healthcare Corporation,EVHC,437e7,2018-02-27,Dec 2017,0.44,6,2017-02-28,1.08,estimated
-"Etsy, Inc.",ETSY,233e7,2018-02-27,Dec 2017,0.08,8,2017-02-28,0.03,estimated
-"Evolent Health, Inc",EVH,111e7,2018-02-27,Dec 2017,-0.04,10,2017-02-28,-0.35,estimated
-"ExlService Holdings, Inc.",EXLS,212e7,2018-02-27,Dec 2017,0.52,7,2017-02-28,0.53,estimated
-Federal Signal Corporation,FSS,126e7,2018-02-27,Dec 2017,0.2,3,2017-02-28,0.16,estimated
-Frontline Ltd.,FRO,83376e4,2018-02-27,Dec 2017,-0.08,4,2017-02-28,0.22,estimated
-"FTI Consulting, Inc.",FCN,165e7,2018-02-27,Dec 2017,0.5,3,2017-02-28,0.24,estimated
-"GenMark Diagnostics, Inc.",GNMK,32055e4,2018-02-27,Dec 2017,-0.24,3,2017-02-28,-0.27,estimated
-Golar LNG Limited,GLNG,29e8,2018-02-27,Dec 2017,-0.24,7,2017-02-28,-0.33,estimated
-Golar LNG Partners LP,GMLP,159e7,2018-02-27,Dec 2017,0.25,5,2017-02-28,1.12,estimated
-Golden Minerals Company,AUMN,4146e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.01,estimated
-GP Strategies Corporation,GPX,43302e4,2018-02-27,Dec 2017,0.26,3,2017-02-28,0.4,estimated
-Gramercy Property Trust,GPT,413e7,2018-02-27,Dec 2017,0.52,8,2017-02-28,0.48,estimated
-"Grifols, S.A.",GRFS,1696e7,2018-02-27,Dec 2017,0.31,2,NA,0.26,estimated
-Halcon Resources Corporation,HK,125e7,2018-02-27,Dec 2017,-0.03,5,2017-02-28,0.66,estimated
-Harmonic Inc.,HLIT,30403e4,2018-02-27,Dec 2017,-0.04,4,2017-02-28,0.03,estimated
-Heico Corporation,HEI,8539999999.999999,2018-02-27,Jan 2018,0.39,3,2017-02-28,0.36,estimated
-Heska Corporation,HSKA,60254e4,2018-02-27,Dec 2017,0.6,2,2017-02-28,0.46,estimated
-Hoegh LNG Partners LP,HMLP,63537e4,2018-02-27,Dec 2017,0.35,4,2017-02-28,0.25,estimated
-"Hyster-Yale Materials Handling, Inc.",HY,144e7,2018-02-27,Dec 2017,0.97,2,2017-02-28,0.74,estimated
-"ILG, Inc",ILG,386e7,2018-02-27,Dec 2017,0.26,3,2017-02-28,0.48,estimated
-"Independence Contract Drilling, Inc.",ICD,19143e4,2018-02-27,Dec 2017,-0.11,4,2017-02-28,-0.14,estimated
-Infinity Property and Casualty Corporation,IPCC,116e7,2018-02-27,Dec 2017,1.47,2,2017-02-28,1.84,estimated
-"InfraREIT, Inc.",HIFR,83696e4,2018-02-27,Dec 2017,0.46,1,2017-02-28,NA,estimated
-Intelsat S.A.,I,35462e4,2018-02-27,Dec 2017,-0.25,4,2017-02-28,-0.1,estimated
-"Intersect ENT, Inc.",XENT,1070000000.0000001,2018-02-27,Dec 2017,-0.17,11,2017-02-28,-0.17,estimated
-"Intrepid Potash, Inc",IPI,54139e4,2018-02-27,Dec 2017,0,2,2017-02-28,-0.19,estimated
-"Ionis Pharmaceuticals, Inc.",IONS,654e7,2018-02-27,Dec 2017,-0.08,7,2017-02-28,0.21,estimated
-Jazz Pharmaceuticals plc,JAZZ,918e7,2018-02-27,Dec 2017,2.73,2,2017-02-28,1.91,estimated
-Jupai Holdings Limited,JP,71515e4,2018-02-27,Dec 2017,0.43,1,2017-02-28,0.29,estimated
-Kaman Corporation,KAMN,174e7,2018-02-27,Dec 2017,0.96,2,2017-02-28,0.56,estimated
-La Quinta Holdings Inc.,LQ,233e7,2018-02-27,Dec 2017,0,6,2017-02-28,0.01,estimated
-"Libbey, Inc.",LBY,17018e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.02,estimated
-Liberty Interactive Corporation,QVCA,1338e7,2018-02-27,Dec 2017,0.63,4,2017-02-28,0.57,estimated
-Liberty Interactive Corporation,LVNTA,512e7,2018-02-27,Dec 2017,0.02,1,2017-02-28,1.15,estimated
-Liberty Media Corporation,LSXMK,1431e7,2018-02-27,Dec 2017,0.4,1,2017-02-28,0.35,estimated
-Liberty Media Corporation,FWONK,862e7,2018-02-27,Dec 2017,-0.15,2,2017-02-28,0.47,estimated
-Liberty Media Corporation,BATRK,118e7,2018-02-27,Dec 2017,NA,0,2017-02-28,-0.82,estimated
-Liberty Media Corporation,FWONA,NA,2018-02-27,Dec 2017,-0.02,1,2017-02-28,0.47,estimated
-Liberty Media Corporation,LSXMA,NA,2018-02-27,Dec 2017,0.45,1,2017-02-28,0.35,estimated
-Mack-Cali Realty Corporation,CLI,192e7,2018-02-27,Dec 2017,0.54,5,2017-02-28,0.56,estimated
-"MacroGenics, Inc.",MGNX,84619e4,2018-02-27,Dec 2017,2.58,7,2017-02-28,-1,estimated
-"Maxwell Technologies, Inc.",MXWL,21838e4,2018-02-27,Dec 2017,-0.15,1,2017-02-28,-0.28,estimated
-McGrath RentCorp,MGRC,117e7,2018-02-27,Dec 2017,0.55,2,2017-02-28,0.4,estimated
-"Melinta Therapeutics, Inc.",MLNT,46988e4,2018-02-27,Dec 2017,-0.59,2,2017-02-28,-3,estimated
-New Senior Investment Group Inc.,SNR,6268e5,2018-02-27,Dec 2017,0.28,2,2017-02-28,0.31,estimated
-NewLink Genetics Corporation,NLNK,32035e4,2018-02-27,Dec 2017,-0.69,5,2017-02-28,-0.46,estimated
-"NRG Energy, Inc.",NRG,876e7,2018-02-27,Dec 2017,-0.04,2,2017-02-28,0.9,estimated
-"NRG Yield, Inc.",NYLD,356e7,2018-02-27,Dec 2017,0.2,3,2017-02-28,-0.1,estimated
-"NRG Yield, Inc.",NYLD.A,NA,2018-02-27,Dec 2017,NA,0,2017-02-28,-0.13,estimated
-"NxStage Medical, Inc.",NXTM,164e7,2018-02-27,Dec 2017,0,2,2017-02-28,-0.02,estimated
-Ophthotech Corporation,OPHT,10956e4,2018-02-27,Dec 2017,-0.58,1,2017-02-28,-1.86,estimated
-ORBCOMM Inc.,ORBC,85586e4,2018-02-27,Dec 2017,-0.1,4,2017-02-28,-0.04,estimated
-"Ormat Technologies, Inc.",ORA,349e7,2018-02-27,Dec 2017,0.55,3,2017-02-28,0.56,estimated
-"Palo Alto Networks, Inc.",PANW,1445e7,2018-02-27,Jan 2018,-0.21,4,2017-02-28,-0.58,estimated
-"Par Pacific Holdings, Inc.",PARR,89245e4,2018-02-27,Dec 2017,0.24,1,2017-02-28,0.23,estimated
-Pengrowth Energy Corporation,PGH,45836e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.06,estimated
-"Penumbra, Inc.",PEN,34e8,2018-02-27,Dec 2017,-0.01,3,2017-02-28,-0.08,estimated
-Platform Specialty Products Corporation,PAH,343e7,2018-02-27,Dec 2017,0.23,4,2017-02-28,0.2,estimated
-"PNM Resources, Inc. (Holding Co.)",PNM,302e7,2018-02-27,Dec 2017,0.18,5,2017-02-28,0.34,estimated
-"Portola Pharmaceuticals, Inc.",PTLA,34e8,2018-02-27,Dec 2017,-1.52,3,2017-02-28,-0.95,estimated
-"PRA Group, Inc.",PRAA,159e7,2018-02-27,Dec 2017,0.37,6,2017-02-28,-0.33,estimated
-"PRGX Global, Inc.",PRGX,17132e4,2018-02-27,Dec 2017,0.14,2,2017-02-28,0.01,estimated
-Primoris Services Corporation,PRIM,135e7,2018-02-27,Dec 2017,0.23,2,2017-02-28,0.28,estimated
+"Calumet Specialty Products Partners, L.P.",CLMT,55288e4,2018-02-23,Dec 2017,-0.55,3,2017-02-24,-0.98,estimated
+Companhia Brasileira de Distribuicao,CBD,573e7,2018-02-23,Dec 2017,0.3,1,NA,0.22,estimated
+"Del Frisco's Restaurant Group, Inc.",DFRG,3724e5,2018-02-23,Dec 2017,0.43,4,2017-02-24,0.37,estimated
+Digirad Corporation,DRAD,4412e4,2018-02-23,Dec 2017,NA,0,2017-02-24,0.15,estimated
+E.W. Scripps Company (The),SSP,121e7,2018-02-23,Dec 2017,0.05,2,2017-02-24,0.46,estimated
+Eagle Point Credit Company Inc.,ECC,34037e4,2018-02-23,Dec 2017,0.45,1,2017-02-24,0.46,estimated
+EchoStar Corporation,SATS,567e7,2018-02-23,Dec 2017,0.11,2,2017-02-24,0.4,estimated
+HMS Holdings Corp,HMSY,13e8,2018-02-23,Dec 2017,0.18,6,2017-02-24,0.18,estimated
+"KBR, Inc.",KBR,259e7,2018-02-23,Dec 2017,0.3,4,2017-02-24,-0.59,estimated
+Materialise NV,MTLS,61428e4,2018-02-23,Dec 2017,0.01,2,2017-02-24,0.01,estimated
+MGE Energy Inc.,MGEE,193e7,2018-02-23,Dec 2017,NA,0,2017-02-24,0.42,estimated
+RAIT Financial Trust,RAS,4396e4,2018-02-23,Dec 2017,0.01,1,2017-02-24,NA,estimated
+Realogy Holdings Corp.,RLGY,345e7,2018-02-23,Dec 2017,0.24,5,2017-02-24,0.28,estimated
+"Telephone and Data Systems, Inc.",TDS,278e7,2018-02-23,Dec 2017,-0.02,2,2017-02-24,-0.05,estimated
+United States Cellular Corporation,USM,291e7,2018-02-23,Dec 2017,-0.08,3,2017-02-24,-0.07,estimated
+58.com Inc.,WUBA,1034e7,2018-02-26,Dec 2017,0.54,1,2017-02-27,-0.14,estimated
+"Accelerate Diagnostics, Inc.",AXDX,147e7,2018-02-26,Dec 2017,-0.33,2,2017-02-27,-0.31,estimated
+American Woodmark Corporation,AMWD,219e7,2018-02-26,Jan 2018,0.89,1,2017-02-27,0.89,estimated
+"AmTrust Financial Services, Inc.",AFSI,251e7,2018-02-26,Dec 2017,0.24,3,2017-02-27,0.38,estimated
+"Anthera Pharmaceuticals, Inc.",ANTH,3415e4,2018-02-26,Dec 2017,-0.72,3,2017-02-27,-2.88,estimated
+"AppFolio, Inc.",APPF,136e7,2018-02-26,Dec 2017,0.04,3,2017-02-27,-0.04,estimated
+Armstrong World Industries Inc,AWI,322e7,2018-02-26,Dec 2017,0.66,2,2017-02-27,0.45,estimated
+Atlantica Yield plc,AY,2e9,2018-02-26,Dec 2017,-0.19,1,2017-02-27,-0.15,estimated
+"BioCryst Pharmaceuticals, Inc.",BCRX,48232e4,2018-02-26,Dec 2017,-0.14,5,2017-02-27,-0.06,estimated
+"Black Stone Minerals, L.P.",BSM,349e7,2018-02-26,Dec 2017,0.17,1,2017-02-27,0.01,estimated
+"BWX Technologies, Inc.",BWXT,613e7,2018-02-26,Dec 2017,0.48,5,2017-02-27,0.46,estimated
+Chesapeake Utilities Corporation,CPK,113e7,2018-02-26,Dec 2017,0.85,3,2017-02-27,0.73,estimated
+"Compania Cervecerias Unidas, S.A.",CCU,526e7,2018-02-26,Dec 2017,NA,0,2017-02-27,0.45,estimated
+Crawford & Company,CRD.B,22987e4,2018-02-26,Dec 2017,0.18,3,2017-02-27,0.15,estimated
+"eHealth, Inc.",EHTH,30191e4,2018-02-26,Dec 2017,-1.3,5,2017-02-24,-0.9,estimated
+Evogene Ltd.,EVGN,8446e4,2018-02-26,Dec 2017,-0.18,1,2017-02-27,-0.26,estimated
+"Exelixis, Inc.",EXEL,879e7,2018-02-26,Dec 2017,0.12,8,2017-02-27,0.12,estimated
+"Freightcar America, Inc.",RAIL,17924e4,2018-02-26,Dec 2017,-0.35,4,2017-02-27,0.07,estimated
+"Fulgent Genetics, Inc.",FLGT,7949e4,2018-02-26,Dec 2017,-0.03,1,2017-02-27,0.05,estimated
+"Global Net Lease, Inc.",GNL,114e7,2018-02-26,Dec 2017,0.51,1,2017-02-27,0.63,estimated
+"Globus Medical, Inc.",GMED,43e8,2018-02-26,Dec 2017,0.35,7,2017-02-27,0.31,estimated
+Great Panther Silver Limited,GPL,20037e4,2018-02-26,Dec 2017,0,2,2017-02-27,-0.01,estimated
+Grupo Aeroportuario del Centro Norte S.A.B. de C.V.,OMAB,2009999999.9999998,2018-02-26,Dec 2017,NA,0,2017-02-27,0.56,estimated
+"Halyard Health, Inc.",HYH,22e8,2018-02-26,Dec 2017,0.49,4,2017-02-27,0.5,estimated
+"Hertz Global Holdings, Inc",HTZ,181e7,2018-02-26,Dec 2017,-0.58,4,2017-02-27,-0.71,estimated
+Ideal Power Inc.,IPWR,1805e4,2018-02-26,Dec 2017,-0.17,6,2017-02-27,-0.29,estimated
+"Installed Building Products, Inc.",IBP,206e7,2018-02-26,Dec 2017,0.43,2,2017-02-27,0.35,estimated
+JinkoSolar Holding Company Limited,JKS,59104e4,2018-02-26,Dec 2017,0.23,1,2017-02-27,0.66,estimated
+"Kindred Healthcare, Inc.",KND,71032e4,2018-02-26,Dec 2017,0.2,2,2017-02-27,0.08,estimated
+"Kratos Defense & Security Solutions, Inc.",KTOS,117e7,2018-02-26,Dec 2017,0.04,4,2017-02-27,0,estimated
+Leucadia National Corporation,LUK,891e7,2018-02-26,Dec 2017,0.47,1,2017-02-27,0.37,estimated
+MDC Partners Inc.,MDCA,43693e4,2018-02-26,Dec 2017,0.21,2,2017-02-27,0.38,estimated
+Mesoblast Limited,MESO,50055e4,2018-02-26,Dec 2017,-0.19,1,2017-02-26,-0.26,estimated
+Noah Holdings Ltd.,NOAH,252e7,2018-02-26,Dec 2017,NA,0,2017-02-27,0.27,estimated
+"Novavax, Inc.",NVAX,78458e4,2018-02-26,Dec 2017,-0.15,4,2017-02-27,-0.21,estimated
+OncoCyte Corporation,OCX,11314e4,2018-02-26,Dec 2017,-0.13,1,2017-02-27,-0.11,estimated
+"OptiNose, Inc.",OPTN,69622e4,2018-02-26,Dec 2017,-0.46,2,NA,NA,estimated
+Orthofix International N.V.,OFIX,97866e4,2018-02-26,Dec 2017,0.5,2,2017-02-27,0.42,estimated
+"Preferred Apartment Communities, Inc.",APTS,56708e4,2018-02-26,Dec 2017,0.35,3,2017-02-27,0.32,estimated
+"RealPage, Inc.",RP,4070000000.0000005,2018-02-26,Dec 2017,0.17,3,2017-02-27,0.14,estimated
+"Revance Therapeutics, Inc.",RVNC,112e7,2018-02-26,Dec 2017,-0.98,3,2017-02-27,-0.95,estimated
+"Rexahn Pharmaceuticals, Inc.",RNN,64400000.00000001,2018-02-26,Dec 2017,-0.14,3,2017-02-27,0,estimated
+"Ritter Pharmaceuticals, Inc.",RTTR,1486e4,2018-02-26,Dec 2017,-0.05,2,2017-02-27,-0.74,estimated
+"RSP Permian, Inc.",RSPP,569e7,2018-02-26,Dec 2017,0.32,17,2017-02-27,0.1,estimated
+Senior Housing Properties Trust,SNH,391e7,2018-02-26,Dec 2017,0.37,6,2017-02-27,0.5,estimated
+Sotheby's,BID,252e7,2018-02-26,Dec 2017,1.4,1,2017-02-27,1.35,estimated
+"Southwest Gas Holdings, Inc.",SWX,326e7,2018-02-26,Dec 2017,1.5,2,2017-02-27,1.37,estimated
+"Tarena International, Inc.",TEDU,6935e5,2018-02-26,Dec 2017,NA,0,2017-02-27,0.25,estimated
+"TC PipeLines, LP",TCP,367e7,2018-02-26,Dec 2017,0.78,4,2017-02-27,0.7,estimated
+"Theravance Biopharma, Inc.",TBPH,152e7,2018-02-26,Dec 2017,-1.15,2,2017-02-27,-1.36,estimated
+Vermilion Energy Inc.,VET,421e7,2018-02-26,Dec 2017,0.16,1,2017-02-27,-0.02,estimated
+vTv Therapeutics Inc.,VTVT,22181e4,2018-02-26,Dec 2017,-0.42,2,2017-02-27,-0.42,estimated
+"Wheeler Real Estate Investment Trust, Inc.",WHLR,468e5,2018-02-26,Dec 2017,0.34,1,2017-02-27,0.16,estimated
+"Workday, Inc.",WDAY,2473e7,2018-02-26,Jan 2018,-0.35,32,2017-02-27,-0.45,estimated
+ZTO Express (Cayman) Inc.,ZTO,1081e7,2018-02-26,Dec 2017,0.28,1,2017-02-27,0.15,estimated
+ACADIA Pharmaceuticals Inc.,ACAD,364e7,2018-02-27,Dec 2017,-0.58,6,2017-02-28,-0.65,estimated
+"Adamas Pharmaceuticals, Inc.",ADMS,8312e5,2018-02-27,Dec 2017,-1.15,4,2017-02-28,-0.68,estimated
+Aegion Corp,AEGN,78097e4,2018-02-27,Dec 2017,0.23,3,2017-02-28,0.44,estimated
+Amarin Corporation plc,AMRN,108e7,2018-02-27,Dec 2017,-0.04,3,2017-02-28,-0.05,estimated
+Amedisys Inc,AMED,191e7,2018-02-27,Dec 2017,0.59,7,2017-02-28,0.44,estimated
+"Ascent Capital Group, Inc.",ASCMA,8962e4,2018-02-27,Dec 2017,-2.22,2,2017-02-28,-1.51,estimated
+"AutoZone, Inc.",AZO,1992e7,2018-02-27,Feb 2018,8.81,8,2017-02-28,8.08,estimated
+Avianca Holdings S.A.,AVH,97829e4,2018-02-27,Dec 2017,0.3,1,NA,0.29,estimated
+"Axon Enterprise, Inc.",AAXN,137e7,2018-02-27,Dec 2017,-0.03,3,2017-02-28,0.12,estimated
+Babcock,BW,2502e5,2018-02-27,Dec 2017,0.04,1,2017-02-28,-1.6,estimated
+Bank Of Montreal,BMO,5047e7,2018-02-27,Jan 2018,1.63,3,2017-02-28,1.71,estimated
+"Barnes & Noble Education, Inc",BNED,30588e4,2018-02-27,Jan 2018,NA,0,2017-02-28,0.09,estimated
+Big 5 Sporting Goods Corporation,BGFV,11142e4,2018-02-27,Dec 2017,0.23,1,2017-02-28,0.33,estimated
+"Bravo Brio Restaurant Group, Inc.",BBRG,5246e4,2018-02-27,Dec 2017,0.1,1,2017-02-28,0.12,estimated
+Buenaventura Mining Company Inc.,BVN,375e7,2018-02-27,Dec 2017,0.27,2,2017-02-28,-1.55,estimated
+"Cable One, Inc.",CABO,401e7,2018-02-27,Dec 2017,5.87,4,2017-02-28,4.23,estimated
+Capital Senior Living Corporation,CSU,35564e4,2018-02-27,Dec 2017,-0.07,1,2017-02-28,-0.08,estimated
+"Cheniere Energy Partners LP Holdings, LLC",CQH,669e7,2018-02-27,Dec 2017,0.47,3,2017-02-28,0.02,estimated
+"Cheniere Energy Partners, LP",CQP,1452e7,2018-02-27,Dec 2017,0.39,4,2017-02-28,0.39,estimated
+"Churchill Downs, Incorporated",CHDN,398e7,2018-02-27,Dec 2017,0.62,2,2017-02-28,0.68,estimated
+"Chuy's Holdings, Inc.",CHUY,43637e4,2018-02-27,Dec 2017,0.2,6,2017-02-28,0.18,estimated
+"Colony NorthStar, Inc.",CLNS,475e7,2018-02-27,Dec 2017,0.24,1,2017-02-28,0.2,estimated
+"Culp, Inc.",CULP,37181e4,2018-02-27,Jan 2018,0.42,3,2017-02-28,0.47,estimated
+"Dermira, Inc.",DERM,117e7,2018-02-27,Dec 2017,-1.31,1,2017-02-28,-0.21,estimated
+"Diplomat Pharmacy, Inc.",DPLO,167e7,2018-02-27,Dec 2017,0.17,9,2017-02-28,0.08,estimated
+"Donnelley Financial Solutions, Inc.",DFIN,66996e4,2018-02-27,Dec 2017,0.04,1,2017-02-28,0.1,estimated
+Drive Shack Inc.,DS,32477e4,2018-02-27,Dec 2017,-0.07,1,2017-02-28,0.1,estimated
+"Ebix, Inc.",EBIX,252e7,2018-02-27,Dec 2017,0.75,2,2017-02-28,0.76,estimated
+Eclipse Resources Corporation,ECR,55905e4,2018-02-27,Dec 2017,-0.01,3,2017-02-28,-0.02,estimated
+Embotelladora Andina S.A.,AKO.B,361e7,2018-02-27,Dec 2017,NA,0,2017-02-28,0.35,estimated
+Envision Healthcare Corporation,EVHC,421e7,2018-02-27,Dec 2017,0.44,6,2017-02-28,1.08,estimated
+"Etsy, Inc.",ETSY,227e7,2018-02-27,Dec 2017,0.08,8,2017-02-28,0.03,estimated
+"Evolent Health, Inc",EVH,109e7,2018-02-27,Dec 2017,-0.04,10,2017-02-28,-0.35,estimated
+Federal Signal Corporation,FSS,115e7,2018-02-27,Dec 2017,0.2,3,2017-02-28,0.16,estimated
+Frontline Ltd.,FRO,69112e4,2018-02-27,Dec 2017,-0.08,4,2017-02-28,0.22,estimated
+"GenMark Diagnostics, Inc.",GNMK,28055e4,2018-02-27,Dec 2017,-0.24,3,2017-02-28,-0.27,estimated
+Golar LNG Limited,GLNG,273e7,2018-02-27,Dec 2017,-0.23,7,2017-02-28,-0.33,estimated
+Golar LNG Partners LP,GMLP,146e7,2018-02-27,Dec 2017,0.25,5,2017-02-28,1.12,estimated
+Golden Minerals Company,AUMN,3594e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.01,estimated
+GP Strategies Corporation,GPX,39022e4,2018-02-27,Dec 2017,0.26,3,2017-02-28,0.4,estimated
+"Grifols, S.A.",GRFS,156e8,2018-02-27,Dec 2017,0.31,2,NA,0.26,estimated
+Halcon Resources Corporation,HK,103e7,2018-02-27,Dec 2017,-0.02,4,2017-02-28,0.66,estimated
+Heico Corporation,HEI,817e7,2018-02-27,Jan 2018,0.39,3,2017-02-28,0.36,estimated
+Heska Corporation,HSKA,46628e4,2018-02-27,Dec 2017,0.6,2,2017-02-28,0.46,estimated
+Hoegh LNG Partners LP,HMLP,59766e4,2018-02-27,Dec 2017,0.35,4,2017-02-28,0.25,estimated
+"Hyster-Yale Materials Handling, Inc.",HY,13e8,2018-02-27,Dec 2017,0.97,2,2017-02-28,0.74,estimated
+"ILG, Inc",ILG,369e7,2018-02-27,Dec 2017,0.26,3,2017-02-28,0.48,estimated
+Infinity Property and Casualty Corporation,IPCC,106e7,2018-02-27,Dec 2017,1.47,2,2017-02-28,1.84,estimated
+Intelsat S.A.,I,31535e4,2018-02-27,Dec 2017,-0.25,4,2017-02-28,-0.1,estimated
+"Intersect ENT, Inc.",XENT,106e7,2018-02-27,Dec 2017,-0.17,11,2017-02-28,-0.17,estimated
+"Ionis Pharmaceuticals, Inc.",IONS,627e7,2018-02-27,Dec 2017,-0.08,7,2017-02-28,0.21,estimated
+Jazz Pharmaceuticals plc,JAZZ,857e7,2018-02-27,Dec 2017,2.73,2,2017-02-28,1.91,estimated
+Jupai Holdings Limited,JP,64315e4,2018-02-27,Dec 2017,0.43,1,2017-02-28,0.29,estimated
+La Quinta Holdings Inc.,LQ,221e7,2018-02-27,Dec 2017,0,6,2017-02-28,0.01,estimated
+"MacroGenics, Inc.",MGNX,83293e4,2018-02-27,Dec 2017,2.58,7,2017-02-28,-1,estimated
+"Melinta Therapeutics, Inc.",MLNT,40253e4,2018-02-27,Dec 2017,-0.59,2,2017-02-28,-3,estimated
+New Senior Investment Group Inc.,SNR,59311e4,2018-02-27,Dec 2017,0.28,2,2017-02-28,0.31,estimated
+NewLink Genetics Corporation,NLNK,32665e4,2018-02-27,Dec 2017,-0.69,5,2017-02-28,-0.46,estimated
+"NxStage Medical, Inc.",NXTM,157e7,2018-02-27,Dec 2017,0,2,2017-02-28,-0.02,estimated
+Ophthotech Corporation,OPHT,10776e4,2018-02-27,Dec 2017,-0.58,1,2017-02-28,-1.86,estimated
+ORBCOMM Inc.,ORBC,81871e4,2018-02-27,Dec 2017,-0.1,5,2017-02-28,-0.04,estimated
+Pengrowth Energy Corporation,PGH,38652e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.06,estimated
+Platform Specialty Products Corporation,PAH,295e7,2018-02-27,Dec 2017,0.23,4,2017-02-28,0.2,estimated
+"Portola Pharmaceuticals, Inc.",PTLA,307e7,2018-02-27,Dec 2017,-1.52,3,2017-02-28,-0.95,estimated
+"PRA Group, Inc.",PRAA,16e8,2018-02-27,Dec 2017,0.37,6,2017-02-28,-0.33,estimated
+"PRGX Global, Inc.",PRGX,16908e4,2018-02-27,Dec 2017,0.14,2,2017-02-28,0.01,estimated
+Primoris Services Corporation,PRIM,127e7,2018-02-27,Dec 2017,0.23,2,2017-02-28,0.28,estimated
 ProQR Therapeutics N.V.,PRQR,7766e4,2018-02-27,Dec 2017,-0.49,1,2017-02-28,-0.41,estimated
-Quaker Chemical Corporation,KWR,206e7,2018-02-27,Dec 2017,1.26,3,2017-02-28,1.26,estimated
-Qumu Corporation,QUMU,1887e4,2018-02-27,Dec 2017,-0.15,1,2017-02-28,-0.04,estimated
-R.R. Donnelley & Sons Company,RRD,6309e5,2018-02-27,Dec 2017,NA,0,2017-02-28,0.51,estimated
-"Ross Stores, Inc.",ROST,3225e7,2018-02-27,Jan 2018,0.93,11,2017-02-28,0.77,estimated
-Salesforce.com Inc,CRM,8087e7,2018-02-27,Jan 2018,0.11,13,2017-02-28,0.02,estimated
-"Sangamo Therapeutics, Inc.",SGMO,176e7,2018-02-27,Dec 2017,-0.18,5,2017-02-28,-0.14,estimated
-Sapiens International Corporation N.V.,SPNS,56352e4,2018-02-27,Dec 2017,0.13,2,2017-02-28,0.11,estimated
-"Sarepta Therapeutics, Inc.",SRPT,437e7,2018-02-27,Dec 2017,-0.35,10,2017-02-28,-1.58,estimated
-Seadrill Limited,SDRL,1362e5,2018-02-27,Dec 2017,NA,0,2017-02-28,0.24,estimated
-Seadrill Partners LLC,SDLP,35351e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.69,estimated
-Seaspan Corporation,SSW,95305e4,2018-02-27,Dec 2017,0.2,9,2017-02-28,0.21,estimated
-"SeaWorld Entertainment, Inc.",SEAS,131e7,2018-02-27,Dec 2017,-0.18,8,2017-02-28,-0.14,estimated
-Sempra Energy,SRE,2674e7,2018-02-27,Dec 2017,1.4,3,2017-02-28,1.52,estimated
-Seritage Growth Properties,SRG,23e8,2018-02-27,Dec 2017,0.49,1,2017-02-28,0.54,estimated
-Ship Finance International Limited,SFL,163e7,2018-02-27,Dec 2017,0.26,3,2017-02-28,0.37,estimated
-"Steven Madden, Ltd.",SHOO,275e7,2018-02-27,Dec 2017,0.47,8,2017-02-28,0.49,estimated
-StoneCastle Financial Corp,BANX,13902e4,2018-02-27,Dec 2017,0.4,1,2017-02-28,0.39,estimated
-"Supernus Pharmaceuticals, Inc.",SUPN,22e8,2018-02-27,Dec 2017,0.26,6,2017-02-28,0.26,estimated
-"Syneos Health, Inc.",SYNH,425e7,2018-02-27,Dec 2017,0.52,2,NA,0.61,estimated
-Target Corporation,TGT,4147e7,2018-02-27,Jan 2018,1.39,8,2017-02-28,1.45,estimated
-TCP Capital Corp.,TCPC,90658e4,2018-02-27,Dec 2017,0.38,5,2017-02-28,0.45,estimated
-"TESARO, Inc.",TSRO,386e7,2018-02-27,Dec 2017,-2.41,13,2017-02-28,-2.6,estimated
-The Medicines Company,MDCO,245e7,2018-02-27,Dec 2017,-1.48,3,2017-02-28,-1.77,estimated
-The Middleby Corporation,MIDD,752e7,2018-02-27,Dec 2017,1.48,5,2017-02-28,1.41,estimated
-TopBuild Corp.,BLD,274e7,2018-02-27,Dec 2017,0.81,4,2017-02-28,0.59,estimated
-"TRACON Pharmaceuticals, Inc.",TCON,5177e4,2018-02-27,Dec 2017,-0.45,3,2017-02-28,-0.45,estimated
-TravelCenters of America LLC,TA,19363e4,2018-02-27,Dec 2017,-0.05,2,2017-02-28,-0.17,estimated
-TriMas Corporation,TRS,125e7,2018-02-27,Dec 2017,0.32,7,2017-02-28,0.3,estimated
-"TriNet Group, Inc.",TNET,301e7,2018-02-27,Dec 2017,0.42,3,2017-02-28,0.32,estimated
-"U S Concrete, Inc.",USCR,139e7,2018-02-27,Dec 2017,0.83,3,2017-02-28,0.76,estimated
-"Universal Health Services, Inc.",UHS,1131e7,2018-02-27,Dec 2017,1.82,7,2017-02-28,1.8,estimated
-"Valeant Pharmaceuticals International, Inc.",VRX,686e7,2018-02-27,Dec 2017,0.98,6,2017-02-28,1.26,estimated
-Veeva Systems Inc.,VEEV,833e7,2018-02-27,Jan 2018,0.15,5,2017-02-28,0.15,estimated
-Weight Watchers International Inc,WTW,425e7,2018-02-27,Dec 2017,0.31,2,2017-02-28,0.19,estimated
-"Xencor, Inc.",XNCR,113e7,2018-02-27,Dec 2017,-0.27,3,2017-02-28,-0.21,estimated
-"XO Group, Inc.",XOXO,50424e4,2018-02-27,Dec 2017,0.11,2,2017-02-28,0.12,estimated
+Quaker Chemical Corporation,KWR,195e7,2018-02-27,Dec 2017,1.26,3,2017-02-28,1.26,estimated
+Qumu Corporation,QUMU,1869e4,2018-02-27,Dec 2017,-0.15,1,2017-02-28,-0.04,estimated
+"Sangamo Therapeutics, Inc.",SGMO,187e7,2018-02-27,Dec 2017,-0.18,5,2017-02-28,-0.14,estimated
+Sapiens International Corporation N.V.,SPNS,59797e4,2018-02-27,Dec 2017,0.13,2,2017-02-28,0.11,estimated
+"Sarepta Therapeutics, Inc.",SRPT,394e7,2018-02-27,Dec 2017,-0.35,10,2017-02-28,-1.58,estimated
+Seadrill Limited,SDRL,12162e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.24,estimated
+Seadrill Partners LLC,SDLP,30117e4,2018-02-27,Dec 2017,NA,0,2017-02-28,0.69,estimated
+Seaspan Corporation,SSW,87755e4,2018-02-27,Dec 2017,0.2,9,2017-02-28,0.21,estimated
+Sempra Energy,SRE,2616e7,2018-02-27,Dec 2017,1.4,3,2017-02-28,1.52,estimated
+Ship Finance International Limited,SFL,152e7,2018-02-27,Dec 2017,0.25,3,2017-02-28,0.37,estimated
+"Steven Madden, Ltd.",SHOO,262e7,2018-02-27,Dec 2017,0.47,8,2017-02-28,0.49,estimated
+"Supernus Pharmaceuticals, Inc.",SUPN,195e7,2018-02-27,Dec 2017,0.26,6,2017-02-28,0.26,estimated
+The Medicines Company,MDCO,234e7,2018-02-27,Dec 2017,-1.48,3,2017-02-28,-1.77,estimated
+The Middleby Corporation,MIDD,743e7,2018-02-27,Dec 2017,1.48,5,2017-02-28,1.41,estimated
+TopBuild Corp.,BLD,258e7,2018-02-27,Dec 2017,0.81,4,2017-02-28,0.59,estimated
+"TRACON Pharmaceuticals, Inc.",TCON,531e5,2018-02-27,Dec 2017,-0.45,3,2017-02-28,-0.45,estimated
+TravelCenters of America LLC,TA,16004e4,2018-02-27,Dec 2017,-0.05,2,2017-02-28,-0.17,estimated
+"TriNet Group, Inc.",TNET,293e7,2018-02-27,Dec 2017,0.42,3,2017-02-28,0.32,estimated
+"U S Concrete, Inc.",USCR,128e7,2018-02-27,Dec 2017,0.83,3,2017-02-28,0.76,estimated
+"Universal Health Services, Inc.",UHS,1112e7,2018-02-27,Dec 2017,1.83,8,2017-02-28,1.8,estimated
+"Xencor, Inc.",XNCR,105e7,2018-02-27,Dec 2017,-0.27,3,2017-02-28,-0.21,estimated
+"XO Group, Inc.",XOXO,48497e4,2018-02-27,Dec 2017,0.11,2,2017-02-28,0.12,estimated
+"ATN International, Inc.",ATNI,88508e4,2018-02-28,Dec 2017,-0.18,1,2017-02-22,0.14,estimated
+"BioTelemetry, Inc.",BEAT,104e7,2018-02-28,Dec 2017,0.21,4,2017-02-22,0.18,estimated
+"bluebird bio, Inc.",BLUE,1002e7,2018-02-28,Dec 2017,-1.64,10,2017-02-22,-1.88,estimated
+"Clean Harbors, Inc.",CLH,29e8,2018-02-28,Dec 2017,0.05,3,2017-02-22,-0.06,estimated
+"Clovis Oncology, Inc.",CLVS,266e7,2018-02-28,Dec 2017,-1.28,7,2017-02-22,-1.83,estimated
+"Ctrip.com International, Ltd.",CTRP,2375e7,2018-02-28,Dec 2017,0.02,3,2017-02-22,0.17,estimated
+Digimarc Corporation,DMRC,33348e4,2018-02-28,Dec 2017,-0.74,4,2017-02-22,-0.57,estimated
+DISH Network Corporation,DISH,2103e7,2018-02-28,Dec 2017,0.56,11,2017-02-22,0.7,estimated
+"Dorman Products, Inc.",DORM,245e7,2018-02-28,Dec 2017,0.86,3,2017-02-22,0.83,estimated
+Employers Holdings Inc,EIG,134e7,2018-02-28,Dec 2017,0.56,1,2017-02-22,0.95,estimated
+Entercom Communications Corporation,ETM,144e7,2018-02-28,Dec 2017,0.32,2,2017-02-22,0.32,estimated
+"Esperion Therapeutics, Inc.",ESPR,176e7,2018-02-28,Dec 2017,-1.8,6,2017-02-22,-1.29,estimated
+Farmland Partners Inc.,FPI,23962e4,2018-02-28,Dec 2017,0.13,4,2017-02-22,0.36,estimated
+"FARO Technologies, Inc.",FARO,83639e4,2018-02-28,Dec 2017,0.36,3,2017-02-22,0.21,estimated
+First Majestic Silver Corp.,AG,91273e4,2018-02-28,Dec 2017,0,2,2017-02-22,-0.01,estimated
+"Fitbit, Inc.",FIT,124e7,2018-02-28,Dec 2017,-0.06,7,2017-02-22,-0.63,estimated
+"Foundation Medicine, Inc.",FMI,256e7,2018-02-28,Dec 2017,-1.01,4,2017-02-22,-1.02,estimated
+Gerdau S.A.,GGB,732e7,2018-02-28,Dec 2017,NA,0,NA,-0.03,estimated
+Government Properties Income Trust,GOV,161e7,2018-02-28,Dec 2017,0.55,5,2017-02-22,0.58,estimated
+Great Lakes Dredge & Dock Corporation,GLDD,27137e4,2018-02-28,Dec 2017,-0.18,1,2017-02-22,0.01,estimated
+"Greenlight Reinsurance, Ltd.",GLRE,69002e4,2018-02-28,Dec 2017,-0.55,1,2017-02-22,1.31,estimated
+"Grupo Aeroportuario del Sureste, S.A. de C.V.",ASR,548e7,2018-02-28,Dec 2017,1.73,1,2017-02-22,1.48,estimated
+HP Inc.,HPQ,349e8,2018-02-28,Jan 2018,0.42,5,2017-02-22,0.38,estimated
+"Iconix Brand Group, Inc.",ICON,7724e4,2018-02-28,Dec 2017,-0.06,1,2017-02-22,0.38,estimated
+Jack In The Box Inc.,JACK,246e7,2018-02-28,Dec 2017,1.07,8,2017-02-22,1.18,estimated
+"LTC Properties, Inc.",LTC,152e7,2018-02-28,Dec 2017,0.75,5,2017-02-22,0.78,estimated
+"Lydall, Inc.",LDL,78106e4,2018-02-28,Dec 2017,0.62,1,2017-02-22,0.52,estimated
+"Monarch Casino & Resort, Inc.",MCRI,78325e4,2018-02-28,Dec 2017,0.38,2,2017-02-22,0.36,estimated
+Nabors Industries Ltd.,NBR,232e7,2018-02-28,Dec 2017,-0.33,11,2017-02-22,-0.3,estimated
+Nationstar Mortgage Holdings Inc.,NSM,167e7,2018-02-28,Dec 2017,0.43,2,2017-02-22,0.36,estimated
+Navios Maritime Holdings Inc.,NM,14585e4,2018-02-28,Dec 2017,-0.14,1,2017-02-22,-0.28,estimated
+Norwegian Cruise Line Holdings Ltd.,NCLH,1319e7,2018-02-28,Dec 2017,0.63,9,2017-02-22,0.48,estimated
+Oasis Petroleum Inc.,OAS,213e7,2018-02-28,Dec 2017,0.05,12,2017-02-22,-0.08,estimated
+Ocwen Financial Corporation,OCN,43475e4,2018-02-28,Dec 2017,-0.23,1,2017-02-22,-0.08,estimated
+"Pinnacle Entertainment, Inc.",PNK,202e7,2018-02-28,Dec 2017,0.14,4,2017-02-22,0.1,estimated
+"Sabra Health Care REIT, Inc.",SBRA,305e7,2018-02-28,Dec 2017,0.67,7,2017-02-22,0.62,estimated
+Sanchez Energy Corporation,SN,32895e4,2018-02-28,Dec 2017,0.15,6,2017-02-22,0.03,estimated
+"SandRidge Energy, Inc.",SD,59562e4,2018-02-28,Dec 2017,0.19,1,2017-02-22,0.86,estimated
+"Spark Therapeutics, Inc.",ONCE,202e7,2018-02-28,Dec 2017,-1.73,9,2017-02-22,-1.22,estimated
+Star Bulk Carriers Corp.,SBLK,6722e5,2018-02-28,Dec 2017,0.22,4,2017-02-22,-0.3,estimated
+"Summit Materials, Inc.",SUM,33e8,2018-02-28,Dec 2017,0.25,5,2017-02-22,0.21,estimated
+"tronc, Inc.",TRNC,72405e4,2018-02-28,Dec 2017,0.55,1,2017-02-22,0.66,estimated
+Ultra Petroleum Corp.,UPL,105e7,2018-02-28,Dec 2017,0.34,2,NA,0.42,estimated
+United Therapeutics Corporation,UTHR,571e7,2018-02-28,Dec 2017,3.99,5,2017-02-22,2.43,estimated
+Vista Gold Corporation,VGZ,833e5,2018-02-28,Dec 2017,NA,0,2017-02-22,-0.03,estimated
+"Wolverine World Wide, Inc.",WWW,305e7,2018-02-28,Dec 2017,0.41,7,2017-02-22,0.33,estimated
+"AcelRx Pharmaceuticals, Inc.",ACRX,9313e4,2018-03-01,Dec 2017,-0.22,2,2017-03-02,-0.21,estimated
+"ACM Research, Inc.",ACMR,10404e4,2018-03-01,Dec 2017,0.13,1,NA,NA,estimated
+Advantage Oil & Gas Ltd,AAV,59508e4,2018-03-01,Dec 2017,0.04,1,2017-03-02,0.04,estimated
+Altair Engineering Inc.,ALTR,167e7,2018-03-01,Dec 2017,0.06,3,NA,NA,estimated
+Ambev S.A.,ABEV,10274e7,2018-03-01,Dec 2017,0.1,1,2017-03-02,0.08,estimated
+"Ameresco, Inc.",AMRC,37768e4,2018-03-01,Dec 2017,0.13,2,2017-03-02,0.08,estimated
+American Outdoor Brands Corporation,AOBC,58119e4,2018-03-01,Jan 2018,0.09,4,2017-03-02,0.66,estimated
+"Amyris, Inc.",AMRS,21388e4,2018-03-01,Dec 2017,0.04,3,2017-03-02,-1.5,estimated
+"ANI Pharmaceuticals, Inc.",ANIP,69119e4,2018-03-01,Dec 2017,1.02,2,2017-03-02,0.82,estimated
+"Assembly Biosciences, Inc.",ASMB,78916e4,2018-03-01,Dec 2017,-0.79,3,NA,-0.67,estimated
+Autohome Inc.,ATHM,871e7,2018-03-01,Dec 2017,0.75,1,2017-03-02,0.47,estimated
+"Barnes & Noble, Inc.",BKS,36029e4,2018-03-01,Jan 2018,NA,0,2017-03-02,0.96,estimated
+"Burlington Stores, Inc.",BURL,801e7,2018-03-01,Jan 2018,2.08,8,2017-03-02,1.78,estimated
+"CHF Solutions, Inc.",CHFS,604e4,2018-03-01,Dec 2017,NA,0,2017-03-02,-92.8,estimated
+"Chimerix, Inc.",CMRX,23234e4,2018-03-01,Dec 2017,-0.48,6,2017-03-02,-0.32,estimated
+"Cloudera, Inc.",CLDR,253e7,2018-03-01,Jan 2018,-0.44,2,NA,NA,estimated
+CTI BioPharma Corp.,CTIC,12981e4,2018-03-01,Dec 2017,-0.3,1,2017-03-02,-0.23,estimated
+"CytomX Therapeutics, Inc.",CTMX,108e7,2018-03-01,Dec 2017,-0.39,5,2017-03-02,-0.39,estimated
+Dawson Geophysical Company,DWSN,13487e4,2018-03-01,Dec 2017,-0.28,1,2017-03-02,-0.33,estimated
+"Easterly Government Properties, Inc.",DEA,86607e4,2018-03-01,Dec 2017,0.32,3,2017-03-02,0.31,estimated
+"Edge Therapeutics, Inc.",EDGE,4166e5,2018-03-01,Dec 2017,-0.47,1,2017-03-02,-0.33,estimated
+Endeavour Silver Corporation,EXK,2792e5,2018-03-01,Dec 2017,0.01,3,2017-03-02,-0.04,estimated
+Entravision Communications Corporation,EVC,58053e4,2018-03-01,Dec 2017,-0.02,1,2017-03-02,0.08,estimated
+Fidus Investment Corporation,FDUS,34364e4,2018-03-01,Dec 2017,0.37,3,2017-03-02,0.39,estimated
+GDS Holdings Limited,GDS,301e7,2018-03-01,Dec 2017,-0.1,1,2017-03-02,-0.22,estimated
+"Guidewire Software, Inc.",GWRE,588e7,2018-03-01,Jan 2018,0,4,2017-03-02,0.08,estimated
+"I.D. Systems, Inc.",IDSY,13407e4,2018-03-01,Dec 2017,-0.01,1,2017-03-02,-0.09,estimated
+"J. Alexander's Holdings, Inc.",JAX,14328e4,2018-03-01,Dec 2017,NA,0,2017-03-02,0.19,estimated
+"JD.com, Inc.",JD,6321e7,2018-03-01,Dec 2017,-0.03,3,2017-03-02,-0.18,estimated
+Kroger Company (The),KR,2547e7,2018-03-01,Jan 2018,0.61,8,2017-03-02,0.53,estimated
+"KVH Industries, Inc.",KVHI,18137e4,2018-03-01,Dec 2017,0.13,1,2017-03-02,0.08,estimated
+Marvell Technology Group Ltd.,MRVL,1058e7,2018-03-01,Jan 2018,0.27,11,2017-03-02,0.18,estimated
+Merchants Bancorp,MBIN,58403e4,2018-03-01,Dec 2017,0.38,2,NA,NA,estimated
+"Methode Electronics, Inc.",MEI,151e7,2018-03-01,Jan 2018,0.66,3,2017-03-02,0.63,estimated
+"MidWestOne Financial Group, Inc.",MOFG,39738e4,2018-03-01,Dec 2017,0.64,1,NA,0.36,estimated
+"National Vision Holdings, Inc.",EYE,282e7,2018-03-01,Dec 2017,0,3,NA,NA,estimated
+"Nutanix, Inc.",NTNX,522e7,2018-03-01,Jan 2018,-0.47,4,2017-03-02,-0.53,estimated
+"Otonomy, Inc.",OTIC,16989e4,2018-03-01,Dec 2017,-0.67,3,2017-03-02,-0.88,estimated
+OvaScience Inc.,OVAS,3362e4,2018-03-01,Dec 2017,-0.29,3,2017-03-02,-0.64,estimated
+"Paratek Pharmaceuticals, Inc.",PRTK,38559e4,2018-03-01,Dec 2017,-0.72,4,2017-03-02,-1.16,estimated
+Pointer Telocation Ltd.,PNTR,13698e4,2018-03-01,Dec 2017,0.22,3,2017-03-02,0.2,estimated
+Regulus Therapeutics Inc.,RGLS,12059e4,2018-03-01,Dec 2017,-0.17,4,2017-03-02,-0.38,estimated
+RMG Networks Holding Corporation,RMGN,1194e4,2018-03-01,Dec 2017,-0.15,1,NA,NA,estimated
+"Safeguard Scientifics, Inc.",SFE,2572e5,2018-03-01,Dec 2017,-1.05,1,2017-03-02,-1.07,estimated
+SeaSpine Holdings Corporation,SPNE,13657e4,2018-03-01,Dec 2017,-0.52,2,2017-03-02,-0.87,estimated
+"Senomyx, Inc.",SNMX,5209e4,2018-03-01,Dec 2017,-0.06,1,2017-03-02,-0.08,estimated
+"Sequential Brands Group, Inc.",SQBG,9915e4,2018-03-01,Dec 2017,0.14,1,2017-03-02,-0.02,estimated
+"Sierra Oncology, Inc.",SRRA,15427e4,2018-03-01,Dec 2017,-0.2,3,2017-03-02,-0.3,estimated
+"Spark Energy, Inc.",SPKE,33765e4,2018-03-01,Dec 2017,0.31,1,2017-03-02,0.52,estimated
+St. Joe Company (The),JOE,119e7,2018-03-01,Dec 2017,NA,0,2017-03-02,0.04,estimated
+STAAR Surgical Company,STAA,63805e4,2018-03-01,Dec 2017,0.03,1,2017-03-02,0.01,estimated
+"Stage Stores, Inc.",SSI,4752e4,2018-03-01,Jan 2018,NA,0,2017-03-02,0.2,estimated
+"Superior Industries International, Inc.",SUP,39105e4,2018-03-01,Dec 2017,0.33,3,2017-03-02,0.31,estimated
+"Syndax Pharmaceuticals, Inc.",SNDX,24975e4,2018-03-01,Dec 2017,-0.85,3,2017-03-02,-0.59,estimated
+"Synthetic Biologics, Inc",SYN,5657e4,2018-03-01,Dec 2017,-0.05,2,2017-03-02,-0.02,estimated
+"The Cooper Companies, Inc.",COO,113e8,2018-03-01,Jan 2018,2.52,9,2017-03-02,1.93,estimated
+"The Habit Restaurants, Inc.",HABT,22121e4,2018-03-01,Dec 2017,-0.01,6,2017-03-02,0.07,estimated
+TICC Capital Corp.,TICC,28417e4,2018-03-01,Dec 2017,0.13,1,2017-03-02,0.14,estimated
+Triple-S Management Corporation,GTS,58226e4,2018-03-01,Dec 2017,0.27,1,2017-03-02,0.14,estimated
+"UFP Technologies, Inc.",UFPT,20786e4,2018-03-01,Dec 2017,0.23,1,2017-03-02,0.2,estimated
+"WhiteHorse Finance, Inc.",WHF,25357e4,2018-03-01,Dec 2017,0.33,2,2017-03-02,0.35,estimated
+"Yext, Inc.",YEXT,103e7,2018-03-01,Jan 2018,-0.17,3,NA,NA,estimated
+"America First Multifamily Investors, L.P.",ATAX,37056e4,2018-03-02,Dec 2017,0.06,1,2017-03-03,0.09,estimated
+Arbor Realty Trust,ABR,49732e4,2018-03-02,Dec 2017,0.2,1,2017-03-03,0.21,estimated
+"Big Lots, Inc.",BIG,244e7,2018-03-02,Jan 2018,2.42,9,2017-03-03,2.26,estimated
+"BioScrip, Inc.",BIOS,38637e4,2018-03-02,Dec 2017,-0.08,1,2017-03-03,-0.08,estimated
+CGG,CGG,28314e4,2018-03-02,Dec 2017,NA,0,2017-03-03,-12.61,estimated
+Cytosorbents Corporation,CTSO,20658e4,2018-03-02,Dec 2017,-0.1,3,2017-03-03,-0.16,estimated
+Ecopetrol S.A.,EC,3487e7,2018-03-02,Dec 2017,0.26,3,NA,0.03,estimated
+Five Star Senior Living Inc.,FVE,7507e4,2018-03-02,Dec 2017,-0.1,1,2017-03-03,-0.12,estimated
+"Lexicon Pharmaceuticals, Inc.",LXRX,103e7,2018-03-02,Dec 2017,-0.43,4,2017-03-03,-0.31,estimated
+"Lilis Energy, Inc.",LLEX,19589e4,2018-03-02,Dec 2017,-0.09,5,NA,-1.15,estimated
+Middlesex Water Company,MSEX,59843e4,2018-03-02,Dec 2017,0.33,1,2017-03-03,0.19,estimated
+POSCO,PKX,2692e7,2018-03-02,Dec 2017,NA,0,2017-03-03,0.42,estimated
+"Reata Pharmaceuticals, Inc.",RETA,NA,2018-03-02,Dec 2017,-0.58,6,2017-03-03,-0.19,estimated
+"Revlon, Inc.",REV,109e7,2018-03-02,Dec 2017,-1.25,1,2017-03-03,0.43,estimated
+Ur Energy Inc,URG,9818e4,2018-03-02,Dec 2017,-0.02,2,2017-03-03,0,estimated
+WPP plc,WPP,221e8,2018-03-02,Dec 2017,NA,0,NA,NA,estimated
+Addus HomeCare Corporation,ADUS,42805e4,2018-03-05,Dec 2017,0.38,2,2017-03-06,0.44,estimated
+"Adverum Biotechnologies, Inc.",ADVM,31979e4,2018-03-05,Dec 2017,-0.35,2,2017-03-06,-0.27,estimated
+"Air Transport Services Group, Inc",ATSG,139e7,2018-03-05,Dec 2017,0.27,4,2017-03-06,0.19,estimated
+"Akebia Therapeutics, Inc.",AKBA,67879e4,2018-03-05,Dec 2017,-0.18,2,2017-03-06,-0.99,estimated
+American Vanguard Corporation,AVD,58546e4,2018-03-05,Dec 2017,0.21,3,2017-03-06,0.13,estimated
+Analogic Corporation,ALOG,98567e4,2018-03-05,Jan 2018,0.68,1,2017-03-06,0.85,estimated
+"Ascena Retail Group, Inc.",ASNA,37052e4,2018-03-05,Jan 2018,-0.09,2,2017-03-06,-0.07,estimated
+"Avinger, Inc.",AVGR,NA,2018-03-05,Dec 2017,NA,0,2017-03-06,-23.2,estimated
+"Caseys General Stores, Inc.",CASY,432e7,2018-03-05,Jan 2018,0.57,5,2017-03-06,0.58,estimated
+Cellectis S.A.,CLLS,1070000000.0000001,2018-03-05,Dec 2017,-0.64,3,2017-03-06,-0.38,estimated
+Clarus Corporation,CLAR,22231e4,2018-03-05,Dec 2017,0.17,2,2017-03-06,0.01,estimated
+"Concert Pharmaceuticals, Inc.",CNCE,48437e4,2018-03-05,Dec 2017,-0.18,2,2017-03-06,-0.54,estimated
+Corcept Therapeutics Incorporated,CORT,189e7,2018-03-05,Dec 2017,0.19,3,2017-03-06,0.04,estimated
+"Douglas Dynamics, Inc.",PLOW,86636e4,2018-03-05,Dec 2017,0.5,3,2017-03-06,0.44,estimated
+Ducommun Incorporated,DCO,30733e4,2018-03-05,Dec 2017,-0.34,2,2017-03-06,0.45,estimated
+"Famous Dave's of America, Inc.",DAVE,4647e4,2018-03-05,Dec 2017,-0.03,1,2017-03-06,-0.1,estimated
+"Genesis Healthcare, Inc.",GEN,15328e4,2018-03-05,Dec 2017,-0.31,2,NA,-0.64,estimated
+"Global Brass and Copper Holdings, Inc.",BRSS,64069e4,2018-03-05,Dec 2017,0.5,2,2017-03-06,0.4,estimated
+Korn/Ferry International,KFY,234e7,2018-03-05,Jan 2018,0.59,4,2017-03-06,0.53,estimated
+Lipocine Inc.,LPCN,2734e4,2018-03-05,Dec 2017,-0.25,2,2017-03-06,-0.16,estimated
+"Manitex International, Inc.",MNTX,19338e4,2018-03-05,Dec 2017,0.05,2,2017-03-06,0.02,estimated
+"Microvision, Inc.",MVIS,9431e4,2018-03-05,Dec 2017,-0.07,2,2017-03-06,-0.09,estimated
+Natural Resource Partners LP,NRP,34555e4,2018-03-05,Dec 2017,0.99,2,2017-03-06,0.91,estimated
+Novanta Inc.,NOVT,18e8,2018-03-05,Dec 2017,0.41,1,2017-03-06,0.35,estimated
+"NTN Buzztime, Inc.",NTN,1469e4,2018-03-05,Dec 2017,-0.14,1,2017-03-06,-0.22,estimated
+"Polar Power, Inc.",POLA,4362e4,2018-03-05,Dec 2017,-0.01,1,NA,NA,estimated
+"Ra Pharmaceuticals, Inc.",RARX,1482e5,2018-03-05,Dec 2017,-0.72,2,2017-03-06,-0.73,estimated
+"Recro Pharma, Inc.",REPH,15455e4,2018-03-05,Dec 2017,-0.78,3,2017-03-06,-0.81,estimated
+"RigNet, Inc.",RNET,2588e5,2018-03-05,Dec 2017,-0.15,1,2017-03-06,-0.21,estimated
+"Savara, Inc.",SVRA,36021e4,2018-03-05,Dec 2017,-0.23,1,NA,-1.4,estimated
+"The Dixie Group, Inc.",DXYN,5246e4,2018-03-05,Dec 2017,0.01,1,2017-03-06,-0.17,estimated
+"The Meet Group, Inc.",MEET,18526e4,2018-03-05,Dec 2017,0.08,2,2017-03-06,0.17,estimated
+"Thor Industries, Inc.",THO,686e7,2018-03-05,Jan 2018,1.79,3,2017-03-06,1.23,estimated
+"TransEnterix, Inc.",TRXC,27695e4,2018-03-05,Dec 2017,-0.06,2,2017-03-06,-0.12,estimated
+Western Asset Mortgage Capital Corporation,WMC,37267e4,2018-03-05,Dec 2017,0.3,1,2017-03-06,-0.92,estimated
+Woori Bank,WF,968e7,2018-03-05,Dec 2017,NA,0,2017-03-06,0.39,estimated
+ABM Industries Incorporated,ABM,23e8,2018-03-06,Jan 2018,0.32,1,2017-03-07,0.38,estimated
+"Aemetis, Inc",AMTX,111e5,2018-03-06,Dec 2017,-0.25,1,2017-03-07,-0.17,estimated
+"Aerie Pharmaceuticals, Inc.",AERI,217e7,2018-03-06,Dec 2017,-1.47,3,2017-03-07,-0.87,estimated
+AeroCentury Corp.,ACY,2019e4,2018-03-06,Dec 2017,0.28,1,2017-03-07,0.55,estimated
+"AeroVironment, Inc.",AVAV,115e7,2018-03-06,Jan 2018,0.09,4,2017-03-07,-0.09,estimated
+"Alamo Group, Inc.",ALG,13e8,2018-03-06,Dec 2017,0.98,2,2017-03-07,0.81,estimated
+"Alliqua BioMedical, Inc.",ALQA,853e4,2018-03-06,Dec 2017,-0.55,1,2017-03-07,-6.1,estimated
+Almost Family Inc,AFAM,79687e4,2018-03-06,Dec 2017,0.58,5,2017-03-07,0.59,estimated
+"American Renal Associates Holdings, Inc",ARA,57258e4,2018-03-06,Dec 2017,0.15,3,2017-03-07,0.26,estimated
+Ares Commercial Real Estate Corporation,ACRE,35023e4,2018-03-06,Dec 2017,0.23,3,2017-03-07,0.28,estimated
+"ArQule, Inc.",ARQL,14373e4,2018-03-06,Dec 2017,-0.09,2,2017-03-07,-0.1,estimated
+Avadel Pharmaceuticals plc,AVDL,38887e4,2018-03-06,Dec 2017,-0.23,2,2017-03-07,0,estimated
+"Axsome Therapeutics, Inc.",AXSM,6746e4,2018-03-06,Dec 2017,NA,0,2017-03-07,-0.38,estimated
+"Barrett Business Services, Inc.",BBSI,47277e4,2018-03-06,Dec 2017,NA,0,2017-03-07,1.24,estimated
+Baytex Energy Corp,BTE,6263e5,2018-03-06,Dec 2017,-0.13,1,2017-03-07,-0.29,estimated
+"Biocept, Inc.",BIOC,2091e4,2018-03-06,Dec 2017,-0.19,1,2017-03-07,-0.27,estimated
+"Boingo Wireless, Inc.",WIFI,94645e4,2018-03-06,Dec 2017,-0.11,6,2017-03-07,-0.11,estimated
+Brown Forman Corporation,BF.A,1078e7,2018-03-06,Jan 2018,NA,0,2017-03-07,0.47,estimated
+Brown Forman Corporation,BF.B,55e8,2018-03-06,Jan 2018,0.51,5,2017-03-07,0.47,estimated
+CafePress Inc.,PRSS,2513e4,2018-03-06,Dec 2017,0.01,1,2017-03-07,0.2,estimated
+"Calavo Growers, Inc.",CVGW,149e7,2018-03-06,Jan 2018,0.32,1,2017-03-07,0.34,estimated
+Cardiome Pharma Corporation,CRME,4987e4,2018-03-06,Dec 2017,-0.18,5,2017-03-07,-0.18,estimated
+Cerus Corporation,CERS,47031e4,2018-03-06,Dec 2017,-0.12,2,2017-03-07,-0.13,estimated
+"Chembio Diagnostics, Inc.",CEMI,9916e4,2018-03-06,Dec 2017,-0.12,2,2017-03-07,-0.21,estimated
+Clean Energy Fuels Corp.,CLNE,22361e4,2018-03-06,Dec 2017,-0.11,2,2017-03-07,-0.03,estimated
+"Communications Systems, Inc.",JCS,3166e4,2018-03-06,Dec 2017,NA,0,2017-03-07,-0.21,estimated
+"CPI Aerostructures, Inc.",CVU,7266e4,2018-03-06,Dec 2017,0.21,2,2017-03-07,0.24,estimated
+DAQO New Energy Corp.,DQ,527320000.00000006,2018-03-06,Dec 2017,1.69,1,2017-03-07,0.54,estimated
+Dick's Sporting Goods Inc,DKS,341e7,2018-03-06,Jan 2018,1.2,13,2017-03-07,1.32,estimated
+"Editas Medicine, Inc.",EDIT,166e7,2018-03-06,Dec 2017,-0.79,5,2017-03-07,-1.1,estimated
+"Ekso Bionics Holdings, Inc.",EKSO,8267e4,2018-03-06,Dec 2017,-0.1,1,2017-03-07,-0.41,estimated
+Geopark Ltd,GPRK,59556e4,2018-03-06,Dec 2017,0.34,1,2017-03-07,-0.34,estimated
+"H&R Block, Inc.",HRB,538e7,2018-03-06,Jan 2018,-1.19,4,2017-03-07,-0.49,estimated
+Horizon Technology Finance Corporation,HRZN,12589e4,2018-03-06,Dec 2017,0.26,3,2017-03-07,0.33,estimated
+Immune Design Corp.,IMDZ,17061e4,2018-03-06,Dec 2017,-0.39,4,2017-03-07,-0.57,estimated
+"Iovance Biotherapeutics, Inc.",IOVA,151e7,2018-03-06,Dec 2017,-0.32,6,2017-03-07,-0.25,estimated
+"John Wiley & Sons, Inc.",JW.A,311e7,2018-03-06,Jan 2018,0.84,1,2017-03-07,0.92,estimated
+"Juniper Pharmaceuticals, Inc.",JNP,9109e4,2018-03-06,Dec 2017,-0.16,2,2017-03-07,0.88,estimated
+KLX Inc.,KLXI,332e7,2018-03-06,Jan 2018,0.81,2,2017-03-07,0.44,estimated
+"Loxo Oncology, Inc.",LOXO,286e7,2018-03-06,Dec 2017,-1.27,4,2017-03-07,-1.28,estimated
+Luxfer Holdings PLC,LXFR,36915e4,2018-03-06,Dec 2017,0.25,1,2017-03-07,0.13,estimated
+Momo Inc.,MOMO,552e7,2018-03-06,Dec 2017,0.42,1,2017-03-07,0.41,estimated
+Monroe Capital Corporation,MRCC,2785e5,2018-03-06,Dec 2017,0.34,4,2017-03-07,0.35,estimated
+"Natera, Inc.",NTRA,49252e4,2018-03-06,Dec 2017,-0.43,3,2017-03-07,-0.72,estimated
+Navistar International Corporation,NAV,434e7,2018-03-06,Jan 2018,-0.37,8,2017-03-07,-0.76,estimated
+"NCI Building Systems, Inc.",NCS,113e7,2018-03-06,Jan 2018,0.09,2,2017-03-07,0.05,estimated
+Nuvectra Corporation,NVTR,10253e4,2018-03-06,Dec 2017,-1.15,1,2017-03-07,-1.27,estimated
+"Ooma, Inc.",OOMA,19651e4,2018-03-06,Jan 2018,-0.18,3,2017-03-07,-0.16,estimated
+Park-Ohio Holdings Corp.,PKOH,52253e4,2018-03-06,Dec 2017,0.81,3,2017-03-07,0.66,estimated
+"PetroQuest Energy, Inc.",PQ,3191e4,2018-03-06,Dec 2017,-0.02,4,2017-03-07,-0.46,estimated
+PLDT Inc.,PHI,647e7,2018-03-06,Dec 2017,NA,0,2017-03-07,0.6,estimated
+"Protagonist Therapeutics, Inc.",PTGX,36618e4,2018-03-06,Dec 2017,-0.36,1,2017-03-07,-0.67,estimated
+Red Lion Hotels Corporation,RLH,24335e4,2018-03-06,Dec 2017,-0.18,2,2017-03-07,-0.2,estimated
+"Red Rock Resorts, Inc.",RRR,386e7,2018-03-06,Dec 2017,0.26,5,2017-03-07,0.37,estimated
+REGENXBIO Inc.,RGNX,81756e4,2018-03-06,Dec 2017,-0.71,2,2017-03-07,-0.74,estimated
+"Renewable Energy Group, Inc.",REGI,38444e4,2018-03-06,Dec 2017,-0.01,2,2017-03-07,0.79,estimated
+ReShape Lifesciences Inc.,RSLS,4134e4,2018-03-06,Dec 2017,NA,0,2017-03-07,-2.65,estimated
+"REV Group, Inc.",REVG,172e7,2018-03-06,Jan 2018,0.08,6,2017-03-07,-0.21,estimated
+Rex Energy Corporation,REXX,1252e4,2018-03-06,Dec 2017,-0.78,1,2017-03-07,-0.9,estimated
+"Saul Centers, Inc.",BFS,114e7,2018-03-06,Dec 2017,0.78,3,2017-03-07,0.73,estimated
+"Team, Inc.",TISI,48909e4,2018-03-06,Dec 2017,-0.04,1,2017-03-07,0.08,estimated
+"Teligent, Inc.",TLGT,1634e5,2018-03-06,Dec 2017,-0.12,3,2017-03-07,0,estimated
+"The Michaels Companies, Inc.",MIK,468e7,2018-03-06,Jan 2018,1.21,5,2017-03-07,0.96,estimated
+The York Water Company,YORW,38838e4,2018-03-06,Dec 2017,NA,0,2017-03-07,0.23,estimated
+TransGlobe Energy Corporation,TGA,9892e4,2018-03-06,Dec 2017,-0.05,1,2017-03-07,-0.22,estimated
+Transportadora De Gas Sa Ord B,TGS,358e7,2018-03-06,Dec 2017,0.27,1,2017-03-07,0.2,estimated
+"Vital Therapies, Inc.",VTL,23214e4,2018-03-06,Dec 2017,-0.3,2,2017-03-07,-0.37,estimated
+"Willbros Group, Inc.",WG,64489999.99999999,2018-03-06,Dec 2017,-0.08,1,2017-03-07,-0.19,estimated
+ZAGG Inc,ZAGG,43641e4,2018-03-06,Dec 2017,0.73,4,2017-03-07,-0.08,estimated
+Acceleron Pharma Inc.,XLRN,189e7,2018-03-07,Dec 2017,-0.6,6,2017-03-01,-0.51,estimated
+"Aduro Biotech, Inc.",ADRO,48701e4,2018-03-07,Dec 2017,-0.36,5,2017-03-01,-0.44,estimated
+Aegean Marine Petroleum Network Inc.,ANW,19101e4,2018-03-07,Dec 2017,0.03,3,2017-03-01,0.41,estimated
+"Aerojet Rocketdyne Holdings, Inc.",AJRD,191e7,2018-03-07,Dec 2017,0.25,3,2017-03-01,0.25,estimated
+"Alimera Sciences, Inc.",ALIM,7814e4,2018-03-07,Dec 2017,-0.03,2,2017-03-01,-0.1,estimated
+Altisource Residential Corporation,RESI,54998e4,2018-03-07,Dec 2017,-0.59,2,2017-03-01,-0.37,estimated
+"American Eagle Outfitters, Inc.",AEO,316e7,2018-03-07,Jan 2018,0.44,10,2017-03-01,0.39,estimated
+"Amicus Therapeutics, Inc.",FOLD,282e7,2018-03-07,Dec 2017,-0.3,5,2017-03-01,-0.32,estimated
+Avino Silver,ASM,6939e4,2018-03-07,Dec 2017,0.03,2,2017-03-01,0.02,estimated
+Bitauto Holdings Limited,BITA,206e7,2018-03-07,Dec 2017,NA,0,2017-03-01,-0.05,estimated
+"BMC Stock Holdings, Inc.",BMCH,145e7,2018-03-07,Dec 2017,0.26,4,2017-03-01,0.2,estimated
+"Box, Inc.",BOX,281e7,2018-03-07,Jan 2018,-0.25,5,2017-03-01,-0.28,estimated
+Broadcom Limited,AVGO,9279e7,2018-03-07,Jan 2018,4.4,5,2017-03-01,3.19,estimated
+"Catasys, Inc.",CATS,7166e4,2018-03-07,Dec 2017,-0.09,1,2017-03-01,-0.18,estimated
+Compass Diversified Holdings,CODI,98536e4,2018-03-07,Dec 2017,0.44,6,2017-03-01,0.07,estimated
+"Condor Hospitality Trust, Inc.",CDOR,11889e4,2018-03-07,Dec 2017,0.2,4,2017-03-01,-0.37,estimated
+"Conifer Holdings, Inc.",CNFR,4813e4,2018-03-07,Dec 2017,-0.01,2,2017-03-01,-0.56,estimated
+"Core-Mark Holding Company, Inc.",CORE,95478e4,2018-03-07,Dec 2017,0.28,3,NA,0.45,estimated
+"CorEnergy Infrastructure Trust, Inc.",CORR,42849e4,2018-03-07,Dec 2017,1.03,3,2017-03-01,0.99,estimated
+CPI Card Group Inc.,PMTS,2984e4,2018-03-07,Dec 2017,-0.19,3,2017-03-01,-0.05,estimated
+CRH PLC,CRH,2923e7,2018-03-07,Dec 2017,NA,0,NA,NA,estimated
+"Crocs, Inc.",CROX,91683e4,2018-03-07,Dec 2017,-0.39,4,2017-03-01,-0.58,estimated
+"Dollar Tree, Inc.",DLTR,2515e7,2018-03-07,Jan 2018,1.89,11,2017-03-01,1.39,estimated
+"Donaldson Company, Inc.",DCI,614e7,2018-03-07,Jan 2018,0.44,6,2017-03-01,0.35,estimated
+"Eagle Pharmaceuticals, Inc.",EGRX,88858e4,2018-03-07,Dec 2017,1.19,2,2017-03-01,3.52,estimated
+ENI S.p.A.,E,6184e7,2018-03-07,Dec 2017,0.44,1,2017-03-01,0.26,estimated
+EP Energy Corporation,EPE,46013e4,2018-03-07,Dec 2017,-0.11,8,2017-03-01,0.12,estimated
+Ferro Corporation,FOE,181e7,2018-03-07,Dec 2017,0.28,5,2017-03-01,0.27,estimated
+"FibroGen, Inc",FGEN,443e7,2018-03-07,Dec 2017,-0.28,4,2017-03-01,-0.54,estimated
+Foresight Energy LP,FELP,58466e4,2018-03-07,Dec 2017,-0.07,2,2017-03-01,-0.37,estimated
+Forestar Group Inc,FOR,103e7,2018-03-07,Dec 2017,0.12,1,2017-03-01,0.27,estimated
+Fox Factory Holding Corp.,FOXF,138e7,2018-03-07,Dec 2017,0.33,6,2017-03-01,0.32,estimated
+FS Investment Corporation,FSIC,184e7,2018-03-07,Dec 2017,0.19,3,2017-03-01,0.23,estimated
+Genco Shipping & Trading Limited,GNK,43165e4,2018-03-07,Dec 2017,-0.03,5,2017-03-01,-3.35,estimated
+Geron Corporation,GERN,41082e4,2018-03-07,Dec 2017,-0.04,2,2017-03-01,-0.05,estimated
+Getty Realty Corporation,GTY,92449e4,2018-03-07,Dec 2017,0.45,3,2017-03-01,0.43,estimated
+"GlycoMimetics, Inc.",GLYC,81758e4,2018-03-07,Dec 2017,-0.26,5,2017-03-01,-0.36,estimated
+Gran Tierra Energy Inc.,GTE,99379e4,2018-03-07,Dec 2017,0.06,2,2017-03-01,0.04,estimated
+Great Ajax Corp.,AJX,2329e5,2018-03-07,Dec 2017,0.42,3,2017-03-01,0.35,estimated
+Greif Bros. Corporation,GEF,327e7,2018-03-07,Jan 2018,0.68,5,2017-03-01,0.45,estimated
+"Health Insurance Innovations, Inc.",HIIQ,39123e4,2018-03-07,Dec 2017,0.28,2,2017-03-01,0.35,estimated
+Herc Holdings Inc.,HRI,177e7,2018-03-07,Dec 2017,0.43,2,2017-03-01,-0.08,estimated
+"Heritage-Crystal Clean, Inc.",HCCI,47018e4,2018-03-07,Dec 2017,0.21,5,2017-03-01,0.2,estimated
+Hilton Grand Vacations Inc.,HGV,44e8,2018-03-07,Dec 2017,0.51,3,2017-03-01,0.38,estimated
+Hospitality Properties Trust,HPT,444e7,2018-03-07,Dec 2017,0.52,6,2017-03-01,0.57,estimated
+"Hudson Technologies, Inc.",HDSN,24929e4,2018-03-07,Dec 2017,-0.09,3,2017-03-01,-0.05,estimated
+Intra-Cellular Therapies Inc.,ITCI,89453e4,2018-03-07,Dec 2017,-0.51,4,2017-03-01,-0.64,estimated
+Intrexon Corporation,XON,175e7,2018-03-07,Dec 2017,-0.31,5,2017-03-01,-0.26,estimated
+"Juno Therapeutics, Inc.",JUNO,991e7,2018-03-07,Dec 2017,-1.02,5,2017-03-01,-0.66,estimated
+"Kindred Biosciences, Inc.",KIN,22808e4,2018-03-07,Dec 2017,-0.33,2,2017-03-01,-0.29,estimated
+Lincoln Educational Services Corporation,LINC,4301e4,2018-03-07,Dec 2017,0.32,1,2017-03-01,0.15,estimated
+"MabVax Therapeutics Holdings, Inc.",MBVX,1729e4,2018-03-07,Dec 2017,NA,0,NA,-0.77,estimated
+McEwen Mining Inc.,MUX,68758e4,2018-03-07,Dec 2017,0.01,1,2017-03-01,-0.01,estimated
+"Merrimack Pharmaceuticals, Inc.",MACK,14853e4,2018-03-07,Dec 2017,-0.28,3,2017-03-01,-2.5,estimated
+Monster Beverage Corporation,MNST,364e8,2018-03-07,Dec 2017,0.37,8,2017-03-01,0.35,estimated
+Mylan N.V.,MYL,217e8,2018-03-07,Dec 2017,1.42,7,2017-03-01,1.57,estimated
+"NanoString Technologies, Inc.",NSTG,16981e4,2018-03-07,Dec 2017,-0.43,4,2017-03-01,-0.55,estimated
+Nektar Therapeutics,NKTR,1206e7,2018-03-07,Dec 2017,-0.35,4,2017-03-01,-0.28,estimated
+"New York REIT, Inc.",NYRT,33754e4,2018-03-07,Dec 2017,0.11,1,2017-03-01,0.02,estimated
+"NN, Inc.",NNBR,74448e4,2018-03-07,Dec 2017,0.31,3,2017-03-01,0.35,estimated
+Noodles & Company,NDLS,24671e4,2018-03-07,Dec 2017,-0.01,5,2017-03-01,-0.04,estimated
+"Northern Oil and Gas, Inc.",NOG,12028e4,2018-03-07,Dec 2017,0.08,4,2017-03-01,0.04,estimated
+"Office Depot, Inc.",ODP,176e7,2018-03-07,Dec 2017,0.07,3,2017-03-01,0.11,estimated
+"Okta, Inc.",OKTA,3e9,2018-03-07,Jan 2018,-0.33,4,NA,NA,estimated
+"Opko Health, Inc.",OPK,232e7,2018-03-07,Dec 2017,-0.08,3,2017-03-01,-0.04,estimated
+"Pacific Ethanol, Inc.",PEIX,1594e5,2018-03-07,Dec 2017,-0.04,5,2017-03-01,0.3,estimated
+"Pacira Pharmaceuticals, Inc.",PCRX,154e7,2018-03-07,Dec 2017,-0.08,7,2017-03-01,-0.12,estimated
+Pattern Energy Group Inc.,PEGI,183e7,2018-03-07,Dec 2017,0.08,4,2017-03-01,0.05,estimated
+"PDL BioPharma, Inc.",PDLI,409e6,2018-03-07,Dec 2017,0.11,2,2017-03-01,0,estimated
+Performant Financial Corporation,PFMT,13709e4,2018-03-07,Dec 2017,-0.03,1,2017-03-01,-0.04,estimated
+"Planet Fitness, Inc.",PLNT,312e7,2018-03-07,Dec 2017,0.23,11,2017-03-01,0.2,estimated
+Puma Biotechnology Inc,PBYI,23e8,2018-03-07,Dec 2017,-1.98,4,2017-03-01,-2.04,estimated
+"Pure Storage, Inc.",PSTG,426e7,2018-03-07,Jan 2018,-0.14,4,2017-03-01,-0.21,estimated
+R1 RCM Inc.,RCM,52713e4,2018-03-07,Dec 2017,-0.01,1,NA,0.05,estimated
+"Retrophin, Inc.",RTRX,87733e4,2018-03-07,Dec 2017,-0.19,2,2017-03-01,0,estimated
+Sociedad Quimica y Minera S.A.,SQM,1443e7,2018-03-07,Dec 2017,0.42,2,2017-03-01,0.31,estimated
+"Speedway Motorsports, Inc.",TRK,82058e4,2018-03-07,Dec 2017,-0.01,1,2017-03-01,0.01,estimated
+"SunOpta, Inc.",STKL,60301e4,2018-03-07,Dec 2017,-0.07,1,2017-03-01,-0.08,estimated
+"Teladoc, Inc.",TDOC,2089999999.9999998,2018-03-07,Dec 2017,-0.41,12,2017-03-01,-0.31,estimated
+"Tetra Technologies, Inc.",TTI,44617e4,2018-03-07,Dec 2017,-0.03,6,2017-03-01,-0.16,estimated
+Trecora Resources,TREC,32508e4,2018-03-07,Dec 2017,0.09,2,2017-03-01,0.07,estimated
+Tribune Media Company,TRCO,371e7,2018-03-07,Dec 2017,0.5,3,2017-03-01,0.85,estimated
+"Vectrus, Inc.",VEC,30698e4,2018-03-07,Dec 2017,0.4,2,2017-03-01,0.21,estimated
+"Veracyte, Inc.",VCYT,20424e4,2018-03-07,Dec 2017,-0.2,4,2017-03-01,-0.14,estimated
+"Vitamin Shoppe, Inc",VSI,8512e4,2018-03-07,Dec 2017,-0.24,4,2017-03-01,0.36,estimated
+"W&T Offshore, Inc.",WTI,56507e4,2018-03-07,Dec 2017,0.15,1,2017-03-01,0.06,estimated
+Zosano Pharma Corporation,ZSAN,NA,2018-03-07,Dec 2017,-4.8,1,2017-03-01,-9.2,estimated
+"Aevi Genomic Medicine, Inc.",GNMX,13646e4,2018-03-08,Dec 2017,-0.17,2,2017-03-09,-0.22,estimated
+Agenus Inc.,AGEN,37669e4,2018-03-08,Dec 2017,-0.28,2,2017-03-09,-0.3,estimated
+Alcentra Capital Corp.,ABDC,11026e4,2018-03-08,Dec 2017,0.26,4,2017-03-09,0.45,estimated
+"Allena Pharmaceuticals, Inc.",ALNA,1635e5,2018-03-08,Dec 2017,-0.33,2,NA,NA,estimated
+"Aquinox Pharmaceuticals, Inc.",AQXP,31959e4,2018-03-08,Dec 2017,-0.65,1,2017-03-09,-0.48,estimated
+Aspen Group Inc.,ASPU,11794e4,2018-03-08,Jan 2018,-0.14,2,2017-03-09,0,estimated
+"Atara Biotherapeutics, Inc.",ATRA,114e7,2018-03-08,Dec 2017,-1.14,2,2017-03-09,-0.63,estimated
+"Athersys, Inc.",ATHX,21046e4,2018-03-08,Dec 2017,-0.08,1,2017-03-09,-0.1,estimated
+"Audentes Therapeutics, Inc.",BOLD,102e7,2018-03-08,Dec 2017,-0.92,8,2017-03-09,-0.91,estimated
+Aurinia Pharmaceuticals Inc,AUPH,43455e4,2018-03-08,Dec 2017,-0.14,4,2017-03-09,-0.22,estimated
+"AutoWeb, Inc.",AUTO,10033e4,2018-03-08,Dec 2017,0.08,2,2017-03-09,0.29,estimated
+"BioLife Solutions, Inc.",BLFS,687e5,2018-03-08,Dec 2017,-0.06,1,2017-03-09,-0.04,estimated
+Blueprint Medicines Corporation,BPMC,341e7,2018-03-08,Dec 2017,-1.07,5,2017-03-09,-0.75,estimated
+Bovie Medical Corporation,BVX,8051e4,2018-03-08,Dec 2017,-0.01,2,2017-03-09,-0.04,estimated
+Cantel Medical Corp.,CMD,457e7,2018-03-08,Jan 2018,0.58,1,2017-03-09,0.52,estimated
+"Cara Therapeutics, Inc.",CARA,41478e4,2018-03-08,Dec 2017,-0.4,4,2017-03-09,-0.81,estimated
+"CAS Medical Systems, Inc.",CASM,33299999.999999996,2018-03-08,Dec 2017,-0.07,1,2017-03-09,-0.07,estimated
+"Cascadian Therapeutics, Inc.",CASC,50518e4,2018-03-08,Dec 2017,-0.29,2,2017-03-09,-0.47,estimated
+CECO Environmental Corp.,CECE,14855e4,2018-03-08,Dec 2017,0.07,1,2017-03-09,0.35,estimated
+Check-Cap Ltd.,CHEK,137e5,2018-03-08,Dec 2017,-0.14,1,2017-03-09,-0.15,estimated
+ChipMOS TECHNOLOGIES INC.,IMOS,71494e4,2018-03-08,Dec 2017,0.11,1,2017-03-09,0.45,estimated
+"Codexis, Inc.",CDXS,39886e4,2018-03-08,Dec 2017,0.05,3,2017-03-09,-0.13,estimated
+"Cogentix Medical, Inc.",CGNT,16505e4,2018-03-08,Dec 2017,0,1,2017-03-09,-0.14,estimated
+"Cogint, Inc.",COGT,23917e4,2018-03-08,Dec 2017,-0.16,2,2017-03-09,-0.09,estimated
+"Collegium Pharmaceutical, Inc.",COLL,69781e4,2018-03-08,Dec 2017,-0.53,5,2017-03-09,-1.02,estimated
+"Commercial Vehicle Group, Inc.",CVGI,34031e4,2018-03-08,Dec 2017,0.13,1,2017-03-09,0.02,estimated
+"Corbus Pharmaceuticals Holdings, Inc.",CRBP,39756e4,2018-03-08,Dec 2017,-0.16,2,2017-03-09,-0.18,estimated
+"Curis, Inc.",CRIS,9491e4,2018-03-08,Dec 2017,-0.09,3,2017-03-09,-0.08,estimated
+Differential Brands Group Inc.,DFBG,1293e4,2018-03-08,Dec 2017,0.05,2,2017-03-09,-0.37,estimated
+DMC Global Inc.,BOOM,31311e4,2018-03-08,Dec 2017,0.09,1,2017-03-09,-0.15,estimated
+Egalet Corporation,EGLT,4043e4,2018-03-08,Dec 2017,-0.38,2,2017-03-09,-0.87,estimated
+"El Pollo Loco Holdings, Inc.",LOCO,36334e4,2018-03-08,Dec 2017,0.1,5,2017-03-09,0.12,estimated
+"Eldorado Resorts, Inc.",ERI,26e8,2018-03-08,Dec 2017,0.23,4,2017-03-09,0.02,estimated
+Embraer-Empresa Brasileira de Aeronautica,ERJ,481e7,2018-03-08,Dec 2017,0.69,4,2017-03-09,1.14,estimated
+"Epizyme, Inc.",EPZM,116e7,2018-03-08,Dec 2017,-0.56,9,2017-03-09,-0.6,estimated
+Fairmount Santrol Holdings Inc.,FMSA,111e7,2018-03-08,Dec 2017,0.14,7,2017-03-09,-0.11,estimated
+"Ferrellgas Partners, L.P.",FGP,3993e5,2018-03-08,Jan 2018,0.61,1,2017-03-09,0.39,estimated
+Fibrocell Science Inc,FCSC,1813e4,2018-03-08,Dec 2017,-0.23,2,2017-03-09,-0.33,estimated
+Finisar Corporation,FNSR,2029999999.9999998,2018-03-08,Jan 2018,0.13,8,2017-03-09,0.47,estimated
+"Flexion Therapeutics, Inc.",FLXN,86982e4,2018-03-08,Dec 2017,-1.09,4,2017-03-09,-0.78,estimated
+"Freshpet, Inc.",FRPT,65365e4,2018-03-08,Dec 2017,0.05,6,2017-03-09,0.04,estimated
+"FuelCell Energy, Inc.",FCEL,12184e4,2018-03-08,Jan 2018,-0.2,3,2017-03-09,-0.35,estimated
+Gastar Exploration Inc.,GST,19054e4,2018-03-08,Dec 2017,-0.03,4,2017-03-09,-0.06,estimated
+Global Partners LP,GLP,59322e4,2018-03-08,Dec 2017,0.2,5,2017-03-09,-0.38,estimated
+GMS Inc.,GMS,137e7,2018-03-08,Jan 2018,0.39,5,2017-03-09,0.32,estimated
+"Hallmark Financial Services, Inc.",HALL,17686e4,2018-03-08,Dec 2017,0.17,2,2017-03-09,-0.2,estimated
+"Harvard Bioscience, Inc.",HBIO,15871e4,2018-03-08,Dec 2017,0.03,1,2017-03-09,0.01,estimated
+Horizon Global Corporation,HZN,22768e4,2018-03-08,Dec 2017,-0.14,4,2017-03-09,-0.37,estimated
+Inseego Corp.,INSG,11191e4,2018-03-08,Dec 2017,-0.14,1,2017-03-09,-0.07,estimated
+Internap Corporation,INAP,6999e4,2018-03-08,Dec 2017,-0.6,1,2017-03-09,-0.48,estimated
+International Game Technology,IGT,556e7,2018-03-08,Dec 2017,0.39,5,2017-03-09,0.88,estimated
+inTest Corporation,INTT,8383e4,2018-03-08,Dec 2017,0.14,1,2017-03-09,0.1,estimated
+"KemPharm, Inc.",KMPH,8355e4,2018-03-08,Dec 2017,-0.69,2,2017-03-09,-0.68,estimated
+"Marcus & Millichap, Inc.",MMI,116e7,2018-03-08,Dec 2017,0.42,2,2017-03-09,0.44,estimated
+MEDIFAST INC,MED,79574e4,2018-03-08,Dec 2017,0.48,1,2017-03-09,0.34,estimated
+"Mirati Therapeutics, Inc.",MRTX,75778e4,2018-03-08,Dec 2017,-0.62,6,2017-03-09,-0.99,estimated
+"Myers Industries, Inc.",MYE,61485e4,2018-03-08,Dec 2017,0.09,2,2017-03-09,0,estimated
+"MYR Group, Inc.",MYRG,55098e4,2018-03-08,Dec 2017,0.33,4,2017-03-09,0.48,estimated
+"Natural Gas Services Group, Inc.",NGS,3313e5,2018-03-08,Dec 2017,0.07,3,2017-03-09,0.09,estimated
+"NII Holdings, Inc.",NIHD,5526e4,2018-03-08,Dec 2017,NA,0,2017-03-09,-0.4,estimated
+"NV5 Global, Inc.",NVEE,48859e4,2018-03-08,Dec 2017,0.63,2,2017-03-09,0.44,estimated
+"Orion Group Holdings, Inc.",ORN,1785e5,2018-03-08,Dec 2017,0.07,3,2017-03-09,0.09,estimated
+Party City Holdco Inc.,PRTY,176e7,2018-03-08,Dec 2017,0.8,5,2017-03-09,0.75,estimated
+"Peak Resorts, Inc.",SKIS,7271e4,2018-03-08,Jan 2018,0.54,5,2017-03-09,0.47,estimated
+"Pioneer Power Solutions, Inc.",PPSI,65879999.99999999,2018-03-08,Dec 2017,0.14,1,2017-03-09,0.21,estimated
+"Plug Power, Inc.",PLUG,45237e4,2018-03-08,Dec 2017,-0.06,5,2017-03-09,-0.08,estimated
+"Pretium Resources, Inc.",PVG,122e7,2018-03-08,Dec 2017,0.01,2,2017-03-09,-0.04,estimated
+"Profire Energy, Inc.",PFIE,10895e4,2018-03-08,Dec 2017,0.01,1,2017-03-09,0.01,estimated
+Progenics Pharmaceuticals Inc.,PGNX,38929e4,2018-03-08,Dec 2017,-0.21,1,2017-03-09,-0.1,estimated
+"Reis, Inc",REIS,2156e5,2018-03-08,Dec 2017,0.04,1,2017-03-09,-0.02,estimated
+"Revolution Lighting Technologies, Inc.",RVLT,9676e4,2018-03-08,Dec 2017,-0.18,2,2017-03-09,0.11,estimated
+"Salem Media Group, Inc.",SALM,1125e5,2018-03-08,Dec 2017,0.02,1,2017-03-09,0.27,estimated
+"Second Sight Medical Products, Inc.",EYES,11191e4,2018-03-08,Dec 2017,-0.14,1,2017-03-09,-0.19,estimated
+"Shiloh Industries, Inc.",SHLO,17159e4,2018-03-08,Jan 2018,NA,0,2017-03-09,-0.03,estimated
+Signet Jewelers Limited,SIG,303e7,2018-03-08,Jan 2018,4.23,3,2017-03-09,4.03,estimated
+"Southcross Energy Partners, L.P.",SXE,15612e4,2018-03-08,Dec 2017,-0.21,1,2017-03-09,-0.58,estimated
+"Spero Therapeutics, Inc.",SPRO,5434e4,2018-03-08,Dec 2017,-1.56,2,NA,NA,estimated
+Sterling Construction Company Inc,STRL,34598e4,2018-03-08,Dec 2017,0.13,2,2017-03-09,-0.25,estimated
+"Strata Skin Sciences, Inc.",SSKN,546e4,2018-03-08,Dec 2017,-1.27,1,2017-03-09,-0.45,estimated
+"Sunesis Pharmaceuticals, Inc.",SNSS,20344e4,2018-03-08,Dec 2017,-0.25,2,2017-03-09,-0.44,estimated
+"Tandy Leather Factory, Inc.",TLF,6814e4,2018-03-08,Dec 2017,NA,0,2017-03-09,0.23,estimated
+The Joint Corp.,JYNT,7016e4,2018-03-08,Dec 2017,-0.03,1,2017-03-09,-0.18,estimated
+The Providence Service Corporation,PRSC,84636e4,2018-03-08,Dec 2017,0.36,1,2017-03-09,0.33,estimated
+"THL Credit, Inc.",TCRD,28491e4,2018-03-08,Dec 2017,0.31,5,2017-03-09,0.28,estimated
+"Top Image Systems, Ltd.",TISA,1874e4,2018-03-08,Dec 2017,-0.04,1,2017-03-09,-0.21,estimated
+U.S. Geothermal Inc.,HTM,10464e4,2018-03-08,Dec 2017,0.09,1,2017-03-09,0.1,estimated
+"Ulta Beauty, Inc.",ULTA,133e8,2018-03-08,Jan 2018,2.78,13,2017-03-09,2.24,estimated
+"Unique Fabricating, Inc.",UFAB,7445e4,2018-03-08,Dec 2017,0.1,3,2017-03-09,0.16,estimated
+USD Partners LP,USDP,29783e4,2018-03-08,Dec 2017,0.27,1,2017-03-09,0.17,estimated
+Vical Incorporated,VICL,2792e4,2018-03-08,Dec 2017,-0.11,2,2017-03-09,-0.25,estimated
+"Zafgen, Inc.",ZFGN,23888e4,2018-03-08,Dec 2017,-0.59,1,2017-03-09,-0.38,estimated
+"Zogenix, Inc.",ZGNX,133e7,2018-03-08,Dec 2017,-1.01,3,2017-03-09,-0.73,estimated
+Zumiez Inc.,ZUMZ,51636e4,2018-03-08,Jan 2018,0.89,4,2017-03-09,0.74,estimated
+"Advaxis, Inc.",ADXS,11689e4,2018-03-09,Jan 2018,-0.58,2,2017-03-10,-0.43,estimated
+"Buckle, Inc. (The)",BKE,104e7,2018-03-09,Jan 2018,0.75,1,2017-03-10,0.74,estimated
+"Century Casinos, Inc.",CNTY,24633e4,2018-03-09,Dec 2017,0.07,3,2017-03-10,0.11,estimated
+"Citi Trends, Inc.",CTRN,30777e4,2018-03-09,Jan 2018,0.43,1,2017-03-10,0.38,estimated
+"Corvus Pharmaceuticals, Inc.",CRVS,17233e4,2018-03-09,Dec 2017,-0.66,1,2017-03-10,-0.55,estimated
+CRISPR Therapeutics AG,CRSP,171e7,2018-03-09,Dec 2017,-0.71,3,2017-03-10,-0.4,estimated
+"Diversified Restaurant Holdings, Inc.",SAUC,4005e4,2018-03-09,Dec 2017,0,1,2017-03-10,0.01,estimated
+"Eco-Stim Energy Solutions, Inc.",ESES,10213e4,2018-03-09,Dec 2017,-0.03,3,2017-03-10,-0.23,estimated
+"Endocyte, Inc.",ECYT,14556e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.26,estimated
+Energy Fuels Inc,UUUU,122e6,2018-03-09,Dec 2017,-0.07,2,2017-03-10,-0.19,estimated
+"Everspin Technologies, Inc.",MRAM,11081e4,2018-03-09,Dec 2017,-0.37,2,2017-03-10,-0.48,estimated
+Genesco Inc.,GCO,7119e5,2018-03-09,Jan 2018,2.08,5,2017-03-10,2.15,estimated
+"Global Water Resources, Inc.",GWRS,1702e5,2018-03-09,Dec 2017,0.01,1,2017-03-10,0,estimated
+"Hibbett Sports, Inc.",HIBB,45813e4,2018-03-09,Jan 2018,0.29,5,2017-03-10,0.54,estimated
+InVivo Therapeutics Holdings Corp.,NVIV,1851e4,2018-03-09,Dec 2017,-0.16,1,2017-03-10,-0.21,estimated
+"Jounce Therapeutics, Inc.",JNCE,75874e4,2018-03-09,Dec 2017,-0.59,3,2017-03-10,0.05,estimated
+"Kirkland's, Inc.",KIRK,16922e4,2018-03-09,Jan 2018,0.96,2,2017-03-10,0.9,estimated
+Kronos Worldwide Inc,KRO,286e7,2018-03-09,Dec 2017,0.49,1,2017-03-10,0.16,estimated
+"Ocular Therapeutix, Inc.",OCUL,15363e4,2018-03-09,Dec 2017,-0.58,2,2017-03-10,-0.52,estimated
+"One Liberty Properties, Inc.",OLP,42072e4,2018-03-09,Dec 2017,0.55,2,2017-03-10,0.51,estimated
+Pacific Coast Oil Trust,ROYT,8488e4,2018-03-09,Dec 2017,0.06,1,NA,0,estimated
+"Ply Gem Holdings, Inc.",PGEM,147e7,2018-03-09,Dec 2017,0.21,4,2017-03-10,0.14,estimated
+"Pulmatrix, Inc.",PULM,32630000.000000004,2018-03-09,Dec 2017,-0.3,1,NA,NA,estimated
+Sprague Resources LP,SRLP,5751e5,2018-03-09,Dec 2017,1.26,1,2017-03-10,-0.08,estimated
+Stellus Capital Investment Corporation,SCM,18609e4,2018-03-09,Dec 2017,0.3,3,2017-03-10,0.37,estimated
+"Superior Drilling Products, Inc.",SDPI,33549999.999999996,2018-03-09,Dec 2017,0,2,2017-03-10,-0.07,estimated
+Telecom Argentina Stet - France Telecom S.A.,TEO,677e7,2018-03-09,Dec 2017,0.5,1,2017-03-10,0.5,estimated
+"TG Therapeutics, Inc.",TGTX,87609e4,2018-03-09,Dec 2017,-0.46,5,2017-03-10,-0.48,estimated
+"TheStreet, Inc.",TST,6225e4,2018-03-09,Dec 2017,0,2,2017-03-10,-0.05,estimated
+Trillium Therapeutics Inc.,TRIL,9335e4,2018-03-09,Dec 2017,-0.89,2,2017-03-10,-0.86,estimated
+Urstadt Biddle Properties Inc.,UBA,69259e4,2018-03-09,Jan 2018,0.33,2,2017-03-10,0.28,estimated
+"Vail Resorts, Inc.",MTN,867e7,2018-03-09,Jan 2018,3.58,5,2017-03-10,3.63,estimated
+Vericel Corporation,VCEL,25134e4,2018-03-09,Dec 2017,-0.1,1,2017-03-10,-0.14,estimated
+VolitionRX Limited,VNRX,8088e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.12,estimated
+"Advaxis, Inc.",ADXS,11689e4,2018-03-09,Jan 2018,-0.58,2,2017-03-10,-0.43,estimated
+"Buckle, Inc. (The)",BKE,104e7,2018-03-09,Jan 2018,0.75,1,2017-03-10,0.74,estimated
+"Century Casinos, Inc.",CNTY,24633e4,2018-03-09,Dec 2017,0.07,3,2017-03-10,0.11,estimated
+"Citi Trends, Inc.",CTRN,30777e4,2018-03-09,Jan 2018,0.43,1,2017-03-10,0.38,estimated
+"Corvus Pharmaceuticals, Inc.",CRVS,17233e4,2018-03-09,Dec 2017,-0.66,1,2017-03-10,-0.55,estimated
+CRISPR Therapeutics AG,CRSP,171e7,2018-03-09,Dec 2017,-0.71,3,2017-03-10,-0.4,estimated
+"Diversified Restaurant Holdings, Inc.",SAUC,4005e4,2018-03-09,Dec 2017,0,1,2017-03-10,0.01,estimated
+"Eco-Stim Energy Solutions, Inc.",ESES,10213e4,2018-03-09,Dec 2017,-0.03,3,2017-03-10,-0.23,estimated
+"Endocyte, Inc.",ECYT,14556e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.26,estimated
+Energy Fuels Inc,UUUU,122e6,2018-03-09,Dec 2017,-0.07,2,2017-03-10,-0.19,estimated
+"Everspin Technologies, Inc.",MRAM,11081e4,2018-03-09,Dec 2017,-0.37,2,2017-03-10,-0.48,estimated
+Genesco Inc.,GCO,7119e5,2018-03-09,Jan 2018,2.08,5,2017-03-10,2.15,estimated
+"Global Water Resources, Inc.",GWRS,1702e5,2018-03-09,Dec 2017,0.01,1,2017-03-10,0,estimated
+"Hibbett Sports, Inc.",HIBB,45813e4,2018-03-09,Jan 2018,0.29,5,2017-03-10,0.54,estimated
+InVivo Therapeutics Holdings Corp.,NVIV,1851e4,2018-03-09,Dec 2017,-0.16,1,2017-03-10,-0.21,estimated
+"Jounce Therapeutics, Inc.",JNCE,75874e4,2018-03-09,Dec 2017,-0.59,3,2017-03-10,0.05,estimated
+"Kirkland's, Inc.",KIRK,16922e4,2018-03-09,Jan 2018,0.96,2,2017-03-10,0.9,estimated
+Kronos Worldwide Inc,KRO,286e7,2018-03-09,Dec 2017,0.49,1,2017-03-10,0.16,estimated
+"Ocular Therapeutix, Inc.",OCUL,15363e4,2018-03-09,Dec 2017,-0.58,2,2017-03-10,-0.52,estimated
+"One Liberty Properties, Inc.",OLP,42072e4,2018-03-09,Dec 2017,0.55,2,2017-03-10,0.51,estimated
+Pacific Coast Oil Trust,ROYT,8488e4,2018-03-09,Dec 2017,0.06,1,NA,0,estimated
+"Ply Gem Holdings, Inc.",PGEM,147e7,2018-03-09,Dec 2017,0.21,4,2017-03-10,0.14,estimated
+"Pulmatrix, Inc.",PULM,32630000.000000004,2018-03-09,Dec 2017,-0.3,1,NA,NA,estimated
+Sprague Resources LP,SRLP,5751e5,2018-03-09,Dec 2017,1.26,1,2017-03-10,-0.08,estimated
+Stellus Capital Investment Corporation,SCM,18609e4,2018-03-09,Dec 2017,0.3,3,2017-03-10,0.37,estimated
+"Superior Drilling Products, Inc.",SDPI,33549999.999999996,2018-03-09,Dec 2017,0,2,2017-03-10,-0.07,estimated
+Telecom Argentina Stet - France Telecom S.A.,TEO,677e7,2018-03-09,Dec 2017,0.5,1,2017-03-10,0.5,estimated
+"TG Therapeutics, Inc.",TGTX,87609e4,2018-03-09,Dec 2017,-0.46,5,2017-03-10,-0.48,estimated
+"TheStreet, Inc.",TST,6225e4,2018-03-09,Dec 2017,0,2,2017-03-10,-0.05,estimated
+Trillium Therapeutics Inc.,TRIL,9335e4,2018-03-09,Dec 2017,-0.89,2,2017-03-10,-0.86,estimated
+Urstadt Biddle Properties Inc.,UBA,69259e4,2018-03-09,Jan 2018,0.33,2,2017-03-10,0.28,estimated
+"Vail Resorts, Inc.",MTN,867e7,2018-03-09,Jan 2018,3.58,5,2017-03-10,3.63,estimated
+Vericel Corporation,VCEL,25134e4,2018-03-09,Dec 2017,-0.1,1,2017-03-10,-0.14,estimated
+VolitionRX Limited,VNRX,8088e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.12,estimated
+"Advaxis, Inc.",ADXS,11689e4,2018-03-09,Jan 2018,-0.58,2,2017-03-10,-0.43,estimated
+"Buckle, Inc. (The)",BKE,104e7,2018-03-09,Jan 2018,0.75,1,2017-03-10,0.74,estimated
+"Century Casinos, Inc.",CNTY,24633e4,2018-03-09,Dec 2017,0.07,3,2017-03-10,0.11,estimated
+"Citi Trends, Inc.",CTRN,30777e4,2018-03-09,Jan 2018,0.43,1,2017-03-10,0.38,estimated
+"Corvus Pharmaceuticals, Inc.",CRVS,17233e4,2018-03-09,Dec 2017,-0.66,1,2017-03-10,-0.55,estimated
+CRISPR Therapeutics AG,CRSP,171e7,2018-03-09,Dec 2017,-0.71,3,2017-03-10,-0.4,estimated
+"Diversified Restaurant Holdings, Inc.",SAUC,4005e4,2018-03-09,Dec 2017,0,1,2017-03-10,0.01,estimated
+"Eco-Stim Energy Solutions, Inc.",ESES,10213e4,2018-03-09,Dec 2017,-0.03,3,2017-03-10,-0.23,estimated
+"Endocyte, Inc.",ECYT,14556e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.26,estimated
+Energy Fuels Inc,UUUU,122e6,2018-03-09,Dec 2017,-0.07,2,2017-03-10,-0.19,estimated
+"Everspin Technologies, Inc.",MRAM,11081e4,2018-03-09,Dec 2017,-0.37,2,2017-03-10,-0.48,estimated
+Genesco Inc.,GCO,7119e5,2018-03-09,Jan 2018,2.08,5,2017-03-10,2.15,estimated
+"Global Water Resources, Inc.",GWRS,1702e5,2018-03-09,Dec 2017,0.01,1,2017-03-10,0,estimated
+"Hibbett Sports, Inc.",HIBB,45813e4,2018-03-09,Jan 2018,0.29,5,2017-03-10,0.54,estimated
+InVivo Therapeutics Holdings Corp.,NVIV,1851e4,2018-03-09,Dec 2017,-0.16,1,2017-03-10,-0.21,estimated
+"Jounce Therapeutics, Inc.",JNCE,75874e4,2018-03-09,Dec 2017,-0.59,3,2017-03-10,0.05,estimated
+"Kirkland's, Inc.",KIRK,16922e4,2018-03-09,Jan 2018,0.96,2,2017-03-10,0.9,estimated
+Kronos Worldwide Inc,KRO,286e7,2018-03-09,Dec 2017,0.49,1,2017-03-10,0.16,estimated
+"Ocular Therapeutix, Inc.",OCUL,15363e4,2018-03-09,Dec 2017,-0.58,2,2017-03-10,-0.52,estimated
+"One Liberty Properties, Inc.",OLP,42072e4,2018-03-09,Dec 2017,0.55,2,2017-03-10,0.51,estimated
+Pacific Coast Oil Trust,ROYT,8488e4,2018-03-09,Dec 2017,0.06,1,NA,0,estimated
+"Ply Gem Holdings, Inc.",PGEM,147e7,2018-03-09,Dec 2017,0.21,4,2017-03-10,0.14,estimated
+"Pulmatrix, Inc.",PULM,32630000.000000004,2018-03-09,Dec 2017,-0.3,1,NA,NA,estimated
+Sprague Resources LP,SRLP,5751e5,2018-03-09,Dec 2017,1.26,1,2017-03-10,-0.08,estimated
+Stellus Capital Investment Corporation,SCM,18609e4,2018-03-09,Dec 2017,0.3,3,2017-03-10,0.37,estimated
+"Superior Drilling Products, Inc.",SDPI,33549999.999999996,2018-03-09,Dec 2017,0,2,2017-03-10,-0.07,estimated
+Telecom Argentina Stet - France Telecom S.A.,TEO,677e7,2018-03-09,Dec 2017,0.5,1,2017-03-10,0.5,estimated
+"TG Therapeutics, Inc.",TGTX,87609e4,2018-03-09,Dec 2017,-0.46,5,2017-03-10,-0.48,estimated
+"TheStreet, Inc.",TST,6225e4,2018-03-09,Dec 2017,0,2,2017-03-10,-0.05,estimated
+Trillium Therapeutics Inc.,TRIL,9335e4,2018-03-09,Dec 2017,-0.89,2,2017-03-10,-0.86,estimated
+Urstadt Biddle Properties Inc.,UBA,69259e4,2018-03-09,Jan 2018,0.33,2,2017-03-10,0.28,estimated
+"Vail Resorts, Inc.",MTN,867e7,2018-03-09,Jan 2018,3.58,5,2017-03-10,3.63,estimated
+Vericel Corporation,VCEL,25134e4,2018-03-09,Dec 2017,-0.1,1,2017-03-10,-0.14,estimated
+VolitionRX Limited,VNRX,8088e4,2018-03-09,Dec 2017,-0.16,2,2017-03-10,-0.12,estimated

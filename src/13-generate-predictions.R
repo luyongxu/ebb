@@ -58,5 +58,5 @@ predictions <- test %>%
   arrange(desc(pred))
 
 #' # 8. Save Predictions 
-write_csv(predictions, here::here("/data/predictions.csv"))
+write_csv(predictions, here::here("/data/predictions-2018-02-08.csv"))
   

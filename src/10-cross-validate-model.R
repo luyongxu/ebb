@@ -70,7 +70,7 @@ train_pred <- train %>%
   mutate(pred = xgb_cv[["pred"]], 
          pred = ifelse(pred >= 10, 10, pred), 
          pred = ifelse(pred <= -10, -10, pred))
-MSE(train_pred[["pred"]], train_pred[["position_label"]])
+RMSE(train_pred[["pred"]], train_pred[["position_label"]])
 
 #' # 9. Save Predictions 
 write_csv(train_pred, here::here("/data/train-pred.csv"))
