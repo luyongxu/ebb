@@ -16,7 +16,7 @@
 #' NASDAQ, NYSE, AMEX, and TSX. 
 
 #' # 1. Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Download Company List Function 
 #' Description  
@@ -32,7 +32,8 @@ source(here::here("/src/01-load-packages.R"))
 #' Returns a dataframe containing the companies and their symbol.  
 download_company_list <- function(exchange) { 
   
-  # For companies listed on NASDAQ, NYSE, and AMEX, use the company list at http://www.nasdaq.com/screening/company-list.aspx
+  # For companies listed on NASDAQ, NYSE, and AMEX, use the company list at 
+  # http://www.nasdaq.com/screening/company-list.aspx
   if(exchange %in% c("nasdaq", "nyse", "amex")) { 
     
     # Download csv file from NASDAQ website  
@@ -61,7 +62,8 @@ download_company_list <- function(exchange) {
     return(df)
   }
   
-  # For companies listed on TSX, use the company list at https://www.tsx.com/listings/listing-with-us/listed-company-directory
+  # For companies listed on TSX, use the company list at 
+  # https://www.tsx.com/listings/listing-with-us/listed-company-directory
   if (exchange == "tsx") { 
     
     # Initialize json endpoints 
@@ -116,8 +118,8 @@ print(list_tsx)
 print(list_all)
 
 #' # 6. Save Company Lists 
-write_csv(list_nasdaq, here::here("/data/list-nasdaq.csv"))
-write_csv(list_nyse, here::here("/data/list-nyse.csv"))
-write_csv(list_amex, here::here("/data/list-amex.csv"))
-write_csv(list_tsx, here::here("/data/list-tsx.csv"))
-write_csv(list_all, here::here("/data/list-all.csv"))
+write_csv(list_nasdaq, here::here("data/list-nasdaq.csv"))
+write_csv(list_nyse, here::here("data/list-nyse.csv"))
+write_csv(list_amex, here::here("data/list-amex.csv"))
+write_csv(list_tsx, here::here("data/list-tsx.csv"))
+write_csv(list_all, here::here("data/list-all.csv"))

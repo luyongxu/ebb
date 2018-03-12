@@ -17,7 +17,26 @@
 source(here::here("/src/01-load-packages.R"))
 
 #' # 2. Load Predictions  
-train_pred <- read_csv(here::here("/data/train-pred.csv"))
+train_pred <- read_feather(here::here("/data/train-with-pred.feather"))
+
+#' # 3. 
+train_pred <- train_pred %>% 
+  mutate(position_label = case_when(
+    position_label == 0 ~ -10, 
+    position_label == 1 ~ -5, 
+    position_label == 2 ~ 0, 
+    position_label == 3 ~ 5, 
+    position_label == 4 ~ 10, 
+    TRUE ~ 0
+  )) %>% 
+  mutate(pred = case_when(
+    pred == 0 ~ -10, 
+    pred == 1 ~ -5, 
+    pred == 2 ~ 0, 
+    pred == 3 ~ 5, 
+    pred == 4 ~ 10, 
+    TRUE ~ 0
+  ))
 
 #' # 3. Create Prediction Error 
 train_pred <- train_pred %>% 

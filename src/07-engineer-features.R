@@ -20,8 +20,7 @@ source(here::here("/src/01-load-packages.R"))
 combined <- read_csv(here::here("/data/combined.csv"), col_types = c("Dddddddcidiciic"))
 
 #' # 3. Choose Data to Calculate Features 
-#' Can choose either training data for training the model or test data for prediction. Move this option into 
-#' a command line argument later.  
+#' Can choose either training data for training the model or test data for prediction. 
 generate_train_or_test <- "test"
 if (generate_train_or_test == "train") { 
   train_symbols <- combined %>% 
@@ -222,7 +221,26 @@ combined <- combined %>%
          volatility_252 = roll_sdr(return_001, n = 252)) %>% 
   ungroup()
 
-#' # 11. Relative Strength Index 
+#' # 11. Large Jump 
+combined <- combined %>% 
+  group_by(symbol) %>% 
+  mutate(large_jump_005 = roll_maxr(return_005, n = 5), 
+         large_jump_010 = roll_maxr(return_005, n = 10), 
+         large_jump_021 = roll_maxr(return_005, n = 21), 
+         large_jump_042 = roll_maxr(return_005, n = 42), 
+         large_jump_063 = roll_maxr(return_005, n = 63), 
+         large_jump_084 = roll_maxr(return_005, n = 84), 
+         large_jump_105 = roll_maxr(return_005, n = 105), 
+         large_jump_126 = roll_maxr(return_005, n = 126), 
+         large_jump_147 = roll_maxr(return_005, n = 147), 
+         large_jump_168 = roll_maxr(return_005, n = 168), 
+         large_jump_189 = roll_maxr(return_005, n = 189), 
+         large_jump_210 = roll_maxr(return_005, n = 210), 
+         large_jump_231 = roll_maxr(return_005, n = 231), 
+         large_jump_252 = roll_maxr(return_005, n = 252)) %>% 
+  ungroup()
+
+#' # 12. Relative Strength Index 
 #' #' Adds rsi.  
 i_rsi <- bind_cols(
   create_indicator(combined, "C", RSI, n = 5) %>% rename(rsi_005 = value), 
@@ -242,7 +260,7 @@ i_rsi <- bind_cols(
 )
 combined <- bind_cols(combined, i_rsi)
 
-#' # 12. Aroon
+#' # 13. Aroon
 #' Adds aroonUp, aroonDn, oscillator.
 i_aroon <- bind_cols( 
   create_indicator(combined, "HL", aroon, n = 5) %>% 
@@ -276,7 +294,7 @@ i_aroon <- bind_cols(
 )
 combined <- bind_cols(combined, i_aroon)
 
-#' # 13. Commodity Channel Index (CCI)
+#' # 14. Commodity Channel Index (CCI)
 #' Adds cci.
 i_cci <- bind_cols(
   create_indicator(combined, "HLC", CCI, n = 5) %>% rename(cci_005 = value), 
@@ -296,7 +314,7 @@ i_cci <- bind_cols(
 )
 combined <- bind_cols(combined, i_cci)
 
-#' # 14. Chaikin Volatility
+#' # 15. Chaikin Volatility
 #' Adds chaikinvol.
 i_chaikinvol <- bind_cols(
   create_indicator(combined, "HL", chaikinVolatility, n = 5) %>% rename(chaikinvol_005 = value), 
@@ -316,7 +334,7 @@ i_chaikinvol <- bind_cols(
 )
 combined <- bind_cols(combined, i_chaikinvol)
 
-#' # 15. Chaikin Money Flow
+#' # 16. Chaikin Money Flow
 #' Adds cmf.
 i_cmf <- bind_cols(
   create_indicator(combined, "HLCV", CMF, n = 5) %>% rename(cmf_005 = value), 
@@ -336,7 +354,7 @@ i_cmf <- bind_cols(
 )
 combined <- bind_cols(combined, i_cmf)
 
-#' # 16. Signal to Noise Ratio
+#' # 17. Signal to Noise Ratio
 #' Adds snr. 
 i_snr <- bind_cols(
   create_indicator(combined, "HLC", SNR, n = 5) %>% rename(snr_005 = value), 
@@ -356,7 +374,7 @@ i_snr <- bind_cols(
 )
 combined <- bind_cols(combined, i_snr)
 
-#' # 17. Williams R
+#' # 18. Williams R
 #' Adds williams_r.
 i_williamsr <- bind_cols(
   create_indicator(combined, "HLC", WPR, n = 5) %>% rename(williamsr_005 = value), 
@@ -376,7 +394,7 @@ i_williamsr <- bind_cols(
 )
 combined <- bind_cols(combined, i_williamsr)
 
-#' # 18. Money Flow Index 
+#' # 19. Money Flow Index 
 #' Adds mfi. 
 i_mfi <- bind_cols(
   create_indicator(combined, "HLCV", MFI, n = 5) %>% rename(mfi_005 = value), 
@@ -437,17 +455,16 @@ i_vhf <- bind_cols(
 combined <- bind_cols(combined, i_vhf)
 
 #' # 22. Clean Combined 
+#' Remove nan values, remove stocks tha thave had large one-day jumps within the last half year. 
 combined[do.call(cbind, lapply(combined, is.nan))] <- NA
-  
-#' # 23. Split into Train and Test 
-train <- combined %>% filter(is.na(position_label) == FALSE)
-test <- combined %>% filter(is.na(position_label) == TRUE) 
 
-#' # 24. Save Data 
+#' # 23. Save Data 
 if (generate_train_or_test == "train") { 
+  train <- combined %>% filter(is.na(position_label) == FALSE)
   write_feather(train, here::here("/data/train.feather"))
 }
 if (generate_train_or_test == "test") { 
+  test <- combined %>% filter(is.na(position_label) == TRUE) 
   write_feather(test, here::here("/data/test.feather"))
 }
 

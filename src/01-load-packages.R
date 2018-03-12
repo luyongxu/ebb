@@ -17,7 +17,6 @@
 #' # 1. Install Libraries Not on CRAN 
 #' These packages require a one-time installation from Github.  
 # devtools::install_github("thomasp85/patchwork")
-# devtools::install_github("mlr-org/mlr")
 
 #' # 2. Load libraries 
 #' Description  
@@ -42,21 +41,17 @@ load_library("readr")
 load_library("rvest")
 load_library("jsonlite")
 load_library("stringr")
-load_library("timetk")
 load_library("xts")
 load_library("TTR")
 load_library("alphavantager")
 load_library("quantmod")
-load_library("formattable")
 load_library("patchwork")
 load_library("here")
 load_library("RcppRoll")
-load_library("mlr")
-load_library("caret") 
 load_library("MLmetrics")
-load_library("parallelMap")
 load_library("xgboost")
 load_library("feather")
+load_library("formattable")
 
 #' # 3. Options 
 #' Turn off scientific notation. 

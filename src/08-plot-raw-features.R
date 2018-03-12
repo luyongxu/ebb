@@ -14,10 +14,10 @@
 #' ---
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_csv(here::here("/data/train.csv"))
+train <- read_feather(here::here("data/train.feather"))
 print(train)
 glimpse(train) 
 summary(train)

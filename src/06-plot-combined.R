@@ -15,10 +15,10 @@
 #' This script calculates the return of the strategy in the original labeled data.  
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Data 
-combined <- read_csv(here::here("/data/combined.csv"), col_types = c("Dddddddcidiciic"))
+combined <- read_csv(here::here("data/combined.csv"), col_types = c("Dddddddcidiciic"))
 
 #' # 3. Filter Data 
 #' Filter data to observations belonging to symbols in the original position label data. 
@@ -41,7 +41,7 @@ combined_plot <- combined_plot %>%
          strategy_cumulative_return = cumprod(1 + strategy_return_01d) - 1, 
          buy_hold_cumulative_return = cumprod(1 + buy_hold_return_01d) - 1)
 
-#' # 4. Calculate Combined Strategy Return and Buy-and-Hold Return 
+#' # 5. Calculate Combined Strategy Return and Buy-and-Hold Return 
 combined_plot <- combined_plot %>% 
   bind_rows(
     combined_plot %>% 
@@ -63,7 +63,7 @@ symbols <- combined_plot %>%
   arrange(desc(strategy_cumulative_return)) %>% 
   .[["symbol"]]
 
-#' # 5. Generate Plots 
+#' # 6. Generate Plots 
 plot_list <- list()
 for (i in c("Combined", symbols)) { 
   

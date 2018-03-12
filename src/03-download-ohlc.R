@@ -16,7 +16,7 @@
 #' primary data source.  
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Download AlphaVantage Data Function 
 #' Description  
@@ -47,7 +47,7 @@ download_alphavantage <- function(symbol, av_fun, outputsize) {
                    return(df)
                  })
   
-  # Add symbol 
+  # Add symbol field 
   if(!is.null(df)) 
     df <- df %>% mutate(symbol = symbol) 
   
@@ -118,11 +118,11 @@ download_yahoo_many <- function(symbols, from, to) {
 #' # 5. Create Vector of Symbols
 #' Use only companies listed on the NASDAQ, NYSE, and AMEX with a market capitalization of $10 billion or greater or 
 #' appear in the original position label data.  
-symbols_us <- read_csv("./data/list-all.csv") %>% 
+symbols_us <- read_csv(here::here("data/list-all.csv")) %>% 
   filter(exchange %in% c("NASDAQ", "NYSE", "AMEX"), 
          market_cap >= 10000000000) %>% 
   .[["symbol"]]
-symbols_original <- read_csv("./data/original-clean.csv") %>% 
+symbols_original <- read_csv(here::here("data/original-clean.csv")) %>% 
   mutate(symbol = ifelse(exchange == "CT Equity", str_c(symbol, ".TO"), symbol)) %>% 
   .[["symbol"]] %>% 
   unique()
@@ -135,12 +135,10 @@ print(symbols)
 #' which is indicated by CT Equity in the exchange field. For Yahoo! Finance, the symbol naming convention is to append 
 #' .TO to the name of the symbol to pull data from those quotes on the Toronto Stock Exchange. RST is also manually added 
 #' because it is below $10 billion cap. 
-ohlc_data <- download_yahoo_many(
-  symbols = symbols, 
-  from = "2014-01-01", 
-  to = Sys.Date()
-) 
+ohlc_data <- download_yahoo_many(symbols = symbols, 
+                                 from = "2014-01-01", 
+                                 to = Sys.Date()) 
 
 #' # 7. Save Data 
-write_csv(ohlc_data, here::here("/data/ohlc-data.csv"))
+write_csv(ohlc_data, here::here("data/ohlc-data.csv"))
 

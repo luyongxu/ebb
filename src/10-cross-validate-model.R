@@ -14,30 +14,44 @@
 #' ---
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_csv(here::here("/data/train.csv"))
+train <- read_feather(here::here("data/train.feather"))
 glimpse(train) 
+
+#' # 3. Convert Position Label 
+#' Convert to a numeric value from 0 to 4 because the xgboost requires 
+#' this format for multiclass prediction. A numeric value of 0 is equivalent 
+#' to a position label of -10 and a value of 4 is equivalent to a position 
+#' label of +10. 
+train <- train %>% 
+  mutate(position_label = as.numeric(factor(position_label)) - 1)
 
 #' # 3. Select Features 
 xgb_features <- train %>%
   select(matches("return_"), matches("drawdown_"), matches("drawup_"),
-         matches("positive_"), matches("volatility_"), matches("rsi_"),
-         matches("aroonUp_"), matches("aroonDn_"), matches("aroon_"),
-         matches("cci_"), matches("chaikinvol_"), matches("cmf_"),
-         matches("snr_"), matches("williamsr_"), matches("mfi_"),
-         matches("cmo_"), matches("vhf_")) %>%
+         matches("positive_"), matches("volatility_"), matches("large_jump_"), 
+         matches("rsi_"), matches("aroonUp_"), matches("aroonDn_"), 
+         matches("aroon_"), matches("cci_"), matches("chaikinvol_"), 
+         matches("cmf_"), matches("snr_"), matches("williamsr_"), 
+         matches("mfi_"), matches("cmo_"), matches("vhf_")) %>%
   colnames()
 
 #' # 4. Set Parameters 
-xgb_params <- list(booster = "gblinear", 
-                   eta = 0.001, 
-                   lambda = 1, 
-                   alpha = 30,  
-                   lambda_bias = 0.0, 
-                   objective = "reg:linear", 
-                   eval_metric = "rmse")
+xgb_params <- list(booster = "gbtree", 
+                   eta = 0.1, 
+                   gamma = 0.1, 
+                   max_depth = 2, 
+                   min_child_weight = 1, 
+                   subsample = 0.7, 
+                   colsample_bytree = 0.1, 
+                   colsample_bylevel = 0.3, 
+                   lambda = 0.15, 
+                   alpha = 0.0, 
+                   objective = "multi:softmax", 
+                   eval_metric = "mlogloss", 
+                   num_class = 5)
 
 #' # 5. Create XGB Data Objects
 xgb_train <- xgb.DMatrix(data = as.matrix(train[, xgb_features]), 
@@ -53,7 +67,7 @@ for (id in unique(train[["id"]])) {
 
 #' # 7. Cross Validate For Parameter Tuning
 # Best iteration:
-# [30]	train-rmse:1.203154+0.023987	test-rmse:1.709590+0.728223
+# [70]	train-mlogloss:0.185265+0.006789	test-mlogloss:0.355103+0.206063
 set.seed(5)
 xgb_cv <- xgb.cv(params = xgb_params, 
                  data = xgb_train, 
@@ -67,13 +81,10 @@ xgb_cv <- xgb.cv(params = xgb_params,
 #' # 8. Extract and Score Predictions 
 #' Cap predictions beyond the -10 or +10 range to -10 or +10. 
 train_pred <- train %>% 
-  mutate(pred = xgb_cv[["pred"]], 
-         pred = ifelse(pred >= 10, 10, pred), 
-         pred = ifelse(pred <= -10, -10, pred))
-RMSE(train_pred[["pred"]], train_pred[["position_label"]])
+  mutate(pred = xgb_cv[["pred"]][, 1])
+Accuracy(train_pred[["pred"]], train_pred[["position_label"]])
 
 #' # 9. Save Predictions 
-write_csv(train_pred, here::here("/data/train-pred.csv"))
-
+write_feather(train_pred, here::here("/data/train-with-pred.feather"))
 
 

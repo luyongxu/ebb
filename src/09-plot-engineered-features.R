@@ -14,10 +14,10 @@
 #' ---
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_csv(here::here("/data/train.csv"))
+train <- read_feather(here::here("data/train.feather"))
 print(train)
 glimpse(train) 
 summary(train)
@@ -124,6 +124,21 @@ ggplot(train, aes(x = factor(position_label))) +
   geom_boxplot(aes(y = volatility_005), fill = "blue", alpha = 0.5)
 ggplot(train, aes(x = factor(position_label))) + 
   geom_boxplot(aes(y = volatility_252), fill = "blue", alpha = 0.5)
+
+#' # 9. Rolling Large Jump 
+ggplot(train, aes(x = timestamp)) +
+  geom_line(aes(y = large_jump_005, colour = position_label), size = 1) + 
+  geom_hline(yintercept = 0) + 
+  facet_wrap(~ symbol) + 
+  plot_gradient
+ggplot(train, aes(x = timestamp)) + 
+  geom_line(aes(y = large_jump_252, colour = position_label), size = 1) + 
+  facet_wrap(~ symbol) + 
+  plot_gradient
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = large_jump_005), fill = "blue", alpha = 0.5)
+ggplot(train, aes(x = factor(position_label))) + 
+  geom_boxplot(aes(y = large_jump_252), fill = "blue", alpha = 0.5)
 
 #' # 10. RSI
 ggplot(train, aes(x = timestamp)) +

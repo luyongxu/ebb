@@ -15,7 +15,7 @@
 #' This script downloads the historical and future earnings announcements.  
 
 #' # 1. Source Load Packages
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Download Earnings Announcements Function 
 #' Description 
@@ -123,5 +123,5 @@ earnings_confirmed  <- download_earnings_many(dates = dates, type = "confirmed")
 earnings_estimated <- download_earnings_many(dates = dates, type = "estimated")
 
 #' # 5. Save Earnings Announcements
-write_csv(earnings_confirmed, here::here("/data/earnings-confirmed.csv"))
-write_csv(earnings_estimated, here::here("/data/earnings-estimated.csv"))
+write_csv(earnings_confirmed, here::here("data/earnings-confirmed.csv"))
+write_csv(earnings_estimated, here::here("data/earnings-estimated.csv"))

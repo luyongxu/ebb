@@ -15,15 +15,15 @@
 #' This script creates the combined data prior to being split into train and test.   
 
 #' # 1. Source Load Packages 
-source(here::here("/src/01-load-packages.R"))
+source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load OHLC Data 
-ohlc_data <- read_csv("./data/ohlc-data.csv", col_types = c("Dddddddc"))
+ohlc_data <- read_csv(here::here("data/ohlc-data.csv"), col_types = c("Dddddddc"))
 print(ohlc_data)
 glimpse(ohlc_data)
 
 #' # 3. Load Position Label Data 
-original_clean <- read_csv("./data/original-clean.csv", col_types = c("icdiccii"))
+original_clean <- read_csv(here::here("data/original-clean.csv"), col_types = c("icdiccii"))
 print(original_clean)
 glimpse(original_clean)
 
@@ -60,6 +60,6 @@ glimpse(combined)
 summary(combined)
 
 #' # 9. Save Data 
-write_csv(combined, here::here("/data/combined.csv"))
+write_csv(combined, here::here("data/combined.csv"))
 
 
