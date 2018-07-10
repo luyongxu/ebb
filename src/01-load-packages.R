@@ -15,8 +15,9 @@
 #' This script loads the necessary packages. 
 
 #' # 1. Install Libraries Not on CRAN 
-#' These packages require a one-time installation from Github.  
+# These packages require a one-time installation from Github.  
 # devtools::install_github("thomasp85/patchwork")
+# devtools::install_github("wesm/feather/R")
 
 #' # 2. Load libraries 
 #' Description  

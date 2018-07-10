@@ -17,7 +17,7 @@
 source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_feather(here::here("data/train.feather"))
+train <- read_csv(here::here("data/train.csv"))
 print(train)
 glimpse(train) 
 summary(train)

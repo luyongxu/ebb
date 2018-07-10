@@ -461,10 +461,10 @@ combined[do.call(cbind, lapply(combined, is.nan))] <- NA
 #' # 23. Save Data 
 if (generate_train_or_test == "train") { 
   train <- combined %>% filter(is.na(position_label) == FALSE)
-  write_feather(train, here::here("/data/train.feather"))
+  write_csv(train, here::here("/data/train.csv"))
 }
 if (generate_train_or_test == "test") { 
   test <- combined %>% filter(is.na(position_label) == TRUE) 
-  write_feather(test, here::here("/data/test.feather"))
+  write_csv(test, here::here("/data/test.csv"))
 }
 

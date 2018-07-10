@@ -17,7 +17,7 @@
 source(here::here("/src/01-load-packages.R"))
 
 #' # 2. Load Predictions  
-train_pred <- read_feather(here::here("/data/train-with-pred.feather"))
+train_pred <- read_csv(here::here("/data/train-with-pred.csv"))
 
 #' # 3. 
 train_pred <- train_pred %>% 

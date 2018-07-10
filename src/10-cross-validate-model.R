@@ -17,7 +17,7 @@
 source(here::here("src/01-load-packages.R"))
 
 #' # 2. Load Training Data 
-train <- read_feather(here::here("data/train.feather"))
+train <- read_csv(here::here("data/train.csv"))
 glimpse(train) 
 
 #' # 3. Convert Position Label 
@@ -85,6 +85,6 @@ train_pred <- train %>%
 Accuracy(train_pred[["pred"]], train_pred[["position_label"]])
 
 #' # 9. Save Predictions 
-write_feather(train_pred, here::here("/data/train-with-pred.feather"))
+write_csv(train_pred, here::here("/data/train-with-pred.csv"))
 
 

@@ -17,7 +17,7 @@
 source(here::here("/src/01-load-packages.R"))
 
 #' # 2. Load Test Data 
-test <- read_feather(here::here("/data/test.feather"))
+test <- read_csv(here::here("/data/test.csv"))
 glimpse(test) 
 
 #' # 3. Load XGBoost Model 
